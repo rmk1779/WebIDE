@@ -1,0 +1,72 @@
+[{
+	"WorkPackage": "WorkPackage 1",
+	"WorkPackageName": "WorkPackageName 1",
+	"__metadata": {
+		"uri": "I_WorkPackageStdVH('WorkPackage%201')",
+		"type": "cds_projectbillingrequest_sd.I_WorkPackageStdVHType"
+	}
+}, {
+	"WorkPackage": "WorkPackage 2",
+	"WorkPackageName": "WorkPackageName 2",
+	"__metadata": {
+		"uri": "I_WorkPackageStdVH('WorkPackage%202')",
+		"type": "cds_projectbillingrequest_sd.I_WorkPackageStdVHType"
+	}
+}, {
+	"WorkPackage": "WorkPackage 3",
+	"WorkPackageName": "WorkPackageName 3",
+	"__metadata": {
+		"uri": "I_WorkPackageStdVH('WorkPackage%203')",
+		"type": "cds_projectbillingrequest_sd.I_WorkPackageStdVHType"
+	}
+
+}, {
+	"WorkPackage": "WorkPackage 4",
+	"WorkPackageName": "WorkPackageName 4",
+	"__metadata": {
+		"uri": "I_WorkPackageStdVH('WorkPackage%204')",
+		"type": "cds_projectbillingrequest_sd.I_WorkPackageStdVHType"
+	}
+}, {
+	"WorkPackage": "WorkPackage 5",
+	"WorkPackageName": "WorkPackageName 5",
+	"__metadata": {
+		"uri": "I_WorkPackageStdVH('WorkPackage%205')",
+		"type": "cds_projectbillingrequest_sd.I_WorkPackageStdVHType"
+	}
+}, {
+	"WorkPackage": "WorkPackage 6",
+	"WorkPackageName": "WorkPackageName 6",
+	"__metadata": {
+		"uri": "I_WorkPackageStdVH('WorkPackage%206')",
+		"type": "cds_projectbillingrequest_sd.I_WorkPackageStdVHType"
+	}
+}, {
+	"WorkPackage": "WorkPackage 7",
+	"WorkPackageName": "WorkPackageName 7",
+	"__metadata": {
+		"uri": "I_WorkPackageStdVH('WorkPackage%207')",
+		"type": "cds_projectbillingrequest_sd.I_WorkPackageStdVHType"
+	}
+}, {
+	"WorkPackage": "WorkPackage 8",
+	"WorkPackageName": "WorkPackageName 8",
+	"__metadata": {
+		"uri": "I_WorkPackageStdVH('WorkPackage%208')",
+		"type": "cds_projectbillingrequest_sd.I_WorkPackageStdVHType"
+	}
+}, {
+	"WorkPackage": "WorkPackage 9",
+	"WorkPackageName": "WorkPackageName 9",
+	"__metadata": {
+		"uri": "I_WorkPackageStdVH('WorkPackage%209')",
+		"type": "cds_projectbillingrequest_sd.I_WorkPackageStdVHType"
+	}
+}, {
+	"WorkPackage": "WorkPackage 10",
+	"WorkPackageName": "WorkPackageName 10",
+	"__metadata": {
+		"uri": "I_WorkPackageStdVH('WorkPackage%2010')",
+		"type": "cds_projectbillingrequest_sd.I_WorkPackageStdVHType"
+	}
+}]

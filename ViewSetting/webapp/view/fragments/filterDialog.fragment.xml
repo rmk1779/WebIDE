@@ -1,0 +1,21 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<ViewSettingsDialog confirm="handleFilterDialogConfirm" >
+		<filterItems>
+			<ViewSettingsFilterItem text="Name" key="name" multiSelect="true" items="{filtersModel>/filterNames}">
+				<items>
+				<ViewSettingsItem text="{filtersModel>name}" key="name"/>
+				</items>
+			</ViewSettingsFilterItem>
+			<ViewSettingsFilterItem text="Weight" key="weight" multiSelect="false" items="{filtersModel>/filterWeight}">
+				<items>
+				<ViewSettingsItem text="{filtersModel>weight}" key="weight"/>
+				</items>
+			</ViewSettingsFilterItem>
+			<ViewSettingsFilterItem text="Salary" key="salary" multiSelect="false" items="{filtersModel>/filterSalary}">
+				<items>
+				<ViewSettingsItem text="{filtersModel>salary}" key="salary"/>
+				</items>
+			</ViewSettingsFilterItem>
+		</filterItems>
+	</ViewSettingsDialog>
+</core:FragmentDefinition>

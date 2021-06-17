@@ -1,0 +1,22 @@
+<core:FragmentDefinition id="ext.fragment.PrepaymentsTable" xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:table="sap.ui.table">
+	<table:Column id="ExtensionWizard::ColumnBreakout_PT" hAlign="End" tooltip="{i18n>TYPE}">
+		<Text id="ext.fragment.PrepaymentsTable.ColLabelPrepaymentType" text="{i18n>TYPE}" wrapping="false"/>
+		<table:customData>
+			<core:CustomData id="ext.fragment.PrepaymentsTable.PrepaymentType" key="p13nData"
+				value='\{"columnKey": "i2d.ps.projbillingrequests1.Material", "leadingProperty" : "Material", "additionalProperty" : "BillingPlanUsageCategory", "columnIndex" : "1"}'/>
+		</table:customData>
+		<table:template>
+			<Text id="ext.fragment.PrepaymentsTable.PrepaymentTypeLabel" wrapping="false" text="{ parts:[{path:'Material'}], formatter: '.fnGetPrepaymentType' }"/>
+		</table:template>
+	</table:Column>
+	<table:Column id="ExtensionWizard::ColumnBreakout_PT4" hAlign="End" tooltip="{i18n>TO_BE_SETTLED}">
+		<Text id="ext.fragment.PrepaymentsTable.ColLabelToBeSettledAmt" text="{i18n>TO_BE_SETTLED}" wrapping="false"/>
+		<table:customData>
+			<core:CustomData id="ext.fragment.PrepaymentsTable.ToBeSettledAmt" key="p13nData"
+				value='\{"columnKey": "i2d.ps.projbillingrequests1.ToBeBilledAmtInProjCurrency", "isCurrency": true, "unit": "ProjectCurrency", "leadingProperty" : "ToBeBilledAmtInProjCurrency", "columnIndex" : "4"}'/>
+		</table:customData>
+		<table:template>
+			<Text id="ext.fragment.PrepaymentsTable.ToBeSettledAmtLabel" wrapping="false" text="{ parts:[{path:'ToBeBilledAmtInProjCurrency'},{path:'ProjectCurrency'}], formatter: '.fnGetToBeSettledAmount' }"/>
+		</table:template>
+	</table:Column>
+</core:FragmentDefinition>

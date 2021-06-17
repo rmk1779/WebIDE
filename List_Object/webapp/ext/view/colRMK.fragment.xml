@@ -1,0 +1,8 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+	<Column hAlign="Begin">
+		<Text text="City"/>
+		<customData>
+			<core:CustomData key="p13nData" value='\{"columnKey": "City"}'/>
+		</customData>
+	</Column>
+</core:FragmentDefinition>

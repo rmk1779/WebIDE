@@ -1,0 +1,80 @@
+<mvc:View xmlns:core="sap.ui.core"  controllerName="opl.ObjectPage.controller.View1" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.uxap" xmlns:forms="sap.ui.layout.form" xmlns:f="sap.f" xmlns:l="sap.ui.layout" displayBlock="true" xmlns:m="sap.m">
+	<ObjectPageLayout id="ObjectPageLayout" showTitleInHeaderContent="true" alwaysShowContentHeader="false" preserveHeaderStateOnScroll="false"
+		headerContentPinnable="true" isChildPage="true" enableLazyLoading="false">
+		<headerTitle>
+			<ObjectPageDynamicHeaderTitle>
+				<expandedHeading>
+					<m:FlexBox wrap="Wrap" fitContainer="true" alignItems="Center">
+						<m:Title text="{Empname}" wrapping="true" class="sapUiTinyMarginEnd sapUiTinyMarginTop"/>
+					</m:FlexBox>
+				</expandedHeading>
+				<snappedHeading>
+					<m:FlexBox wrap="Wrap" fitContainer="true" alignItems="Center">
+						<m:FlexBox wrap="NoWrap" fitContainer="true" alignItems="Center" class="sapUiTinyMarginEnd">
+							<f:Avatar src="./test-resources/sap/uxap/images/imageID_275314.png" displaySize="S" class="sapUiTinyMarginEnd"/>
+							<m:Title text="{Empname}" wrapping="true" class="sapUiTinyMarginEnd"/>
+						</m:FlexBox>
+					</m:FlexBox>
+				</snappedHeading>
+				<expandedContent>
+					<m:Text text="{EmpPosition}"/>
+				</expandedContent>
+				<snappedContent>
+					<m:Text text="{EmpPosition}"/>
+				</snappedContent>
+				<!--<navigationActions>-->
+				<!--	<m:Button type="Transparent" icon="sap-icon://key" tooltip="Change Password" press="onChangePwd"/>-->
+				<!--	<m:OverflowToolbarButton type="{Empnotify}" text="{Empmsg}" icon="sap-icon://bell" tooltip="Employee Request" press="onEmpNotify"/>-->
+				<!--	<m:OverflowToolbarButton type="Transparent" icon="sap-icon://edit" tooltip="Edit Your Profile" press="onEdit"/>-->
+				<!--	<m:OverflowToolbarButton type="Reject" icon="sap-icon://log" tooltip="Logout" press="onLogout1"/>-->
+				<!--</navigationActions>-->
+			</ObjectPageDynamicHeaderTitle>
+		</headerTitle>
+		<headerContent>
+			<!--<m:FlexBox wrap="Wrap" fitContainer="true" alignItems="Stretch">-->
+			<!--	<f:Avatar class="sapUiSmallMarginEnd sapUiSmallMarginTop" src="./test-resources/sap/uxap/images/imageID_275314.png" displaySize="L"></f:Avatar>-->
+			<!--	<l:VerticalLayout class="sapUiSmallMarginEnd sapUiSmallMarginTop">-->
+			<!--		<m:Link id="linkID" text="{Id}"/>-->
+			<!--		<m:Link text="+91-{Empmobile}"/>-->
+			<!--		<m:Link text="{Empmail}"/>-->
+			<!--	</l:VerticalLayout>-->
+			<!--</m:FlexBox>-->
+		</headerContent>
+		<sections>
+			<ObjectPageSection id="personalSection" title="Personal" importance="Medium">
+				<subSections>
+					<ObjectPageSubSection id="personalSectionSS1" title="First Tab">
+						<l:VerticalLayout class="sapUiSmallMarginEnd sapUiSmallMarginTop">
+							<forms:SimpleForm width="100%">
+								<core:Title text="Data"/>
+								<m:Label text="FirstName"/>
+								<m:Input id="idFirstName" value=""></m:Input>
+								<m:Label text="LastName"/>
+								<m:Input id="idLastName" value=""></m:Input>
+								<m:Label/>
+								<m:Button press="sendData" text="Submit"></m:Button>
+							</forms:SimpleForm>
+						</l:VerticalLayout>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+			<ObjectPageSection id="personalSection2" title="JOB" importance="Medium">
+				<subSections>
+					<ObjectPageSubSection id="personalSectionSS2" title="Second Tab">
+						<l:VerticalLayout class="sapUiSmallMarginEnd sapUiSmallMarginTop">
+							<forms:SimpleForm width="100%">
+								<core:Title text="Data 2"/>
+								<m:Label text="FirstName"/>
+								<m:Text id="idFirstName2" text="{oMdl>/firstName}"/>
+								<m:Label text="LastName"/>
+								<m:Text id="idLastName2" text="{oMdl>/lastName}"/>
+							</forms:SimpleForm>
+						</l:VerticalLayout>
+						<!--<l:VerticalLayout class="sapUiSmallMarginEnd sapUiSmallMarginTop"></l:VerticalLayout>-->
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+		</sections>
+	</ObjectPageLayout>
+</mvc:View>

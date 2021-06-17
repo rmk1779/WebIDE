@@ -1,0 +1,131 @@
+[{
+	"BillingPlan": "BillingPlan 1",
+	"BillingPlanItem": "BillingPlanItem 1",
+	"BillingPlanBillingDate": "/Date(967783448000)/",
+	"BillingPlanRelatedBillgStatus": "BillingPlanRelatedBillgStatus 1",
+	"BillingPlanAmount": 9.85,
+	"TransactionCurrency": "TransactionCurrency 1",
+	"BillingPlanItemUsage": "BillingPlanItemUsage 1",
+	"BillingPlanUsageCategory": "1",
+	"__metadata": {
+		"uri": "C_ProjBillgSlsItmBillgPlnDuDte(BillingPlan='BillingPlan%201',BillingPlanItem='BillingPlanItem%201')",
+		"type": "cds_projectbillingelement_sd.C_ProjBillgSlsItmBillgPlnDuDteType"
+	}
+}, {
+	"BillingPlan": "BillingPlan 2",
+	"BillingPlanItem": "BillingPlanItem 2",
+	"BillingPlanBillingDate": "/Date(1114231448000)/",
+	"BillingPlanRelatedBillgStatus": "BillingPlanRelatedBillgStatus 2",
+	"BillingPlanAmount": 416.31,
+	"TransactionCurrency": "TransactionCurrency 2",
+	"BillingPlanItemUsage": "1",
+	"BillingPlanUsageCategory": "2",
+	"__metadata": {
+		"uri": "C_ProjBillgSlsItmBillgPlnDuDte(BillingPlan='BillingPlan%202',BillingPlanItem='BillingPlanItem%202')",
+		"type": "cds_projectbillingelement_sd.C_ProjBillgSlsItmBillgPlnDuDteType"
+	}
+}, {
+	"BillingPlan": "BillingPlan 3",
+	"BillingPlanItem": "BillingPlanItem 3",
+	"BillingPlanBillingDate": "/Date(1264135448000)/",
+	"BillingPlanRelatedBillgStatus": "BillingPlanRelatedBillgStatus 3",
+	"BillingPlanAmount": 6671.92,
+	"TransactionCurrency": "TransactionCurrency 3",
+	"BillingPlanItemUsage": "5",
+	"BillingPlanUsageCategory": "2",
+	"__metadata": {
+		"uri": "C_ProjBillgSlsItmBillgPlnDuDte(BillingPlan='BillingPlan%203',BillingPlanItem='BillingPlanItem%203')",
+		"type": "cds_projectbillingelement_sd.C_ProjBillgSlsItmBillgPlnDuDteType"
+	}
+}, {
+	"BillingPlan": "BillingPlan 4",
+	"BillingPlanItem": "BillingPlanItem 4",
+	"BillingPlanBillingDate": "/Date(1509165848000)/",
+	"BillingPlanRelatedBillgStatus": "BillingPlanRelatedBillgStatus 4",
+	"BillingPlanAmount": 2613.6,
+	"TransactionCurrency": "TransactionCurrency 4",
+	"BillingPlanItemUsage": "BillingPlanItemUsage 4",
+	"BillingPlanUsageCategory": "BillingPlanUsageCategory 4",
+	"__metadata": {
+		"uri": "C_ProjBillgSlsItmBillgPlnDuDte(BillingPlan='BillingPlan%204',BillingPlanItem='BillingPlanItem%204')",
+		"type": "cds_projectbillingelement_sd.C_ProjBillgSlsItmBillgPlnDuDteType"
+	}
+}, {
+	"BillingPlan": "BillingPlan 5",
+	"BillingPlanItem": "BillingPlanItem 5",
+	"BillingPlanBillingDate": "/Date(1149137048000)/",
+	"BillingPlanRelatedBillgStatus": "BillingPlanRelatedBillgStatus 5",
+	"BillingPlanAmount": 7960.43,
+	"TransactionCurrency": "TransactionCurrency 5",
+	"BillingPlanItemUsage": "BillingPlanItemUsage 5",
+	"BillingPlanUsageCategory": "BillingPlanUsageCategory 5",
+	"__metadata": {
+		"uri": "C_ProjBillgSlsItmBillgPlnDuDte(BillingPlan='BillingPlan%205',BillingPlanItem='BillingPlanItem%205')",
+		"type": "cds_projectbillingelement_sd.C_ProjBillgSlsItmBillgPlnDuDteType"
+	}
+}, {
+	"BillingPlan": "BillingPlan 6",
+	"BillingPlanItem": "BillingPlanItem 6",
+	"BillingPlanBillingDate": "/Date(1224650648000)/",
+	"BillingPlanRelatedBillgStatus": "BillingPlanRelatedBillgStatus 6",
+	"BillingPlanAmount": 2584.86,
+	"TransactionCurrency": "TransactionCurrency 6",
+	"BillingPlanItemUsage": "BillingPlanItemUsage 6",
+	"BillingPlanUsageCategory": "BillingPlanUsageCategory 6",
+	"__metadata": {
+		"uri": "C_ProjBillgSlsItmBillgPlnDuDte(BillingPlan='BillingPlan%206',BillingPlanItem='BillingPlanItem%206')",
+		"type": "cds_projectbillingelement_sd.C_ProjBillgSlsItmBillgPlnDuDteType"
+	}
+}, {
+	"BillingPlan": "BillingPlan 7",
+	"BillingPlanItem": "BillingPlanItem 7",
+	"BillingPlanBillingDate": "/Date(1190090648000)/",
+	"BillingPlanRelatedBillgStatus": "BillingPlanRelatedBillgStatus 7",
+	"BillingPlanAmount": 5101.49,
+	"TransactionCurrency": "TransactionCurrency 7",
+	"BillingPlanItemUsage": "BillingPlanItemUsage 7",
+	"BillingPlanUsageCategory": "BillingPlanUsageCategory 7",
+	"__metadata": {
+		"uri": "C_ProjBillgSlsItmBillgPlnDuDte(BillingPlan='BillingPlan%207',BillingPlanItem='BillingPlanItem%207')",
+		"type": "cds_projectbillingelement_sd.C_ProjBillgSlsItmBillgPlnDuDteType"
+	}
+}, {
+	"BillingPlan": "BillingPlan 8",
+	"BillingPlanItem": "BillingPlanItem 8",
+	"BillingPlanBillingDate": "/Date(1157690648000)/",
+	"BillingPlanRelatedBillgStatus": "BillingPlanRelatedBillgStatus 8",
+	"BillingPlanAmount": 7638.68,
+	"TransactionCurrency": "TransactionCurrency 8",
+	"BillingPlanItemUsage": "BillingPlanItemUsage 8",
+	"BillingPlanUsageCategory": "BillingPlanUsageCategory 8",
+	"__metadata": {
+		"uri": "C_ProjBillgSlsItmBillgPlnDuDte(BillingPlan='BillingPlan%208',BillingPlanItem='BillingPlanItem%208')",
+		"type": "cds_projectbillingelement_sd.C_ProjBillgSlsItmBillgPlnDuDteType"
+	}
+}, {
+	"BillingPlan": "BillingPlan 9",
+	"BillingPlanItem": "BillingPlanItem 9",
+	"BillingPlanBillingDate": "/Date(1139201048000)/",
+	"BillingPlanRelatedBillgStatus": "BillingPlanRelatedBillgStatus 9",
+	"BillingPlanAmount": 100.85,
+	"TransactionCurrency": "TransactionCurrency 9",
+	"BillingPlanItemUsage": "BillingPlanItemUsage 9",
+	"BillingPlanUsageCategory": "BillingPlanUsageCategory 9",
+	"__metadata": {
+		"uri": "C_ProjBillgSlsItmBillgPlnDuDte(BillingPlan='BillingPlan%209',BillingPlanItem='BillingPlanItem%209')",
+		"type": "cds_projectbillingelement_sd.C_ProjBillgSlsItmBillgPlnDuDteType"
+	}
+}, {
+	"BillingPlan": "BillingPlan 10",
+	"BillingPlanItem": "BillingPlanItem 10",
+	"BillingPlanBillingDate": "/Date(1405313048000)/",
+	"BillingPlanRelatedBillgStatus": "BillingPlanRelatedBillgStatus 10",
+	"BillingPlanAmount": 8688.55,
+	"TransactionCurrency": "TransactionCurrency 10",
+	"BillingPlanItemUsage": "BillingPlanItemUsage 10",
+	"BillingPlanUsageCategory": "BillingPlanUsageCategory 10",
+	"__metadata": {
+		"uri": "C_ProjBillgSlsItmBillgPlnDuDte(BillingPlan='BillingPlan%2010',BillingPlanItem='BillingPlanItem%2010')",
+		"type": "cds_projectbillingelement_sd.C_ProjBillgSlsItmBillgPlnDuDteType"
+	}
+}]

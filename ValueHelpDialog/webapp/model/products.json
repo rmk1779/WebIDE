@@ -1,0 +1,67 @@
+{
+	"productList": [
+
+		{
+
+			"ProductId": "ID101",
+			"ProductName": "ONEPLUS TV",
+			"Category": "TV"
+		}, {
+
+			"ProductId": "ID102",
+			"ProductName": "LENOVO T440P",
+			"Category": "LAPTOP"
+		}, {
+
+			"ProductId": "ID103",
+			"ProductName": "HP PAVILION",
+			"Category": "LAPTOP"
+		}, {
+
+			"ProductId": "ID104",
+			"ProductName": "FITBIT VERSA",
+			"Category": "SMARTWATCH"
+		}, {
+
+			"ProductId": "ID105",
+			"ProductName": "HUAWEI GT WATCH",
+			"Category": "SMARTWATCH"
+		}, {
+
+			"ProductId": "ID106",
+			"ProductName": "IPHONE 11",
+			"Category": "MOBILE"
+		}, {
+
+			"ProductId": "ID107",
+			"ProductName": "SONY BRAVIA",
+			"Category": "TV"
+		}, {
+
+			"ProductId": "ID108",
+			"ProductName": "HUAWEI P30 PRO",
+			"Category": "MOBILE"
+		}, {
+
+			"ProductId": "ID109",
+			"ProductName": "SAMSUNG TAB10",
+			"Category": "TABLET"
+		}, {
+
+			"ProductId": "ID110",
+			"ProductName": "SAMSUNG S20",
+			"Category": "MOBILE"
+		}, {
+
+			"ProductId": "ID111",
+			"ProductName": "LG TV",
+			"Category": "TV"
+		}, {
+
+			"ProductId": "ID112",
+			"ProductName": "ONEPLUS 6",
+			"Category": "MOBILE"
+		}
+
+	]
+}

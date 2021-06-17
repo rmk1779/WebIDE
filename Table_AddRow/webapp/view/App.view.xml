@@ -1,0 +1,61 @@
+<mvc:View controllerName="TAR.Table_AddRow.controller.App" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<Table id="idTeamTable" width="auto" items="{/Team}" noDataText="Table Data Error" growing="false"
+							growingScrollToLoad="false">
+							<headerToolbar>
+								<OverflowToolbar>
+									<Title id="idTableTitle" text="Team" level="H3"/>
+									<ToolbarSpacer/>
+									<Button text="Add Role" press="onAddRole"></Button>
+									<!--<SearchField id="searchField" tooltip="{i18n>worklistSearchTooltip}" liveChange=".onSearch">-->
+									<!--	<layoutData>-->
+									<!--		<OverflowToolbarLayoutData maxWidth="200px" priority="NeverOverflow"/>-->
+									<!--	</layoutData>-->
+									<!--</SearchField>-->
+								</OverflowToolbar>
+							</headerToolbar>
+							<columns>
+								<Column id="idRole">
+									<Text id="idRoleText" text="Role"/>
+								</Column>
+								<Column id="idDeliveryOrg">
+									<Text id="idDeliveryOrgText" text="Delivery Organisation"/>
+								</Column>
+								<Column id="idWorkPackage">
+									<Text id="idWorkPackageText" text="Work Package"/>
+								</Column>
+								<!--<Column id="unitsOnOrderColumn" demandPopin="true" minScreenWidth="Tablet" hAlign="End">-->
+								<!--	<Text text="{i18n>UnitsOnOrder}"/>-->
+								<!--</Column>-->
+								<!--<Column id="unitsInStockColumn" hAlign="End">-->
+								<!--	<Text text="{i18n>UnitsInStock}"/>-->
+								<!--</Column>-->
+							</columns>
+							<items>
+								<ColumnListItem type="Navigation" press=".onPress">
+									<cells>
+										<Input value="{Role}"></Input>
+										<Input value="{Delivery Org}"></Input>
+										<Input value="{Work Package}"></Input>
+										<!--<ComboBox  change="onChange">-->
+										<!--	<items>-->
+										<!--		<core:Item key="Titanium" text="Titanium"/>-->
+										<!--		<core:Item key="Red Point Stores" text="Red Point Stores"/>-->
+										<!--		<core:Item key="Technocom" text="Technocom"/>-->
+										<!--		<core:Item key="Laptop" text="Laptop"/>-->
+										<!--	</items>-->
+										<!--</ComboBox>-->
+									</cells>
+								</ColumnListItem>
+							</items>
+						</Table>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

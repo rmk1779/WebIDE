@@ -1,0 +1,221 @@
+{
+	"_version": "1.11.0",
+	"sap.app": {
+		"id": "${project.artifactId}",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "${project.version}"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"tags": {
+			"keywords": []
+		},
+		"ach": "PS-FIO",
+		"resources": "resources.json",
+		"dataSources": {
+			"mainService": {
+				"uri": "/sap/opu/odata/sap/UI_PROJBILLGELMNT_SB_V2/",
+				"type": "OData",
+				"settings": {
+					"annotations": [
+						"UI_PROJBILLGELMNT_SB_V2_VAN",
+						"localAnnotations"
+					],
+					"localUri": "localService/metadata.xml"
+				}
+			},
+			"UI_PROJBILLGELMNT_SB_V2_VAN": {
+				"uri": "/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Annotations(TechnicalName='UI_PROJBILLGELMNT_SB_V2_VAN',Version='0001')/$value/",
+				"type": "ODataAnnotation",
+				"settings": {
+					"localUri": "localService/UI_PROJBILLGELMNT_SB_V2_VAN.xml"
+				}
+			},
+			"localAnnotations": {
+				"uri": "annotations/annotations.xml",
+				"type": "ODataAnnotation",
+				"settings": {
+					"localUri": "annotations/annotations.xml"
+				}
+			}
+		},
+		"offline": false,
+		"sourceTemplate": {
+			"id": "ui5template.smartTemplate",
+			"version": "1.40.12"
+		},
+		"crossNavigation": {
+			"inbounds": {
+				"EnterpriseProject-manageProjectBillingElement": {
+					"semanticObject": "EnterpriseProject",
+					"action": "manageProjectBillingElement",
+					"signature": {
+						"parameters": {
+							"Customer": { "defaultValue": { "value": "UserDefault.extended.Customer", "format": "reference" } },
+							"ProfitCenter": { "defaultValue": { "value": "UserDefault.extended.ProfitCenter", "format": "reference" } },
+							"CustomerProject": { "defaultValue": { "value": "UserDefault.extended.CustomerProject", "format": "reference" } },
+							"WBSElement": { "defaultValue": { "value": "UserDefault.extended.WBSElement", "format": "reference" } }
+						},
+						"additionalParameters": "allowed"
+					}
+				}
+			}
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": false
+		},
+		"supportedThemes": [
+			"sap_hcb",
+			"sap_belize"
+		]
+	},
+	"sap.ui5": {
+		"flexEnabled": true,
+		"resources": {
+			"js": [],
+			"css": []
+		},
+		"dependencies": {
+			"minUI5Version": "${sap.ui5.dist.version}",
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {},
+				"sap.ui.generic.app": {},
+				"sap.suite.ui.generic.template": {},
+				"sap.ui.comp": {
+					"lazy": false
+				}
+			},
+			"components": {}
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"uri": "i18n/i18n.properties"
+			},
+			"@i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"uri": "i18n/i18n.properties"
+			},
+			"i18n|sap.suite.ui.generic.template.ListReport|C_ProjectBillingElementTP": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"uri": "i18n/ListReport/C_ProjectBillingElementTP/i18n.properties"
+			},
+			"i18n|sap.suite.ui.generic.template.ObjectPage|C_ProjectBillingElementTP": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"uri": "i18n/ObjectPage/C_ProjectBillingElementTP/i18n.properties"
+			},
+			"i18n|sap.suite.ui.generic.template.ObjectPage|C_ProjectBillingElementEntryTP": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"uri": "i18n/ObjectPage/C_ProjectBillingElementEntryTP/i18n.properties"
+			},
+			"": {
+				"dataSource": "mainService",
+				"preload": true,
+				"settings": {
+					"defaultBindingMode": "TwoWay",
+					"defaultCountMode": "Inline",
+					"refreshAfterChange": false,
+					"metadataUrlParams": {
+						"sap-value-list": "none"
+					}
+				}
+			}
+		},
+		"extends": {
+			"extensions": {
+				"sap.ui.viewExtensions": {
+					"sap.suite.ui.generic.template.ListReport.view.ListReport": {
+						"ResponsiveTableColumnsExtension|C_ProjectBillingElementTP": {
+							"className": "sap.ui.core.Fragment",
+							"fragmentName": "i2d.ps.projbillingelements1.ext.fragment.ListReportResponsiveTableColumns",
+							"type": "XML"
+						},
+						"ResponsiveTableCellsExtension|C_ProjectBillingElementTP": {
+							"className": "sap.ui.core.Fragment",
+							"fragmentName": "i2d.ps.projbillingelements1.ext.fragment.ListReportResponsiveTableCells",
+							"type": "XML"
+						}
+					}
+				},
+				"sap.ui.controllerExtensions": {
+					"sap.suite.ui.generic.template.ListReport.view.ListReport": {
+						"controllerName": "i2d.ps.projbillingelements1.ext.controller.ListReportExt",
+						"sap.ui.generic.app": {
+							"C_ProjectBillingElementTP": {
+								"EntitySet": "C_ProjectBillingElementTP",
+								"Actions": {
+									"ActionC_ProjectBillingElementTP1": {
+										"id": "ActionC_ProjectBillingElementTP1button",
+										"text": "{@i18n>ActionC_ProjectBillingElementTP1}",
+										"press": "fnOnClickPrepareBilling",
+										"requiresSelection": true
+									},
+									"ActionC_ProjectBillingElementTP2": {
+										"id": "ActionC_ProjectBillingElementTP2button",
+										"text": "{@i18n>ActionC_ProjectBillingElementTP2}",
+										"press": "fnOnClickingPrepayment",
+										"requiresSelection": true
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": false
+		}
+	},
+	"sap.ui.generic.app": {
+		"_version": "1.3.0",
+		"settings": {
+			"forceGlobalRefresh": false,
+			"objectPageHeaderType": "Dynamic",
+			"showDraftToggle": false
+		},
+		"pages": {
+			"ListReport|C_ProjectBillingElementTP": {
+				"entitySet": "C_ProjectBillingElementTP",
+				"component": {
+					"name": "sap.suite.ui.generic.template.ListReport",
+					"list": true,
+					"settings": {
+						"tableSettings": {
+							"multiSelect": true
+						},
+						"condensedTableLayout": true,
+						"smartVariantManagement": true,
+						"enableTableFilterInPageVariant": true
+					}
+				}
+			}
+		}
+	},
+	"sap.fiori": {
+		"registrationIds": [
+			"F4374"
+		],
+		"archeType": "transactional"
+	},
+	"sap.platform.hcp": {
+		"uri": ""
+	}
+}

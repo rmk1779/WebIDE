@@ -1,0 +1,44 @@
+{
+	"Employees":[{
+		"empId":"01",
+		"empName":"Kevin",
+		"email":"kevin@gmail.com",
+		"mobile":"9812345670",
+		"salary":30000,
+		"currency":"INR"
+	},
+	{
+		"empId":"02",
+		"empName":"Stuart",
+		"email":"Stuart@gmail.com",
+		"mobile":"9871234560",
+		"salary":40000,
+		"currency":"INR"
+	},
+	{
+		"empId":"03",
+		"empName":"Bob",
+		"email":"Bob@gmail.com",
+		"mobile":"9876123450",
+		"salary":50000,
+		"currency":"INR"
+	},
+	{
+		"empId":"04",
+		"empName":"Gru",
+		"email":"Gru@gmail.com",
+		"mobile":"9912345678",
+		"salary":45000,
+		"currency":"INR"
+	},
+	{
+		"empId":"05",
+		"empName":"Agnes",
+		"email":"Agnes@gmail.com" ,
+		"mobile":"9876543210",
+		"salary":35000,
+		"currency":"INR"
+	}
+
+	]
+}

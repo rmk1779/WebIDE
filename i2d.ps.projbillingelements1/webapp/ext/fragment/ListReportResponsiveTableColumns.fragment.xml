@@ -1,0 +1,45 @@
+<core:FragmentDefinition id="ext.fragment.ListReportResponsiveTableColumns" xmlns:core="sap.ui.core" xmlns="sap.m">
+	<Column id="ext.fragment.ListReportResponsiveTableColumns.ColProjBillingReq" tooltip="{i18n>DRAFT_BILL}" hAlign="Begin" popinDisplay="Block">
+		<Text id="ext.fragment.ListReportResponsiveTableColumns.ProjBillingReqLabel" text="{i18n>DRAFT_BILL}" tooltip="{i18n>DRAFT_BILL}"/>
+		<customData>
+			<core:CustomData id="ext.fragment.ListReportResponsiveTableColumns.ProjBillingReq" key="p13nData"
+				value='\{"columnKey": "i2d.ps.projbillingelements1.ProjectBillingRequest", "sortProperty": "ProjectBillingRequest", "filterProperty": "ProjectBillingRequest", "leadingProperty":"ProjectBillingRequest","additionalProperty":"BillingPlanUsageCategory","columnIndex" : "1"}'/>
+		</customData>
+	</Column>
+	<Column id="ext.fragment.ListReportResponsiveTableColumns.ColProj" tooltip="{i18n>PROJ}" hAlign="Begin" popinDisplay="Block">
+		<Text id="ext.fragment.ListReportResponsiveTableColumns.ProjLabel" text="{i18n>PROJ}" tooltip="{i18n>PROJ}"/>
+		<customData>
+			<core:CustomData id="ext.fragment.ListReportResponsiveTableColumns.Proj" key="p13nData"
+				value='\{"columnKey": "i2d.ps.projbillingelements1.CustomerProject", "sortProperty": "CustomerProject", "filterProperty": "CustomerProject", "leadingProperty":"CustomerProject", "additionalProperty":"ProjectDescription,Customer,PlannedStartDate,PlannedEndDate,ServiceOrganizationUnit,CostCenterProfitCenter","displayBehaviour":"descriptionAndId" , "description":"ProjectDescription" , "columnIndex" : "3"}'/>
+		</customData>
+	</Column>
+	<Column id="ext.fragment.ListReportResponsiveTableColumns.ColBilled" tooltip="{i18n>NET_BILLD}" hAlign="End">
+		<Text id="ext.fragment.ListReportResponsiveTableColumns.BilledLabel" text="{i18n>NET_BILLD}" tooltip="{i18n>NET_BILLD}"/>
+		<customData>
+			<core:CustomData id="ext.fragment.ListReportResponsiveTableColumns.Billed" key="p13nData"
+				value='\{"columnKey": "i2d.ps.projbillingelements1.BilledRevenueAmtInDocCrcy", "isCurrency": true, "unit":"DocumentCurrency", "sortProperty": "BilledRevenueAmtInDocCrcy", "filterProperty": "BilledRevenueAmtInDocCrcy", "leadingProperty":"BilledRevenueAmtInDocCrcy", "additionalProperty":"DocumentCurrency,to_ProjectBillingDocDetails", "columnIndex" : "9"}'/>
+		</customData>
+	</Column>
+	<Column id="ext.fragment.ListReportResponsiveTableColumns.ColEstActuals" tooltip="{i18n>EST_ACTUALS}" hAlign="End">
+		<Text id="ext.fragment.ListReportResponsiveTableColumns.EstActualsLabel" text="{i18n>EST_ACTUALS}" tooltip="{i18n>EST_ACTUALS}"/>
+		<customData>
+			<core:CustomData id="ext.fragment.ListReportResponsiveTableColumns.EstActuals" key="p13nData"
+				value='\{"columnKey": "i2d.ps.projbillingelements1.NetValueAmountInDocCurrency", "isCurrency": true, "unit":"DocumentCurrency", "leadingProperty":"NetValueAmountInDocCurrency", "additionalProperty":"DocumentCurrency,PlndRevnAmt,CappedNetAmount", "columnIndex" : "8"}'/>
+		</customData>
+	</Column>
+	<Column id="ext.fragment.ListReportResponsiveTableColumns.ColToBeBilled" tooltip="{i18n>DUEBILLING_AMOUNT}" hAlign="End">
+		<Text id="ext.fragment.ListReportResponsiveTableColumns.ToBeBilledLabel" text="{i18n>DUEBILLING_AMOUNT}" tooltip="{i18n>DUEBILLING_AMOUNT}"/>
+		<customData>
+			<core:CustomData id="ext.fragment.ListReportResponsiveTableColumns.ToBeBilled" key="p13nData"
+				value='\{"columnKey": "i2d.ps.projbillingelements1.BillableRevenueAmtInDocCrcy", "isCurrency": true, "unit":"DocumentCurrency", "leadingProperty":["BillableRevenueAmtInDocCrcy", "ProjectBillingElementUUID"], "additionalProperty": "to_PrjBlgElmEntrForPrepayment", "columnIndex" : "12"}'/>
+		</customData>
+	</Column>
+	<Column id="ext.fragment.ListReportResponsiveTableColumns.ColDueBillingDate" tooltip="{i18n>BILLING_DUE_DATE}" hAlign="End">
+		<Text id="ext.fragment.ListReportResponsiveTableColumns.DueBillingDateLabel" text="{i18n>BILLING_DUE_DATE}"
+			tooltip="{i18n>BILLING_DUE_DATE}"/>
+		<customData>
+			<core:CustomData id="ext.fragment.ListReportResponsiveTableColumns.DueBillingDate" key="p13nData"
+				value='\{"columnKey": "i2d.ps.projbillingelements1.DueBillingDate", "type": "date", "sortProperty": "DueBillingDate", "filterProperty": "DueBillingDate", "leadingProperty":"DueBillingDate", "additionalProperty":"to_ProjBillgSlsItmBillgPlnDuDte", "columnIndex" : "13"}'/>
+		</customData>
+	</Column>
+</core:FragmentDefinition>

@@ -1,0 +1,14 @@
+<core:FragmentDefinition xmlns="sap.ui.comp.valuehelpdialog" xmlns:fb="sap.ui.comp.filterbar" xmlns:m="sap.m" xmlns:core="sap.ui.core">
+	<ValueHelpDialog id="idSellerValueHelpDialog" title="{i18n>seller}" supportMultiselect="true" cancel="onSellerValueHelpCancelPress"
+		afterClose="onValueHelpAfterClose" filterMode="false" key="Seller" tokenDisplayBehaviour="idAndDescription" descriptionKey="Seller"
+		updateSelection="onSellerValueHelpUpdateSelection" tokenRemove="onTokenRemove" ok="onValueHelpDialogClose"
+		selectionChange="onSellerSelectionChange" class="SellerValueHelpClass">
+		<filterBar>
+			<fb:FilterBar id="idSellerFilter" advancedMode="false" search="onSellerTreeSearch"></fb:FilterBar>
+		</filterBar>
+		<customData>
+			<core:CustomData id="idSellerFilterCustom" key="F4Filter" value="Seller"></core:CustomData>
+			<core:CustomData key="f4name" value="sellerF4"></core:CustomData>
+		</customData>
+	</ValueHelpDialog>
+</core:FragmentDefinition>

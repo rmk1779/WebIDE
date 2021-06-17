@@ -1,0 +1,15 @@
+<edmx:Edmx xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+	xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData" Version="1.0">
+	<edmx:DataServices m:DataServiceVersion="2.0">
+		<Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" Namespace="ZRMK_EMPODATA_SRV" xml:lang="en" sap:schema-version="1">
+			<EntityType Name="zrmk_ohrtbl" sap:content-version="1">
+				<Key><PropertyRef Name="Hrid"/></Key><Property Name="Hrid" Type="Edm.String" Nullable="false" MaxLength="5" sap:label="hrid data element" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Hrpassword" Type="Edm.String" Nullable="false" MaxLength="8" sap:label="hrpwd data element" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Hrnoti" Type="Edm.String" Nullable="false" MaxLength="2" sap:label="hr noti data" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityContainer Name="ZRMK_EMPODATA_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx"><EntitySet Name="zrmk_ohrtblSet" EntityType="ZRMK_EMPODATA_SRV.zrmk_ohrtbl" sap:creatable="false" sap:updatable="false"
+				sap:deletable="false" sap:pageable="false" sap:content-version="1"/></EntityContainer><atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="self"
+				href="http://49.206.197.238:8048/sap/opu/odata/sap/ZRMK_EMPODATA_SRV/$metadata"/><atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="latest-version"
+				href="http://49.206.197.238:8048/sap/opu/odata/sap/ZRMK_EMPODATA_SRV/$metadata"/></Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

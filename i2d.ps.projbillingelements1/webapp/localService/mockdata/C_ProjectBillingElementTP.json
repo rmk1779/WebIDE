@@ -1,0 +1,721 @@
+[{
+	"ProjectBillingElementUUID": "60169ba7-2d5c-4d05-b242-ba3f7e8f74d4",
+	"WBSElement": "WBSElement 1",
+	"ProjectBillingRequest": "",
+	"Customer": "Customer 1",
+	"CustomerProject": "CustomerProject 1",
+	"BillingPlanUsageCategoryName": "BillingPlanUsageCategoryName 1",
+	"BillingPlanUsageCategory": "BillingPlanUsageCategory 1",
+	"DocumentCurrency": "DocumentCurrency 1",
+	"TransactionCurrency": "Transaction Currency 1",
+	"OriginalRevenueAmtInDocCrcy": 6559.56,
+	"BilledRevenueAmtInDocCrcy": 5818.42,
+	"UnbilledRevnAmtInDocCrcy": 4955.31,
+	"ProfitCenter": "ProfitCenter 1",
+	"PlndRevnAmt": 7983.09,
+	"CappedNetAmount": 8330.98,
+	"BillingWBSElementInternalID": "BillingWBSElementInternalID 1",
+	"WrittenOffRevenueAmtInDocCrcy": 5181.79,
+	"ProjectDescription": "ProjectDescription 1",
+	"CustomerName": "CustomerName 1",
+	"PlannedStartDate": "/Date(1130496391000)/",
+	"PlannedEndDate": "/Date(1542883591000)/",
+	"ServiceOrganizationUnit": "ServiceOrganizationUnit 1",
+	"CostCenter": "CostCenter 1",
+	"CostCenterProfitCenter": "CostCenterProfitCenter 1",
+	"BillingDate": "/Date(1376563591000)/",
+	"NetValueAmountInDocCurrency": 4149.92,
+	"BillingPlan": "BillingPlan 1",
+	"DueBillingDate": "/Date(1177871400000)/",
+	"BillableRevenueAmtInDocCrcy": 9542.43,
+	"BillingPlanItemUsage": 1,
+	"PlndPrepaymentAmtInProjCrcy": 1000,
+	"RcvdPrepaymentAmtInProjCrcy": 100,
+	"ReqdPrepaymentAmtInDocCrcy": 1000,
+	"ProjBillgElmntEntrIsCancelled": "",
+	"__metadata": {
+		"uri": "C_ProjectBillingElementTP(guid'60169ba7-2d5c-4d05-b242-ba3f7e8f74d4')",
+		"type": "cds_projectbillingelement_sd.C_ProjectBillingElementTPType"
+	},
+	"to_ProjectBillingDocDetails": {
+		"__deferred": {
+			"uri": "C_ProjectBillingElementTP(guid'60169ba7-2d5c-4d05-b242-ba3f7e8f74d4')/to_ProjectBillingDocDetails"
+		}
+	},
+	"to_ProjectBillingElementEntry": {
+		"__deferred": {
+			"uri": "C_ProjectBillingElementTP(guid'60169ba7-2d5c-4d05-b242-ba3f7e8f74d4')/to_ProjectBillingElementEntry"
+		}
+	},
+	"to_CustProjSlsOrdItmBillgPlnItm": {
+		"__deferred": {
+			"uri": "C_ProjectBillingElementTP(guid'60169ba7-2d5c-4d05-b242-ba3f7e8f74d4')/to_CustProjSlsOrdItmBillgPlnItm"
+		}
+	},
+	"to_PrjBlgElmEntrForPrepayment": {
+		"__deferred": {
+			"uri": "C_ProjectBillingElementTP(guid'60169ba7-2d5c-4d05-b242-ba3f7e8f74d4')/to_PrjBlgElmEntrForPrepayment"
+		}
+	},
+	"ProjectBillingRequestUUID": "PBRUID 1",
+	"BillgReqdRevenueAmtInDocCrcy": 1234.44,
+	"ProfitCenterText": "ProfitCenterText 1",
+	"ProfitCenterName": "ProfitCenterName 1",
+	"EngmtProjectServiceOrgName": "SON 1",
+	"CostCenterName": "CostCenterName 1",
+	"ItemBillingBlockReason": "IBBR 1",
+	"HeaderBillingBlockReason": "01",
+	"BillingPlanItemDescription": "BPID 1",
+	"SalesOrder": "SalesOrder 1",
+	"SalesOrderItem": "SalesOrderItem 1",
+	"IsMyProjectBillingElement": true,
+	"StoreCustomerName": "SCustomer 1"
+}, {
+	"ProjectBillingElementUUID": "aa4261d3-0f19-44b9-838f-2eff59c287d4",
+	"WBSElement": "WBSElement 2",
+	"ProjectBillingRequest": "SProjectBillingRequest 2",
+	"Customer": "Customer 2",
+	"CustomerProject": "CustomerProject 2",
+	"BillingPlanUsageCategoryName": "BillingPlanUsageCategoryName 2",
+	"BillingPlanUsageCategory": "BillingPlanUsageCategory 2",
+	"DocumentCurrency": "DocumentCurrency 2",
+	"TransactionCurrency": "Transaction Currency 2",
+	"OriginalRevenueAmtInDocCrcy": 8281.11,
+	"BilledRevenueAmtInDocCrcy": 3846.1,
+	"UnbilledRevnAmtInDocCrcy": 5995.63,
+	"ProfitCenter": "ProfitCenter 2",
+	"PlndRevnAmt": 9209.73,
+	"CappedNetAmount": 9932.5,
+	"BillingWBSElementInternalID": "BillingWBSElementInternalID 2",
+	"WrittenOffRevenueAmtInDocCrcy": 201.69,
+	"ProjectDescription": "ProjectDescription 2",
+	"CustomerName": "CustomerName 2",
+	"PlannedStartDate": "/Date(1158835591000)/",
+	"PlannedEndDate": "/Date(1406630791000)/",
+	"ServiceOrganizationUnit": "ServiceOrganizationUnit 2",
+	"CostCenter": "CostCenter 2",
+	"CostCenterProfitCenter": "CostCenterProfitCenter 2",
+	"BillingDate": "/Date(1443005191000)/",
+	"NetValueAmountInDocCurrency": 3240.79,
+	"BillingPlan": "BillingPlan 2",
+	"DueBillingDate": "/Date(1656354600000)/",
+	"BillableRevenueAmtInDocCrcy": 8947.1,
+	"BillingPlanItemUsage": "1",
+	"PlndPrepaymentAmtInProjCrcy": 100,
+	"RcvdPrepaymentAmtInProjCrcy": 100,
+	"ReqdPrepaymentAmtInDocCrcy": 1000,
+	"ProjBillgElmntEntrIsCancelled": "",
+	"__metadata": {
+		"uri": "C_ProjectBillingElementTP(guid'aa4261d3-0f19-44b9-838f-2eff59c287d4')",
+		"type": "cds_projectbillingelement_sd.C_ProjectBillingElementTPType"
+	},
+	"to_ProjectBillingDocDetails": {
+		"__deferred": {
+			"uri": "C_ProjectBillingElementTP(guid'aa4261d3-0f19-44b9-838f-2eff59c287d4')/to_ProjectBillingDocDetails"
+		}
+	},
+	"to_ProjectBillingElementEntry": {
+		"__deferred": {
+			"uri": "C_ProjectBillingElementTP(guid'aa4261d3-0f19-44b9-838f-2eff59c287d4')/to_ProjectBillingElementEntry"
+		}
+	},
+	"to_CustProjSlsOrdItmBillgPlnItm": {
+		"__deferred": {
+			"uri": "C_ProjectBillingElementTP(guid'aa4261d3-0f19-44b9-838f-2eff59c287d4')/to_CustProjSlsOrdItmBillgPlnItm"
+		}
+	},
+	"to_PrjBlgElmEntrForPrepayment": {
+		"__deferred": {
+			"uri": "C_ProjectBillingElementTP(guid'aa4261d3-0f19-44b9-838f-2eff59c287d4')/to_PrjBlgElmEntrForPrepayment"
+		}
+	},
+	"ProjectBillingRequestUUID": "PBRUID 2",
+	"BillgReqdRevenueAmtInDocCrcy": 1234.44,
+	"ProfitCenterText": "ProfitCenterText 2",
+	"ProfitCenterName": "ProfitCenterName 2",
+	"EngmtProjectServiceOrgName": "SON 2",
+	"CostCenterName": "CostCenterName 2",
+	"ItemBillingBlockReason": "IBBR 2",
+	"HeaderBillingBlockReason": "01",
+	"BillingPlanItemDescription": "BPID 2",
+	"SalesOrder": "SalesOrder 2",
+	"SalesOrderItem": "SalesOrderItem 2",
+	"IsMyProjectBillingElement": true,
+	"StoreCustomerName": "SCustomer 2"
+}, {
+	"ProjectBillingElementUUID": "a9707ed2-07bb-45a9-9bb9-4492072ab6b2",
+	"WBSElement": "WBSElement 3",
+	"ProjectBillingRequest": "SProjectBillingRequest 3",
+	"Customer": "Customer 3",
+	"CustomerProject": "CustomerProject 3",
+	"BillingPlanUsageCategoryName": "BillingPlanUsageCategoryName 3",
+	"BillingPlanUsageCategory": "BillingPlanUsageCategory 3",
+	"DocumentCurrency": "DocumentCurrency 3",
+	"TransactionCurrency": "Transaction Currency 3",
+	"OriginalRevenueAmtInDocCrcy": 3129.69,
+	"BilledRevenueAmtInDocCrcy": 3214.85,
+	"UnbilledRevnAmtInDocCrcy": 3884.89,
+	"ProfitCenter": "ProfitCenter 3",
+	"PlndRevnAmt": 6235.89,
+	"CappedNetAmount": 9230.56,
+	"BillingWBSElementInternalID": "BillingWBSElementInternalID 3",
+	"WrittenOffRevenueAmtInDocCrcy": 2498.19,
+	"ProjectDescription": "ProjectDescription 3",
+	"CustomerName": "CustomerName 3",
+	"PlannedStartDate": "/Date(977222791000)/",
+	"PlannedEndDate": "/Date(1275129991000)/",
+	"ServiceOrganizationUnit": "ServiceOrganizationUnit 3",
+	"CostCenter": "CostCenter 3",
+	"CostCenterProfitCenter": "CostCenterProfitCenter 3",
+	"BillingDate": "/Date(1132483591000)/",
+	"NetValueAmountInDocCurrency": 9692.81,
+	"BillingPlan": "BillingPlan 3",
+	"DueBillingDate": "/Date(1378896391000)/",
+	"BillableRevenueAmtInDocCrcy": 5500.82,
+	"BillingPlanItemUsage": 2,
+	"PlndPrepaymentAmtInProjCrcy": 0,
+	"RcvdPrepaymentAmtInProjCrcy": 100,
+	"ReqdPrepaymentAmtInDocCrcy": 1000,
+	"ProjBillgElmntEntrIsCancelled": "",
+	"__metadata": {
+		"uri": "C_ProjectBillingElementTP(guid'a9707ed2-07bb-45a9-9bb9-4492072ab6b2')",
+		"type": "cds_projectbillingelement_sd.C_ProjectBillingElementTPType"
+	},
+	"to_ProjectBillingDocDetails": {
+		"__deferred": {
+			"uri": "C_ProjectBillingElementTP(guid'a9707ed2-07bb-45a9-9bb9-4492072ab6b2')/to_ProjectBillingDocDetails"
+		}
+	},
+	"to_ProjectBillingElementEntry": {
+		"__deferred": {
+			"uri": "C_ProjectBillingElementTP(guid'a9707ed2-07bb-45a9-9bb9-4492072ab6b2')/to_ProjectBillingElementEntry"
+		}
+	},
+	"to_CustProjSlsOrdItmBillgPlnItm": {
+		"__deferred": {
+			"uri": "C_ProjectBillingElementTP(guid'a9707ed2-07bb-45a9-9bb9-4492072ab6b2')/to_CustProjSlsOrdItmBillgPlnItm"
+		}
+	},
+	"to_PrjBlgElmEntrForPrepayment": {
+		"__deferred": {
+			"uri": "C_ProjectBillingElementTP(guid'a9707ed2-07bb-45a9-9bb9-4492072ab6b2')/to_PrjBlgElmEntrForPrepayment"
+		}
+	},
+	"ProjectBillingRequestUUID": "PBRUID 3",
+	"BillgReqdRevenueAmtInDocCrcy": 1234.44,
+	"ProfitCenterText": "ProfitCenterText 3",
+	"ProfitCenterName": "ProfitCenterName 3",
+	"EngmtProjectServiceOrgName": "SON 3",
+	"CostCenterName": "CostCenterName 3",
+	"ItemBillingBlockReason": "IBBR 3",
+	"HeaderBillingBlockReason": "01",
+	"BillingPlanItemDescription": "BPID 3",
+	"SalesOrder": "SalesOrder 3",
+	"SalesOrderItem": "SalesOrderItem 3",
+	"IsMyProjectBillingElement": true,
+	"StoreCustomerName": "SCustomer 3"
+}, {
+	"ProjectBillingElementUUID": "c7879ff4-7d0d-4da6-a56e-f015e065bf3a",
+	"WBSElement": "WBSElement 4",
+	"ProjectBillingRequest": "SProjectBillingRequest 4",
+	"Customer": "Customer 4",
+	"CustomerProject": "CustomerProject 4",
+	"BillingPlanUsageCategoryName": "BillingPlanUsageCategoryName 4",
+	"BillingPlanUsageCategory": "BillingPlanUsageCategory 4",
+	"DocumentCurrency": "DocumentCurrency 4",
+	"TransactionCurrency": "Transaction Currency 4",
+	"OriginalRevenueAmtInDocCrcy": 2522.1,
+	"BilledRevenueAmtInDocCrcy": 6191.29,
+	"UnbilledRevnAmtInDocCrcy": 499.84,
+	"ProfitCenter": "ProfitCenter 4",
+	"PlndRevnAmt": 7714.93,
+	"CappedNetAmount": 1052.36,
+	"BillingWBSElementInternalID": "BillingWBSElementInternalID 4",
+	"WrittenOffRevenueAmtInDocCrcy": 6542.08,
+	"ProjectDescription": "ProjectDescription 4",
+	"CustomerName": "CustomerName 4",
+	"PlannedStartDate": "/Date(1080125191000)/",
+	"PlannedEndDate": "/Date(1474973191000)/",
+	"ServiceOrganizationUnit": "ServiceOrganizationUnit 4",
+	"CostCenter": "CostCenter 4",
+	"CostCenterProfitCenter": "CostCenterProfitCenter 4",
+	"BillingDate": "/Date(1506595591000)/",
+	"NetValueAmountInDocCurrency": 2780.94,
+	"BillingPlan": "BillingPlan 4",
+	"DueBillingDate": "/Date(1429353991000)/",
+	"BillableRevenueAmtInDocCrcy": 8585.07,
+	"BillingPlanItemUsage": 1,
+	"PlndPrepaymentAmtInProjCrcy": 1000,
+	"RcvdPrepaymentAmtInProjCrcy": 100,
+	"ReqdPrepaymentAmtInDocCrcy": 1000,
+	"ProjBillgElmntEntrIsCancelled": "",
+	"__metadata": {
+		"uri": "C_ProjectBillingElementTP(guid'c7879ff4-7d0d-4da6-a56e-f015e065bf3a')",
+		"type": "cds_projectbillingelement_sd.C_ProjectBillingElementTPType"
+	},
+	"to_ProjectBillingDocDetails": {
+		"__deferred": {
+			"uri": "C_ProjectBillingElementTP(guid'c7879ff4-7d0d-4da6-a56e-f015e065bf3a')/to_ProjectBillingDocDetails"
+		}
+	},
+	"to_ProjectBillingElementEntry": {
+		"__deferred": {
+			"uri": "C_ProjectBillingElementTP(guid'c7879ff4-7d0d-4da6-a56e-f015e065bf3a')/to_ProjectBillingElementEntry"
+		}
+	},
+	"to_CustProjSlsOrdItmBillgPlnItm": {
+		"__deferred": {
+			"uri": "C_ProjectBillingElementTP(guid'c7879ff4-7d0d-4da6-a56e-f015e065bf3a')/to_CustProjSlsOrdItmBillgPlnItm"
+		}
+	},
+	"to_PrjBlgElmEntrForPrepayment": {
+		"__deferred": {
+			"uri": "C_ProjectBillingElementTP(guid'c7879ff4-7d0d-4da6-a56e-f015e065bf3a')/to_PrjBlgElmEntrForPrepayment"
+		}
+	},
+	"ProjectBillingRequestUUID": "PBRUID 4",
+	"BillgReqdRevenueAmtInDocCrcy": 1234.44,
+	"ProfitCenterText": "ProfitCenterText 4",
+	"ProfitCenterName": "ProfitCenterName 4",
+	"EngmtProjectServiceOrgName": "SON 4",
+	"CostCenterName": "CostCenterName 4",
+	"ItemBillingBlockReason": "IBBR 4",
+	"HeaderBillingBlockReason": "01",
+	"BillingPlanItemDescription": "BPID 4",
+	"SalesOrder": "SalesOrder 4",
+	"SalesOrderItem": "SalesOrderItem 4",
+	"IsMyProjectBillingElement": true,
+	"StoreCustomerName": "SCustomer 4"
+}, {
+	"ProjectBillingElementUUID": "5e5433a0-5816-48ab-b775-090c0c0969ab",
+	"WBSElement": "WBSElement 5",
+	"ProjectBillingRequest": "SProjectBillingRequest 5",
+	"Customer": "Customer 5",
+	"CustomerProject": "CustomerProject 5",
+	"BillingPlanUsageCategoryName": "BillingPlanUsageCategoryName 5",
+	"BillingPlanUsageCategory": "BillingPlanUsageCategory 5",
+	"DocumentCurrency": "DocumentCurrency 5",
+	"TransactionCurrency": "Transaction Currency 5",
+	"OriginalRevenueAmtInDocCrcy": 3129.69,
+	"BilledRevenueAmtInDocCrcy": 3214.85,
+	"UnbilledRevnAmtInDocCrcy": 3884.89,
+	"ProfitCenter": "ProfitCenter 5",
+	"PlndRevnAmt": 6235.89,
+	"CappedNetAmount": 9230.56,
+	"BillingWBSElementInternalID": "BillingWBSElementInternalID 5",
+	"WrittenOffRevenueAmtInDocCrcy": 2498.19,
+	"ProjectDescription": "ProjectDescription 5",
+	"CustomerName": "CustomerName 5",
+	"PlannedStartDate": "/Date(977222791000)/",
+	"PlannedEndDate": "/Date(1275129991000)/",
+	"ServiceOrganizationUnit": "ServiceOrganizationUnit 5",
+	"CostCenter": "CostCenter 5",
+	"CostCenterProfitCenter": "CostCenterProfitCenter 5",
+	"BillingDate": "/Date(1132483591000)/",
+	"NetValueAmountInDocCurrency": 9692.81,
+	"BillingPlan": "BillingPlan 5",
+	"DueBillingDate": "/Date(1378896391000)/",
+	"BillableRevenueAmtInDocCrcy": 5500.82,
+	"BillingPlanItemUsage": 2,
+	"PlndPrepaymentAmtInProjCrcy": 0,
+	"RcvdPrepaymentAmtInProjCrcy": 100,
+	"ReqdPrepaymentAmtInDocCrcy": 1000,
+	"ProjBillgElmntEntrIsCancelled": "",
+	"__metadata": {
+		"uri": "C_ProjectBillingElementTP(guid'5e5433a0-5816-48ab-b775-090c0c0969ab')",
+		"type": "cds_projectbillingelement_sd.C_ProjectBillingElementTPType"
+	},
+	"to_ProjectBillingDocDetails": {
+		"__deferred": {
+			"uri": "C_ProjectBillingElementTP(guid'5e5433a0-5816-48ab-b775-090c0c0969ab')/to_ProjectBillingDocDetails"
+		}
+	},
+	"to_ProjectBillingElementEntry": {
+		"__deferred": {
+			"uri": "C_ProjectBillingElementTP(guid'5e5433a0-5816-48ab-b775-090c0c0969ab')/to_ProjectBillingElementEntry"
+		}
+	},
+	"to_CustProjSlsOrdItmBillgPlnItm": {
+		"__deferred": {
+			"uri": "C_ProjectBillingElementTP(guid'5e5433a0-5816-48ab-b775-090c0c0969ab')/to_CustProjSlsOrdItmBillgPlnItm"
+		}
+	},
+	"to_PrjBlgElmEntrForPrepayment": {
+		"__deferred": {
+			"uri": "C_ProjectBillingElementTP(guid'5e5433a0-5816-48ab-b775-090c0c0969ab')/to_PrjBlgElmEntrForPrepayment"
+		}
+	},
+	"ProjectBillingRequestUUID": "PBRUID 5",
+	"BillgReqdRevenueAmtInDocCrcy": 1234.44,
+	"ProfitCenterText": "ProfitCenterText 5",
+	"ProfitCenterName": "ProfitCenterName 5",
+	"EngmtProjectServiceOrgName": "SON 5",
+	"CostCenterName": "CostCenterName 5",
+	"ItemBillingBlockReason": "IBBR 5",
+	"HeaderBillingBlockReason": "01",
+	"BillingPlanItemDescription": "BPID 5",
+	"SalesOrder": "SalesOrder 5",
+	"SalesOrderItem": "SalesOrderItem 5",
+	"IsMyProjectBillingElement": true,
+	"StoreCustomerName": "SCustomer 5"
+}, {
+	"ProjectBillingElementUUID": "b07faa15-4153-4653-850b-7ace1045706a",
+	"WBSElement": "WBSElement 6",
+	"ProjectBillingRequest": "SProjectBillingRequest 6",
+	"Customer": "Customer 6",
+	"CustomerProject": "CustomerProject 6",
+	"BillingPlanUsageCategoryName": "BillingPlanUsageCategoryName 6",
+	"BillingPlanUsageCategory": "BillingPlanUsageCategory 6",
+	"DocumentCurrency": "DocumentCurrency 6",
+	"TransactionCurrency": "Transaction Currency 6",
+	"OriginalRevenueAmtInDocCrcy": 3276.32,
+	"BilledRevenueAmtInDocCrcy": 4223.27,
+	"UnbilledRevnAmtInDocCrcy": 3536.27,
+	"ProfitCenter": "ProfitCenter 6",
+	"PlndRevnAmt": 9658.1,
+	"CappedNetAmount": 4752.33,
+	"BillingWBSElementInternalID": "BillingWBSElementInternalID 6",
+	"WrittenOffRevenueAmtInDocCrcy": 4091.19,
+	"ProjectDescription": "ProjectDescription 6",
+	"CustomerName": "CustomerName 6",
+	"PlannedStartDate": "/Date(1488451591000)/",
+	"PlannedEndDate": "/Date(1368096391000)/",
+	"ServiceOrganizationUnit": "ServiceOrganizationUnit 6",
+	"CostCenter": "CostCenter 6",
+	"CostCenterProfitCenter": "CostCenterProfitCenter 6",
+	"BillingDate": "/Date(1480502791000)/",
+	"NetValueAmountInDocCurrency": 7998.68,
+	"BillingPlan": "BillingPlan 6",
+	"DueBillingDate": "/Date(1539168391000)/",
+	"BillableRevenueAmtInDocCrcy": 5987.12,
+	"BillingPlanItemUsage": 2,
+	"PlndPrepaymentAmtInProjCrcy": 0,
+	"RcvdPrepaymentAmtInProjCrcy": 100,
+	"ReqdPrepaymentAmtInDocCrcy": 1000,
+	"ProjBillgElmntEntrIsCancelled": "",
+	"__metadata": {
+		"uri": "C_ProjectBillingElementTP(guid'b07faa15-4153-4653-850b-7ace1045706a')",
+		"type": "cds_projectbillingelement_sd.C_ProjectBillingElementTPType"
+	},
+	"to_ProjectBillingDocDetails": {
+		"__deferred": {
+			"uri": "C_ProjectBillingElementTP(guid'b07faa15-4153-4653-850b-7ace1045706a')/to_ProjectBillingDocDetails"
+		}
+	},
+	"to_ProjectBillingElementEntry": {
+		"__deferred": {
+			"uri": "C_ProjectBillingElementTP(guid'b07faa15-4153-4653-850b-7ace1045706a')/to_ProjectBillingElementEntry"
+		}
+	},
+	"to_CustProjSlsOrdItmBillgPlnItm": {
+		"__deferred": {
+			"uri": "C_ProjectBillingElementTP(guid'b07faa15-4153-4653-850b-7ace1045706a')/to_CustProjSlsOrdItmBillgPlnItm"
+		}
+	},
+	"to_PrjBlgElmEntrForPrepayment": {
+		"__deferred": {
+			"uri": "C_ProjectBillingElementTP(guid'b07faa15-4153-4653-850b-7ace1045706a')/to_PrjBlgElmEntrForPrepayment"
+		}
+	},
+	"ProjectBillingRequestUUID": "PBRUID 6",
+	"BillgReqdRevenueAmtInDocCrcy": 1234.44,
+	"ProfitCenterText": "ProfitCenterText 6",
+	"ProfitCenterName": "ProfitCenterName 6",
+	"EngmtProjectServiceOrgName": "SON 6",
+	"CostCenterName": "CostCenterName 6",
+	"ItemBillingBlockReason": "IBBR 6",
+	"HeaderBillingBlockReason": "01",
+	"BillingPlanItemDescription": "BPID 6",
+	"SalesOrder": "SalesOrder 6",
+	"SalesOrderItem": "SalesOrderItem 6",
+	"IsMyProjectBillingElement": true,
+	"StoreCustomerName": "SCustomer 6"
+}, {
+	"ProjectBillingElementUUID": "15137411-1a29-4306-a2eb-37bedd90509d",
+	"WBSElement": "WBSElement 7",
+	"ProjectBillingRequest": "SProjectBillingRequest 7",
+	"Customer": "Customer 7",
+	"CustomerProject": "CustomerProject 7",
+	"BillingPlanUsageCategoryName": "BillingPlanUsageCategoryName 7",
+	"BillingPlanUsageCategory": "BillingPlanUsageCategory 7",
+	"DocumentCurrency": "DocumentCurrency 7",
+	"TransactionCurrency": "Transaction Currency 7",
+	"OriginalRevenueAmtInDocCrcy": 9171.69,
+	"BilledRevenueAmtInDocCrcy": 52.01,
+	"UnbilledRevnAmtInDocCrcy": 1215.31,
+	"ProfitCenter": "ProfitCenter 7",
+	"PlndRevnAmt": 2469.28,
+	"CappedNetAmount": 3007.07,
+	"BillingWBSElementInternalID": "BillingWBSElementInternalID 7",
+	"WrittenOffRevenueAmtInDocCrcy": 8546.02,
+	"ProjectDescription": "ProjectDescription 7",
+	"CustomerName": "CustomerName 7",
+	"PlannedStartDate": "/Date(1345805191000)/",
+	"PlannedEndDate": "/Date(1473936391000)/",
+	"ServiceOrganizationUnit": "ServiceOrganizationUnit 7",
+	"CostCenter": "CostCenter 7",
+	"CostCenterProfitCenter": "CostCenterProfitCenter 7",
+	"BillingDate": "/Date(1031741191000)/",
+	"NetValueAmountInDocCurrency": 2758.1,
+	"BillingPlan": "BillingPlan 7",
+	"DueBillingDate": "/Date(1228473991000)/",
+	"BillableRevenueAmtInDocCrcy": 4338.52,
+	"BillingPlanItemUsage": 2,
+	"PlndPrepaymentAmtInProjCrcy": 0,
+	"RcvdPrepaymentAmtInProjCrcy": 100,
+	"ReqdPrepaymentAmtInDocCrcy": 1000,
+	"ProjBillgElmntEntrIsCancelled": "",
+	"__metadata": {
+		"uri": "C_ProjectBillingElementTP(guid'15137411-1a29-4306-a2eb-37bedd90509d')",
+		"type": "cds_projectbillingelement_sd.C_ProjectBillingElementTPType"
+	},
+	"to_ProjectBillingDocDetails": {
+		"__deferred": {
+			"uri": "C_ProjectBillingElementTP(guid'15137411-1a29-4306-a2eb-37bedd90509d')/to_ProjectBillingDocDetails"
+		}
+	},
+	"to_ProjectBillingElementEntry": {
+		"__deferred": {
+			"uri": "C_ProjectBillingElementTP(guid'15137411-1a29-4306-a2eb-37bedd90509d')/to_ProjectBillingElementEntry"
+		}
+	},
+	"to_CustProjSlsOrdItmBillgPlnItm": {
+		"__deferred": {
+			"uri": "C_ProjectBillingElementTP(guid'15137411-1a29-4306-a2eb-37bedd90509d')/to_CustProjSlsOrdItmBillgPlnItm"
+		}
+	},
+	"to_PrjBlgElmEntrForPrepayment": {
+		"__deferred": {
+			"uri": "C_ProjectBillingElementTP(guid'15137411-1a29-4306-a2eb-37bedd90509d')/to_PrjBlgElmEntrForPrepayment"
+		}
+	},
+	"ProjectBillingRequestUUID": "PBRUID 7",
+	"BillgReqdRevenueAmtInDocCrcy": 1234.44,
+	"ProfitCenterText": "ProfitCenterText 7",
+	"ProfitCenterName": "ProfitCenterName 7",
+	"EngmtProjectServiceOrgName": "SON 7",
+	"CostCenterName": "CostCenterName 7",
+	"ItemBillingBlockReason": "IBBR 7",
+	"HeaderBillingBlockReason": "01",
+	"BillingPlanItemDescription": "BPID 7",
+	"SalesOrder": "SalesOrder 7",
+	"SalesOrderItem": "SalesOrderItem 7",
+	"IsMyProjectBillingElement": true,
+	"StoreCustomerName": "SCustomer 7"
+}, {
+	"ProjectBillingElementUUID": "f7ac7c61-65b4-48d4-892c-38e1b6c36160",
+	"WBSElement": "WBSElement 8",
+	"ProjectBillingRequest": "SProjectBillingRequest 8",
+	"Customer": "Customer 8",
+	"CustomerProject": "CustomerProject 8",
+	"BillingPlanUsageCategoryName": "BillingPlanUsageCategoryName 8",
+	"BillingPlanUsageCategory": "BillingPlanUsageCategory 8",
+	"DocumentCurrency": "DocumentCurrency 8",
+	"TransactionCurrency": "Transaction Currency 8",
+	"OriginalRevenueAmtInDocCrcy": 3509.1,
+	"BilledRevenueAmtInDocCrcy": 1080.67,
+	"UnbilledRevnAmtInDocCrcy": 1328.18,
+	"ProfitCenter": "ProfitCenter 8",
+	"PlndRevnAmt": 4179.63,
+	"CappedNetAmount": 5475.03,
+	"BillingWBSElementInternalID": "BillingWBSElementInternalID 8",
+	"WrittenOffRevenueAmtInDocCrcy": 973.73,
+	"ProjectDescription": "ProjectDescription 8",
+	"CustomerName": "CustomerName 8",
+	"PlannedStartDate": "/Date(1204195591000)/",
+	"PlannedEndDate": "/Date(1316429191000)/",
+	"ServiceOrganizationUnit": "ServiceOrganizationUnit 8",
+	"CostCenter": "CostCenter 8",
+	"CostCenterProfitCenter": "CostCenterProfitCenter 8",
+	"BillingDate": "/Date(1362566791000)/",
+	"NetValueAmountInDocCurrency": 1108.6,
+	"BillingPlan": "BillingPlan 8",
+	"DueBillingDate": "/Date(1466937991000)/",
+	"BillableRevenueAmtInDocCrcy": 9992.73,
+	"BillingPlanItemUsage": 2,
+	"PlndPrepaymentAmtInProjCrcy": 0,
+	"RcvdPrepaymentAmtInProjCrcy": 100,
+	"ReqdPrepaymentAmtInDocCrcy": 1000,
+	"ProjBillgElmntEntrIsCancelled": "",
+	"__metadata": {
+		"uri": "C_ProjectBillingElementTP(guid'f7ac7c61-65b4-48d4-892c-38e1b6c36160')",
+		"type": "cds_projectbillingelement_sd.C_ProjectBillingElementTPType"
+	},
+	"to_ProjectBillingDocDetails": {
+		"__deferred": {
+			"uri": "C_ProjectBillingElementTP(guid'f7ac7c61-65b4-48d4-892c-38e1b6c36160')/to_ProjectBillingDocDetails"
+		}
+	},
+	"to_ProjectBillingElementEntry": {
+		"__deferred": {
+			"uri": "C_ProjectBillingElementTP(guid'f7ac7c61-65b4-48d4-892c-38e1b6c36160')/to_ProjectBillingElementEntry"
+		}
+	},
+	"to_CustProjSlsOrdItmBillgPlnItm": {
+		"__deferred": {
+			"uri": "C_ProjectBillingElementTP(guid'f7ac7c61-65b4-48d4-892c-38e1b6c36160')/to_CustProjSlsOrdItmBillgPlnItm"
+		}
+	},
+	"to_PrjBlgElmEntrForPrepayment": {
+		"__deferred": {
+			"uri": "C_ProjectBillingElementTP(guid'f7ac7c61-65b4-48d4-892c-38e1b6c36160')/to_PrjBlgElmEntrForPrepayment"
+		}
+	},
+	"ProjectBillingRequestUUID": "PBRUID 8",
+	"BillgReqdRevenueAmtInDocCrcy": 1234.44,
+	"ProfitCenterText": "ProfitCenterText 8",
+	"ProfitCenterName": "ProfitCenterName 8",
+	"EngmtProjectServiceOrgName": "SON 8",
+	"CostCenterName": "CostCenterName 8",
+	"ItemBillingBlockReason": "IBBR 8",
+	"HeaderBillingBlockReason": "01",
+	"BillingPlanItemDescription": "BPID 8",
+	"SalesOrder": "SalesOrder 8",
+	"SalesOrderItem": "SalesOrderItem 8",
+	"IsMyProjectBillingElement": true,
+	"StoreCustomerName": "SCustomer 8"
+}, {
+	"ProjectBillingElementUUID": "26dc70ea-d58a-4340-9d0f-b51e96be3d11",
+	"WBSElement": "WBSElement 9",
+	"ProjectBillingRequest": "SProjectBillingRequest 9",
+	"Customer": "Customer 9",
+	"CustomerProject": "CustomerProject 9",
+	"BillingPlanUsageCategoryName": "BillingPlanUsageCategoryName 9",
+	"BillingPlanUsageCategory": "BillingPlanUsageCategory 9",
+	"DocumentCurrency": "DocumentCurrency 9",
+	"TransactionCurrency": "Transaction Currency 9",
+	"OriginalRevenueAmtInDocCrcy": 5476.01,
+	"BilledRevenueAmtInDocCrcy": 3526.64,
+	"UnbilledRevnAmtInDocCrcy": 4948.3,
+	"ProfitCenter": "ProfitCenter 9",
+	"PlndRevnAmt": 1666.13,
+	"CappedNetAmount": 7439.41,
+	"BillingWBSElementInternalID": "BillingWBSElementInternalID 9",
+	"WrittenOffRevenueAmtInDocCrcy": 6002.48,
+	"ProjectDescription": "ProjectDescription 9",
+	"CustomerName": "CustomerName 9",
+	"PlannedStartDate": "/Date(1528886791000)/",
+	"PlannedEndDate": "/Date(1378896391000)/",
+	"ServiceOrganizationUnit": "ServiceOrganizationUnit 9",
+	"CostCenter": "CostCenter 9",
+	"CostCenterProfitCenter": "CostCenterProfitCenter 9",
+	"BillingDate": "/Date(1562323591000)/",
+	"NetValueAmountInDocCurrency": 7784.65,
+	"BillingPlan": "BillingPlan 9",
+	"DueBillingDate": "/Date(974889991000)/",
+	"BillableRevenueAmtInDocCrcy": 2591.83,
+	"BillingPlanItemUsage": 2,
+	"PlndPrepaymentAmtInProjCrcy": 0,
+	"RcvdPrepaymentAmtInProjCrcy": 100,
+	"ReqdPrepaymentAmtInDocCrcy": 1000,
+	"ProjBillgElmntEntrIsCancelled": "",
+	"__metadata": {
+		"uri": "C_ProjectBillingElementTP(guid'26dc70ea-d58a-4340-9d0f-b51e96be3d11')",
+		"type": "cds_projectbillingelement_sd.C_ProjectBillingElementTPType"
+	},
+	"to_ProjectBillingDocDetails": {
+		"__deferred": {
+			"uri": "C_ProjectBillingElementTP(guid'26dc70ea-d58a-4340-9d0f-b51e96be3d11')/to_ProjectBillingDocDetails"
+		}
+	},
+	"to_ProjectBillingElementEntry": {
+		"__deferred": {
+			"uri": "C_ProjectBillingElementTP(guid'26dc70ea-d58a-4340-9d0f-b51e96be3d11')/to_ProjectBillingElementEntry"
+		}
+	},
+	"to_CustProjSlsOrdItmBillgPlnItm": {
+		"__deferred": {
+			"uri": "C_ProjectBillingElementTP(guid'26dc70ea-d58a-4340-9d0f-b51e96be3d11')/to_CustProjSlsOrdItmBillgPlnItm"
+		}
+	},
+	"to_PrjBlgElmEntrForPrepayment": {
+		"__deferred": {
+			"uri": "C_ProjectBillingElementTP(guid'26dc70ea-d58a-4340-9d0f-b51e96be3d11')/to_PrjBlgElmEntrForPrepayment"
+		}
+	},
+	"ProjectBillingRequestUUID": "PBRUID 9",
+	"BillgReqdRevenueAmtInDocCrcy": 1234.44,
+	"ProfitCenterText": "ProfitCenterText 9",
+	"ProfitCenterName": "ProfitCenterName 9",
+	"EngmtProjectServiceOrgName": "SON 9",
+	"CostCenterName": "CostCenterName 9",
+	"ItemBillingBlockReason": "IBBR 9",
+	"HeaderBillingBlockReason": "01",
+	"BillingPlanItemDescription": "BPID 9",
+	"SalesOrder": "SalesOrder 9",
+	"SalesOrderItem": "SalesOrderItem 9",
+	"IsMyProjectBillingElement": true,
+	"StoreCustomerName": "SCustomer 9"
+}, {
+	"ProjectBillingElementUUID": "551cbb41-7c66-4972-9633-d526461fe8b0",
+	"WBSElement": "WBSElement 10",
+	"ProjectBillingRequest": "SProjectBillingRequest 10",
+	"Customer": "Customer 10",
+	"CustomerProject": "CustomerProject 10",
+	"BillingPlanUsageCategoryName": "BillingPlanUsageCategoryName 10",
+	"BillingPlanUsageCategory": "BillingPlanUsageCategory 10",
+	"DocumentCurrency": "DocumentCurrency 10",
+	"TransactionCurrency": "Transaction Currency 10",
+	"OriginalRevenueAmtInDocCrcy": 2522.1,
+	"BilledRevenueAmtInDocCrcy": 6191.29,
+	"UnbilledRevnAmtInDocCrcy": 499.84,
+	"ProfitCenter": "ProfitCenter 10",
+	"PlndRevnAmt": 7714.93,
+	"CappedNetAmount": 1052.36,
+	"BillingWBSElementInternalID": "BillingWBSElementInternalID 10",
+	"WrittenOffRevenueAmtInDocCrcy": 6542.08,
+	"ProjectDescription": "ProjectDescription 10",
+	"CustomerName": "CustomerName 10",
+	"PlannedStartDate": "/Date(1080125191000)/",
+	"PlannedEndDate": "/Date(1474973191000)/",
+	"ServiceOrganizationUnit": "ServiceOrganizationUnit 10",
+	"CostCenter": "CostCenter 4",
+	"CostCenterProfitCenter": "CostCenterProfitCenter 10",
+	"BillingDate": "/Date(1506595591000)/",
+	"NetValueAmountInDocCurrency": 2780.94,
+	"BillingPlan": "BillingPlan 10",
+	"DueBillingDate": "/Date(1429353991000)/",
+	"BillableRevenueAmtInDocCrcy": 8585.07,
+	"BillingPlanItemUsage": 1,
+	"PlndPrepaymentAmtInProjCrcy": 1000,
+	"RcvdPrepaymentAmtInProjCrcy": 100,
+	"ReqdPrepaymentAmtInDocCrcy": 1000,
+	"ProjBillgElmntEntrIsCancelled": "",
+	"__metadata": {
+		"uri": "C_ProjectBillingElementTP(guid'551cbb41-7c66-4972-9633-d526461fe8b0')",
+		"type": "cds_projectbillingelement_sd.C_ProjectBillingElementTPType"
+	},
+	"to_ProjectBillingDocDetails": {
+		"__deferred": {
+			"uri": "C_ProjectBillingElementTP(guid'551cbb41-7c66-4972-9633-d526461fe8b0')/to_ProjectBillingDocDetails"
+		}
+	},
+	"to_ProjectBillingElementEntry": {
+		"__deferred": {
+			"uri": "C_ProjectBillingElementTP(guid'551cbb41-7c66-4972-9633-d526461fe8b0')/to_ProjectBillingElementEntry"
+		}
+	},
+	"to_CustProjSlsOrdItmBillgPlnItm": {
+		"__deferred": {
+			"uri": "C_ProjectBillingElementTP(guid'551cbb41-7c66-4972-9633-d526461fe8b0')/to_CustProjSlsOrdItmBillgPlnItm"
+		}
+	},
+	"to_PrjBlgElmEntrForPrepayment": {
+		"__deferred": {
+			"uri": "C_ProjectBillingElementTP(guid'551cbb41-7c66-4972-9633-d526461fe8b0')/to_PrjBlgElmEntrForPrepayment"
+		}
+	},
+	"ProjectBillingRequestUUID": "PBRUID 10",
+	"BillgReqdRevenueAmtInDocCrcy": 1234.44,
+	"ProfitCenterText": "ProfitCenterText 10",
+	"ProfitCenterName": "ProfitCenterName 10",
+	"EngmtProjectServiceOrgName": "SON 10",
+	"CostCenterName": "CostCenterName 10",
+	"ItemBillingBlockReason": "IBBR 10",
+	"HeaderBillingBlockReason": "01",
+	"BillingPlanItemDescription": "BPID 10",
+	"SalesOrder": "SalesOrder 10",
+	"SalesOrderItem": "SalesOrderItem 10",
+	"IsMyProjectBillingElement": true,
+	"StoreCustomerName": "SCustomer 10"
+}]

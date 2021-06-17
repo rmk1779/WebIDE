@@ -1,0 +1,70 @@
+{
+	"userDetails": [
+
+		{
+			"name": "rmk",
+			"address": "hrg",
+			"age": 25,
+			"doj": "Thu Aug 01 2004 12:12:39 GMT+0530 (India Standard Time)",
+			"weight": 5,
+			"salary": 23445,
+			"currency": "INR"
+		}, {
+			"name": "rmk",
+			"address": "hubli",
+			"age": 28,
+			"doj": "Fri Oct 16 2002 12:12:39 GMT+0530 (India Standard Time)",
+			"weight": "48kg",
+			"salary": 29445,
+			"currency": "INR"
+		}, {
+			"name": "shreyas",
+			"address": "sid",
+			"age": 10,
+			"doj": "Mon Jun 05 2020 12:12:39 GMT+0530 (India Standard Time)",
+			"weight": "18kg",
+			"salary": 3445,
+			"currency": "INR"
+		}, {
+			"name": "abd",
+			"address": "SA",
+			"age": 35,
+			"doj": "Wed Jul 01 2020 12:12:39 GMT+0530 (India Standard Time)",
+			"weight": "68kg",
+			"salary": 234456,
+			"currency": "INR"
+		}, {
+			"name": "rmk",
+			"address": "hrg",
+			"age": 26,
+			"doj": "Tue Sep 08 2013 12:12:39 GMT+0530 (India Standard Time)",
+			"weight": 5,
+			"salary": 23445,
+			"currency": "INR"
+		}, {
+			"name": "sud",
+			"address": "hubli",
+			"age": 28,
+			"doj": "Wed Nov 14 2007 12:12:39 GMT+0530 (India Standard Time)",
+			"weight": "48kg",
+			"salary": 29445,
+			"currency": "EUR"
+		}, {
+			"name": "shreyas",
+			"address": "sid",
+			"age": 15,
+			"doj": "Sat Oct 03 2015 12:12:39 GMT+0530 (India Standard Time)",
+			"weight": "18kg",
+			"salary": 3445,
+			"currency": "USD"
+		}, {
+			"name": "abd",
+			"address": "SA",
+			"age": 35,
+			"doj": "Mon Feb 17 2004 12:12:39 GMT+0530 (India Standard Time)",
+			"weight": "68kg",
+			"salary": 234456,
+			"currency": "INR"
+		}
+	]
+}

@@ -1,0 +1,52 @@
+<core:FragmentDefinition id="ext.fragment.TimeAndExpenseTableColumn" xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:smartlink="sap.ui.comp.navpopover" xmlns:table="sap.ui.table">
+	<table:Column id="ExtensionWizard::ColumnBreakout" hAlign="End" sortProperty="NetPriceAmountInDocCrcy" tooltip="{i18n>SALES_RATE}"
+		filterProperty="NetPriceAmountInDocCrcy" showFilterMenuEntry="true" showSortMenuEntry="true">
+		<Text id="ext.fragment.TimeAndExpenseTableColumn.ColLabelSalesRate" wrapping="false" text="{i18n>SALES_RATE}"/>
+		<table:customData>
+			<core:CustomData id="ext.fragment.TimeAndExpenseTableColumn.SalesRate" key="p13nData"
+				value='\{"columnKey": "i2d.ps.projbillingrequests1.NetPriceAmountInDocCrcy", "isCurrency": true, "unit": "DocumentCurrency", "sortProperty": "NetPriceAmountInDocCrcy", "leadingProperty":"NetPriceAmountInDocCrcy","additionalProperty":"DocumentCurrency","columnIndex" : "15"}'/>
+		</table:customData>
+		<table:template>
+			<Text id="ext.fragment.TimeAndExpenseTableColumn.SalesRateLabel" wrapping="false" 
+				text="{ parts:[{path:'NetPriceAmountInDocCrcy'},{path:'DocumentCurrency'},{path:'OpenQuantity'}], formatter: '.fnGetFormattedRates' }"/>
+		</table:template>
+	</table:Column>
+	<table:Column id="ExtensionWizard::ColumnBreakout2" hAlign="End" sortProperty="BaseUnitActualCost" filterProperty="BaseUnitActualCost" tooltip="{i18n>COST_RATE}"
+		showFilterMenuEntry="true" showSortMenuEntry="true" visible="false">
+		<Text id="ext.fragment.TimeAndExpenseTableColumn.ColLabelCostRate" text="{i18n>COST_RATE}" wrapping="false"/>
+		<table:customData>
+			<core:CustomData id="ext.fragment.TimeAndExpenseTableColumn.CostRate" key="p13nData"
+				value='\{"columnKey": "i2d.ps.projbillingrequests1.BaseUnitActualCost", "isCurrency": true, "unit": "TransactionCurrency", "sortProperty": "BaseUnitActualCost", "leadingProperty":"BaseUnitActualCost","additionalProperty":"TransactionCurrency","columnIndex" : "26"}'/>
+		</table:customData>
+		<table:template>
+			<Text id="ext.fragment.TimeAndExpenseTableColumn.CostRateLabel" wrapping="false" 
+				text="{ parts:[{path:'BaseUnitActualCost'},{path:'TransactionCurrency'},{path:'OpenQuantity'}], formatter: '.fnGetFormattedRates' }"/>
+		</table:template>
+	</table:Column>
+	<table:Column id="ExtensionWizard::ColumnBreakout3" hAlign="End" sortProperty="SalesDocument" filterProperty="SalesDocument" tooltip="{i18n>SOITEM}"
+		showFilterMenuEntry="true" showSortMenuEntry="true">
+		<Text id="ext.fragment.TimeAndExpenseTableColumn.ColLabelSalesDocument" text="{i18n>SOITEM}" wrapping="false"/>
+		<table:customData>
+			<core:CustomData id="ext.fragment.TimeAndExpenseTableColumn.SalesDocument" key="p13nData"
+				value='\{"columnKey": "i2d.ps.projbillingrequests1.SalesDocument", "sortProperty": "SalesDocument", "leadingProperty":"SalesDocument","additionalProperty":"SalesDocumentItem,SalesOrderItemConcatenatedID","displayBehaviour": "descriptionOnly","description": "SalesOrderItemConcatenatedID","columnIndex" : "18"}'/>
+		</table:customData>
+		<table:template>
+			<smartlink:SmartLink id="ext.fragment.TimeAndExpenseTableColumn.SalesDocumentLabel"
+				text="{ parts:[{path:'SalesDocument'},{path:'SalesDocumentItem'}], formatter: '.fnGetFormattedSalesDocument' }"
+				semanticObject="SalesDocument" mapFieldToSemanticObject="false" forceLinkRendering="true"></smartlink:SmartLink>
+		</table:template>
+	</table:Column>
+	<table:Column id="ExtensionWizard::ColumnBreakout4" hAlign="End" sortProperty="AccountingDocument" filterProperty="AccountingDocument" tooltip="{i18n>JE_ITEM_FY_LABEL}"
+		showFilterMenuEntry="true" showSortMenuEntry="true">
+		<Text id="ext.fragment.TimeAndExpenseTableColumn.ColLabelAccountingDocument" text="{i18n>JE_ITEM_FY_LABEL}" wrapping="false"/>
+		<table:customData>
+			<core:CustomData id="ext.fragment.TimeAndExpenseTableColumn.AccountingDocument" key="p13nData"
+				value='\{"columnKey": "i2d.ps.projbillingrequests1.AccountingDocument", "sortProperty": "AccountingDocument", "leadingProperty":"AccountingDocument","additionalProperty":"LedgerGLLineItem,FiscalYear,JournalEntrySemanticKey","displayBehaviour": "descriptionOnly","description": "JournalEntrySemanticKey","columnIndex" : "0"}'/>
+		</table:customData>
+		<table:template>
+			<smartlink:SmartLink id="ext.fragment.TimeAndExpenseTableColumn.AccountingDocumentLabel"
+				text="{ parts:[{path:'AccountingDocument'},{path:'LedgerGLLineItem'},{path:'FiscalYear'}], formatter: '.fnGetFormattedJournalEntry' }"
+				semanticObject="AccountingDocument" mapFieldToSemanticObject="false" forceLinkRendering="true"></smartlink:SmartLink>
+		</table:template>
+	</table:Column>
+</core:FragmentDefinition>

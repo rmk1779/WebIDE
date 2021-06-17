@@ -1,0 +1,160 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:m="sap.m" controllerName="eod.empOdata.controller.View5"
+	xmlns="sap.uxap" xmlns:forms="sap.ui.layout.form" xmlns:f="sap.f" xmlns:l="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml">
+	<ObjectPageLayout id="ObjectPageLayout" showTitleInHeaderContent="true" alwaysShowContentHeader="false" preserveHeaderStateOnScroll="false"
+		headerContentPinnable="true" isChildPage="true" enableLazyLoading="false">
+		<headerTitle>
+			<ObjectPageDynamicHeaderTitle>
+				<expandedHeading>
+					<m:FlexBox wrap="Wrap" fitContainer="true" alignItems="Center">
+						<m:Title text="{Empname}" wrapping="true" class="sapUiTinyMarginEnd sapUiTinyMarginTop"/>
+					</m:FlexBox>
+				</expandedHeading>
+				<snappedHeading>
+					<m:FlexBox wrap="Wrap" fitContainer="true" alignItems="Center">
+						<m:FlexBox wrap="NoWrap" fitContainer="true" alignItems="Center" class="sapUiTinyMarginEnd">
+							<f:Avatar src="./test-resources/sap/uxap/images/imageID_275314.png" displaySize="S" class="sapUiTinyMarginEnd"/>
+							<m:Title text="{Empname}" wrapping="true" class="sapUiTinyMarginEnd"/>
+						</m:FlexBox>
+					</m:FlexBox>
+				</snappedHeading>
+				<expandedContent>
+					<m:Text text="{EmpPosition}"/>
+				</expandedContent>
+				<snappedContent>
+					<m:Text text="{EmpPosition}"/>
+				</snappedContent>
+				<navigationActions>
+					<m:Button type="Transparent" icon="sap-icon://key" tooltip="Change Password" press="onChangePwd"/>
+					<m:OverflowToolbarButton type="{Empnotify}" text="{Empmsg}" icon="sap-icon://bell" tooltip="Employee Request" press="onEmpNotify"/>
+					<m:OverflowToolbarButton type="Transparent" icon="sap-icon://edit" tooltip="Edit Your Profile" press="onEdit"/>
+					<m:OverflowToolbarButton type="Reject" icon="sap-icon://log" tooltip="Logout" press="onLogout1"/>
+				</navigationActions>
+			</ObjectPageDynamicHeaderTitle>
+		</headerTitle>
+		<headerContent>
+			<m:FlexBox wrap="Wrap" fitContainer="true" alignItems="Stretch">
+				<f:Avatar class="sapUiSmallMarginEnd sapUiSmallMarginTop" src="./test-resources/sap/uxap/images/imageID_275314.png" displaySize="L"></f:Avatar>
+				<l:VerticalLayout class="sapUiSmallMarginEnd sapUiSmallMarginTop">
+					<m:Link id="linkID" text="{Id}"/>
+					<m:Link text="+91-{Empmobile}"/>
+					<m:Link text="{Empmail}"/>
+				</l:VerticalLayout>
+			</m:FlexBox>
+		</headerContent>
+		<sections>
+			<ObjectPageSection id="personalSection" title="Personal" importance="Medium">
+				<subSections>
+					<ObjectPageSubSection id="personalSectionSS1" title="PERSONAL">
+						<l:VerticalLayout class="sapUiSmallMarginEnd sapUiSmallMarginTop">
+							<forms:SimpleForm width="100%">
+								<core:Title text="Contact"/>
+								<m:Label text="Mobile"/>
+								<m:Text text="+91-{Empmobile}"/>
+								<m:Label text="Office phone"/>
+								<m:Text text="080257179"/>
+								<m:Label text="Email"/>
+								<m:Link text="{Empmail}"/>
+							</forms:SimpleForm>
+						</l:VerticalLayout>
+						<l:VerticalLayout class="sapUiSmallMarginEnd sapUiSmallMarginTop">
+							<forms:SimpleForm editable="false" labelSpanL="4" labelSpanM="4" labelSpanS="4" emptySpanL="0" emptySpanM="0" emptySpanS="0"
+								maxContainerCols="2" width="100%">
+								<core:Title text="Social Accounts"/>
+								<m:Label text="LinkedIn"/>
+								<m:Link text="/linkedin.com/{Empname}"/>
+								<m:Label text="Twitter"/>
+								<m:Link text="@twitter.{Empname}"/>
+							</forms:SimpleForm>
+						</l:VerticalLayout>
+						<l:VerticalLayout class="sapUiSmallMarginEnd sapUiSmallMarginTop">
+							<forms:SimpleForm editable="false" labelSpanL="4" labelSpanM="4" labelSpanS="4" emptySpanL="0" emptySpanM="0" emptySpanS="0"
+								maxContainerCols="2" width="100%">
+								<core:Title text="Addresses"/>
+								<m:Label text="Current Address"/>
+								<m:Text text="{Empcaddrs}"/>
+								<m:Label text="Permanent Address"/>
+								<m:Text text="{Emppaddrs}"/>
+							</forms:SimpleForm>
+						</l:VerticalLayout>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+			<ObjectPageSection id="personalSection2" title="JOB" importance="Medium">
+				<subSections>
+					<ObjectPageSubSection id="personalSectionSS2" title="Employment">
+						<l:VerticalLayout class="sapUiSmallMarginEnd sapUiSmallMarginTop">
+							<forms:SimpleForm width="100%">
+								<core:Title text="Job Information"/>
+								<m:Label text="Job classification"/>
+								<m:Text text="SAP developer"/>
+								<m:Label text="Pay Grade"/>
+								<m:Text text="Salary Grade 18 (GR-14)"/>
+							</forms:SimpleForm>
+						</l:VerticalLayout>
+						<l:VerticalLayout class="sapUiSmallMarginEnd sapUiSmallMarginTop">
+							<forms:SimpleForm width="100%">
+								<m:Label text="Joining Date"/>
+								<m:Text text="{Empjoindate}"/>
+								<m:Label text="Job Title"/>
+								<m:Text text="{Empposition}"/>
+							</forms:SimpleForm>
+						</l:VerticalLayout>
+						<l:VerticalLayout class="sapUiSmallMarginEnd sapUiSmallMarginTop"></l:VerticalLayout>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+			<ObjectPageSection id="personalSection3" title="About" importance="Medium">
+				<subSections>
+					<ObjectPageSubSection id="personalSectionSS3" title="Payment Info">
+						<l:VerticalLayout class="sapUiSmallMarginEnd sapUiSmallMarginTop">
+							<forms:SimpleForm width="100%">
+								<core:Title text="Main payment method"/>
+								<m:Label text="Bank Transfer"/>
+								<m:Text text="HDFC Bangalore,India"/>
+								<m:Label text="UPI"/>
+								<m:Text text="{Empmobile}@upi"/>
+							</forms:SimpleForm>
+						</l:VerticalLayout>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+			<ObjectPageSection id="personalSection4" title="About" importance="Medium">
+				<subSections>
+					<ObjectPageSubSection id="personalSectionSS4" title="Leave Request">
+						<l:VerticalLayout class="sapUiSmallMarginEnd sapUiSmallMarginTop">
+							<forms:SimpleForm width="100%">
+								<core:Title text="Leave request details"/>
+								<!--<m:Label text="Bank Transfer"/>-->
+								<!--<m:Text text="HDFC Bangalore,India"/>-->
+								<!--<m:Label text="UPI"/>-->
+								<!--<m:Text text="{Empmobile}@upi"/>-->
+								<m:HBox>
+									<m:VBox>
+										<m:Label text="From" labelFor="lrFrom" required="true"/>
+										<m:DatePicker id="idLeaveFrom" valueFormat="medium" minDate="" change="handleChange" class="sapUiSmallMarginBottom"/>
+									</m:VBox>
+									<m:VBox class="sapUiMediumMarginBegin">
+										<m:Label text="To" labelFor="lrTo" required="true"/>
+										<m:DatePicker id="idLeaveTo" valueFormat="medium" minDate="" change="handleChange" class="sapUiSmallMarginBottom"/>
+									</m:VBox>
+								</m:HBox>
+								<m:Label text="Leave Type" required="true"/>
+								<m:ComboBox id="idLeaveType" placeholder="Leave Type" selectedKey="MD">
+									<m:items>
+										<core:Item key="MD" text="Medical"></core:Item>
+										<core:Item key="PLN" text="Planned"></core:Item>
+										<core:Item key="HL" text="Holiday"></core:Item>
+									</m:items>
+								</m:ComboBox>
+								<m:Label text="Reason Description" required="true"/>
+								<m:TextArea id="idLeaveReason" width="100%" height="auto" maxLength="250"/>
+								<m:Label/>
+								<m:Button icon="sap-icon://save" text="Request" width="35%" press=".onLeaveRequest"/>
+							</forms:SimpleForm>
+						</l:VerticalLayout>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+		</sections>
+	</ObjectPageLayout>
+</mvc:View>

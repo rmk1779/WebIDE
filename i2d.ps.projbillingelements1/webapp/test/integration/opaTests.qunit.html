@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Opa tests for Manage Project Billing Elements</title>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<meta charset="UTF-8">
+
+	<script id="sap-ui-bootstrap"
+			src="../../resources/sap-ui-core.js"
+			data-sap-ui-resourceroots='{
+			"i2d.ps.projbillingelements1.test": "../",
+			"i2d.ps.projbillingelements1.app" : "../flpSandboxMockServer",
+				"sap.suite.ui.generic.template.integration.testLibrary" : "../../test-resources/sap/suite/ui/generic/template/integration/testLibrary",
+			"i2d.ps.projbillingelements1.localService" : "../../localService",
+			"i2d.ps.projbillingelements1.i18n" : "../../i18n/ListReport"
+			
+		}'>
+	</script>
+
+	<script>
+		jQuery.sap.require("sap.ui.qunit.qunit-css");
+		jQuery.sap.require("sap.ui.thirdparty.qunit");
+		jQuery.sap.require("sap.ui.qunit.qunit-junit");
+		jQuery.sap.require("sap.ui.test.opaQunit");
+		jQuery.sap.require("sap.ui.test.Opa5");
+
+		// pages
+		jQuery.sap.require("i2d.ps.projbillingelements1.test.integration.pages.ManageProjectBillingElement");
+
+		// journeys
+		jQuery.sap.require("i2d.ps.projbillingelements1.test.integration.ManageProjectBillingElementJourney");
+	</script>
+
+</head>
+<body>
+	<div id="content"></div>
+    <h1 id="qunit-header">Opa tests for Manage Project Billing Element</h1>
+    <h2 id="qunit-banner"></h2>
+    <h2 id="qunit-userAgent"></h2>
+    <ol id="qunit-tests"></ol>
+</body>
+</html>

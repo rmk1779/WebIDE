@@ -1,0 +1,31 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.f"
+	controllerName="FCL.Flex_Col_Layout.controller.MasterView" xmlns:html="http://www.w3.org/1999/xhtml">
+	<f:DynamicPage id="idSellerMoveFrom" toggleHeaderOnTitleClick="false" headerExpanded="true" showFooter="true" fitContent="true" class="sapUiSizeCompact">
+		<f:title>
+			<f:DynamicPageTitle>
+				<f:heading>
+					<Title text="Dynamic Header"/>
+				</f:heading>
+				<f:navigationActions>
+					<Button icon="sap-icon://full-screen" type="Transparent" press="setFullScreen"/>
+				</f:navigationActions>
+			</f:DynamicPageTitle>
+		</f:title>
+		<f:header>
+			<f:DynamicPageHeader pinnable="true">
+				<f:content>
+					<VBox>
+					<core:Fragment type="XML" fragmentName="FCL.Flex_Col_Layout.view.fragments.smartFilterBar"/>
+					</VBox>
+				</f:content>
+			</f:DynamicPageHeader>
+		</f:header>
+		<f:content>
+			<VBox>
+			<core:Fragment type="XML" fragmentName="FCL.Flex_Col_Layout.view.fragments.masterTable"/>
+			<Button text="Click for triple Column" press="onTripleColumn"></Button>
+			<Button text="SelectedData" press="onSelectRows"></Button>
+			</VBox>
+		</f:content>
+	</f:DynamicPage>
+</mvc:View>

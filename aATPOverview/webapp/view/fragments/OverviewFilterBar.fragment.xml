@@ -1,0 +1,25 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:smartFilterBar="sap.ui.comp.smartfilterbar" xmlns:core="sap.ui.core">
+	<smartFilterBar:SmartFilterBar entitySet="ZEIDPSD101Set" persistencyKey="SmartFilter_Exp" clear="onFilterBarClearPress" showClearOnFB="true">
+		<smartFilterBar:controlConfiguration>
+			<smartFilterBar:ControlConfiguration groupId="GlobalFilters" key="SalesOrgId" label="Sales Organization" visibleInAdvancedArea="false">
+				<smartFilterBar:customControl>
+					<Input id="salesID" value="" showValueHelp="true"/>
+				</smartFilterBar:customControl>
+			</smartFilterBar:ControlConfiguration>
+		</smartFilterBar:controlConfiguration>
+		<smartFilterBar:controlConfiguration>
+			<smartFilterBar:ControlConfiguration groupId="GlobalFilters" key="ProductID" label="Created On" visibleInAdvancedArea="false">
+				<smartFilterBar:customControl>
+					<DatePicker id="SalesOrderID" placeholder="Enter Date ..." change="handleChange" class="sapUiSmallMarginBottom"/>
+				</smartFilterBar:customControl>
+			</smartFilterBar:ControlConfiguration>
+		</smartFilterBar:controlConfiguration>
+		<smartFilterBar:controlConfiguration>
+			<smartFilterBar:ControlConfiguration groupId="GlobalFilters" key="CreatedOnId" label="Created By" visibleInAdvancedArea="false">
+				<smartFilterBar:customControl>
+					<Input id="CreatedId" value="" showValueHelp="true"/>
+				</smartFilterBar:customControl>
+			</smartFilterBar:ControlConfiguration>
+		</smartFilterBar:controlConfiguration>
+	</smartFilterBar:SmartFilterBar>
+</core:FragmentDefinition>

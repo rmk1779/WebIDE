@@ -1,0 +1,13 @@
+/* Enter your custom styles here */
+.btnStyle{
+	border:2px solid orange;
+	background-color:maroon;
+	border-radius:50%;
+	width:8%;
+	height:80px;
+	color:white;
+	font-size:80%;
+}
+.ifrm{
+	margin:30px;
+}

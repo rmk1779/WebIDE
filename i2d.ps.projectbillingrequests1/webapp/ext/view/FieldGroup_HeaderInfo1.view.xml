@@ -1,0 +1,13 @@
+<core:View xmlns:commons="sap.ui.commons" xmlns:core="sap.ui.core" xmlns:form="sap.ui.layout.form" xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form" xmlns:sfi="sap.ui.comp.smartfield" xmlns:sfo="sap.ui.comp.smartform" xmlns:table="sap.ui.table"
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1" xmlns:uxap="sap.uxap" xmlns="sap.m"
+	controllerName="i2d.ps.projectbillingrequests1.ext.controller.headerExt">
+	<VBox id="headerInfoGroup1VBoxID">
+		<ObjectStatus id="ext.view.FieldGroupHeaderInfo1.Proj" title="{i18n>PROJECT}"
+			text="{CustomerProject}" class="sapUiTinyMarginBottom" active="false"/>
+		<ObjectStatus id="ext.view.FieldGroupHeaderInfo1.Customer" title="{i18n>CUSTOMER}"
+			text="{CustomerName}" class="sapUiTinyMarginBottom"/>
+		<ObjectStatus id="ext.view.FieldGroupHeaderInfo1.ProfitCenter" title="{i18n>PROFIT_CENTER}"
+			text="{parts:[{path:'ProfitCenterName'}], formatter: '.formatter.fnGetHeaderFieldsText'}" class="sapUiTinyMarginBottom"/>
+	</VBox>
+</core:View>

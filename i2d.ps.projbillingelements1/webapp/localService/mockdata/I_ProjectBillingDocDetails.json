@@ -1,0 +1,141 @@
+[{
+	"BillingDocumentItem": "BillingDocumentItem 1",
+	"BillingDocument": "BillingDocument 1",
+	"TotalNetAmount": 4638.76,
+	"BillingDocumentDate": "/Date(1079088412000)/",
+	"WBSElement": "WBSElement 1",
+	"BillingPlan": "BillingPlan 1",
+	"__metadata": {
+		"uri": "I_ProjectBillingDocDetails(BillingDocumentItem='BillingDocumentItem%201',BillingDocument='BillingDocument%201')",
+		"type": "cds_projectbillingelement_sd.I_ProjectBillingDocDetailsType"
+	},
+	"TransactionCurrency": " TransactionCurrency 1",
+	"AccountType": "A",
+	"SDDocumentCategory": "M"
+}, {
+	"BillingDocumentItem": "BillingDocumentItem 2",
+	"BillingDocument": "BillingDocument 2",
+	"TotalNetAmount": 905.98,
+	"BillingDocumentDate": "/Date(1001069212000)/",
+	"WBSElement": "WBSElement 2",
+	"BillingPlan": "BillingPlan 2",
+	"__metadata": {
+		"uri": "I_ProjectBillingDocDetails(BillingDocumentItem='BillingDocumentItem%202',BillingDocument='BillingDocument%202')",
+		"type": "cds_projectbillingelement_sd.I_ProjectBillingDocDetailsType"
+	},
+	"TransactionCurrency": "TransactionCurrency 2",
+	"AccountType": "A",
+	"SDDocumentCategory": "N"
+}, {
+	"BillingDocumentItem": "BillingDocumentItem 3",
+	"BillingDocument": "BillingDocument 3",
+	"TotalNetAmount": 660.24,
+	"BillingDocumentDate": "/Date(1286016412000)/",
+	"WBSElement": "WBSElement 3",
+	"BillingPlan": "BillingPlan 3",
+	"__metadata": {
+		"uri": "I_ProjectBillingDocDetails(BillingDocumentItem='BillingDocumentItem%203',BillingDocument='BillingDocument%203')",
+		"type": "cds_projectbillingelement_sd.I_ProjectBillingDocDetailsType"
+	},
+	"TransactionCurrency": "TransactionCurrency 3",
+	"AccountType": " ",
+	"SDDocumentCategory": "M"
+}, {
+	"BillingDocumentItem": "BillingDocumentItem 4",
+	"BillingDocument": "BillingDocument 4",
+	"TotalNetAmount": 7377.61,
+	"BillingDocumentDate": "/Date(1420109212000)/",
+	"WBSElement": "WBSElement 4",
+	"BillingPlan": "BillingPlan 4",
+	"__metadata": {
+		"uri": "I_ProjectBillingDocDetails(BillingDocumentItem='BillingDocumentItem%204',BillingDocument='BillingDocument%204')",
+		"type": "cds_projectbillingelement_sd.I_ProjectBillingDocDetailsType"
+	},
+	"TransactionCurrency": "TransactionCurrency 4",
+	"AccountType": " ",
+	"SDDocumentCategory": "R"
+}, {
+	"BillingDocumentItem": "BillingDocumentItem 5",
+	"BillingDocument": "BillingDocument 5",
+	"TotalNetAmount": 7154.82,
+	"BillingDocumentDate": "/Date(1437734812000)/",
+	"WBSElement": "WBSElement 5",
+	"BillingPlan": "BillingPlan 5",
+	"__metadata": {
+		"uri": "I_ProjectBillingDocDetails(BillingDocumentItem='BillingDocumentItem%205',BillingDocument='BillingDocument%205')",
+		"type": "cds_projectbillingelement_sd.I_ProjectBillingDocDetailsType"
+	},
+	"TransactionCurrency": "TransactionCurrency 5",
+	"AccountType": "A",
+	"SDDocumentCategory": "N"
+}, {
+	"BillingDocumentItem": "BillingDocumentItem 6",
+	"BillingDocument": "BillingDocument 6",
+	"TotalNetAmount": 518.21,
+	"BillingDocumentDate": "/Date(1268045212000)/",
+	"WBSElement": "WBSElement 6",
+	"BillingPlan": "BillingPlan 6",
+	"__metadata": {
+		"uri": "I_ProjectBillingDocDetails(BillingDocumentItem='BillingDocumentItem%206',BillingDocument='BillingDocument%206')",
+		"type": "cds_projectbillingelement_sd.I_ProjectBillingDocDetailsType"
+	},
+	"TransactionCurrency": "TransactionCurrency 6",
+	"AccountType": " ",
+	"SDDocumentCategory": "M"
+}, {
+	"BillingDocumentItem": "BillingDocumentItem 7",
+	"BillingDocument": "BillingDocument 7",
+	"TotalNetAmount": 595.05,
+	"BillingDocumentDate": "/Date(1087210012000)/",
+	"WBSElement": "WBSElement 7",
+	"BillingPlan": "BillingPlan 7",
+	"__metadata": {
+		"uri": "I_ProjectBillingDocDetails(BillingDocumentItem='BillingDocumentItem%207',BillingDocument='BillingDocument%207')",
+		"type": "cds_projectbillingelement_sd.I_ProjectBillingDocDetailsType"
+	},
+	"TransactionCurrency": "TransactionCurrency 7",
+	"AccountType": "A",
+	"SDDocumentCategory": "N"
+}, {
+	"BillingDocumentItem": "BillingDocumentItem 8",
+	"BillingDocument": "BillingDocument 8",
+	"TotalNetAmount": 3697.65,
+	"BillingDocumentDate": "/Date(1141210012000)/",
+	"WBSElement": "WBSElement 8",
+	"BillingPlan": "BillingPlan 8",
+	"__metadata": {
+		"uri": "I_ProjectBillingDocDetails(BillingDocumentItem='BillingDocumentItem%208',BillingDocument='BillingDocument%208')",
+		"type": "cds_projectbillingelement_sd.I_ProjectBillingDocDetailsType"
+	},
+	"TransactionCurrency": "TransactionCurrency 8",
+	"AccountType": " ",
+	"SDDocumentCategory": "M"
+}, {
+	"BillingDocumentItem": "BillingDocumentItem 9",
+	"BillingDocument": "BillingDocument 9",
+	"TotalNetAmount": 8864.88,
+	"BillingDocumentDate": "/Date(1488883612000)/",
+	"WBSElement": "WBSElement 9",
+	"BillingPlan": "BillingPlan 9",
+	"__metadata": {
+		"uri": "I_ProjectBillingDocDetails(BillingDocumentItem='BillingDocumentItem%209',BillingDocument='BillingDocument%209')",
+		"type": "cds_projectbillingelement_sd.I_ProjectBillingDocDetailsType"
+	},
+	"TransactionCurrency": "TransactionCurrency 9",
+	"AccountType": " ",
+	"SDDocumentCategory": "N"
+}, {
+	"BillingDocumentItem": "BillingDocumentItem 10",
+	"BillingDocument": "BillingDocument 10",
+	"TotalNetAmount": 302.76,
+	"BillingDocumentDate": "/Date(1507891612000)/",
+	"WBSElement": "WBSElement 10",
+	"BillingPlan": "BillingPlan 10",
+	"__metadata": {
+		"uri": "I_ProjectBillingDocDetails(BillingDocumentItem='BillingDocumentItem%2010',BillingDocument='BillingDocument%2010')",
+		"type": "cds_projectbillingelement_sd.I_ProjectBillingDocDetailsType"
+	},
+	"TransactionCurrency": "TransactionCurrency 10",
+	"AccountType": " ",
+	"SDDocumentCategory": "M"
+}]

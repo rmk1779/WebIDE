@@ -1,0 +1,101 @@
+[{
+	"ControllingArea": "ControllingArea 1",
+	"ProfitCenter": "ProfitCenter 1",
+	"ProfitCenter_Text": "ProfitCenter_Text 1",
+	"ValidityEndDate": "/Date(1067260368000)/",
+	"ValidityStartDate": "/Date(1082293968000)/",
+	"__metadata": {
+		"uri": "I_ProfitCenterStdVH(ControllingArea='ControllingArea%201',ProfitCenter='ProfitCenter%201',ValidityEndDate=datetime'2003-10-27T13%3A12%3A48')",
+		"type": "cds_projectbillingelement_sd.I_ProfitCenterStdVHType"
+	}
+}, {
+	"ControllingArea": "ControllingArea 2",
+	"ProfitCenter": "ProfitCenter 2",
+	"ProfitCenter_Text": "ProfitCenter_Text 2",
+	"ValidityEndDate": "/Date(1567602768000)/",
+	"ValidityStartDate": "/Date(1500037968000)/",
+	"__metadata": {
+		"uri": "I_ProfitCenterStdVH(ControllingArea='ControllingArea%202',ProfitCenter='ProfitCenter%202',ValidityEndDate=datetime'2019-09-04T13%3A12%3A48')",
+		"type": "cds_projectbillingelement_sd.I_ProfitCenterStdVHType"
+	}
+}, {
+	"ControllingArea": "ControllingArea 3",
+	"ProfitCenter": "ProfitCenter 3",
+	"ProfitCenter_Text": "ProfitCenter_Text 3",
+	"ValidityEndDate": "/Date(1139663568000)/",
+	"ValidityStartDate": "/Date(1391778768000)/",
+	"__metadata": {
+		"uri": "I_ProfitCenterStdVH(ControllingArea='ControllingArea%203',ProfitCenter='ProfitCenter%203',ValidityEndDate=datetime'2006-02-11T13%3A12%3A48')",
+		"type": "cds_projectbillingelement_sd.I_ProfitCenterStdVHType"
+	}
+}, {
+	"ControllingArea": "ControllingArea 4",
+	"ProfitCenter": "ProfitCenter 4",
+	"ProfitCenter_Text": "ProfitCenter_Text 4",
+	"ValidityEndDate": "/Date(1158412368000)/",
+	"ValidityStartDate": "/Date(1090847568000)/",
+	"__metadata": {
+		"uri": "I_ProfitCenterStdVH(ControllingArea='ControllingArea%204',ProfitCenter='ProfitCenter%204',ValidityEndDate=datetime'2006-09-16T13%3A12%3A48')",
+		"type": "cds_projectbillingelement_sd.I_ProfitCenterStdVHType"
+	}
+}, {
+	"ControllingArea": "ControllingArea 5",
+	"ProfitCenter": "ProfitCenter 5",
+	"ProfitCenter_Text": "ProfitCenter_Text 5",
+	"ValidityEndDate": "/Date(1235913168000)/",
+	"ValidityStartDate": "/Date(1451567568000)/",
+	"__metadata": {
+		"uri": "I_ProfitCenterStdVH(ControllingArea='ControllingArea%205',ProfitCenter='ProfitCenter%205',ValidityEndDate=datetime'2009-03-01T13%3A12%3A48')",
+		"type": "cds_projectbillingelement_sd.I_ProfitCenterStdVHType"
+	}
+}, {
+	"ControllingArea": "ControllingArea 6",
+	"ProfitCenter": "ProfitCenter 6",
+	"ProfitCenter_Text": "ProfitCenter_Text 6",
+	"ValidityEndDate": "/Date(1050930768000)/",
+	"ValidityStartDate": "/Date(1013173968000)/",
+	"__metadata": {
+		"uri": "I_ProfitCenterStdVH(ControllingArea='ControllingArea%206',ProfitCenter='ProfitCenter%206',ValidityEndDate=datetime'2003-04-21T13%3A12%3A48')",
+		"type": "cds_projectbillingelement_sd.I_ProfitCenterStdVHType"
+	}
+}, {
+	"ControllingArea": "ControllingArea 7",
+	"ProfitCenter": "ProfitCenter 7",
+	"ProfitCenter_Text": "ProfitCenter_Text 7",
+	"ValidityEndDate": "/Date(1215177168000)/",
+	"ValidityStartDate": "/Date(1467378768000)/",
+	"__metadata": {
+		"uri": "I_ProfitCenterStdVH(ControllingArea='ControllingArea%207',ProfitCenter='ProfitCenter%207',ValidityEndDate=datetime'2008-07-04T13%3A12%3A48')",
+		"type": "cds_projectbillingelement_sd.I_ProfitCenterStdVHType"
+	}
+}, {
+	"ControllingArea": "ControllingArea 8",
+	"ProfitCenter": "ProfitCenter 8",
+	"ProfitCenter_Text": "ProfitCenter_Text 8",
+	"ValidityEndDate": "/Date(1562850768000)/",
+	"ValidityStartDate": "/Date(1463231568000)/",
+	"__metadata": {
+		"uri": "I_ProfitCenterStdVH(ControllingArea='ControllingArea%208',ProfitCenter='ProfitCenter%208',ValidityEndDate=datetime'2019-07-11T13%3A12%3A48')",
+		"type": "cds_projectbillingelement_sd.I_ProfitCenterStdVHType"
+	}
+}, {
+	"ControllingArea": "ControllingArea 9",
+	"ProfitCenter": "ProfitCenter 9",
+	"ProfitCenter_Text": "ProfitCenter_Text 9",
+	"ValidityEndDate": "/Date(968677968000)/",
+	"ValidityStartDate": "/Date(1390655568000)/",
+	"__metadata": {
+		"uri": "I_ProfitCenterStdVH(ControllingArea='ControllingArea%209',ProfitCenter='ProfitCenter%209',ValidityEndDate=datetime'2000-09-11T13%3A12%3A48')",
+		"type": "cds_projectbillingelement_sd.I_ProfitCenterStdVHType"
+	}
+}, {
+	"ControllingArea": "ControllingArea 10",
+	"ProfitCenter": "ProfitCenter 10",
+	"ProfitCenter_Text": "ProfitCenter_Text 10",
+	"ValidityEndDate": "/Date(1508505168000)/",
+	"ValidityStartDate": "/Date(1254834768000)/",
+	"__metadata": {
+		"uri": "I_ProfitCenterStdVH(ControllingArea='ControllingArea%2010',ProfitCenter='ProfitCenter%2010',ValidityEndDate=datetime'2017-10-20T13%3A12%3A48')",
+		"type": "cds_projectbillingelement_sd.I_ProfitCenterStdVHType"
+	}
+}]

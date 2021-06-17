@@ -1,0 +1,9 @@
+/* Enter your custom styles here */
+
+.sapMAppBG{
+	background-image : url("http://www.goacutraq.com/images/banner_woman_holding_people.jpg") !important;
+}
+
+.fbold .sapUiRFLContainer{
+	font-weight: bolder !important;
+}

@@ -1,0 +1,87 @@
+<mvc:View controllerName="mrp.murphy.controller.App" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:t="sap.tnt">
+	<Toolbar>
+		<!--<Image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJPtvaHR71DR4VoBmAMlF97daJW3BRSUoq6MiBSck4QmtyQp6tOQ" />-->
+		<ImageContent class="sapUiLargeMarginTop sapUiLargeMarginBottom"
+			src="test-resources/sap/m/demokit/sample/ImageContent/images/ProfileImage_LargeGenTile.png" description="Profile image" press="press"></ImageContent>
+		<VBox>
+			<Title text="MURPHY"/>
+			<Title text="Showing list of all version IDs"/>
+		</VBox>
+		<ToolbarSpacer/>
+		<Title text="Enersight Canada Integration"/>
+		<!--<Button icon="sap-icon://customize"></Button>-->
+		<ToolbarSpacer/>
+		<Button icon="sap-icon://search" type="Transparent"></Button>
+		<Button icon="sap-icon://mirrored-task-circle" type="Transparent"></Button>
+		<Button icon="sap-icon://attachment" type="Transparent" press="onPress"></Button>
+	</Toolbar>
+	<!--</HeaderContainer>-->
+	<SplitApp>
+		<masterPages>
+			<t:NavigationList id="navigationList" width="320px" selectedKey="rootItem1">
+				<t:NavigationListItem text="Dashboard" key="rootItem1" icon="sap-icon://clinical-tast-tracker"></t:NavigationListItem>
+				<t:NavigationListItem text="Create New" key="rootItem2" icon="sap-icon://task" select="onSelectCN" ></t:NavigationListItem>
+				<t:NavigationListItem text="Excel Upload" key="rootItem3" icon="sap-icon://excel-attachment"></t:NavigationListItem>
+			</t:NavigationList>
+		</masterPages>
+		<detailPages>
+			<Page>
+				<Table id="idProductsTable" mode="MultiSelect"  inset="false" items="{/Datas}" growing="true">
+					<headerToolbar>
+						<OverflowToolbar>
+							<Title text="Showing list of all version IDs"/>
+							<ToolbarSpacer/>
+							<SearchField width="20%" id="idSearch" liveChange="onSearch" showSearchButton="true" enableSuggestions="true" suggestionItems="{/Datas}"
+								suggest="onSuggest">
+								<suggestionItems>
+									<SuggestionItem key="{srNo}" text="{srNo}"></SuggestionItem>
+								</suggestionItems>
+							</SearchField>
+							<Button icon="sap-icon://customize" type="Transparent"></Button>
+						</OverflowToolbar>
+					</headerToolbar>
+					<columns>
+						<Column width="12em">
+							<Text text="Serial No."/>
+						</Column>
+						<Column>
+							<Text text="Version ID"/>
+						</Column>
+						<Column>
+							<Text text="Region"/>
+						</Column>
+						<Column>
+							<Text text="Business Unit"/>
+						</Column>
+						<Column >
+							<Text text="scenario Type"/>
+						</Column>
+						<Column>
+							<Text text="Year"/>
+						</Column>
+					</columns>
+					<items>
+						<ColumnListItem>
+							<cells>
+								<Input value="{srNo}" editable="false"></Input>
+								<Input value="{versionId}" editable="false"></Input>
+								<Input value="{region}" editable="false"></Input>
+								<Input value="{businessUnit}" editable="false"></Input>
+								<Input value="{scenarioType}" editable="false"></Input>
+								<Input value="{year}" editable="false"></Input>
+							</cells>
+						</ColumnListItem>
+					</items>
+				</Table>
+				<footer>
+					<Toolbar>
+						<ToolbarSpacer/>
+						<Button id="idAdd" icon="sap-icon://save" text="Save" type="Accept" press="onSave"></Button>
+						<Button id="idMod" icon="sap-icon://add" text="Modify" type="Ghost" press="onModify"></Button>
+						<Button id="idDel" icon="sap-icon://delete" text="Delete" type="Reject" press="onDelete"></Button>
+					</Toolbar>
+				</footer>
+			</Page>
+		</detailPages>
+	</SplitApp>
+</mvc:View>

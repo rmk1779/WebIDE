@@ -1,0 +1,21 @@
+{
+  "name": "EmpReg",
+  "version": "0.0.1",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "start": "fiori run --open index.html",
+    "build": "ui5 build --include-task=generateManifestBundle generateCachebusterInfo"
+  },
+  "devDependencies": {
+    "@ui5/cli": "2.5.0",
+    "@ui5/fs": "2.0.1",
+    "@ui5/logger": "2.0.0",
+    "@sap/ux-ui5-tooling": "1"
+  },
+  "ui5": {
+    "dependencies": [
+      "@sap/ux-ui5-tooling"
+    ]
+  }
+}

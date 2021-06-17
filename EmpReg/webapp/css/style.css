@@ -1,0 +1,11 @@
+/* Enter your custom styles here */
+/*.redText{ sapUiGlobalBackgroundImage*/
+/*	text*/
+/*}*/
+.bellId{
+	color : red;
+}
+
+.sapMAppBG{
+	background-image : url("https://cdn.pixabay.com/photo/2013/06/10/00/30/sunset-123926__340.jpg") !important;
+}

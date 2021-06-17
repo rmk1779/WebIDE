@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="4.0" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+	<edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMON',Version='0001',SAP__Origin='')/$value"><edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="Common"/></edmx:Reference>
+	<edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_UI',Version='0001',SAP__Origin='')/$value"><edmx:Include Namespace="com.sap.vocabularies.UI.v1" Alias="UI"/></edmx:Reference>
+	<edmx:Reference
+		Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMUNICATION',Version='0001',SAP__Origin='')/$value"><edmx:Include Namespace="com.sap.vocabularies.Communication.v1" Alias="Communication"/></edmx:Reference>
+	<edmx:Reference
+		Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_PERSONALDATA',Version='0001',SAP__Origin='')/$value"><edmx:Include Namespace="com.sap.vocabularies.PersonalData.v1" Alias="PersonalData"/></edmx:Reference>
+	<edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_VALIDATION',Version='0001',SAP__Origin='')/$value"><edmx:Include Namespace="Org.OData.Validation.V1" Alias="Validation"/></edmx:Reference>
+	<edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_ANALYTICS',Version='0001',SAP__Origin='')/$value"><edmx:Include Namespace="com.sap.vocabularies.Analytics.v1" Alias="Analytics"/></edmx:Reference>
+	<edmx:Reference Uri="../../../sap/ui_projbillgelmnt_sb_v2/$metadata"><edmx:Include Namespace="UI_PROJBILLGELMNT_SB_V2" Alias="SAP"/></edmx:Reference>
+	<edmx:DataServices>
+		<Schema Namespace="ui_projbillgelmnt_sb_v2_van.v1" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingCustomerCardType/CustomerName"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingCustomerCardType/CustAddressNumber"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingCustomerCardType/PhoneNumber"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingCustomerCardType/MobilePhoneNumber"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingCustomerCardType/EmailAddress"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingCustomerCardType/AuthorizationGroup"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingCustomerCardType/CustomerAccountGroup"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingCustomerCardType">
+				<Annotation Term="UI.QuickViewFacets">
+					<Collection>
+						<Record Type="UI.ReferenceFacet"><PropertyValue Property="Label" String="Contact Details"/><PropertyValue Property="Target" AnnotationPath="@UI.FieldGroup#CustomerFieldGroup"/></Record>
+					</Collection>
+				</Annotation>
+				<Annotation Term="UI.FieldGroup" Qualifier="CustomerFieldGroup">
+					<Record>
+						<PropertyValue Property="Data">
+							<Collection>
+								<Record Type="UI.DataField"><PropertyValue Property="Value" Path="CustomerName"/></Record>
+								<Record Type="UI.DataField"><PropertyValue Property="Value" Path="CustAddressNumber"/></Record>
+								<Record Type="UI.DataField"><PropertyValue Property="Value" Path="MobilePhoneNumber"/></Record>
+								<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PhoneNumber"/></Record>
+								<Record Type="UI.DataField"><PropertyValue Property="Value" Path="CityName"/></Record>
+								<Record Type="UI.DataField"><PropertyValue Property="Value" Path="EmailAddress"/></Record>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+				<Annotation Term="UI.HeaderInfo">
+					<Record><PropertyValue Property="TypeName" String="Project Billing - Customer Contact Card"/><PropertyValue Property="TypeImageUrl" String="sap-icon://customer"/></Record>
+					<Annotation Term="Core.Messages">
+						<Collection>
+							<Record><PropertyValue Property="message" String="UI.HEADERINFO: TypeNamePlural is mandatory"/><PropertyValue Property="severity" String="error"/></Record>
+						</Collection>
+					</Annotation>
+				</Annotation>
+			</Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementEntryTPType/ProjectBillingElementUUID"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementEntryTPType/ProjBillgElmntEntrSourceType"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementEntryTPType/ProjBillgElmntEntrIsCancelled"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementEntryTPType/PricingDate"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementEntryTPType/NetPriceAmountIsManual"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementEntryTPType/TransactionCurrency"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementEntryTPType/ProjectCurrency"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementEntryTPType/DocumentCurrency"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementEntryTPType/OriginalAmountInTransacCrcy"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementEntryTPType/OriginalAmountInProjectCrcy"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementEntryTPType/OriginalRevenueAmtInDocCrcy"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementEntryTPType/OpenQuantity"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementEntryTPType/OpenAmountInTransCrcy"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementEntryTPType/OpenAmountInProjectCurrency"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementEntryTPType/OpenAmountInGlobalCurrency"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementEntryTPType/ToBeWrittenOffAmtInTransCrcy"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementEntryTPType/ToBeWrittenOffAmtInProjectCrcy"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementEntryTPType/ToBePostponedAmtInTransacCrcy"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementEntryTPType/ToBePostponedAmtInProjectCrcy"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementEntryTPType/ManualNetPriceAmtInDocCrcy"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementEntryTPType/NetPriceAmountInDocCrcy"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementEntryTPType/PrjBlgElmEntrCreatedAtDteTme"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementEntryTPType/PrjBlgElmEntrLastChgdByUser"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementEntryTPType/PrjBlgElmEntrLastChgdAtDteTme"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementEntryTPType">
+				<Annotation Term="UI.LineItem">
+					<Collection>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="WBSElementInternalID"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PrjBlgElmEntrCreatedByUser"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="ServicesRenderedDate"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="OriginalAmountInGlobalCurrency"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="ToBePostponedAmtInGlobalCrcy"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="ToBeWrittenOffAmtInGlobalCrcy"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="ToBeBilledAmtInGlobCurrency"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="OriginalTotalQuantity"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="ToBePostponedQuantity"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="ToBeWrittenOffQuantity"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="ToBeBilledQuantity"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+					</Collection>
+				</Annotation>
+			</Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/ProjectBillingRequest"><Annotation Term="UI.HiddenFilter"/></Annotations><Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/BillableRevenueAmtInDocCrcy"/><Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/IsMyProjectBillingElement"/>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/BillingPlanUsageCategory"><Annotation Term="UI.HiddenFilter"/><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/DocumentCurrency"><Annotation Term="UI.HiddenFilter"/><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/TransactionCurrency"><Annotation Term="UI.HiddenFilter"/><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/BilledRevenueAmtInDocCrcy"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/UnbilledRevnAmtInDocCrcy"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/BillgReqdRevenueAmtInDocCrcy"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/PlndRevnAmt"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/CappedNetAmount"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/WrittenOffRevenueAmtInDocCrcy"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/ProjectDescription"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/CustomerName"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/StoreCustomerName"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/BillingDate"><Annotation Term="UI.HiddenFilter"/></Annotations><Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/PlndPrepaymentAmtInProjCrcy"/>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/NetValueAmountInDocCurrency"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/EngmtProjectServiceOrgName"><Annotation Term="UI.HiddenFilter"/><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/to_CustomerContactCard"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/to_ProjBillgSlsItmBillgPlnDuDte"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/ProjectBillingElementUUID"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/ProjectBillingRequestUUID"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/BillingWBSElementInternalID"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/UserID"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/ProjBillgElmntEntrIsCancelled"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/ProfitCenterText"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/ProfitCenterName"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/CostCenterName"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/PlannedStartDate"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/PlannedEndDate"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/ServiceOrganizationUnit"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/CostCenter"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/CostCenterProfitCenter"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/BillingPlanItemUsage"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/BillingPlan"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/ItemBillingBlockReason"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/HeaderBillingBlockReason"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType">
+				<Annotation Term="UI.HeaderInfo">
+					<Record><PropertyValue Property="TypeName" String="Billing Element"/><PropertyValue Property="TypeNamePlural" String="Billing Elements"/>
+						<PropertyValue Property="Title">
+							<Record Type="UI.DataField"><PropertyValue Property="Value" Path="WBSElement"/></Record>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+				<Annotation Term="UI.LineItem">
+					<Collection>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="WBSElement"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="Customer"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="BillingPlanUsageCategoryName"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="ProfitCenter"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PlndRevnAmt"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="CappedNetAmount"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="UnbilledRevnAmtInDocCrcy"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="BillgReqdRevenueAmtInDocCrcy"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="WrittenOffRevenueAmtInDocCrcy"/></Record>
+					</Collection>
+				</Annotation>
+				<Annotation Term="UI.SelectionFields">
+					<Collection>
+						<PropertyPath>Customer</PropertyPath>
+						<PropertyPath>CustomerProject</PropertyPath>
+						<PropertyPath>BillingPlanUsageCategoryName</PropertyPath>
+						<PropertyPath>DueBillingDate</PropertyPath>
+						<PropertyPath>IsMyProjectBillingElement</PropertyPath>
+					</Collection>
+				</Annotation>
+			</Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.I_BillingWBSBasicDataStdVHType/WBSElementInternalID"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.I_Customer_VHType/CustomerAccountGroup"><Annotation Term="UI.HiddenFilter"/><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.I_Customer_VHType/AuthorizationGroup"><Annotation Term="UI.HiddenFilter"/><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.I_Customer_VHType/IsBusinessPurposeCompleted"><Annotation Term="UI.HiddenFilter"/><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.I_ProjectBillingDocDetailsType">
+				<Annotation Term="UI.LineItem">
+					<Collection>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="BillingDocument"/></Record>
+					</Collection>
+				</Annotation>
+			</Annotations>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

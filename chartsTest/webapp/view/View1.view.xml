@@ -1,0 +1,65 @@
+<mvc:View controllerName="chr.chartsTest.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m"
+	xmlns:viz="sap.viz.ui5.controls" xmlns:layout="sap.ui.layout" xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds" xmlns:core="sap.ui.core"
+	xmlns:viz.data="sap.viz.ui5.data" height="100%">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<ComboBox id="idCombo" items="{/years}" selectionChange="onSelectYear">
+							<core:Item text="{year}"/>
+						</ComboBox>
+						<layout:FixFlex id='chartFixFlex' minFlexSize="250">
+							<!--Below is the setting panel -->
+							<layout:fixContent>
+								<Panel id='settingsPanel' class="panelStyle" expandable="true" expanded="true" headerText="Settings" width="auto">
+									<content>
+										<HBox class='settingsHBox'>
+											<VBox class='settingsBox'>
+												<Label text="{/dataset/name}" design="Bold" class='settingsLabel'></Label>
+												<RadioButtonGroup id='datasetRadioGroup' buttons="{path: '/dataset/values'}">
+													<buttons>
+														<RadioButton class='settingsRadio' text="{name}" select="onDatasetSelected"/>
+													</buttons>
+												</RadioButtonGroup>
+											</VBox>
+											<VBox class='settingsBox'>
+												<Label text='Chart Change' design="Bold" class='settingsLabel'></Label>
+												<RadioButtonGroup id='seriesRadioGroup' select="onRadioSelect">
+													<buttons>
+														<RadioButton class='settingsRadio' text="pie"/>
+														<RadioButton class='settingsRadio' text="line"/>
+														<RadioButton class='settingsRadio' text="bar"/>
+													</buttons>
+												</RadioButtonGroup>
+											</VBox>
+										</HBox>
+									</content>
+								</Panel>
+							</layout:fixContent>
+							<layout:flexContent>
+								<viz:Popover id="idPopOver"></viz:Popover>
+								<viz:VizFrame id="idVizFrame" uiConfig="{applicationSet:'fiori'}" height='100%' width="100%" vizType='pie'>
+									<viz:dataset>
+										<viz.data:FlattenedDataset data="{PieData>/selYearData}">
+											<viz.data:dimensions>
+												<viz.data:DimensionDefinition name="Store Name" value="{PieData>month}"/>
+											</viz.data:dimensions>
+											<viz.data:measures>
+												<viz.data:MeasureDefinition name="Revenue" value="{PieData>amount}"/>
+											</viz.data:measures>
+										</viz.data:FlattenedDataset>
+									</viz:dataset>
+									<viz:feeds>
+										<viz.feeds:FeedItem id="idFeed1" uid="size" type="Measure" values="Revenue"/>
+										<viz.feeds:FeedItem id="idFeed2" uid="color" type="Dimension" values="Store Name"/>
+									</viz:feeds>
+								</viz:VizFrame>
+							</layout:flexContent>
+						</layout:FixFlex>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

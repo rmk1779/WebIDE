@@ -1,0 +1,13 @@
+/* Enter your custom styles here */
+
+.btnClass{
+	
+	float :right !important;
+	clear: right !important;
+	border-radius:50% !important;
+}
+.sapMBtnDefault{
+	border-radius:50% !important;
+	background-color:Tomato !important;
+	color:white !important;
+}

@@ -1,0 +1,42 @@
+{
+	"fileName": "id_1571372345238_163_propertyChange",
+	"fileType": "change",
+	"changeType": "propertyChange",
+	"moduleName": "",
+	"reference": "i2d.ps.projectbillingrequests1.Component",
+	"packageName": "$TMP",
+	"content": {
+		"property": "useIconTabBar",
+		"newValue": true
+	},
+	"selector": {
+		"id": "i2d.ps.projectbillingrequests1::sap.suite.ui.generic.template.ObjectPage.view.Details::C_ProjectBillingRequestTP--objectPage",
+		"type": "sap.uxap.ObjectPageLayout",
+		"idIsLocal": false
+	},
+	"layer": "VENDOR",
+	"texts": {},
+	"namespace": "apps/i2d.ps.projectbillingrequests1/changes/",
+	"projectId": "i2d.ps.projectbillingrequests1",
+	"creation": "2019-10-18T04:19:09.185Z",
+	"originalLanguage": "EN",
+	"conditions": {},
+	"context": "",
+	"support": {
+		"generator": "Change.createInitialFileContent",
+		"service": "",
+		"user": "",
+		"sapui5Version": "1.70.0",
+		"sourceChangeFileName": "",
+		"compositeCommand": ""
+	},
+	"oDataInformation": {},
+	"dependentSelector": {},
+	"validAppVersions": {
+		"creation": "${project.version}",
+		"from": "${project.version}",
+		"to": "${project.version}"
+	},
+	"jsOnly": false,
+	"variantReference": ""
+}

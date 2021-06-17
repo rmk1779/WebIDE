@@ -1,0 +1,50 @@
+<mvc:View controllerName="cf.CRUDfiori.controller.CreateEntity" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form"
+	xmlns:footerbar="sap.ushell.ui.footerbar" xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic"
+	xmlns:smart="sap.ui.comp.smartfield" xmlns="sap.m">
+	<semantic:DetailPage id="page" navButtonPress="onNavBack" title="{viewModel>/viewTitle}" busy="{viewModel>/busy}">
+		<semantic:content>
+			<f:SimpleForm class="editableForm" columnsL="1" columnsM="1" editable="true" emptySpanL="4" emptySpanM="4" id="newEntitySimpleForm"
+				labelSpanL="3" labelSpanM="3" layout="ResponsiveGridLayout" maxContainerCols="2" minWidth="1024"
+				title="{= ${viewModel>/mode} === 'edit'? 'Edit NorthwindModel.Product': 'New NorthwindModel.Product'}">
+				<f:content>
+					<Label text="ProductID" required="true"/>
+					<Input name="ProductID" id="ProductID_id" valueLiveUpdate="true" liveChange="_validateSaveEnablement"
+						enabled="{= ${viewModel>/mode} === 'edit'? false: true}" visible="true"
+						value="{ path: 'ProductID', type: 'sap.ui.model.odata.type.Int32' , constraints:{ nullable:false } }"/>
+					<Label text="ProductName" required="true"/>
+					<Input name="ProductName" id="ProductName_id" valueLiveUpdate="true" liveChange="_validateSaveEnablement" enabled="true" visible="true"
+						value="{ path: 'ProductName', type: 'sap.ui.model.odata.type.String' , constraints:{ maxLength:40, nullable:false } }"/>
+					<Label text="SupplierID" required="false"/>
+					<Input name="SupplierID" id="SupplierID_id" valueLiveUpdate="true" liveChange="_validateSaveEnablement" enabled="true" visible="true"
+						value="{ path: 'SupplierID', type: 'sap.ui.model.odata.type.Int32' }"/>
+					<Label text="CategoryID" required="false"/>
+					<Input name="CategoryID" id="CategoryID_id" valueLiveUpdate="true" liveChange="_validateSaveEnablement" enabled="true" visible="true"
+						value="{ path: 'CategoryID', type: 'sap.ui.model.odata.type.Int32' }"/>
+					<Label text="QuantityPerUnit" required="false"/>
+					<Input name="QuantityPerUnit" id="QuantityPerUnit_id" valueLiveUpdate="true" liveChange="_validateSaveEnablement" enabled="true"
+						visible="true" value="{ path: 'QuantityPerUnit', type: 'sap.ui.model.odata.type.String' , constraints:{ maxLength:20 } }"/>
+					<Label text="UnitPrice" required="false"/>
+					<Input name="UnitPrice" id="UnitPrice_id" valueLiveUpdate="true" liveChange="_validateSaveEnablement" enabled="true" visible="true"
+						value="{ path: 'UnitPrice', type: 'sap.ui.model.odata.type.Decimal' , constraints:{ precision:19, scale:4 } }"/>
+					<Label text="UnitsInStock" required="false"/>
+					<Input name="UnitsInStock" id="UnitsInStock_id" valueLiveUpdate="true" liveChange="_validateSaveEnablement" enabled="true" visible="true"
+						value="{ path: 'UnitsInStock', type: 'sap.ui.model.odata.type.String' }"/>
+					<Label text="UnitsOnOrder" required="false"/>
+					<Input name="UnitsOnOrder" id="UnitsOnOrder_id" valueLiveUpdate="true" liveChange="_validateSaveEnablement" enabled="true" visible="true"
+						value="{ path: 'UnitsOnOrder', type: 'sap.ui.model.odata.type.String' }"/>
+					<Label text="ReorderLevel" required="false"/>
+					<Input name="ReorderLevel" id="ReorderLevel_id" valueLiveUpdate="true" liveChange="_validateSaveEnablement" enabled="true" visible="true"
+						value="{ path: 'ReorderLevel', type: 'sap.ui.model.odata.type.String' }"/>
+					<Label text="Discontinued" required="true"/>
+					<CheckBox name="Discontinued" selected="{ path: 'Discontinued'}" id="Discontinued_id" enabled="true" visible="true"/>
+				</f:content>
+			</f:SimpleForm>
+		</semantic:content>
+		<semantic:saveAction>
+			<semantic:SaveAction id="save" enabled="{viewModel>/enableCreate}" press="onSave"/>
+		</semantic:saveAction>
+		<semantic:cancelAction>
+			<semantic:CancelAction id="cancel" press="onCancel"></semantic:CancelAction>
+		</semantic:cancelAction>
+	</semantic:DetailPage>
+</mvc:View>

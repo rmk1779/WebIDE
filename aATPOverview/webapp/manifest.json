@@ -1,0 +1,176 @@
+{
+	"_version": "1.12.0",
+	"sap.app": {
+		"id": "com.samsung.aATPOverview",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"dataSources": {
+			"ZGWIDPSD1ATPOVERVIEW_SRV": {
+				"uri": "/sap/opu/odata/sap/ZGWIDPSD1ATPOVERVIEW_SRV/",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0",
+					"localUri": "localService/ZGWIDPSD1ATPOVERVIEW_SRV/metadata.xml",
+					"annotations": [
+						"ZGWIDPSD1ATPOVERVIEW_ANNO_MDL"
+					]
+				}
+			},
+			"ZGWIDPSD1ATPOVERVIEW_ANNO_MDL": {
+				"uri": "/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Annotations(TechnicalName='ZGWIDPSD1ATPOVERVIEW_ANNO_MDL',Version='0001')/$value/",
+				"type": "ODataAnnotation",
+				"settings": {
+					"localUri": "localService/ZGWIDPSD1MOVEALLOCATION_SRV/ZGWIDPSD1ATPOVERVIEW_ANNO_MDL .xml"
+				}
+			}
+		},
+		"sourceTemplate": {
+			"id": "ui5template.basicSAPUI5ApplicationProject",
+			"version": "1.40.12"
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		}
+	},
+	"sap.ui5": {
+		"flexEnabled": false,
+		"config": {
+			"fullWidth": true
+		},
+		"rootView": {
+			"viewName": "com.samsung.aATPOverview.view.App",
+			"type": "XML",
+			"async": true,
+			"id": "app"
+		},
+		"dependencies": {
+			"minUI5Version": "1.65.6",
+			"libs": {
+				"sap.collaboration": {
+					"lazy": true
+				},
+				"sap.f": {},
+				"sap.m": {},
+				"sap.ui.comp": {},
+				"sap.ui.core": {},
+				"sap.ushell": {},
+				"com.sap.atp.reuselib": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "com.samsung.aATPOverview.i18n.i18n"
+				}
+			},
+			"LineChart": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "model/LineChart.json"
+			},
+			"ATPOverviewModel": {
+				"type": "sap.ui.model.json.JSONModel",
+				"settings": {},
+				"preload": false
+			},
+			"": {
+				"dataSource": "ZGWIDPSD1ATPOVERVIEW_SRV",
+				"settings": {
+					"defaultCountMode": "Inline"
+				}
+			}
+		},
+		"resources": {
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"async": true,
+				"viewPath": "com.samsung.aATPOverview.view",
+				"controlId": "app",
+				"bypassed": {
+					"target": [
+						"notFound"
+					]
+				}
+			},
+			"routes": [
+				{
+					"name": "Overview",
+					"pattern": "",
+					"target": [
+						"Overview"
+					]
+				},
+				{
+					"name": "MoveAllocationHistoryDetail",
+					"pattern": "MoveAllocationHistory/Detail",
+					"target": [
+						"MoveAllocationHistoryDetail"
+					]
+				},
+				{
+					"name": "AllocationVsConsumptionDetail",
+					"pattern": "AllocationVsConsumption/Detail",
+					"target": [
+						"AllocationVsConsumptionDetail"
+					]
+				}
+			],
+			"targets": {
+				"Overview": {
+					"viewType": "XML",
+					"viewId": "MoveAllocationHistory",
+					"viewName": "Overview",
+					"controlAggregation": "pages"
+				},
+				"MoveAllocationHistoryDetail": {
+					"viewType": "XML",
+					"transition": "slide",
+					"controlAggregation": "pages",
+					"viewId": "idMoveAllocationHistoryDetail",
+					"viewName": "MoveAllocationHistoryDetail"
+				},
+				"notFound": {
+					"viewName": "NotFound",
+					"viewId": "notFound"
+				},
+				"AllocationVsConsumptionDetail": {
+					"viewType": "XML",
+					"transition": "slide",
+					"controlAggregation": "pages",
+					"viewId": "idMoveAllocationConsumptionDetail",
+					"viewName": "AllocationVsConsumptionDetail"
+				}
+			}
+		}
+	}
+}

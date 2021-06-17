@@ -1,0 +1,14 @@
+<core:FragmentDefinition id="ext.fragment.FixedPriceTableColumns" xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:smartlink="sap.ui.comp.navpopover" xmlns:table="sap.ui.table">
+	<table:Column id="ExtensionWizard::ColumnBreakout_FP" hAlign="End" visible="false" tooltip="{i18n>SOITEM}">
+		<Text id="ext.fragment.FixedPriceTableColumns.SOItemLabel" text="{i18n>SOITEM}" wrapping="false"/>
+		<table:customData>
+			<core:CustomData id="ext.fragment.FixedPriceTableColumns.SOItem" key="p13nData"
+				value='\{"columnKey": "i2d.ps.projbillingrequests1.SalesDocument", "sortProperty": "SalesDocument", "leadingProperty":"SalesDocument","additionalProperty":"SalesDocumentItem","columnIndex" : "8"}'/>
+		</table:customData>
+		<table:template>
+			<smartlink:SmartLink id="ext.fragment.FixedPriceTableColumns.SOItemSmartLink"
+				text="{ parts:[{path:'SalesDocument'},{path:'SalesDocumentItem'}], formatter: '.fnGetFormattedSalesDocument' }"
+				semanticObject="SalesDocument" mapFieldToSemanticObject="false" forceLinkRendering="true"></smartlink:SmartLink>
+		</table:template>
+	</table:Column>
+</core:FragmentDefinition>

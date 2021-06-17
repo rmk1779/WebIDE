@@ -1,0 +1,29 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="eod.empOdata.controller.View3"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="Employee List" backgroundDesign="List">
+				<headerContent></headerContent>
+				<subHeader>
+					<Toolbar>
+						<SearchField liveChange="onSearch" enableSuggestions="true" suggest="onSuggest" id="idSearch"> </SearchField>
+					</Toolbar>
+				</subHeader>
+				<content>
+					<List id="empList" items="{/ZRMK_EMPTABLESet}" itemPress="onSelect" delete="onDelete">
+						<items>
+							<ObjectListItem id="idObjectListItem" type="Navigation" title="{Empname}" intro="{Id}" number="{Empsalary}"
+								numberState="{=${Empsalary}> 40000 ? 'Error' : 'Success'}" numberUnit="{Empcurrency}" ></ObjectListItem>
+						</items>
+					</List>
+				</content>
+				<footer>
+					<Toolbar>
+						<ToolbarSpacer/>
+						<Button id="idAdd" icon="sap-icon://add" text="Add Employee" type="Accept" press="onAddEmp"></Button>
+					</Toolbar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

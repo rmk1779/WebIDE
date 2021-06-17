@@ -1,0 +1,32 @@
+<core:FragmentDefinition xmlns="sap.ui.table" xmlns:m="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout">
+	<TreeTable id="idSellerTable" selectionMode="Single" selectionBehavior="RowOnly" enableSelectAll="false" collapseRecursive="false">
+		<extension>
+			<m:OverflowToolbar>
+				<!--<m:Title id="title" text="{i18n>seller}"/>-->
+				<m:ToolbarSpacer/>
+				<m:CheckBox id="idIncludeLowerLevel" select="onLowlevelSelected" class="sapUiTinyMarginTop"/>
+				<m:Text text="{i18n>includeLowLevelSeller}"></m:Text>
+				<m:Button text="{i18n>clearAllSelItem}" press="onClearAllSelection" type="Transparent"/>
+			</m:OverflowToolbar>
+		</extension>
+		<columns>
+			<Column id="idColumnItem">
+				<m:Label id="idColumnItemLabel" text="{i18n>seller}"/>
+				<template>
+					<l:HorizontalLayout>
+						<m:CheckBox select="onChangeSellerSelectionCB" selected="{ATPOverviewModel>checked}"/>
+						<m:Text id="idDataItemDesc" text="{ATPOverviewModel>SellerName}" wrapping="false" class="sapUiTinyMarginTop"/>
+					</l:HorizontalLayout>
+				</template>
+			</Column>
+			<Column id="idColumnSellerId">
+				<m:Label id="idColumnSellerIdLabel" text="{i18n>sellerID}"/>
+				<template>
+					<l:HorizontalLayout>
+						<m:Text id="idDataItemId" text="{ATPOverviewModel>Seller}" wrapping="false"/>
+					</l:HorizontalLayout>
+				</template>
+			</Column>
+		</columns>
+	</TreeTable>
+</core:FragmentDefinition>

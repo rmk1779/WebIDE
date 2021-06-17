@@ -1,0 +1,28 @@
+<core:FragmentDefinition xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns:layout="sap.ui.layout" xmlns="sap.m" xmlns:f="sap.f"
+	xmlns:fb="sap.ui.comp.filterbar" xmlns:vm="sap.ui.comp.variants" xmlns:smartFilterBar="sap.ui.comp.smartfilterbar">
+	<fb:FilterBar id="filterbar" reset="onReset" useToolbar="false" showGoOnFB="true" showRestoreOnFB="true" search="onGoFilter">
+		<fb:filterItems>
+			<fb:FilterItem name="A" label="srNo">
+				<fb:control>
+					<Select id="slName" forceSelection="true" change="onSelectChange" items="{ path: '/Datas' }">
+						<core:Item key="srNo" text="{srNo}"/>
+					</Select>
+				</fb:control>
+			</fb:FilterItem>
+			<fb:FilterItem name="B" label="VersionID">
+				<fb:control>
+					<Select id="slCategory" change="onSelectChange" forceSelection="true" items="{ path: '/Datas' }">
+						<core:Item key="versionId" text="{versionId}"/>
+					</Select>
+				</fb:control>
+			</fb:FilterItem>
+			<fb:FilterItem name="C" label="SupplierName">
+				<fb:control>
+					<Select id="slSupplierName" change="onSelectChange" forceSelection="true" items="{ path: '/Datas' }">
+						<core:Item key="region" text="{region}"/>
+					</Select>
+				</fb:control>
+			</fb:FilterItem>
+		</fb:filterItems>
+	</fb:FilterBar>
+</core:FragmentDefinition>

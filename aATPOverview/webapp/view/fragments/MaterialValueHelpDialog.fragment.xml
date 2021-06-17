@@ -1,0 +1,14 @@
+<core:FragmentDefinition xmlns="sap.ui.comp.valuehelpdialog" xmlns:fb="sap.ui.comp.filterbar" xmlns:m="sap.m" xmlns:core="sap.ui.core">
+	<ValueHelpDialog id="idMaterialValueHelpDialog" title="{i18n>material}" supportMultiselect="true" cancel="onValueHelpCancelPress"
+		afterClose="onValueHelpAfterClose" filterMode="false" key="Item" tokenDisplayBehaviour="idAndDescription" descriptionKey="Maktx"
+		updateSelection="onGeneralValueHelpUpdateSelection" tokenRemove="onGeneralTokenRemove" ok="onValueHelpDialogClose"
+		selectionChange="onGeneralValueHelpSelectionChange" class="SellerValueHelpClass">
+		<filterBar>
+			<fb:FilterBar id="idMaterialFilter" advancedMode="false" search="onMaterialTreeSearch"></fb:FilterBar>
+		</filterBar>
+		<customData>
+			<core:CustomData id="idMaterialFilterCustom" key="F4Filter" value="materialF4"></core:CustomData>
+			<core:CustomData key="f4name" value="materialF4"></core:CustomData>
+		</customData>
+	</ValueHelpDialog>
+</core:FragmentDefinition>

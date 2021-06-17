@@ -1,0 +1,156 @@
+{
+	"_version": "1.12.0",
+	"sap.app": {
+		"id": "emp.EmpReg",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"sourceTemplate": {
+			"id": "ui5template.basicSAPUI5ApplicationProject",
+			"version": "1.40.12"
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		}
+	},
+	"sap.ui5": {
+		"flexEnabled": false,
+		"rootView": {
+			"viewName": "emp.EmpReg.view.App",
+			"type": "XML",
+			"async": true,
+			"id": "App"
+		},
+		"dependencies": {
+			"minUI5Version": "1.60.1",
+			"libs": {
+				"sap.ui.layout": {},
+				"sap.ui.core": {},
+				"sap.m": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "emp.EmpReg.i18n.i18n"
+				}
+			},
+			"": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "model/Employee.json"
+			}
+		},
+		"resources": {
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"async": true,
+				"viewPath": "emp.EmpReg.view",
+				"controlAggregation": "pages",
+				"controlId": "app",
+				"clearControlAggregation": false
+			},
+			"routes": [
+				{
+					"pattern": "",
+					"name": "View1",
+					"target": [
+						"View1"
+					]
+				},
+				{
+					"pattern": "HRPage",
+					"name": "View2",
+					"target": [
+						"View3",
+						"View4"
+					]
+				},
+				{
+					"pattern": "HRPage/{miniPath}",
+					"name": "View24",
+					"target": [
+						"View3",
+						"View4"
+					]
+				},
+				{
+					"pattern": "EPage/{empPath}",
+					"name": "View5",
+					"target": [
+						"View5"
+					]
+				}
+			],
+			"targets": {
+				"View1": {
+					"viewType": "XML",
+					"transition": "slide",
+					"viewName": "View1",
+					"viewId": "idView1",
+					"viewLevel1": 1,
+					"controlAggregation": "pages"
+				},
+				"View2": {
+					"viewType": "XML",
+					"viewName": "View2"
+				},
+				"View3": {
+					"viewType": "XML",
+					"parent": "View2",
+					"viewName": "View3",
+					"controlId": "idSplitApp",
+					"viewLevel1": 3,
+					"controlAggregation": "masterPages"
+				},
+				"View4": {
+					"viewType": "XML",
+					"parent": "View2",
+					"viewName": "View4",
+					"controlId": "idSplitApp",
+					"viewLevel1": 4,
+					"controlAggregation": "detailPages"
+				},
+				"View5": {
+					"viewType": "XML",
+					"viewName": "View5",
+					"viewLevel1": 5,
+					"controlAggregation": "pages"
+				},
+				"View6": {
+					"viewType": "XML",
+					"viewName": "View6"
+				}
+			}
+		}
+	}
+}

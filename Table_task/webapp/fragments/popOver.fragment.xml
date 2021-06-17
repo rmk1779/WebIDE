@@ -1,0 +1,12 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout">
+	<Popover id="idPop" title="this is data" placement="Right" contentWidth="auto" contentHeight="auto">
+		<l:VerticalLayout class="sapUiContentPadding">
+			<l:content>
+				<ObjectListItem id="idObjList" intro="Icon pressed" title="Table link display" >
+					
+				</ObjectListItem>
+				
+			</l:content>
+		</l:VerticalLayout>
+	</Popover>
+</core:FragmentDefinition>

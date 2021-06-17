@@ -1,0 +1,30 @@
+{
+	"itemsPath":[
+		{
+			"fname":"Kevin",
+			"lname":"kvn",
+			"company_name":"Google",
+			"email":"Kevin@gmail.com",
+			"country":"Brazil",
+			"phone":8976987656
+		},
+		{
+			"fname":"Stuart",
+			"lname":"strt",
+			"company_name":"Microsoft",
+			"email":"Stuart@gmail.com",
+			"country":"Spain",
+			"phone":9834567898
+		},
+		{
+			"fname":"Bob",
+			"lname":"Kevin",
+			"company_name":"Signiwis",
+			"email":"Bob@gmail.com",
+			"country":"India",
+			"phone":9899887768
+		}
+		
+		]	
+	
+}

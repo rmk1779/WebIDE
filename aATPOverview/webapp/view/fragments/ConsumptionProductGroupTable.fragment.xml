@@ -1,0 +1,12 @@
+<core:FragmentDefinition xmlns="sap.ui.table" xmlns:m="sap.m" xmlns:core="sap.ui.core">
+	<Table id="idMoveAllocationSectionTable" selectionMode="Multi" enableSelectAll="false" ariaLabelledBy="title" selectionBehavior="Row">
+		<columns>
+			<Column id="idColumnSection">
+				<m:Label id="idColumnSectionLable" text="{i18n>productGroup}"/>
+				<template>
+					<m:Text id="idDataSection" text="{ATPOverviewModel>ProductGrp}" wrapping="false" class="sapUiSmallMarginTop"/>
+				</template>
+			</Column>
+		</columns>
+	</Table>
+</core:FragmentDefinition>

@@ -1,0 +1,43 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form">
+	<Dialog contentWidth="30%" id="helloDialog" title="Enter Employee Details" >
+		<content>
+			<f:SimpleForm>
+				<f:content>
+					<Label text="Name" required="true"/>
+					<Input id="fName" class="sapUiTinyMarginTop" placeholder="Enter Employee Name" value="" width="100%" required="true"/>
+					<!--<Label text="Eployee id" required="true" />-->
+					<!--<Input id="fId" class="sapUiTinyMarginTop" placeholder="Employee ID" value="" width="100%" required="true" />-->
+					<Label text="Email" required="true"/>
+					<Input id="fEmail" class="sapUiTinyMarginTop" placeholder="Enter Employee Email" value="" width="100%" required="true"/>
+					<Label text="Mobile" required="true"/>
+					<Input maxLength="10" id="fMobile" class="sapUiTinyMarginTop" placeholder="Enter Employee Mobile" value="" width="100%" required="true"/>
+					<Label text="Password" required="true" />
+					<Input id="fPwd" class="sapUiTinyMarginTop" placeholder="Enter Employee Password" value="" width="100%" required="true" maxLength="10"/>
+					<Label text="Joining Date" labelFor="DP1" required="true"/>
+					<DatePicker id="DP1" valueFormat="medium" change="handleChange" class="sapUiSmallMarginBottom"/>
+					<Label text="Job Role" required="true"/>
+					<!--<Input id="fPos" class="sapUiTinyMarginTop" placeholder="Enter Employee Position" value="" width="100%" required="true"/>-->
+					<ComboBox id="posCombo" placeholder=" Employee Job Role" selectedKey="MNG">
+						<items>
+							<core:Item key="MNG" text="Manager" ></core:Item>
+							<core:Item key="HR" text="HR Manager"></core:Item>
+							<core:Item key="HR1" text="HR Assistant"></core:Item>
+							<core:Item key="TL" text="Technical Lead"></core:Item>
+							<core:Item key="UI5" text="SAP UI5 Consultant"></core:Item>
+							<core:Item key="ABAP" text="SAP ABAP Consultant"></core:Item>
+							<core:Item key="ACC" text="Accountant"></core:Item>
+							<core:Item key="REC" text="Receptionist"></core:Item>
+							
+						</items>
+					</ComboBox>
+					<Label text="Salary" required="true"/>
+					<Input id="fSalary" class="sapUiTinyMarginTop" placeholder="Enter Employee Salary" value="" width="100%" required="true"/>
+				</f:content>
+			</f:SimpleForm>
+		</content>
+		<buttons>
+			<Button icon="sap-icon://cancel" text="Cancel" press="onCloseDialog"/>
+			<Button icon="sap-icon://save" text="Save" press=".onSave"/>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

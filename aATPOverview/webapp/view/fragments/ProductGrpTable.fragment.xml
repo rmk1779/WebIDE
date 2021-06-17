@@ -1,0 +1,28 @@
+<core:FragmentDefinition xmlns="sap.ui.table" xmlns:m="sap.m" xmlns:core="sap.ui.core">
+	<Table id="idProductGrpTable" selectionMode="MultiToggle" enableSelectAll="false">
+		<extension>
+			<m:OverflowToolbar>
+				<!--<m:Title id="title" text="{i18n>productGroupTitle}"/>-->
+				<m:ToolbarSpacer/>
+			</m:OverflowToolbar>
+		</extension>
+		<columns>
+			<Column id="idColumnItem">
+				<m:Label id="idColumnItemLabel" text="{i18n>sectionTitle}"/>
+				<template>
+					<m:HBox>
+						<m:Text id="idDataItemDesc" text="{ATPOverviewModel>Section}" wrapping="false" class="sapUiSmallMarginTop"/>
+					</m:HBox>
+				</template>
+			</Column>
+			<Column id="idProductColumnItem">
+				<m:Label id="idProductColumnItemLabel" text="{i18n>productGroupTitle}"/>
+				<template>
+					<m:HBox>
+						<m:Text id="idProductDataItemDesc" text="{ATPOverviewModel>ProductGrp}" wrapping="false" class="sapUiSmallMarginTop"/>
+					</m:HBox>
+				</template>
+			</Column>
+		</columns>
+	</Table>
+</core:FragmentDefinition>

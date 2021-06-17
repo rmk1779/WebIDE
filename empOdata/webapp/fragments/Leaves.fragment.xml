@@ -1,0 +1,17 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout">
+	<Popover id="lvPop" title="Employee Requests" placement="Left" contentWidth="400px" contentHeight="400px">
+		<l:VerticalLayout class="sapUiContentPadding">
+			<l:content>
+				<List id="lvNotiList" items="{path:'/ZRMK_EMPTABLESet' , templateShareable:'true'}" width="360px">
+					<NotificationListItem title="{Id}" authorName="{Lvfrom}" description="{Lvreason} " showCloseButton="true" unread="false" priority="High"
+						close="onItemClose" press="onListItemPress">
+						<buttons>
+							<Button text="Accept" enabled="{ebl}" type="Accept" press="onAcceptLeave" icon="sap-icon://accept"/>
+							<Button text="Reject" enabled="{ebl}" type="Reject" press="onRejectLeave" icon="sap-icon://sys-cancel"/>
+						</buttons>
+					</NotificationListItem>
+				</List>
+			</l:content>
+		</l:VerticalLayout>
+	</Popover>
+</core:FragmentDefinition>

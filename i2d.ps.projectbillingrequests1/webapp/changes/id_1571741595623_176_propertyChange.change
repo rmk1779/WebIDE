@@ -1,0 +1,42 @@
+{
+	"fileName": "id_1571741595623_176_propertyChange",
+	"fileType": "change",
+	"changeType": "propertyChange",
+	"moduleName": "",
+	"reference": "i2d.ps.projectbillingrequests1.Component",
+	"packageName": "$TMP",
+	"content": {
+		"property": "visible",
+		"newValue": "{= !${ui>/editable}}"
+	},
+	"selector": {
+		"id": "i2d.ps.projectbillingrequests1::sap.suite.ui.generic.template.ObjectPage.view.Details::C_ProjectBillingRequestTP--ActionC_ProjectBillingRequestTPHeader1button",
+		"type": "sap.m.Button",
+		"idIsLocal": false
+	},
+	"layer": "VENDOR",
+	"texts": {},
+	"namespace": "apps/i2d.ps.projectbillingrequests1/changes/",
+	"projectId": "i2d.ps.projectbillingrequests1",
+	"creation": "2019-10-22T10:53:21.839Z",
+	"originalLanguage": "EN",
+	"conditions": {},
+	"context": "",
+	"support": {
+		"generator": "Change.createInitialFileContent",
+		"service": "",
+		"user": "",
+		"sapui5Version": "1.70.0",
+		"sourceChangeFileName": "",
+		"compositeCommand": ""
+	},
+	"oDataInformation": {},
+	"dependentSelector": {},
+	"validAppVersions": {
+		"creation": "${project.version}",
+		"from": "${project.version}",
+		"to": "${project.version}"
+	},
+	"jsOnly": false,
+	"variantReference": ""
+}

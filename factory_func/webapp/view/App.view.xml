@@ -1,0 +1,16 @@
+<mvc:View controllerName="fun.factory_func.controller.App" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<App id="app">
+		<pages>
+			<Page id="page" title="{i18n>title}">
+				<content>
+					<List id="empList" items="{ path: '/Employees', factory: '.createContent'}" itemPress="onSelect">
+						<!--<items>-->
+							<!--<ObjectListItem type="Navigation" title="{orderId}" intro="{productName}" number="{productId}"-->
+							<!--	numberState="{=${salary}> 40000 ? 'Error' : 'Success'}" numberUnit="{currency}"></ObjectListItem>-->
+						<!--</items>-->
+					</List>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

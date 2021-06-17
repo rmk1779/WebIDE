@@ -1,0 +1,7 @@
+[{
+	"IsSettled": true,
+	"IndicatorText": "Yes"
+}, {
+	"IndicatorText": "No",
+	"IsSettled": false
+}]

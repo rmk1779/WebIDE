@@ -1,0 +1,56 @@
+<mvc:View controllerName="TBL.Table_test.controller.App" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<Table id="table" width="auto"
+							items="{ path: '/Products', sorter: { path: 'ProductName', descending: false }, parameters: { 'expand': 'Supplier' } }"
+							noDataText="{i18n>/tableNoDataText}" busyIndicatorDelay="{worklistView>/tableBusyDelay}" growing="true" growingScrollToLoad="true"
+							mode="MultiSelect" >
+							<headerToolbar>
+								<OverflowToolbar>
+									<Title id="tableHeader" text="{i18n>/worklistTableTitle}" level="H3"/>
+									<ToolbarSpacer/>
+									<SearchField id="searchField" tooltip="{i18n>worklistSearchTooltip}" liveChange=".onSearch">
+										<layoutData>
+											<OverflowToolbarLayoutData maxWidth="200px" priority="NeverOverflow"/>
+										</layoutData>
+									</SearchField>
+								</OverflowToolbar>
+							</headerToolbar>
+							<columns>
+								<Column id="nameColumn">
+									<Text id="nameColumnTitle" text="{i18n>ProductName}"/>
+								</Column>
+								<Column id="supplierNameColumn" demandPopin="false" minScreenWidth="Tablet">
+									<Text text="{i18n>Supplier/CompanyName}"/>
+								</Column>
+								<Column id="unitPriceColumn" hAlign="End" demandPopin="true" minScreenWidth="Tablet">
+									<Text text="{i18n>UnitPrice}"/>
+								</Column>
+								<Column id="unitsOnOrderColumn" demandPopin="true" minScreenWidth="Tablet" hAlign="End">
+									<Text text="{i18n>UnitsOnOrder}"/>
+								</Column>
+								<Column id="unitsInStockColumn" hAlign="End">
+									<Text text="{i18n>UnitsInStock}"/>
+								</Column>
+							</columns>
+							<items>
+								<ColumnListItem type="Navigation" press=".onPress">
+									<cells>
+										<ObjectIdentifier title="{ProductName}"/>
+										<Text text="{Supplier/CompanyName}"/>
+										<ObjectNumber unit="EUR" number="{UnitPrice}" />
+										<ObjectNumber number="{UnitsOnOrder}" unit="PC"/>
+										<ObjectNumber number="{UnitsInStock}" unit="PC"/>
+									</cells>
+								</ColumnListItem>
+							</items>
+						</Table>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

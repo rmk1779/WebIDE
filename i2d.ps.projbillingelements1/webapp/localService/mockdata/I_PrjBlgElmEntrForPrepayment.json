@@ -1,0 +1,141 @@
+[{
+	"ProjectBillingElementUUID": "60169ba7-2d5c-4d05-b242-ba3f7e8f74d4",
+	"ProjBillgElmntEntrItmUUID": "ad691cdb-d4af-4c8a-aec8-3780d9f7a05c",
+	"ProjectCurrency": "EUR",
+	"DocumentCurrency": "DocumentCurrency 1",
+	"PlndPrepaymentAmtInProjCrcy": 20.5,
+	"RcvdPrepaymentAmtInProjCrcy": 8980.21,
+	"ReqdPrepaymentAmtInDocCrcy": 3316.23,
+	"PrjBlgElmEntrLastChgdAtDteTme": "/Date(1467706787000+0000)/",
+	"__metadata": {
+		"uri": "I_PrjBlgElmEntrForPrepayment(guid'60169ba7-2d5c-4d05-b242-ba3f7e8f74d4')",
+		"type": "cds_projectbillingelement_sd.I_PrjBlgElmEntrForPrepaymentType"
+	},
+	"ServicesRenderedDate": "/Date(1582569000000)/"
+}, {
+	"ProjectBillingElementUUID": "aa4261d3-0f19-44b9-838f-2eff59c287d4",
+	"ProjBillgElmntEntrItmUUID": "1f16d615-e02f-4af0-9ae5-bca62f3b09d6",
+	"ProjectCurrency": "EUR",
+	"DocumentCurrency": "DocumentCurrency 2",
+	"PlndPrepaymentAmtInProjCrcy": 100.35,
+	"RcvdPrepaymentAmtInProjCrcy": 1114.84,
+	"ReqdPrepaymentAmtInDocCrcy": 6945.99,
+	"PrjBlgElmEntrLastChgdAtDteTme": "/Date(1366618787000+0000)/",
+	"__metadata": {
+		"uri": "I_PrjBlgElmEntrForPrepayment(guid'aa4261d3-0f19-44b9-838f-2eff59c287d4')",
+		"type": "cds_projectbillingelement_sd.I_PrjBlgElmEntrForPrepaymentType"
+	},
+	"ServicesRenderedDate": "/Date(1582569000000)/"
+}, {
+	"ProjectBillingElementUUID": "a9707ed2-07bb-45a9-9bb9-4492072ab6b2",
+	"ProjBillgElmntEntrItmUUID": "765372a6-b2ba-4688-a58e-7e4208f4468a",
+	"ProjectCurrency": "ProjectCurrency 3",
+	"DocumentCurrency": "DocumentCurrency 3",
+	"PlndPrepaymentAmtInProjCrcy": 0,
+	"RcvdPrepaymentAmtInProjCrcy": 7303.5,
+	"ReqdPrepaymentAmtInDocCrcy": 124.05,
+	"PrjBlgElmEntrLastChgdAtDteTme": "/Date(1019981987000+0000)/",
+	"__metadata": {
+		"uri": "I_PrjBlgElmEntrForPrepayment(guid'a9707ed2-07bb-45a9-9bb9-4492072ab6b2')",
+		"type": "cds_projectbillingelement_sd.I_PrjBlgElmEntrForPrepaymentType"
+	},
+	"ServicesRenderedDate": "/Date(1582569000000)/"
+}, {
+	"ProjectBillingElementUUID": "c7879ff4-7d0d-4da6-a56e-f015e065bf3a",
+	"ProjBillgElmntEntrItmUUID": "8719a07f-6efb-443e-b83b-6d806e617af3",
+	"ProjectCurrency": "USD",
+	"DocumentCurrency": "DocumentCurrency 4",
+	"PlndPrepaymentAmtInProjCrcy": 2983.67,
+	"RcvdPrepaymentAmtInProjCrcy": 4355.86,
+	"ReqdPrepaymentAmtInDocCrcy": 8615.23,
+	"PrjBlgElmEntrLastChgdAtDteTme": "/Date(1364199587000+0000)/",
+	"__metadata": {
+		"uri": "I_PrjBlgElmEntrForPrepayment(guid'c7879ff4-7d0d-4da6-a56e-f015e065bf3a')",
+		"type": "cds_projectbillingelement_sd.I_PrjBlgElmEntrForPrepaymentType"
+	},
+	"ServicesRenderedDate": "/Date(1582396200000)/"
+}, {
+	"ProjectBillingElementUUID": "5e5433a0-5816-48ab-b775-090c0c0969ab",
+	"ProjBillgElmntEntrItmUUID": "5f58e15c-c68c-4e97-9331-425cfc8af72b",
+	"ProjectCurrency": "ProjectCurrency 5",
+	"DocumentCurrency": "DocumentCurrency 5",
+	"PlndPrepaymentAmtInProjCrcy": 0,
+	"RcvdPrepaymentAmtInProjCrcy": 6680.1,
+	"ReqdPrepaymentAmtInDocCrcy": 1747,
+	"PrjBlgElmEntrLastChgdAtDteTme": "/Date(1038730787000+0000)/",
+	"__metadata": {
+		"uri": "I_PrjBlgElmEntrForPrepayment(guid'5e5433a0-5816-48ab-b775-090c0c0969ab')",
+		"type": "cds_projectbillingelement_sd.I_PrjBlgElmEntrForPrepaymentType"
+	},
+	"ServicesRenderedDate": "/Date(1582396200000)/"
+}, {
+	"ProjectBillingElementUUID": "b07faa15-4153-4653-850b-7ace1045706a",
+	"ProjBillgElmntEntrItmUUID": "74bcbd01-3d46-4763-a568-d39cea5c8752",
+	"ProjectCurrency": "ProjectCurrency 6",
+	"DocumentCurrency": "DocumentCurrency 6",
+	"PlndPrepaymentAmtInProjCrcy": 0,
+	"RcvdPrepaymentAmtInProjCrcy": 279.31,
+	"ReqdPrepaymentAmtInDocCrcy": 3365.44,
+	"PrjBlgElmEntrLastChgdAtDteTme": "/Date(1064996387000+0000)/",
+	"__metadata": {
+		"uri": "I_PrjBlgElmEntrForPrepayment(guid'b07faa15-4153-4653-850b-7ace1045706a')",
+		"type": "cds_projectbillingelement_sd.I_PrjBlgElmEntrForPrepaymentType"
+	},
+	"ServicesRenderedDate": "/Date(1582396200000)/"
+}, {
+	"ProjectBillingElementUUID": "15137411-1a29-4306-a2eb-37bedd90509d",
+	"ProjBillgElmntEntrItmUUID": "351df14a-3409-45bd-8f56-af5d559cb819",
+	"ProjectCurrency": "ProjectCurrency 7",
+	"DocumentCurrency": "DocumentCurrency 7",
+	"PlndPrepaymentAmtInProjCrcy": 0,
+	"RcvdPrepaymentAmtInProjCrcy": 9099.7,
+	"ReqdPrepaymentAmtInDocCrcy": 7413.38,
+	"PrjBlgElmEntrLastChgdAtDteTme": "/Date(1445674787000+0000)/",
+	"__metadata": {
+		"uri": "I_PrjBlgElmEntrForPrepayment(guid'15137411-1a29-4306-a2eb-37bedd90509d')",
+		"type": "cds_projectbillingelement_sd.I_PrjBlgElmEntrForPrepaymentType"
+	},
+	"ServicesRenderedDate": "/Date(1582396200000)/"
+}, {
+	"ProjectBillingElementUUID": "f7ac7c61-65b4-48d4-892c-38e1b6c36160",
+	"ProjBillgElmntEntrItmUUID": "e81a349f-bb71-4079-842c-db251dce1324",
+	"ProjectCurrency": "ProjectCurrency 8",
+	"DocumentCurrency": "DocumentCurrency 8",
+	"PlndPrepaymentAmtInProjCrcy": 0,
+	"RcvdPrepaymentAmtInProjCrcy": 220.05,
+	"ReqdPrepaymentAmtInDocCrcy": 3395.4,
+	"PrjBlgElmEntrLastChgdAtDteTme": "/Date(1310113187000+0000)/",
+	"__metadata": {
+		"uri": "I_PrjBlgElmEntrForPrepayment(guid'f7ac7c61-65b4-48d4-892c-38e1b6c36160')",
+		"type": "cds_projectbillingelement_sd.I_PrjBlgElmEntrForPrepaymentType"
+	},
+	"ServicesRenderedDate": "/Date(1582569000000)/"
+}, {
+	"ProjectBillingElementUUID": "26dc70ea-d58a-4340-9d0f-b51e96be3d11",
+	"ProjBillgElmntEntrItmUUID": "6dfc62e5-bf00-4329-91fc-45c87cb7f34e",
+	"ProjectCurrency": "ProjectCurrency 9",
+	"DocumentCurrency": "DocumentCurrency 9",
+	"PlndPrepaymentAmtInProjCrcy": 0,
+	"RcvdPrepaymentAmtInProjCrcy": 1621.9,
+	"ReqdPrepaymentAmtInDocCrcy": 3221.49,
+	"PrjBlgElmEntrLastChgdAtDteTme": "/Date(1576829987000+0000)/",
+	"__metadata": {
+		"uri": "I_PrjBlgElmEntrForPrepayment(guid'26dc70ea-d58a-4340-9d0f-b51e96be3d11')",
+		"type": "cds_projectbillingelement_sd.I_PrjBlgElmEntrForPrepaymentType"
+	},
+	"ServicesRenderedDate": "/Date(1582396200000)/"
+}, {
+	"ProjectBillingElementUUID": "551cbb41-7c66-4972-9633-d526461fe8b0",
+	"ProjBillgElmntEntrItmUUID": "f92ed471-bf9c-41d9-b8a2-9b7c80c39707",
+	"ProjectCurrency": "ProjectCurrency 10",
+	"DocumentCurrency": "DocumentCurrency 10",
+	"PlndPrepaymentAmtInProjCrcy": 0,
+	"RcvdPrepaymentAmtInProjCrcy": 7750.21,
+	"ReqdPrepaymentAmtInDocCrcy": 9293.37,
+	"PrjBlgElmEntrLastChgdAtDteTme": "/Date(1555229987000+0000)/",
+	"__metadata": {
+		"uri": "I_PrjBlgElmEntrForPrepayment(guid'551cbb41-7c66-4972-9633-d526461fe8b0')",
+		"type": "cds_projectbillingelement_sd.I_PrjBlgElmEntrForPrepaymentType"
+	},
+	"ServicesRenderedDate": "/Date(1582396200000)/"
+}]

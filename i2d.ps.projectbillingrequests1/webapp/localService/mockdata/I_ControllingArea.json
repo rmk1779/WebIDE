@@ -1,0 +1,182 @@
+[{
+	"ControllingArea": "ControllingArea 1",
+	"FiscalYearVariant": "FiscalYearVariant 1",
+	"ControllingAreaName": "ControllingAreaName 1",
+	"ControllingAreaCurrency": "ControllingAreaCurrency 1",
+	"ChartOfAccounts": "ChartOfAccounts 1",
+	"ChartOfAccounts_Text": "ChartOfAccounts_Text 1",
+	"CostCenterStandardHierarchy": "CostCenterStandardHierarchy 1",
+	"ProfitCenterStandardHierarchy": "ProfitCenterStandardHierarchy 1",
+	"FinancialManagementArea": "FinancialManagementArea 1",
+	"ControllingAreaCurrencyRole": "ControllingAreaCurrencyRole 1",
+	"CtrlgStdFinStatementVersion": "CtrlgStdFinStatementVersion 1",
+	"CtrlgStdFinStatementVersion_Text": "CtrlgStdFinStatementVersion_Text 1",
+	"ProfitCenterAccountingCurrency": "ProfitCenterAccountingCurrency 1",
+	"__metadata": {
+		"uri": "I_ControllingArea('ControllingArea%201')",
+		"type": "cds_projectbillingrequest_sd.I_ControllingAreaType"
+	}
+
+}, {
+	"ControllingArea": "ControllingArea 2",
+	"FiscalYearVariant": "FiscalYearVariant 2",
+	"ControllingAreaName": "ControllingAreaName 2",
+	"ControllingAreaCurrency": "ControllingAreaCurrency 2",
+	"ChartOfAccounts": "ChartOfAccounts 2",
+	"ChartOfAccounts_Text": "ChartOfAccounts_Text 2",
+	"CostCenterStandardHierarchy": "CostCenterStandardHierarchy 2",
+	"ProfitCenterStandardHierarchy": "ProfitCenterStandardHierarchy 2",
+	"FinancialManagementArea": "FinancialManagementArea 2",
+	"ControllingAreaCurrencyRole": "ControllingAreaCurrencyRole 2",
+	"CtrlgStdFinStatementVersion": "CtrlgStdFinStatementVersion 2",
+	"CtrlgStdFinStatementVersion_Text": "CtrlgStdFinStatementVersion_Text 2",
+	"ProfitCenterAccountingCurrency": "ProfitCenterAccountingCurrency 2",
+	"__metadata": {
+		"uri": "I_ControllingArea('ControllingArea%202')",
+		"type": "cds_projectbillingrequest_sd.I_ControllingAreaType"
+	}
+}, {
+	"ControllingArea": "ControllingArea 3",
+	"FiscalYearVariant": "FiscalYearVariant 3",
+	"ControllingAreaName": "ControllingAreaName 3",
+	"ControllingAreaCurrency": "ControllingAreaCurrency 3",
+	"ChartOfAccounts": "ChartOfAccounts 3",
+	"ChartOfAccounts_Text": "ChartOfAccounts_Text 3",
+	"CostCenterStandardHierarchy": "CostCenterStandardHierarchy 3",
+	"ProfitCenterStandardHierarchy": "ProfitCenterStandardHierarchy 3",
+	"FinancialManagementArea": "FinancialManagementArea 3",
+	"ControllingAreaCurrencyRole": "ControllingAreaCurrencyRole 3",
+	"CtrlgStdFinStatementVersion": "CtrlgStdFinStatementVersion 3",
+	"CtrlgStdFinStatementVersion_Text": "CtrlgStdFinStatementVersion_Text 3",
+	"ProfitCenterAccountingCurrency": "ProfitCenterAccountingCurrency 3",
+	"__metadata": {
+		"uri": "I_ControllingArea('ControllingArea%203')",
+		"type": "cds_projectbillingrequest_sd.I_ControllingAreaType"
+	}
+}, {
+	"ControllingArea": "ControllingArea 4",
+	"FiscalYearVariant": "FiscalYearVariant 4",
+	"ControllingAreaName": "ControllingAreaName 4",
+	"ControllingAreaCurrency": "ControllingAreaCurrency 4",
+	"ChartOfAccounts": "ChartOfAccounts 4",
+	"ChartOfAccounts_Text": "ChartOfAccounts_Text 4",
+	"CostCenterStandardHierarchy": "CostCenterStandardHierarchy 4",
+	"ProfitCenterStandardHierarchy": "ProfitCenterStandardHierarchy 4",
+	"FinancialManagementArea": "FinancialManagementArea 4",
+	"ControllingAreaCurrencyRole": "ControllingAreaCurrencyRole 4",
+	"CtrlgStdFinStatementVersion": "CtrlgStdFinStatementVersion 4",
+	"CtrlgStdFinStatementVersion_Text": "CtrlgStdFinStatementVersion_Text 4",
+	"ProfitCenterAccountingCurrency": "ProfitCenterAccountingCurrency 4",
+	"__metadata": {
+		"uri": "I_ControllingArea('ControllingArea%204')",
+		"type": "cds_projectbillingrequest_sd.I_ControllingAreaType"
+	}
+}, {
+	"ControllingArea": "ControllingArea 5",
+	"FiscalYearVariant": "FiscalYearVariant 5",
+	"ControllingAreaName": "ControllingAreaName 5",
+	"ControllingAreaCurrency": "ControllingAreaCurrency 5",
+	"ChartOfAccounts": "ChartOfAccounts 5",
+	"ChartOfAccounts_Text": "ChartOfAccounts_Text 5",
+	"CostCenterStandardHierarchy": "CostCenterStandardHierarchy 5",
+	"ProfitCenterStandardHierarchy": "ProfitCenterStandardHierarchy 5",
+	"FinancialManagementArea": "FinancialManagementArea 5",
+	"ControllingAreaCurrencyRole": "ControllingAreaCurrencyRole 5",
+	"CtrlgStdFinStatementVersion": "CtrlgStdFinStatementVersion 5",
+	"CtrlgStdFinStatementVersion_Text": "CtrlgStdFinStatementVersion_Text 5",
+	"ProfitCenterAccountingCurrency": "ProfitCenterAccountingCurrency 5",
+	"__metadata": {
+		"uri": "I_ControllingArea('ControllingArea%205')",
+		"type": "cds_projectbillingrequest_sd.I_ControllingAreaType"
+	}
+}, {
+	"ControllingArea": "ControllingArea 6",
+	"FiscalYearVariant": "FiscalYearVariant 6",
+	"ControllingAreaName": "ControllingAreaName 6",
+	"ControllingAreaCurrency": "ControllingAreaCurrency 6",
+	"ChartOfAccounts": "ChartOfAccounts 6",
+	"ChartOfAccounts_Text": "ChartOfAccounts_Text 6",
+	"CostCenterStandardHierarchy": "CostCenterStandardHierarchy 6",
+	"ProfitCenterStandardHierarchy": "ProfitCenterStandardHierarchy 6",
+	"FinancialManagementArea": "FinancialManagementArea 6",
+	"ControllingAreaCurrencyRole": "ControllingAreaCurrencyRole 6",
+	"CtrlgStdFinStatementVersion": "CtrlgStdFinStatementVersion 6",
+	"CtrlgStdFinStatementVersion_Text": "CtrlgStdFinStatementVersion_Text 6",
+	"ProfitCenterAccountingCurrency": "ProfitCenterAccountingCurrency 6",
+	"__metadata": {
+		"uri": "I_ControllingArea('ControllingArea%206')",
+		"type": "cds_projectbillingrequest_sd.I_ControllingAreaType"
+	}
+}, {
+	"ControllingArea": "ControllingArea 7",
+	"FiscalYearVariant": "FiscalYearVariant 7",
+	"ControllingAreaName": "ControllingAreaName 7",
+	"ControllingAreaCurrency": "ControllingAreaCurrency 7",
+	"ChartOfAccounts": "ChartOfAccounts 7",
+	"ChartOfAccounts_Text": "ChartOfAccounts_Text 7",
+	"CostCenterStandardHierarchy": "CostCenterStandardHierarchy 7",
+	"ProfitCenterStandardHierarchy": "ProfitCenterStandardHierarchy 7",
+	"FinancialManagementArea": "FinancialManagementArea 7",
+	"ControllingAreaCurrencyRole": "ControllingAreaCurrencyRole 7",
+	"CtrlgStdFinStatementVersion": "CtrlgStdFinStatementVersion 7",
+	"CtrlgStdFinStatementVersion_Text": "CtrlgStdFinStatementVersion_Text 7",
+	"ProfitCenterAccountingCurrency": "ProfitCenterAccountingCurrency 7",
+	"__metadata": {
+		"uri": "I_ControllingArea('ControllingArea%207')",
+		"type": "cds_projectbillingrequest_sd.I_ControllingAreaType"
+	}
+}, {
+	"ControllingArea": "ControllingArea 8",
+	"FiscalYearVariant": "FiscalYearVariant 8",
+	"ControllingAreaName": "ControllingAreaName 8",
+	"ControllingAreaCurrency": "ControllingAreaCurrency 8",
+	"ChartOfAccounts": "ChartOfAccounts 8",
+	"ChartOfAccounts_Text": "ChartOfAccounts_Text 8",
+	"CostCenterStandardHierarchy": "CostCenterStandardHierarchy 8",
+	"ProfitCenterStandardHierarchy": "ProfitCenterStandardHierarchy 8",
+	"FinancialManagementArea": "FinancialManagementArea 8",
+	"ControllingAreaCurrencyRole": "ControllingAreaCurrencyRole 8",
+	"CtrlgStdFinStatementVersion": "CtrlgStdFinStatementVersion 8",
+	"CtrlgStdFinStatementVersion_Text": "CtrlgStdFinStatementVersion_Text 8",
+	"ProfitCenterAccountingCurrency": "ProfitCenterAccountingCurrency 8",
+	"__metadata": {
+		"uri": "I_ControllingArea('ControllingArea%208')",
+		"type": "cds_projectbillingrequest_sd.I_ControllingAreaType"
+	}
+}, {
+	"ControllingArea": "ControllingArea 9",
+	"FiscalYearVariant": "FiscalYearVariant 9",
+	"ControllingAreaName": "ControllingAreaName 9",
+	"ControllingAreaCurrency": "ControllingAreaCurrency 9",
+	"ChartOfAccounts": "ChartOfAccounts 9",
+	"ChartOfAccounts_Text": "ChartOfAccounts_Text 9",
+	"CostCenterStandardHierarchy": "CostCenterStandardHierarchy 9",
+	"ProfitCenterStandardHierarchy": "ProfitCenterStandardHierarchy 9",
+	"FinancialManagementArea": "FinancialManagementArea 9",
+	"ControllingAreaCurrencyRole": "ControllingAreaCurrencyRole 9",
+	"CtrlgStdFinStatementVersion": "CtrlgStdFinStatementVersion 9",
+	"CtrlgStdFinStatementVersion_Text": "CtrlgStdFinStatementVersion_Text 9",
+	"ProfitCenterAccountingCurrency": "ProfitCenterAccountingCurrency 9",
+	"__metadata": {
+		"uri": "I_ControllingArea('ControllingArea%209')",
+		"type": "cds_projectbillingrequest_sd.I_ControllingAreaType"
+	}
+}, {
+	"ControllingArea": "ControllingArea 10",
+	"FiscalYearVariant": "FiscalYearVariant 10",
+	"ControllingAreaName": "ControllingAreaName 10",
+	"ControllingAreaCurrency": "ControllingAreaCurrency 10",
+	"ChartOfAccounts": "ChartOfAccounts 10",
+	"ChartOfAccounts_Text": "ChartOfAccounts_Text 10",
+	"CostCenterStandardHierarchy": "CostCenterStandardHierarchy 10",
+	"ProfitCenterStandardHierarchy": "ProfitCenterStandardHierarchy 10",
+	"FinancialManagementArea": "FinancialManagementArea 10",
+	"ControllingAreaCurrencyRole": "ControllingAreaCurrencyRole 10",
+	"CtrlgStdFinStatementVersion": "CtrlgStdFinStatementVersion 10",
+	"CtrlgStdFinStatementVersion_Text": "CtrlgStdFinStatementVersion_Text 10",
+	"ProfitCenterAccountingCurrency": "ProfitCenterAccountingCurrency 10",
+	"__metadata": {
+		"uri": "I_ControllingArea('ControllingArea%2010')",
+		"type": "cds_projectbillingrequest_sd.I_ControllingAreaType"
+	}
+}]

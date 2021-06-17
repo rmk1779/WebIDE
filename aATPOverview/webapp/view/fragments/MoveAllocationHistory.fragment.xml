@@ -1,0 +1,52 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds" xmlns:viz.data="sap.viz.ui5.data"
+	xmlns:viz="sap.viz.ui5.controls" xmlns:suite="sap.suite.ui.commons" xmlns:core="sap.ui.core">
+	<VBox>
+		<HBox justifyContent="SpaceBetween">
+			<VBox>
+				<Label text="{i18n>fromWeek}" labelFor="idOriginatorSubObject"/>
+				<Button icon="sap-icon://accelerated" press="onCalendarPress" tooltip="{i18n>weekPickerToolTip}" id="idWeekCalendar"
+					text="{ATPOverviewModel>/moveAllocationHistory/fromWeek}">
+					<layoutData>
+						<FlexItemData growFactor="1" shrinkFactor="0"/>
+					</layoutData>
+				</Button>
+			</VBox>
+			<VBox>
+				<Label text="{i18n>productGroup}" labelFor="idOriginatorSubObject" class="sapUiSmallMarginBegin"/>
+				<MultiInput id="idProductGroup" width="15rem" class="sapUiSmallMarginBegin" valueHelpOnly="false"
+					tokens="{ATPOverviewModel>/moveAllocationHistory/productGroupTokens}" showValueHelp="true" showSuggestion="true"
+					valueHelpRequest="onProductGroupValueRequest" tokenUpdate="onProductGroupTokenUpdate">
+					<layoutData>
+						<FlexItemData growFactor="1" shrinkFactor="0"/>
+					</layoutData>
+					<tokens>
+						<Token id="idProductGroupToken" text="{ATPOverviewModel>text}" key="{ATPOverviewModel>key}"></Token>
+					</tokens>
+					<customData>
+						<core:CustomData key="f4name" value="productGroupF4"></core:CustomData>
+					</customData>
+				</MultiInput>
+			</VBox>
+			<Button press="onSearchButtonPress" text="{i18n>go}" type="Emphasized" class="sapUiLargeMarginBegin sapUiSmallMarginTop">
+				<!--<layoutData>-->
+				<!--	<FlexItemData growFactor="1" shrinkFactor="0"/>-->
+				<!--</layoutData>-->
+			</Button>
+		</HBox>
+		<suite:ChartContainer id="idChartContainer" showZoom="false" showLegendButton="true" showFullScreen="true">
+			<suite:ChartContainerContent>
+				<suite:content>
+					<viz:VizFrame id="idVizFrame" width="100%" height="20rem" vizType='stacked_column' uiConfig="{applicationSet:'fiori'}"
+						selectData="onLineChartDataPointSelect">
+						<viz:feeds>
+							<viz.feeds:FeedItem id="valueAxisFeed1" uid="valueAxis" type="Measure" values="Seller Move"/>
+							<viz.feeds:FeedItem id="idFeed2" uid="categoryAxis" type="Dimension" values="Week"/>
+							<viz.feeds:FeedItem id='valueAxisFeed2' uid="valueAxis" type="Measure" values="Logical Site Move"/>
+							<viz.feeds:FeedItem id='valueAxisFeed3' uid="valueAxis" type="Measure" values="Time Move"/>
+						</viz:feeds>
+					</viz:VizFrame>
+				</suite:content>
+			</suite:ChartContainerContent>
+		</suite:ChartContainer>
+	</VBox>
+</core:FragmentDefinition>

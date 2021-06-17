@@ -1,0 +1,36 @@
+{
+	"Datas": [{
+			"srNo": 101,
+			"versionId": "ID101",
+			"region": "M101",
+			"businessUnit": "BU101",
+			"scenarioType": 12731,
+			"year": 2019
+		},
+		{
+			"srNo": 102,
+			"versionId": "ID102",
+			"region": "M102",
+			"businessUnit": "BU102",
+			"scenarioType": 12732,
+			"year": 2018
+		},
+		{
+			"srNo": 103,
+			"versionId": "ID103",
+			"region": "M103",
+			"businessUnit": "BU103",
+			"scenarioType": 12733,
+			"year": 2017
+		},
+		{
+			"srNo": 104,
+			"versionId": "ID104",
+			"region": "M104",
+			"businessUnit": "BU104",
+			"scenarioType": 12734,
+			"year": 2016
+		}
+
+	]
+}

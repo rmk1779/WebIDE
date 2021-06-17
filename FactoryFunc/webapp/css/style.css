@@ -1,0 +1,10 @@
+/* Enter your custom styles here */
+.redclass{
+	background-color:red;
+}
+.yellowclass{
+	background-color: yellow ! important;
+}
+.greenclass{
+	background-color: green ! important;
+}

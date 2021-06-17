@@ -1,0 +1,48 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout">
+	<Dialog id="itemDialog" title="Add New Data" contentWidth="auto">
+		<content>
+			<f:SimpleForm>
+				<f:content>
+					<l:VerticalLayout id="containerLayout" width="100%">
+						<l:HorizontalLayout class="sapUiSmallMarginBegin">
+							<l:VerticalLayout>
+									<Label text="Sr No" required="true"/>
+									<Input id="idSrNo" class="sapUiTinyMarginTop" placeholder="Enter Serial No." value="{srNo}" width="80%" editable="false"  required="true" maxLength="10"/>
+							</l:VerticalLayout>
+							<l:VerticalLayout>
+									<Label text="Version ID" class="sapUiSmallMarginBegin" required="true"/>
+									<Input id="idVerID" class="sapUiTinyMarginTop sapUiSmallMarginBegin" placeholder="Enter Version ID" value="{versionId}" width="80%" editable="false" required="true" maxLength="10"/>
+							</l:VerticalLayout>
+							</l:HorizontalLayout>
+								
+								<l:HorizontalLayout class="sapUiMediumMarginTopBottom sapUiSmallMarginBegin">
+									<l:VerticalLayout>
+									<Label text="Region" required="true"/>
+									<Input id="idRegion" class="sapUiTinyMarginTop" placeholder="Enter Region" value="{region}" width="80%" required="true" maxLength="10"/>
+									</l:VerticalLayout>
+									<l:VerticalLayout>
+									<Label text="Business Unit" class="sapUiSmallMarginBegin" required="true"/>
+									<Input id="idBusUnit" class="sapUiTinyMarginTop sapUiSmallMarginBegin" placeholder="Enter Business Unit" value="{businessUnit}" width="80%" required="true" maxLength="10"/>
+									</l:VerticalLayout>
+								</l:HorizontalLayout>
+								
+								<l:HorizontalLayout class="sapUiSmallMarginBegin">
+									<l:VerticalLayout>
+									<Label text="Scenario Type" required="true"/>
+									<Input id="idScenario" class="sapUiTinyMarginTop" placeholder="Enter Scenario Type" value="{scenarioType}" width="80%" required="true" maxLength="10"/>
+									</l:VerticalLayout>
+									<l:VerticalLayout>
+									<Label text="Year" class="sapUiSmallMarginBegin" required="true"/>
+									<Input id="idYear" class="sapUiTinyMarginTop sapUiSmallMarginBegin" placeholder="Enter Year" value="{year}" width="80%" required="true" maxLength="10"/>
+									</l:VerticalLayout>
+								</l:HorizontalLayout>
+					</l:VerticalLayout>
+				</f:content>
+			</f:SimpleForm>
+		</content>
+		<buttons>
+			<Button icon="sap-icon://cancel" text="Cancel" press="onCloseitemDialog"/>
+			<Button icon="sap-icon://save" text="Update" press=".onUpdateFields"/>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

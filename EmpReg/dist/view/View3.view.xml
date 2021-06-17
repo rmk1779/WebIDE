@@ -1,0 +1,37 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="emp.EmpReg.controller.View3"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="Employee List" backgroundDesign="List">
+							<headerContent>
+					
+				</headerContent>
+				<subHeader>
+					<Toolbar>
+						<SearchField 
+					liveChange="onSearch"	enableSuggestions="true" 
+						suggestionItems="{/Employees}" suggest="onSuggest">
+							<suggestionItems>
+								<SuggestionItem key="{empName}" text="{empName}" 
+							></SuggestionItem>
+							</suggestionItems>
+						</SearchField>
+					</Toolbar>
+				</subHeader>
+				<content>
+					<List id="empList"  items="{/Employees}" itemPress="onSelect" delete="onDelete">
+						<items>
+							<ObjectListItem type="Navigation" title="{empName}"  intro="{empId}" number="{salary}" numberState="{=${salary}> 40000 ? 'Error' : 'Success'}" numberUnit="{currency}"></ObjectListItem>
+						</items>
+					</List>
+				</content>
+				<footer>
+					<Toolbar design="Solid">
+						<ToolbarSpacer/>
+						<Button id="idAdd" icon="sap-icon://add" text="Add Employee" type="Accept" press="onAddEmp"></Button>
+					</Toolbar>
+					</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

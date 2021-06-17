@@ -1,0 +1,62 @@
+<mvc:View xmlns:c="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.ui.table" controllerName="grd.gridTable.controller.View1"
+	xmlns:u="sap.ui.unified" xmlns:m="sap.m" height="100%" xmlns:html="http://www.w3.org/1999/xhtml">
+	<m:Page showHeader="false" enableScrolling="false" class="sapUiContentPadding">
+		<m:content>
+			<m:Input value="{jmodel>/Cross_App_Value}"></m:Input>
+			<m:Text text="rmk"></m:Text>
+			<m:IconTabBar id="idIconTabBar" select="handleIconTabBarSelect" class="sapUiResponsiveContentPadding">
+				<m:items>
+					<m:IconTabFilter icon="sap-icon://customer" iconColor="Positive" text="Employee List" key="All">
+						<!--<m:Text text="{empId}" />-->
+						<m:content>
+							<m:List id="empList" items="{/Employees}" width="25%" itemPress="onSelect" delete="onDelete">
+								<m:items>
+									<m:ObjectListItem type="Navigation" title="{empName}" intro="{empId}" number="{salary}"
+										numberState="{=${salary}> 40000 ? 'Error' : 'Success'}" numberUnit="{currency}"></m:ObjectListItem>
+								</m:items>
+							</m:List>
+						</m:content>
+					</m:IconTabFilter>
+					<m:IconTabSeparator/>
+					<m:IconTabFilter icon="sap-icon://begin" iconColor="Positive" count="{empName}" text="Employee Table" key="Ok">
+						<Table rows="{path:'/Employees', templateShareable:'true'}" title="Employees"  selectionMode="MultiToggle" visibleRowCount="5"
+							cellClick="puri">
+							<columns >
+								<Column width="11rem">
+									<m:Label text="Employee Name"/>
+									<template>
+										<m:Text  text="{empName}" wrapping="false"/>
+									</template>
+								</Column>
+								<Column width="11rem">
+									<m:Label text="Employee ID"/>
+									<template>
+										<m:Input value="{empId}" liveChange="puruChange" />
+									</template>
+								</Column>
+								<Column width="9rem">
+									<m:Label text="Employee Salary"/>
+									<template>
+										<u:Currency value="{salary}" currency="{currency}"/>
+									</template>
+								</Column>
+								<Column width="12rem">
+									<m:Label text="Worker"/>
+									<template>
+										<m:ComboBox value="{empName}" items="{/Employees}">
+											<c:Item text="{empName}"/>
+										</m:ComboBox>
+									</template>
+								</Column>
+							</columns>
+						</Table>
+					</m:IconTabFilter>
+					<m:IconTabFilter icon="sap-icon://compare" iconColor="Critical" count="{/ProductCollectionStats/Counts/Weight/Heavy}" text="Heavy"
+						key="Heavy"></m:IconTabFilter>
+					<m:IconTabFilter icon="sap-icon://inventory" iconColor="Negative" count="{/ProductCollectionStats/Counts/Weight/Overweight}"
+						text="Overweight" key="Overweight"></m:IconTabFilter>
+				</m:items>
+			</m:IconTabBar>
+		</m:content>
+	</m:Page>
+</mvc:View>

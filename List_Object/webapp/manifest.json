@@ -1,0 +1,255 @@
+{
+	"_version": "1.8.0",
+	"sap.app": {
+		"id": "LO.list_object",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"tags": {
+			"keywords": []
+		},
+		"dataSources": {
+			"mainService": {
+				"uri": "/Northwind/V2/Northwind/Northwind.svc/",
+				"type": "OData",
+				"settings": {
+					"localUri": "localService/metadata.xml",
+					"annotations": [
+						"annotation0"
+					]
+				}
+			},
+			"annotation0": {
+				"type": "ODataAnnotation",
+				"uri": "annotations/annotation0.xml",
+				"settings": {
+					"localUri": "annotations/annotation0.xml"
+				}
+			}
+		},
+		"offline": false,
+		"sourceTemplate": {
+			"id": "ui5template.smartTemplate",
+			"version": "1.40.12"
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": [
+			"sap_fiori_3"
+		]
+	},
+	"sap.ui5": {
+		"resources": {
+			"js": [],
+			"css": []
+		},
+		"dependencies": {
+			"minUI5Version": "1.65.6",
+			"libs": {
+				"sap.ui.core": {
+					"lazy": false
+				},
+				"sap.ui.generic.app": {
+					"lazy": false
+				},
+				"sap.suite.ui.generic.template": {
+					"lazy": false
+				}
+			},
+			"components": {}
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"uri": "i18n/i18n.properties"
+			},
+			"@i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"uri": "i18n/i18n.properties"
+			},
+			"i18n|sap.suite.ui.generic.template.ListReport|Invoices": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"uri": "i18n/ListReport/Invoices/i18n.properties"
+			},
+			"i18n|sap.suite.ui.generic.template.ObjectPage|Invoices": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"uri": "i18n/ObjectPage/Invoices/i18n.properties"
+			},
+			"": {
+				"dataSource": "mainService",
+				"preload": true,
+				"settings": {
+					"defaultBindingMode": "TwoWay",
+					"defaultCountMode": "Inline",
+					"refreshAfterChange": false,
+					"metadataUrlParams": {
+						"sap-value-list": "none"
+					}
+				}
+			}
+		},
+		"extends": {
+			"extensions": {
+				"sap.ui.viewExtensions": {
+					"sap.suite.ui.generic.template.ObjectPage.view.Details": {
+						"AfterHeaderFacet|Invoices|headerEditable::com.sap.vocabularies.UI.v1.FieldGroup::puri1": {
+							"type": "XML",
+							"className": "sap.ui.core.mvc.View",
+							"viewName": "LO.list_object.ext.view.headerExtRMK"
+						},
+						"BeforeFacet|Invoices|idCollfct": {
+							"type": "XML",
+							"className": "sap.ui.core.Fragment",
+							"fragmentName": "LO.list_object.ext.fragment.newFacet",
+							"sap.ui.generic.app": {
+								"title": "multiTable"
+							}
+						}
+					},
+					"sap.suite.ui.generic.template.ListReport.view.ListReport": {
+						"ResponsiveTableColumnsExtension|Invoices": {
+							"type": "XML",
+							"className": "sap.ui.core.Fragment",
+							"fragmentName": "LO.list_object.ext.view.colRMK"
+						},
+						"ResponsiveTableCellsExtension|Invoices": {
+							"type": "XML",
+							"className": "sap.ui.core.Fragment",
+							"fragmentName": "LO.list_object.ext.view.cellsRMK"
+						}
+					}
+				},
+				"sap.ui.controllerExtensions": {
+					"sap.suite.ui.generic.template.ListReport.view.ListReport": {
+						"controllerName": "LO.list_object.ext.controller.ListReportExt",
+						"sap.ui.generic.app": {
+							"Invoices": {
+								"EntitySet": "Invoices",
+								"Actions": {
+									"ActionInvoices1": {
+										"id": "ActionInvoices1button",
+										"text": "{@i18n>ActionInvoices1}",
+										"press": "onClickActionInvoices1"
+									}
+								}
+							}
+						}
+					},
+					"sap.suite.ui.generic.template.ListReport.view.Details": {
+						"controllername": "LO.list_object.ext.controller.ObjPageExt",
+						"sap.ui.generic.app": {
+							"Invoices": {
+								"EntitySet": "Invoices",
+								"Sections": {
+									"idOPT": {
+										"id": "idOPT",
+										"Actions": {
+											"ActionC_ProjectBillingRequestTPSections1": {
+												"id": "ActionC_ProjectBillingRequestTPSections1button",
+												"text": "Button1",
+												"press": "fnOnClickRestrictDateAction"
+											},
+											"ActionC_ProjectBillingRequestTPSections2": {
+												"id": "ActionC_ProjectBillingRequestTPSections2button",
+												"text": "Button2",
+												"press": "fnOnClickPostponeAction",
+												"requiresSelection": true
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		}
+	},
+	"sap.ui.generic.app": {
+		"_version": "1.3.0",
+		"settings": {
+			"forceGlobalRefresh": false,
+			"objectPageHeaderType": "Dynamic",
+			"showDraftToggle": false
+		},
+		"pages": {
+			"ListReport|Invoices": {
+				"entitySet": "Invoices",
+				"component": {
+					"name": "sap.suite.ui.generic.template.ListReport",
+					"list": true,
+					"settings": {
+						"smartVariantManagement": true,
+						"quickVariantSelectionX": {
+							"showCounts": true,
+							"variants": {
+								"Expensive": {
+									"key": "Expensive",
+									"annotationPath": "com.sap.vocabularies.UI.v1.SelectionVariant#Expensive",
+									"entitySet": "Invoices"
+								},
+								"Cheap": {
+									"key": "Cheap",
+									"annotationPath": "com.sap.vocabularies.UI.v1.SelectionVariant#Cheap",
+									"entitySet": "Invoices"
+								}
+							}
+						}
+					}
+				},
+				"pages": {
+					"ObjectPage|Invoices": {
+						"entitySet": "Invoices",
+						"component": {
+							"name": "sap.suite.ui.generic.template.ObjectPage",
+							"settings": {
+								"sections": {
+									"idOPT": {
+										"quickVariantSelectionX": {
+											"showCounts": true,
+											"variants": {
+												"0": {
+													"key": "EXP",
+													"annotationPath": "com.sap.vocabularies.UI.v1.SelectionVariant#EXP",
+													"entitySet": "Invoices"
+												},
+												"1": {
+													"key": "CHP",
+													"annotationPath": "com.sap.vocabularies.UI.v1.SelectionVariant#CHP",
+													"entitySet": "Invoices"
+												}
+											}
+										}
+									}
+								}
+							}
+
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,7 @@
+/* Enter your custom styles here */
+.leftBorderColor{
+	border-left: 5px solid maroon;
+}
+.leftBorderReset{
+	border-left: none;
+}

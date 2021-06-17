@@ -1,0 +1,175 @@
+{
+	"_version": "1.12.0",
+	"sap.app": {
+		"id": "eod.empOdata",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"sourceTemplate": {
+			"id": "servicecatalog.connectivityComponentForManifest",
+			"version": "0.0.0"
+		},
+		"dataSources": {
+			"ZRMK_EMPODATA_SRV": {
+				"uri": "/sap/opu/odata/sap/ZRMK_EMPODATA_SRV/",
+				"type": "OData",
+				"settings": {
+					"localUri": "localService/metadata.xml"
+				}
+			}
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		}
+	},
+	"sap.ui5": {
+		"flexEnabled": false,
+		"rootView": {
+			"viewName": "eod.empOdata.view.App",
+			"type": "XML",
+			"async": true,
+			"id": "App"
+		},
+		"dependencies": {
+			"minUI5Version": "1.65.6",
+			"libs": {
+				"sap.ui.layout": {},
+				"sap.ui.core": {},
+				"sap.m": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "eod.empOdata.i18n.i18n"
+				}
+			},
+			"": {
+				"type": "sap.ui.model.odata.v2.ODataModel",
+				"settings": {
+					"defaultOperationMode": "Server",
+					"defaultBindingMode": "OneWay",
+					"defaultCountMode": "Request"
+				},
+				"dataSource": "ZRMK_EMPODATA_SRV",
+				"preload": true
+			}
+		},
+		"resources": {
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"async": true,
+				"viewPath": "eod.empOdata.view",
+				"controlAggregation": "pages",
+				"controlId": "app",
+				"clearControlAggregation": false
+			},
+			"routes": [
+				{
+					"pattern": "",
+					"name": "View1",
+					"target": [
+						"View1"
+					]
+				},
+				{
+					"pattern": "HRPage",
+					"name": "View2",
+					"target": [
+						"View3",
+						"View4"
+					]
+				},
+				{
+					"pattern": "HRPage/{miniPath}",
+					"name": "View24",
+					"target": [
+						"View3",
+						"View4"
+					]
+				},
+				{
+					"pattern": "EPage/{empPath}",
+					"name": "View5",
+					"target": [
+						"View5"
+					]
+				}
+			],
+			"targets": {
+				"View1": {
+					"viewType": "XML",
+					"transition": "slide",
+					"viewName": "View1",
+					"viewId": "idView1",
+					"viewLevel1": 1,
+					"controlAggregation": "pages"
+				},
+				"View2": {
+					"viewType": "XML",
+					"viewName": "View2"
+				},
+				"View3": {
+					"viewType": "XML",
+					"parent": "View2",
+					"viewName": "View3",
+					"controlId": "idSplitApp",
+					"viewLevel1": 3,
+					"controlAggregation": "masterPages"
+				},
+				"View4": {
+					"viewType": "XML",
+					"parent": "View2",
+					"viewName": "View4",
+					"controlId": "idSplitApp",
+					"viewLevel1": 4,
+					"controlAggregation": "detailPages"
+				},
+				"View5": {
+					"viewType": "XML",
+					"viewName": "View5",
+					"viewLevel1": 5,
+					"controlAggregation": "pages"
+				},
+				"View6": {
+					"viewType": "XML",
+					"viewName": "View6"
+				}
+			}
+		}
+	},
+	"sap.platform.hcp": {
+		"uri": "webapp",
+		"_version": "1.1.0"
+	}
+}

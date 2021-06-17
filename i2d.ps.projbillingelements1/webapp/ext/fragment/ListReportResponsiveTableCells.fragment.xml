@@ -1,0 +1,43 @@
+<core:FragmentDefinition id="ext.fragment.ListReportResponsiveTableCells" xmlns:core="sap.ui.core" xmlns="sap.m"
+	xmlns:navpopover="sap.ui.comp.navpopover">
+	<HBox id="ext.fragment.ListReportResponsiveTableCells.VBox1"
+		visible="{ parts:[{path:'BillingPlanUsageCategory'}, {path: 'ProjectBillingRequest'}], formatter: '.formatter.fnGetDraftBillVisibility' }">
+		<navpopover:SmartLink id="ext.fragment.ListReportResponsiveTableCells.ProjBillingReqSmartLink" text="{ProjectBillingRequest}"
+			class="sapUiTinyMarginEnd" semanticObject="ProjectBillingRequest" mapFieldToSemanticObject="false" forceLinkRendering="true"/>
+		<core:Icon id="ext.fragment.ListReportResponsiveTableCells.DeleteIcon" src="sap-icon://sys-cancel" color="Negative" tooltip="Delete"
+			visible="true" press="fnOnPressIconForDelete"/>
+	</HBox>
+	<VBox id="ext.fragment.ListReportResponsiveTableCells.VBox2">
+		<items>
+			<navpopover:SmartLink id="ext.fragment.ListReportResponsiveTableCells.ProjDescSmartLink" text="{CustomerProject}"
+				semanticObject="CustomerProject" navigationTargetsObtained="fnOnNavigationTargetsObtained" mapFieldToSemanticObject="false"
+				forceLinkRendering="true"></navpopover:SmartLink>
+			<Text id="ext.fragment.ListReportResponsiveTableCells.ProjDescLabel" class="sapUiTinyMarginTop" text="{ProjectDescription}"/>
+		</items>
+	</VBox>
+	<ObjectStatus id="ext.fragment.ListReportResponsiveTableCells.BilledRev"
+		text="{ parts:[{path:'BilledRevenueAmtInDocCrcy'},{path:'DocumentCurrency'}], formatter: '.formatter.fnGetFormattedCost' }"
+		state="{ parts:[{path:'BilledRevenueAmtInDocCrcy'},{path:'PlndRevnAmt'},{path:'CappedNetAmount'}], formatter: '.formatter.fnGetNetBilledRevStatus' }"
+		active="true" press="fnOnNetBilledPressed"/>
+	<ObjectStatus id="ext.fragment.ListReportResponsiveTableCells.EstActuals"
+		text="{ parts:[{path:'NetValueAmountInDocCurrency'},{path:'DocumentCurrency'}], type: 'sap.ui.model.type.Currency', formatter: '.formatter.fnGetFormattedCost'}"
+		state="{ parts:[{path:'NetValueAmountInDocCurrency'},{path:'PlndRevnAmt'},{path:'CappedNetAmount'}], formatter: '.formatter.fnGetEstActualStatus' }"
+		active="{ parts:[{path:'NetValueAmountInDocCurrency'},{path:'PlndRevnAmt'},{path:'CappedNetAmount'}], formatter: '.formatter.fnGetEstActualActive' }"
+		press="fnOnEstActualPressed"/>
+	<VBox id="ext.fragment.ListReportResponsiveTableCells.VBox3">
+		<ObjectStatus id="ext.fragment.ListReportResponsiveTableCells.ToBeBilledRev"
+			text="{ parts:[{path:'BillableRevenueAmtInDocCrcy'},{path:'DocumentCurrency'}], formatter: '.formatter.fnGetFormattedCost' }"/>
+		<core:Icon id="ext.fragment.ListReportResponsiveTableCells.OnAccountIcon" src="sap-icon://up" color="Critical"
+			tooltip="{i18n>PREPAYMENT_DETAILS}"
+			visible="{ parts:[{path:'PlndPrepaymentAmtInProjCrcy'}], formatter: '.formatter.fnGetIsPlannedPrepayment'}"
+			press="fnOnPressIconForOnAccount"/>
+	</VBox>
+	<VBox id="ext.fragment.ListReportResponsiveTableCells.VBox4">
+		<ObjectStatus id="ext.fragment.ListReportResponsiveTableCells.DueBillingDate"
+			text="{path: 'DueBillingDate', type:'sap.ui.model.type.Date', formatOptions : { UTC: true, type: 'short'}}" active="true"
+			state="{ parts:[{path:'DueBillingDate'}], formatter: '.formatter.fnGetDueBillingDateStatus'}" press="fnOnDueBillingDatePressed"/>
+		<Button id="ext.fragment.ListReportResponsiveTableCells.OnAccountButton" text="{i18n>ONACCOUNT}" type="Accept"
+			visible="{ parts:[{path:'BillingPlanItemUsage'}, {path: 'PlndPrepaymentAmtInProjCrcy'}], formatter: '.formatter.fnGetIsOnAccount'}"
+			press="fnOnPressOnAccountButton"/>
+	</VBox>
+</core:FragmentDefinition>

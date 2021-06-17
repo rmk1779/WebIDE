@@ -1,0 +1,181 @@
+[{
+	"BillingPlan": "BillingPlan 1",
+	"BillingPlanItem": "BillingPlanItem 1",
+	"BillingPlanBillingDate": "/Date(1442225723000)/",
+	"BillingPlanRelatedBillgStatus": "BillingPlanRelatedBillgStatus 1",
+	"BillgPlnDteCorrectionRfndType": "BillgPlnDteCorrectionRfndType 1",
+	"BillingPlanAmount": 2163.11,
+	"TransactionCurrency": "TransactionCurrency 1",
+	"BillingPlanRule": "BillingPlanRule 1",
+	"PostponementReason": "PostponementReason 1",
+	"BillingPlanItemUsage": "BillingPlanItemUsage 1",
+	"BillingPlanItemDescription": "BillingPlanItemDescription 1",
+	"BillingPlanServiceStartDate": "/Date(1329560123000)/",
+	"BillingPlanServiceEndDate": "/Date(1507630523000)/",
+	"__metadata": {
+		"uri": "I_SlsDocItemBillingPlanDueDate(BillingPlan='BillingPlan%201',BillingPlanItem='BillingPlanItem%201')",
+		"type": "cds_projectbillingelement_sd.I_SlsDocItemBillingPlanDueDateType"
+	}
+}, {
+	"BillingPlan": "BillingPlan 2",
+	"BillingPlanItem": "BillingPlanItem 2",
+	"BillingPlanBillingDate": "/Date(1458900923000)/",
+	"BillingPlanRelatedBillgStatus": "BillingPlanRelatedBillgStatus 2",
+	"BillgPlnDteCorrectionRfndType": "BillgPlnDteCorrectionRfndType 2",
+	"BillingPlanAmount": 4173.51,
+	"TransactionCurrency": "TransactionCurrency 2",
+	"BillingPlanRule": "BillingPlanRule 2",
+	"PostponementReason": "PostponementReason 2",
+	"BillingPlanItemUsage": "BillingPlanItemUsage 2",
+	"BillingPlanItemDescription": "BillingPlanItemDescription 2",
+	"BillingPlanServiceStartDate": "/Date(1138097723000)/",
+	"BillingPlanServiceEndDate": "/Date(1279793723000)/",
+	"__metadata": {
+		"uri": "I_SlsDocItemBillingPlanDueDate(BillingPlan='BillingPlan%202',BillingPlanItem='BillingPlanItem%202')",
+		"type": "cds_projectbillingelement_sd.I_SlsDocItemBillingPlanDueDateType"
+	}
+}, {
+	"BillingPlan": "BillingPlan 3",
+	"BillingPlanItem": "BillingPlanItem 3",
+	"BillingPlanBillingDate": "/Date(997784123000)/",
+	"BillingPlanRelatedBillgStatus": "BillingPlanRelatedBillgStatus 3",
+	"BillgPlnDteCorrectionRfndType": "BillgPlnDteCorrectionRfndType 3",
+	"BillingPlanAmount": 1947.31,
+	"TransactionCurrency": "TransactionCurrency 3",
+	"BillingPlanRule": "BillingPlanRule 3",
+	"PostponementReason": "PostponementReason 3",
+	"BillingPlanItemUsage": "BillingPlanItemUsage 3",
+	"BillingPlanItemDescription": "BillingPlanItemDescription 3",
+	"BillingPlanServiceStartDate": "/Date(1193566523000)/",
+	"BillingPlanServiceEndDate": "/Date(1322734523000)/",
+	"__metadata": {
+		"uri": "I_SlsDocItemBillingPlanDueDate(BillingPlan='BillingPlan%203',BillingPlanItem='BillingPlanItem%203')",
+		"type": "cds_projectbillingelement_sd.I_SlsDocItemBillingPlanDueDateType"
+	}
+}, {
+	"BillingPlan": "BillingPlan 4",
+	"BillingPlanItem": "BillingPlanItem 4",
+	"BillingPlanBillingDate": "/Date(1334657723000)/",
+	"BillingPlanRelatedBillgStatus": "BillingPlanRelatedBillgStatus 4",
+	"BillgPlnDteCorrectionRfndType": "BillgPlnDteCorrectionRfndType 4",
+	"BillingPlanAmount": 672.8,
+	"TransactionCurrency": "TransactionCurrency 4",
+	"BillingPlanRule": "BillingPlanRule 4",
+	"PostponementReason": "PostponementReason 4",
+	"BillingPlanItemUsage": "BillingPlanItemUsage 4",
+	"BillingPlanItemDescription": "BillingPlanItemDescription 4",
+	"BillingPlanServiceStartDate": "/Date(960891323000)/",
+	"BillingPlanServiceEndDate": "/Date(1148724923000)/",
+	"__metadata": {
+		"uri": "I_SlsDocItemBillingPlanDueDate(BillingPlan='BillingPlan%204',BillingPlanItem='BillingPlanItem%204')",
+		"type": "cds_projectbillingelement_sd.I_SlsDocItemBillingPlanDueDateType"
+	}
+}, {
+	"BillingPlan": "BillingPlan 5",
+	"BillingPlanItem": "BillingPlanItem 5",
+	"BillingPlanBillingDate": "/Date(1437992123000)/",
+	"BillingPlanRelatedBillgStatus": "BillingPlanRelatedBillgStatus 5",
+	"BillgPlnDteCorrectionRfndType": "BillgPlnDteCorrectionRfndType 5",
+	"BillingPlanAmount": 7131.18,
+	"TransactionCurrency": "TransactionCurrency 5",
+	"BillingPlanRule": "BillingPlanRule 5",
+	"PostponementReason": "PostponementReason 5",
+	"BillingPlanItemUsage": "BillingPlanItemUsage 5",
+	"BillingPlanItemDescription": "BillingPlanItemDescription 5",
+	"BillingPlanServiceStartDate": "/Date(1381832123000)/",
+	"BillingPlanServiceEndDate": "/Date(1327313723000)/",
+	"__metadata": {
+		"uri": "I_SlsDocItemBillingPlanDueDate(BillingPlan='BillingPlan%205',BillingPlanItem='BillingPlanItem%205')",
+		"type": "cds_projectbillingelement_sd.I_SlsDocItemBillingPlanDueDateType"
+	}
+}, {
+	"BillingPlan": "BillingPlan 6",
+	"BillingPlanItem": "BillingPlanItem 6",
+	"BillingPlanBillingDate": "/Date(1092478523000)/",
+	"BillingPlanRelatedBillgStatus": "BillingPlanRelatedBillgStatus 6",
+	"BillgPlnDteCorrectionRfndType": "BillgPlnDteCorrectionRfndType 6",
+	"BillingPlanAmount": 7078.42,
+	"TransactionCurrency": "TransactionCurrency 6",
+	"BillingPlanRule": "BillingPlanRule 6",
+	"PostponementReason": "PostponementReason 6",
+	"BillingPlanItemUsage": "BillingPlanItemUsage 6",
+	"BillingPlanItemDescription": "BillingPlanItemDescription 6",
+	"BillingPlanServiceStartDate": "/Date(1228040123000)/",
+	"BillingPlanServiceEndDate": "/Date(1517998523000)/",
+	"__metadata": {
+		"uri": "I_SlsDocItemBillingPlanDueDate(BillingPlan='BillingPlan%206',BillingPlanItem='BillingPlanItem%206')",
+		"type": "cds_projectbillingelement_sd.I_SlsDocItemBillingPlanDueDateType"
+	}
+}, {
+	"BillingPlan": "BillingPlan 7",
+	"BillingPlanItem": "BillingPlanItem 7",
+	"BillingPlanBillingDate": "/Date(1473416123000)/",
+	"BillingPlanRelatedBillgStatus": "BillingPlanRelatedBillgStatus 7",
+	"BillgPlnDteCorrectionRfndType": "BillgPlnDteCorrectionRfndType 7",
+	"BillingPlanAmount": 5448.86,
+	"TransactionCurrency": "TransactionCurrency 7",
+	"BillingPlanRule": "BillingPlanRule 7",
+	"PostponementReason": "PostponementReason 7",
+	"BillingPlanItemUsage": "BillingPlanItemUsage 7",
+	"BillingPlanItemDescription": "BillingPlanItemDescription 7",
+	"BillingPlanServiceStartDate": "/Date(1528539323000)/",
+	"BillingPlanServiceEndDate": "/Date(1501582523000)/",
+	"__metadata": {
+		"uri": "I_SlsDocItemBillingPlanDueDate(BillingPlan='BillingPlan%207',BillingPlanItem='BillingPlanItem%207')",
+		"type": "cds_projectbillingelement_sd.I_SlsDocItemBillingPlanDueDateType"
+	}
+}, {
+	"BillingPlan": "BillingPlan 8",
+	"BillingPlanItem": "BillingPlanItem 8",
+	"BillingPlanBillingDate": "/Date(1573208123000)/",
+	"BillingPlanRelatedBillgStatus": "BillingPlanRelatedBillgStatus 8",
+	"BillgPlnDteCorrectionRfndType": "BillgPlnDteCorrectionRfndType 8",
+	"BillingPlanAmount": 841.55,
+	"TransactionCurrency": "TransactionCurrency 8",
+	"BillingPlanRule": "BillingPlanRule 8",
+	"PostponementReason": "PostponementReason 8",
+	"BillingPlanItemUsage": "BillingPlanItemUsage 8",
+	"BillingPlanItemDescription": "BillingPlanItemDescription 8",
+	"BillingPlanServiceStartDate": "/Date(1495188923000)/",
+	"BillingPlanServiceEndDate": "/Date(1494670523000)/",
+	"__metadata": {
+		"uri": "I_SlsDocItemBillingPlanDueDate(BillingPlan='BillingPlan%208',BillingPlanItem='BillingPlanItem%208')",
+		"type": "cds_projectbillingelement_sd.I_SlsDocItemBillingPlanDueDateType"
+	}
+}, {
+	"BillingPlan": "BillingPlan 9",
+	"BillingPlanItem": "BillingPlanItem 9",
+	"BillingPlanBillingDate": "/Date(1451384123000)/",
+	"BillingPlanRelatedBillgStatus": "BillingPlanRelatedBillgStatus 9",
+	"BillgPlnDteCorrectionRfndType": "BillgPlnDteCorrectionRfndType 9",
+	"BillingPlanAmount": 7642.48,
+	"TransactionCurrency": "TransactionCurrency 9",
+	"BillingPlanRule": "BillingPlanRule 9",
+	"PostponementReason": "PostponementReason 9",
+	"BillingPlanItemUsage": "BillingPlanItemUsage 9",
+	"BillingPlanItemDescription": "BillingPlanItemDescription 9",
+	"BillingPlanServiceStartDate": "/Date(1059128123000)/",
+	"BillingPlanServiceEndDate": "/Date(1574676923000)/",
+	"__metadata": {
+		"uri": "I_SlsDocItemBillingPlanDueDate(BillingPlan='BillingPlan%209',BillingPlanItem='BillingPlanItem%209')",
+		"type": "cds_projectbillingelement_sd.I_SlsDocItemBillingPlanDueDateType"
+	}
+}, {
+	"BillingPlan": "BillingPlan 10",
+	"BillingPlanItem": "BillingPlanItem 10",
+	"BillingPlanBillingDate": "/Date(1124273723000)/",
+	"BillingPlanRelatedBillgStatus": "BillingPlanRelatedBillgStatus 10",
+	"BillgPlnDteCorrectionRfndType": "BillgPlnDteCorrectionRfndType 10",
+	"BillingPlanAmount": 7824.97,
+	"TransactionCurrency": "TransactionCurrency 10",
+	"BillingPlanRule": "BillingPlanRule 10",
+	"PostponementReason": "PostponementReason 10",
+	"BillingPlanItemUsage": "BillingPlanItemUsage 10",
+	"BillingPlanItemDescription": "BillingPlanItemDescription 10",
+	"BillingPlanServiceStartDate": "/Date(1506939323000)/",
+	"BillingPlanServiceEndDate": "/Date(1102932923000)/",
+	"__metadata": {
+		"uri": "I_SlsDocItemBillingPlanDueDate(BillingPlan='BillingPlan%2010',BillingPlanItem='BillingPlanItem%2010')",
+		"type": "cds_projectbillingelement_sd.I_SlsDocItemBillingPlanDueDateType"
+	}
+}]

@@ -1,0 +1,41 @@
+{
+	"fileName": "id_1594382317853_123_propertyChange",
+	"fileType": "change",
+	"changeType": "propertyChange",
+	"moduleName": "",
+	"reference": "LRP.list_repormk.Component",
+	"packageName": "$TMP",
+	"content": {
+		"property": "subSectionLayout",
+		"newValue": "TitleOnTop"
+	},
+	"selector": {
+		"id": "LRP.list_repormk::sap.suite.ui.generic.template.ObjectPage.view.Details::ZRMK_EMPSet--objectPage",
+		"type": "sap.uxap.ObjectPageLayout",
+		"idIsLocal": false
+	},
+	"layer": "CUSTOMER_BASE",
+	"texts": {},
+	"namespace": "apps/LRP.list_repormk/changes/",
+	"projectId": "LRP.list_repormk",
+	"creation": "2020-07-10T12:00:28.664Z",
+	"originalLanguage": "EN",
+	"support": {
+		"generator": "Change.createInitialFileContent",
+		"service": "",
+		"user": "",
+		"sapui5Version": "1.79.0",
+		"sourceChangeFileName": "",
+		"compositeCommand": ""
+	},
+	"oDataInformation": {},
+	"dependentSelector": {},
+	"validAppVersions": {
+		"creation": "1.0.0",
+		"from": "1.0.0",
+		"to": "1.0.0"
+	},
+	"jsOnly": false,
+	"variantReference": "",
+	"appDescriptorChange": false
+}

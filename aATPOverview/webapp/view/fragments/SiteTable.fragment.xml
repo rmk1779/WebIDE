@@ -1,0 +1,20 @@
+<core:FragmentDefinition xmlns="sap.ui.table" xmlns:m="sap.m" xmlns:core="sap.ui.core">
+	<Table id="idSiteTable" selectionMode="MultiToggle" enableSelectAll="false">
+		<extension>
+			<m:OverflowToolbar>
+				<!--<m:Title id="title" text="{i18n>site}"/>-->
+				<m:ToolbarSpacer/>
+			</m:OverflowToolbar>
+		</extension>
+		<columns>
+			<Column id="idColumnItem">
+				<m:Label id="idColumnItemLabel" text="{i18n>site}"/>
+				<template>
+					<m:HBox>
+						<m:Text id="idDataItemDesc" text="{ATPOverviewModel>Site}" wrapping="false" class="sapUiSmallMarginTop"/>
+					</m:HBox>
+				</template>
+			</Column>
+		</columns>
+	</Table>
+</core:FragmentDefinition>

@@ -1,0 +1,151 @@
+[{
+	"Customer": "Customer 1",
+	"OrganizationBPName1": "OrganizationBPName1 1",
+	"OrganizationBPName2": "OrganizationBPName2 1",
+	"Country": "Country 1",
+	"CityName": "CityName 1",
+	"StreetName": "StreetName 1",
+	"CustomerName": "CustomerName 1",
+	"CustomerAccountGroup": "CustomerAccountGroup 1",
+	"AuthorizationGroup": "AuthorizationGroup 1",
+	"IsBusinessPurposeCompleted": "IsBusinessPurposeCompleted 1",
+	"__metadata": {
+		"uri": "I_Customer_VH('Customer%201')",
+		"type": "cds_projectbillingelement_sd.I_Customer_VHType"
+	}
+}, {
+	"Customer": "Customer 2",
+	"OrganizationBPName1": "OrganizationBPName1 2",
+	"OrganizationBPName2": "OrganizationBPName2 2",
+	"Country": "Country 2",
+	"CityName": "CityName 2",
+	"StreetName": "StreetName 2",
+	"CustomerName": "CustomerName 2",
+	"CustomerAccountGroup": "CustomerAccountGroup 2",
+	"AuthorizationGroup": "AuthorizationGroup 2",
+	"IsBusinessPurposeCompleted": "IsBusinessPurposeCompleted 2",
+	"__metadata": {
+		"uri": "I_Customer_VH('Customer%202')",
+		"type": "cds_projectbillingelement_sd.I_Customer_VHType"
+	}
+}, {
+	"Customer": "Customer 3",
+	"OrganizationBPName1": "OrganizationBPName1 3",
+	"OrganizationBPName2": "OrganizationBPName2 3",
+	"Country": "Country 3",
+	"CityName": "CityName 3",
+	"StreetName": "StreetName 3",
+	"CustomerName": "CustomerName 3",
+	"CustomerAccountGroup": "CustomerAccountGroup 3",
+	"AuthorizationGroup": "AuthorizationGroup 3",
+	"IsBusinessPurposeCompleted": "IsBusinessPurposeCompleted 3",
+	"__metadata": {
+		"uri": "I_Customer_VH('Customer%203')",
+		"type": "cds_projectbillingelement_sd.I_Customer_VHType"
+	}
+}, {
+	"Customer": "Customer 4",
+	"OrganizationBPName1": "OrganizationBPName1 4",
+	"OrganizationBPName2": "OrganizationBPName2 4",
+	"Country": "Country 4",
+	"CityName": "CityName 4",
+	"StreetName": "StreetName 4",
+	"CustomerName": "CustomerName 4",
+	"CustomerAccountGroup": "CustomerAccountGroup 4",
+	"AuthorizationGroup": "AuthorizationGroup 4",
+	"IsBusinessPurposeCompleted": "IsBusinessPurposeCompleted 4",
+	"__metadata": {
+		"uri": "I_Customer_VH('Customer%204')",
+		"type": "cds_projectbillingelement_sd.I_Customer_VHType"
+	}
+}, {
+	"Customer": "Customer 5",
+	"OrganizationBPName1": "OrganizationBPName1 5",
+	"OrganizationBPName2": "OrganizationBPName2 5",
+	"Country": "Country 5",
+	"CityName": "CityName 5",
+	"StreetName": "StreetName 5",
+	"CustomerName": "CustomerName 5",
+	"CustomerAccountGroup": "CustomerAccountGroup 5",
+	"AuthorizationGroup": "AuthorizationGroup 5",
+	"IsBusinessPurposeCompleted": "IsBusinessPurposeCompleted 5",
+	"__metadata": {
+		"uri": "I_Customer_VH('Customer%205')",
+		"type": "cds_projectbillingelement_sd.I_Customer_VHType"
+	}
+}, {
+	"Customer": "Customer 6",
+	"OrganizationBPName1": "OrganizationBPName1 6",
+	"OrganizationBPName2": "OrganizationBPName2 6",
+	"Country": "Country 6",
+	"CityName": "CityName 6",
+	"StreetName": "StreetName 6",
+	"CustomerName": "CustomerName 6",
+	"CustomerAccountGroup": "CustomerAccountGroup 6",
+	"AuthorizationGroup": "AuthorizationGroup 6",
+	"IsBusinessPurposeCompleted": "IsBusinessPurposeCompleted 6",
+	"__metadata": {
+		"uri": "I_Customer_VH('Customer%206')",
+		"type": "cds_projectbillingelement_sd.I_Customer_VHType"
+	}
+}, {
+	"Customer": "Customer 7",
+	"OrganizationBPName1": "OrganizationBPName1 7",
+	"OrganizationBPName2": "OrganizationBPName2 7",
+	"Country": "Country 7",
+	"CityName": "CityName 7",
+	"StreetName": "StreetName 7",
+	"CustomerName": "CustomerName 7",
+	"CustomerAccountGroup": "CustomerAccountGroup 7",
+	"AuthorizationGroup": "AuthorizationGroup 7",
+	"IsBusinessPurposeCompleted": "IsBusinessPurposeCompleted 7",
+	"__metadata": {
+		"uri": "I_Customer_VH('Customer%207')",
+		"type": "cds_projectbillingelement_sd.I_Customer_VHType"
+	}
+}, {
+	"Customer": "Customer 8",
+	"OrganizationBPName1": "OrganizationBPName1 8",
+	"OrganizationBPName2": "OrganizationBPName2 8",
+	"Country": "Country 8",
+	"CityName": "CityName 8",
+	"StreetName": "StreetName 8",
+	"CustomerName": "CustomerName 8",
+	"CustomerAccountGroup": "CustomerAccountGroup 8",
+	"AuthorizationGroup": "AuthorizationGroup 8",
+	"IsBusinessPurposeCompleted": "IsBusinessPurposeCompleted 8",
+	"__metadata": {
+		"uri": "I_Customer_VH('Customer%208')",
+		"type": "cds_projectbillingelement_sd.I_Customer_VHType"
+	}
+}, {
+	"Customer": "Customer 9",
+	"OrganizationBPName1": "OrganizationBPName1 9",
+	"OrganizationBPName2": "OrganizationBPName2 9",
+	"Country": "Country 9",
+	"CityName": "CityName 9",
+	"StreetName": "StreetName 9",
+	"CustomerName": "CustomerName 9",
+	"CustomerAccountGroup": "CustomerAccountGroup 9",
+	"AuthorizationGroup": "AuthorizationGroup 9",
+	"IsBusinessPurposeCompleted": "IsBusinessPurposeCompleted 9",
+	"__metadata": {
+		"uri": "I_Customer_VH('Customer%209')",
+		"type": "cds_projectbillingelement_sd.I_Customer_VHType"
+	}
+}, {
+	"Customer": "Customer 10",
+	"OrganizationBPName1": "OrganizationBPName1 10",
+	"OrganizationBPName2": "OrganizationBPName2 10",
+	"Country": "Country 10",
+	"CityName": "CityName 10",
+	"StreetName": "StreetName 10",
+	"CustomerName": "CustomerName 10",
+	"CustomerAccountGroup": "CustomerAccountGroup 10",
+	"AuthorizationGroup": "AuthorizationGroup 10",
+	"IsBusinessPurposeCompleted": "IsBusinessPurposeCompleted 10",
+	"__metadata": {
+		"uri": "I_Customer_VH('Customer%2010')",
+		"type": "cds_projectbillingelement_sd.I_Customer_VHType"
+	}
+}]

@@ -1,0 +1,47 @@
+<mvc:View controllerName="tvs.TableViewSetting.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<Table id="idProductsTable" items="{/userDetails}">
+							<headerToolbar>
+								<OverflowToolbar>
+									<Title text="Products" level="H2"/>
+									<ToolbarSpacer/>
+									<Button tooltip="View Sort Settings" icon="sap-icon://sort" press="handleSortButtonPressed"/>
+									<Button tooltip="View Filter Settings" icon="sap-icon://filter" press="handleFilterButtonPressed"/>
+									<Button tooltip="View Group Settings" icon="sap-icon://group-2" press="handleGroupButtonPressed"/>
+									<ToggleButton icon="sap-icon://menu" tooltip="Enable / Disable Custom Context Menu" press="onToggleContextMenu"/>
+								</OverflowToolbar>
+							</headerToolbar>
+							<infoToolbar>
+								<OverflowToolbar id="vsdFilterBar" visible="false">
+									<Text id="vsdFilterLabel"/>
+								</OverflowToolbar>
+							</infoToolbar>
+							<columns>
+								<Column width="12em" mergeDuplicates="true" demandPopin="true" minScreenWidth="Tablet" sortIndicator="Ascending"><Text text="Name"/></Column>
+								<Column minScreenWidth="Tablet" demandPopin="true"><Text text="Address"/></Column>
+								<Column minScreenWidth="Tablet" demandPopin="true" hAlign="End"><Text text="Age"/></Column>
+								<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center"><Text text="Weight"/></Column>
+								<Column hAlign="End"><Text text="Salary"/></Column>
+							</columns>
+							<items>
+								<ColumnListItem>
+									<cells>
+										<Text text="{name}"/>
+										<Text text="{address}"/>
+										<Text text="{age}"/>
+										<ObjectNumber number="{weight}"/>
+										<ObjectNumber number="{salary}"/>
+									</cells>
+								</ColumnListItem>
+							</items>
+						</Table>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

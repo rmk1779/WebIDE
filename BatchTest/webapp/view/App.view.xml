@@ -1,0 +1,20 @@
+<mvc:View controllerName="BT.BatchTest.controller.App" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:f="sap.f">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<l:FixFlex>
+						
+						<l:flexContent>
+						<f:FlexibleColumnLayout id="flexibleColumnLayout" stateChange=".onStateChanged" layout="{FlexibleColumnUIState>/layout}"
+							backgroundDesign="Translucent"></f:FlexibleColumnLayout>
+							</l:flexContent>
+							
+						</l:FixFlex>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

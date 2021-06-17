@@ -1,0 +1,26 @@
+<mvc:View controllerName="com.samsung.aATPOverview.controller.Overview" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:f="sap.f"
+	xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc">
+	<f:DynamicPage id="dynamicPageMoveAllocationFromId" toggleHeaderOnTitleClick="false" showFooter="true" fitContent="true"
+		class="sapUiSizeCompact">
+		<f:header>
+			<f:DynamicPageHeader pinnable="false">
+				<f:content>
+					<core:Fragment type="XML" fragmentName="com.samsung.aATPOverview.view.fragments.OverviewFilterBar"/>
+				</f:content>
+			</f:DynamicPageHeader>
+		</f:header>
+		<!-- DynamicPage Content -->
+		<f:content>
+			<l:BlockLayout background="Dashboard">
+				<l:BlockLayoutRow>
+					<l:BlockLayoutCell id="idLineChartCell" title="{i18n>moveAllocationHistory}" width="2" titleAlignment="Left">
+						<!--<core:Fragment type="XML" fragmentName="com.samsung.aATPOverview.view.fragments.MoveAllocationHistory"/>-->
+					</l:BlockLayoutCell>
+					<l:BlockLayoutCell id="idAllocationbConsumptionCell" title="{i18n>allocationVsConsumption}" width="2" titleAlignment="Left">
+						<!--<core:Fragment type="XML" fragmentName="com.samsung.aATPOverview.view.fragments.MoveAllocationConsumption"/>-->
+					</l:BlockLayoutCell>
+				</l:BlockLayoutRow>
+			</l:BlockLayout>
+		</f:content>
+	</f:DynamicPage>
+</mvc:View>

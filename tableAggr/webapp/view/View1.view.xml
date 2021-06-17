@@ -1,0 +1,110 @@
+<mvc:View controllerName="ta.tableAggr.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:ut="sap.ui.table">
+
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<Table id="idProductsTable" inset="false" items="{ path: '/orderDetails', factory: '.createContent'}" >
+							<headerToolbar>
+								<OverflowToolbar>
+									<content>
+										<Title text="Products" level="H2"/>
+										<ToolbarSpacer/>
+										<!--<ComboBox id="idPopinLayout" placeholder="Popin layout options" change="onPopinLayoutChanged">-->
+										<!--	<items>-->
+										<!--		<core:Item text="Block" key="Block"/>-->
+										<!--		<core:Item text="Grid Large" key="GridLarge"/>-->
+										<!--		<core:Item text="Grid Small" key="GridSmall"/>-->
+										<!--	</items>-->
+										<!--</ComboBox>-->
+										<!--<Label text="Sticky options:"/>-->
+										<!--<CheckBox text="ColumnHeaders" select="onSelect"/>-->
+										<!--<CheckBox text="HeaderToolbar" select="onSelect"/>-->
+										<!--<CheckBox text="InfoToolbar" select="onSelect"/>-->
+										<!--<ToggleButton id="toggleInfoToolbar" text="Hide/Show InfoToolbar" press="onToggleInfoToolbar"/>-->
+										<Button icon="sap-icon://download" press="downPDF"></Button>
+									</content>
+								</OverflowToolbar>
+							</headerToolbar>
+							<!--<infoToolbar>-->
+							<!--	<OverflowToolbar>-->
+							<!--		<Label text="Wide range of available products"/>-->
+							<!--	</OverflowToolbar>-->
+							<!--</infoToolbar>-->
+							<columns>
+								<Column width="12em">
+									<Text text="OrderId"/>
+								</Column>
+								<Column minScreenWidth="Tablet" demandPopin="true">
+									<Text text="ProductId"/>
+								</Column>
+								<Column minScreenWidth="Desktop" demandPopin="true" hAlign="End">
+									<Text text="ProductName"/>
+								</Column>
+								<Column minScreenWidth="Desktop" demandPopin="true" hAlign="Center">
+									<Text text="UnitPrice"/>
+								</Column>
+								<Column hAlign="End">
+									<Text text="Quantity"/>
+								</Column>
+							</columns>
+							<!--<items>-->
+							<!--	<ColumnListItem>-->
+							<!--		<cells>-->
+										
+							<!--		</cells>-->
+							<!--	</ColumnListItem>-->
+							<!--</items>-->
+						</Table>
+						
+						
+						<Table id="idProductsTable2" inset="false">
+						
+							<columns>
+								<Column width="12em">
+									<Text text="OrderId"/>
+								</Column>
+								<Column minScreenWidth="Tablet" demandPopin="true">
+									<Text text="ProductId"/>
+								</Column>
+								<Column minScreenWidth="Desktop" demandPopin="true" hAlign="End">
+									<Text text="ProductName"/>
+								</Column>
+								<Column minScreenWidth="Desktop" demandPopin="true" hAlign="Center">
+									<Text text="UnitPrice"/>
+								</Column>
+								<Column hAlign="End">
+									<Text text="Quantity"/>
+								</Column>
+							</columns>
+							<!--<items>-->
+							<!--	<ColumnListItem>-->
+							<!--		<cells>-->
+										
+							<!--		</cells>-->
+							<!--	</ColumnListItem>-->
+							<!--</items>-->
+						</Table>
+						
+						<ut:Table id="idGridTable">
+							
+							
+						</ut:Table>
+						
+						<List id="list" items="{mckdt>/Meetups}" noDataText="{i18n>noDataText}">
+					<items>
+						<ObjectListItem
+							
+							title="{mckdt>Title}">
+							<attributes>
+								<ObjectAttribute text="{mckdt>Description}"/>
+							</attributes>
+						</ObjectListItem>
+						</items>
+				</List>
+						
+					</content>
+				</Page>
+			</pages>
+		</App>
+</mvc:View>

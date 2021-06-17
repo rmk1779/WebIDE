@@ -1,0 +1,171 @@
+[{
+	"Customer": "Customer 1",
+	"FullName": "FullName 1",
+	"AuthorizationGroup": "AuthorizationGroup 1",
+	"CustomerAccountGroup": "CustomerAccountGroup 1",
+	"StreetName": "StreetName 1",
+	"HouseNumber": "HouseNumber 1",
+	"CityName": "CityName 1",
+	"PostalCode": "PostalCode 1",
+	"Country": "Country 1",
+	"PhoneNumber": "PhoneNumber 1",
+	"MobilePhoneNumber": "MobilePhoneNumber 1",
+	"EmailAddress": "EmailAddress 1",
+	"__metadata": {
+		"uri": "C_DspPaytCardCustomerCard('Customer%201')",
+		"type": "cds_projectbillingelement_sd.C_DspPaytCardCustomerCardType"
+	}
+}, {
+	"Customer": "Customer 2",
+	"FullName": "FullName 2",
+	"AuthorizationGroup": "AuthorizationGroup 2",
+	"CustomerAccountGroup": "CustomerAccountGroup 2",
+	"StreetName": "StreetName 2",
+	"HouseNumber": "HouseNumber 2",
+	"CityName": "CityName 2",
+	"PostalCode": "PostalCode 2",
+	"Country": "Country 2",
+	"PhoneNumber": "PhoneNumber 2",
+	"MobilePhoneNumber": "MobilePhoneNumber 2",
+	"EmailAddress": "EmailAddress 2",
+	"__metadata": {
+		"uri": "C_DspPaytCardCustomerCard('Customer%202')",
+		"type": "cds_projectbillingelement_sd.C_DspPaytCardCustomerCardType"
+	}
+}, {
+	"Customer": "Customer 3",
+	"FullName": "FullName 3",
+	"AuthorizationGroup": "AuthorizationGroup 3",
+	"CustomerAccountGroup": "CustomerAccountGroup 3",
+	"StreetName": "StreetName 3",
+	"HouseNumber": "HouseNumber 3",
+	"CityName": "CityName 3",
+	"PostalCode": "PostalCode 3",
+	"Country": "Country 3",
+	"PhoneNumber": "PhoneNumber 3",
+	"MobilePhoneNumber": "MobilePhoneNumber 3",
+	"EmailAddress": "EmailAddress 3",
+	"__metadata": {
+		"uri": "C_DspPaytCardCustomerCard('Customer%203')",
+		"type": "cds_projectbillingelement_sd.C_DspPaytCardCustomerCardType"
+	}
+}, {
+	"Customer": "Customer 4",
+	"FullName": "FullName 4",
+	"AuthorizationGroup": "AuthorizationGroup 4",
+	"CustomerAccountGroup": "CustomerAccountGroup 4",
+	"StreetName": "StreetName 4",
+	"HouseNumber": "HouseNumber 4",
+	"CityName": "CityName 4",
+	"PostalCode": "PostalCode 4",
+	"Country": "Country 4",
+	"PhoneNumber": "PhoneNumber 4",
+	"MobilePhoneNumber": "MobilePhoneNumber 4",
+	"EmailAddress": "EmailAddress 4",
+	"__metadata": {
+		"uri": "C_DspPaytCardCustomerCard('Customer%204')",
+		"type": "cds_projectbillingelement_sd.C_DspPaytCardCustomerCardType"
+	}
+}, {
+	"Customer": "Customer 5",
+	"FullName": "FullName 5",
+	"AuthorizationGroup": "AuthorizationGroup 5",
+	"CustomerAccountGroup": "CustomerAccountGroup 5",
+	"StreetName": "StreetName 5",
+	"HouseNumber": "HouseNumber 5",
+	"CityName": "CityName 5",
+	"PostalCode": "PostalCode 5",
+	"Country": "Country 5",
+	"PhoneNumber": "PhoneNumber 5",
+	"MobilePhoneNumber": "MobilePhoneNumber 5",
+	"EmailAddress": "EmailAddress 5",
+	"__metadata": {
+		"uri": "C_DspPaytCardCustomerCard('Customer%205')",
+		"type": "cds_projectbillingelement_sd.C_DspPaytCardCustomerCardType"
+	}
+}, {
+	"Customer": "Customer 6",
+	"FullName": "FullName 6",
+	"AuthorizationGroup": "AuthorizationGroup 6",
+	"CustomerAccountGroup": "CustomerAccountGroup 6",
+	"StreetName": "StreetName 6",
+	"HouseNumber": "HouseNumber 6",
+	"CityName": "CityName 6",
+	"PostalCode": "PostalCode 6",
+	"Country": "Country 6",
+	"PhoneNumber": "PhoneNumber 6",
+	"MobilePhoneNumber": "MobilePhoneNumber 6",
+	"EmailAddress": "EmailAddress 6",
+	"__metadata": {
+		"uri": "C_DspPaytCardCustomerCard('Customer%206')",
+		"type": "cds_projectbillingelement_sd.C_DspPaytCardCustomerCardType"
+	}
+}, {
+	"Customer": "Customer 7",
+	"FullName": "FullName 7",
+	"AuthorizationGroup": "AuthorizationGroup 7",
+	"CustomerAccountGroup": "CustomerAccountGroup 7",
+	"StreetName": "StreetName 7",
+	"HouseNumber": "HouseNumber 7",
+	"CityName": "CityName 7",
+	"PostalCode": "PostalCode 7",
+	"Country": "Country 7",
+	"PhoneNumber": "PhoneNumber 7",
+	"MobilePhoneNumber": "MobilePhoneNumber 7",
+	"EmailAddress": "EmailAddress 7",
+	"__metadata": {
+		"uri": "C_DspPaytCardCustomerCard('Customer%207')",
+		"type": "cds_projectbillingelement_sd.C_DspPaytCardCustomerCardType"
+	}
+}, {
+	"Customer": "Customer 8",
+	"FullName": "FullName 8",
+	"AuthorizationGroup": "AuthorizationGroup 8",
+	"CustomerAccountGroup": "CustomerAccountGroup 8",
+	"StreetName": "StreetName 8",
+	"HouseNumber": "HouseNumber 8",
+	"CityName": "CityName 8",
+	"PostalCode": "PostalCode 8",
+	"Country": "Country 8",
+	"PhoneNumber": "PhoneNumber 8",
+	"MobilePhoneNumber": "MobilePhoneNumber 8",
+	"EmailAddress": "EmailAddress 8",
+	"__metadata": {
+		"uri": "C_DspPaytCardCustomerCard('Customer%208')",
+		"type": "cds_projectbillingelement_sd.C_DspPaytCardCustomerCardType"
+	}
+}, {
+	"Customer": "Customer 9",
+	"FullName": "FullName 9",
+	"AuthorizationGroup": "AuthorizationGroup 9",
+	"CustomerAccountGroup": "CustomerAccountGroup 9",
+	"StreetName": "StreetName 9",
+	"HouseNumber": "HouseNumber 9",
+	"CityName": "CityName 9",
+	"PostalCode": "PostalCode 9",
+	"Country": "Country 9",
+	"PhoneNumber": "PhoneNumber 9",
+	"MobilePhoneNumber": "MobilePhoneNumber 9",
+	"EmailAddress": "EmailAddress 9",
+	"__metadata": {
+		"uri": "C_DspPaytCardCustomerCard('Customer%209')",
+		"type": "cds_projectbillingelement_sd.C_DspPaytCardCustomerCardType"
+	}
+}, {
+	"Customer": "Customer 10",
+	"FullName": "FullName 10",
+	"AuthorizationGroup": "AuthorizationGroup 10",
+	"CustomerAccountGroup": "CustomerAccountGroup 10",
+	"StreetName": "StreetName 10",
+	"HouseNumber": "HouseNumber 10",
+	"CityName": "CityName 10",
+	"PostalCode": "PostalCode 10",
+	"Country": "Country 10",
+	"PhoneNumber": "PhoneNumber 10",
+	"MobilePhoneNumber": "MobilePhoneNumber 10",
+	"EmailAddress": "EmailAddress 10",
+	"__metadata": {
+		"uri": "C_DspPaytCardCustomerCard('Customer%2010')",
+		"type": "cds_projectbillingelement_sd.C_DspPaytCardCustomerCardType"
+	}
+}]

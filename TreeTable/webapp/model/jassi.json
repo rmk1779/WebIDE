@@ -1,0 +1,47 @@
+{
+	"category":{
+		"xyz":[
+			{"name": "Casual Red Dress", "categories": [
+              {"name": "Red Pant", "amount": 32.99, "currency": "USD", "size": "M"},
+              {"name": "Skinny Jeans", "amount": 44.99, "currency": "USD", "size": "S"},
+              {"name": "Black Jeans", "amount": 99.99, "currency": "USD", "size": "XS"},
+              {"name": "Relaxed Fit Jeans", "amount": 56.99, "currency": "USD", "size": "L"}
+            ],
+            "amount": 16.99, "cat": [
+              {"name": "Necklace", "amount": 16.99, "currency": "USD"},
+              {"name": "Bracelet", "amount": 47.99, "currency": "USD"},
+              {"name": "Gold Ring", "amount": 399.99, "currency": "USD"}
+            ],
+            "currency": "EUR", "size": "S"},
+            
+              {"name": "Short Black Dress", "categories": [
+              {"name": "Red Pant", "amount": 32.99, "currency": "USD", "size": "M"},
+              {"name": "Skinny Jeans", "amount": 44.99, "currency": "USD", "size": "S"},
+              {"name": "Black Jeans", "amount": 99.99, "currency": "USD", "size": "XS"},
+              {"name": "Relaxed Fit Jeans", "amount": 56.99, "currency": "USD", "size": "L"}
+            ],
+            "amount": 47.99, "cat": [
+              {"name": "Necklace", "amount": 16.99, "currency": "USD"},
+              {"name": "Bracelet", "amount": 47.99, "currency": "USD"},
+              {"name": "Gold Ring", "amount": 399.99, "currency": "USD"}
+            ],
+            "currency": "EUR", "size": "M"},
+            
+            
+              {"name": "Long Blue Dinner Dress", "categories": [
+              {"name": "Red Pant", "cat": [
+              {"name": "Necklace", "amount": 16.99, "currency": "USD"},
+              {"name": "Bracelet", "amount": 47.99, "currency": "USD"},
+              {"name": "Gold Ring", "amount": 399.99, "currency": "USD"}
+            ],
+            "amount": 32.99, "currency": "USD", "size": "M"},
+              {"name": "Skinny Jeans", "amount": 44.99, "currency": "USD", "size": "S"},
+              {"name": "Black Jeans", "amount": 99.99, "currency": "USD", "size": "XS"},
+              {"name": "Relaxed Fit Jeans", "amount": 56.99, "currency": "USD", "size": "L"}
+            ],
+            "amount": 103.99, 
+            "currency": "USD", "size": "L"}
+			]
+		
+	}
+}

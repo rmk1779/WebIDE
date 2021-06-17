@@ -1,0 +1,21 @@
+<edmx:Edmx xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+	xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData" Version="1.0">
+	<edmx:DataServices m:DataServiceVersion="2.0">
+		<Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" Namespace="ZRMK_EMPS_SRV" xml:lang="en" sap:schema-version="1">
+			<EntityType Name="ZRMK_EMP" sap:content-version="1">
+				<Key><PropertyRef Name="Id"/></Key><Property Name="Id" Type="Edm.String" Nullable="false" MaxLength="8" sap:label="id data element" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="Name" Type="Edm.String" Nullable="false" MaxLength="15" sap:label="name data ele" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Email" Type="Edm.String" Nullable="false" MaxLength="20" sap:label="email data ele" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Password" Type="Edm.String" Nullable="false" MaxLength="16" sap:label="password data ele" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Age" Type="Edm.String" Nullable="false" MaxLength="2" sap:label="age data ele" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="Dob" Type="Edm.DateTime" Precision="7" sap:label="dob data ele" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="Doj" Type="Edm.DateTime" Precision="7" sap:label="doj data ele" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="Salary" Type="Edm.String" Nullable="false" MaxLength="7" sap:label="salary data ele" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Caddress" Type="Edm.String" Nullable="false" MaxLength="60" sap:label="caddress data ele" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Paddress" Type="Edm.String" Nullable="false" MaxLength="60" sap:label="paddress data ele" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityContainer Name="ZRMK_EMPS_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx"><EntitySet Name="ZRMK_EMPSet" EntityType="ZRMK_EMPS_SRV.ZRMK_EMP" sap:creatable="false" sap:updatable="false" sap:deletable="false"
+				sap:pageable="false" sap:content-version="1"/></EntityContainer><atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="self" href="http://124.123.42.25:7200/sap/opu/odata/sap/ZRMK_EMPS_SRV/$metadata"/><atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="latest-version"
+				href="http://124.123.42.25:7200/sap/opu/odata/sap/ZRMK_EMPS_SRV/$metadata"/></Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

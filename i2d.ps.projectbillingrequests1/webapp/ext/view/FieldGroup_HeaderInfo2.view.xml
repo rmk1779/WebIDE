@@ -1,0 +1,11 @@
+<core:View xmlns:commons="sap.ui.commons" xmlns:core="sap.ui.core" xmlns:form="sap.ui.layout.form" xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form" xmlns:sfi="sap.ui.comp.smartfield" xmlns:sfo="sap.ui.comp.smartform" xmlns:table="sap.ui.table"
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1" xmlns:uxap="sap.uxap" xmlns="sap.m"
+	controllerName="i2d.ps.projectbillingrequests1.ext.controller.headerExt">
+	<VBox id="headerInfoGroup2VBoxID">
+		<ObjectStatus id="ext.view.FieldGroupHeaderInfo2.WBSElement" title="{i18n>BILLING_ELEMENT}"
+			text="{parts:[{path:'WBSElementExternalID'}], formatter: '.formatter.fnGetHeaderFieldsText'}" class="sapUiTinyMarginBottom"/>
+		<ObjectStatus id="ext.view.FieldGroupHeaderInfo2.BillingMethod" title="{i18n>BILLING_METHOD}"
+			text="{parts:[{path:'BillingPlanUsageCategoryName'}], formatter: '.formatter.fnGetBillingMethod'}" class="sapUiTinyMarginBottom"/>
+	</VBox>
+</core:View>

@@ -1,0 +1,44 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form">
+	<Dialog id="helloDialog2" title="Update your Details">
+		<content>
+			<f:SimpleForm>
+				<f:content>
+					<!--<Label text="Name" required="true"/>-->
+					<!--<Input id="fName1" class="sapUiTinyMarginTop" placeholder="Enter Employee Name" value="" width="100%" required="true"/>-->
+					<Label text="Eployee id" required="true"/>
+					<Input id="eId1" class="sapUiTinyMarginTop" placeholder="Employee ID" value="{empId}" width="100%" required="true" editable="false"/>
+					<!--<Label text="Email" required="true"/>-->
+					<!--<Input id="fEmail1" class="sapUiTinyMarginTop" placeholder="Enter Employee Email" value="" width="100%" required="true"/>-->
+					<Label text="Mobile Number" required="true"/>
+					<Input maxLength="10" id="eMbl"  class="sapUiTinyMarginTop" placeholder="Enter Mobile Number" value="" width="100%" required="true"/>
+					<!--<Label text="Date of Birth" labelFor="DP3" required="true"/>-->
+					<!--<DatePicker id="DP3" valueFormat="medium" change="handleChange" class="sapUiSmallMarginBottom"/>-->
+					<!--<Label text="Gender" required="true"/>-->
+					<!--<RadioButtonGroup id="rdGrp1" columns="5" >-->
+					<!--	<buttons>-->
+					<!--		<RadioButton id="RB1" text="Male"/>-->
+					<!--		<RadioButton id="RB2" text="Female"/>-->
+					<!--	</buttons>-->
+					<!--</RadioButtonGroup>-->
+					<!--<Label text="Marital status" required="true"/>-->
+					<!--<RadioButtonGroup id="rdGrp2" columns="5" >-->
+					<!--	<buttons>-->
+					<!--		<RadioButton id="RB3" text="Single"/>-->
+					<!--		<RadioButton id="RB4" text="Married"/>-->
+					<!--	</buttons>-->
+					<!--</RadioButtonGroup>-->
+					<Label text="Current Address" required="true"/>
+					<TextArea id="eAdr" value="" showExceededText="true" maxLength="40" width="100%"/>
+					<!--<Label text="Password" required="true"/>-->
+					<!--<Input id="fPwd" class="sapUiTinyMarginTop" placeholder="Enter Employee Mobile" value="" width="100%" required="true"/>-->
+					<!--<Label text="Salary" required="true"/>-->
+					<!--<Input id="fSalary" class="sapUiTinyMarginTop" placeholder="Enter Employee Salary" value="" width="100%" required="true"/>-->
+				</f:content>
+			</f:SimpleForm>
+		</content>
+		<buttons>
+			<Button icon="sap-icon://cancel" text="Cancel" press="onCloseDialog"/>
+			<Button icon="sap-icon://save" text="Request" press=".onRequest"/>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

@@ -1,0 +1,35 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="emp.EmpReg.controller.View1"
+	xmlns:f="sap.ui.layout.form" xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="Employee Login">
+				<content>
+					<VBox class="sapUiLargeMarginTop">
+					<f:SimpleForm editable="true">
+						<!--<f:title>-->
+						<!--	<core:Title text="Employee Login" />-->
+						<!--</f:title>-->
+						<f:content>
+							<Label text="UserID"/>
+							<Input id="userId" class="sapUiTinyMarginTop" value="" width="30%" maxLength="6" placeholder="Enter User ID"/>
+							<!--<Label text="Email"/>-->
+							<!--<Input   id="emailId" class="sapUiTinyMarginTop" value="" width="50%"/>-->
+							<Label text="Password"/>
+							<Input id="pwId" class="sapUiSmallMarginTop" value="" width="30%" type="Password" maxLength="10" placeholder="Enter Password"/>
+							<Label/>
+							<HBox alignContent="Center">
+						<Button text="Login" width="100%" class="sapUiLargeMarginBegin sapUiLargeMarginBottom sapUiSmallMarginTop" id="logId"  press="onLogin"/>
+						</HBox>
+						</f:content>
+					</f:SimpleForm>
+					</VBox>
+					<!--<Toolbar>-->
+					<!--	<content>-->
+					<!--		<Button icon="sap-icon://visits" press="onLogin" text="Login" id="logId" width="30%" class="sapUiLargeMargin"></Button>-->
+					<!--	</content>-->
+					<!--</Toolbar>-->
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

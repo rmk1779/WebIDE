@@ -1,0 +1,89 @@
+<mvc:View controllerName="vhd.ValueHelpDialog.controller.App" xmlns:layout="sap.ui.layout" xmlns:form="sap.ui.layout.form"
+	xmlns:mvc="sap.ui.core.mvc" xmlns:f="sap.f" displayBlock="true" xmlns="sap.m" height="100%">
+	<f:DynamicPage id="idSellerMoveFrom" toggleHeaderOnTitleClick="false" headerExpanded="true" showFooter="true">
+		<f:title>
+			<f:DynamicPageTitle>
+				<f:heading>
+					<Title text="Value Help Dialog"/>
+				</f:heading>
+				<f:navigationActions>
+					<Button icon="sap-icon://full-screen" type="Transparent" press="setFullScreen"/>
+				</f:navigationActions>
+			</f:DynamicPageTitle>
+		</f:title>
+		<f:header>
+			<f:DynamicPageHeader pinnable="true">
+				<f:content>
+					<layout:Grid defaultSpan="L12 M12 S12">
+						<layout:content>
+							<form:SimpleForm editable="true" layout="ResponsiveGridLayout" labelSpanM="12" labelSpanL="12" labelSpanXL="12" emptySpanL="6"
+								emptySpanM="6">
+								<form:content>
+									<Label text="Products" labelFor="multiInput"/>
+									<MultiInput id="multiInput" valueHelpOnly="true" valueHelpRequest=".onValueHelpRequested"></MultiInput>
+								</form:content>
+							</form:SimpleForm>
+							<Input id="idMaterialInput" valueHelpOnly="false" showSuggestion="true" showValueHelp="true" valueHelpRequest="f4ValueRequest"
+								required="true" change="onChangeMatSuggestion" enabled="true"
+								suggestionRows="{/productList}" suggestionItemSelected="onSelectMaterialSuggestion">
+								<suggestionColumns>
+									<Column hAlign="Center" popinDisplay="Inline" demandPopin="true">
+										<Label text="item"/>
+									</Column>
+									<Column hAlign="Center" popinDisplay="Inline" demandPopin="true">
+										<Label text="description"/>
+									</Column>
+								</suggestionColumns>
+								<suggestionRows>
+									<ColumnListItem>
+										<cells>
+											<Label text="{ProductId}"/>
+											<Label text="{ProductName}"/>
+										</cells>
+									</ColumnListItem>
+								</suggestionRows>
+								<!--<customData>-->
+								<!--	<core:CustomData key="f4name" value="materialF4"></core:CustomData>-->
+								<!--</customData>-->
+							</Input>
+						</layout:content>
+					</layout:Grid>
+				</f:content>
+			</f:DynamicPageHeader>
+		</f:header>
+		<f:content>
+			<Table sticky="HeaderToolbar,ColumnHeaders" class="sapFDynamicPageAlignContent" width="auto" inset="false" id="idProductsTable"
+				items="{/productList}">
+				<headerToolbar>
+					<OverflowToolbar>
+						<Title text="Products"/>
+						<ToolbarSpacer/>
+						<Button tooltip="View Sort Settings" icon="sap-icon://sort" press="handleSortButtonPressed"/>
+						<Button tooltip="View Filter Settings" icon="sap-icon://filter" press="handleFilterButtonPressed"/>
+						<Button tooltip="View Group Settings" icon="sap-icon://group-2" press="handleGroupButtonPressed"/>
+						<ToggleButton icon="sap-icon://menu" tooltip="Enable / Disable Custom Context Menu" press="onToggleContextMenu"/>
+					</OverflowToolbar>
+				</headerToolbar>
+				<infoToolbar>
+					<OverflowToolbar id="vsdFilterBar" visible="false">
+						<Text id="vsdFilterLabel"/>
+					</OverflowToolbar>
+				</infoToolbar>
+				<columns>
+					<Column ><Text text="ProductId"/></Column>
+					<Column ><Text text="ProductName"/></Column>
+					<Column ><Text text="Category"/></Column>
+				</columns>
+				<items>
+					<ColumnListItem>
+						<cells>
+							<Text text="{ProductId}"/>
+							<Text text="{ProductName}"/>
+							<Text text="{Category}"/>
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</f:content>
+	</f:DynamicPage>
+</mvc:View>

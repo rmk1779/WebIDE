@@ -1,0 +1,697 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+	xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+	<edmx:Reference
+		Uri="./sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMON',Version='0001',SAP__Origin='')/$value"
+		xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx"><edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="Common"/></edmx:Reference>
+	<edmx:Reference
+		Uri="./sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_CAPABILITIES',Version='0001',SAP__Origin='')/$value"
+		xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx"><edmx:Include Namespace="Org.OData.Capabilities.V1" Alias="Capabilities"/></edmx:Reference>
+	<edmx:Reference
+		Uri="./sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMUNICATION',Version='0001',SAP__Origin='')/$value"
+		xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx"><edmx:Include Namespace="com.sap.vocabularies.Communication.v1" Alias="Communication"/></edmx:Reference>
+	<edmx:Reference
+		Uri="./sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_AGGREGATION',Version='0001',SAP__Origin='')/$value"
+		xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx"><edmx:Include Namespace="Org.OData.Aggregation.V1" Alias="Aggregation"/></edmx:Reference>
+	<edmx:Reference
+		Uri="./sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_PERSONALDATA',Version='0001',SAP__Origin='')/$value"
+		xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx"><edmx:Include Namespace="com.sap.vocabularies.PersonalData.v1" Alias="PersonalData"/></edmx:Reference>
+	<edmx:Reference
+		Uri="./sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_VALIDATION',Version='0001',SAP__Origin='')/$value"
+		xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx"><edmx:Include Namespace="Org.OData.Validation.V1" Alias="Validation"/></edmx:Reference>
+	<edmx:Reference
+		Uri="./sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_ANALYTICS',Version='0001',SAP__Origin='')/$value"
+		xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx"><edmx:Include Namespace="com.sap.vocabularies.Analytics.v1" Alias="Analytics"/></edmx:Reference>
+	<edmx:Reference
+		Uri="./sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_MEASURES',Version='0001',SAP__Origin='')/$value"
+		xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx"><edmx:Include Namespace="Org.OData.Measures.V1" Alias="Measures"/></edmx:Reference>
+	<edmx:DataServices m:DataServiceVersion="2.0">
+		<Schema Namespace="cds_projectbillingelement_sd" xml:lang="en" sap:schema-version="1" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+			<EntityType Name="C_BillingMethodVHType" sap:label="C-View for Billing Method VH" sap:value-list="true" sap:content-version="1">
+				<Key><PropertyRef Name="BillingPlanUsageCategory"/></Key><Property Name="BillingPlanUsageCategory" Type="Edm.String" Nullable="false" MaxLength="10" sap:display-format="UpperCase"
+					sap:text="BillingPlanUsageCategory" sap:label="Billing Method" sap:quickinfo="Values for Domains: Single Value/Lower Limit"/><Property Name="BillingPlanUsageCategoryName" Type="Edm.String" MaxLength="60" sap:label="Short Descript."
+					sap:quickinfo="Short Text for Fixed Values"/></EntityType>
+			<EntityType Name="C_PrftCtrValHelpType" sap:label="Profit Center Value Help" sap:value-list="true" sap:content-version="1">
+				<Key><PropertyRef Name="ProfitCenter"/><PropertyRef Name="ControllingArea"/></Key><Property Name="ProfitCenter" Type="Edm.String" Nullable="false" MaxLength="10" sap:display-format="UpperCase" sap:text="ProfitCenterName"
+					sap:label="Profit Center"/><Property Name="ControllingArea" Type="Edm.String" Nullable="false" MaxLength="4" sap:display-format="UpperCase"
+					sap:label="Controlling Area"/><Property Name="ProfitCenterName" Type="Edm.String" MaxLength="20" sap:label="Profit Center Name"
+					sap:quickinfo="Description of Profit Center"/></EntityType>
+			<EntityType Name="C_ProjBillgSlsItmBillgPlnDuDteType" sap:label="Due billing date popover" sap:content-version="1">
+				<Key><PropertyRef Name="BillingPlan"/><PropertyRef Name="BillingPlanItem"/></Key><Property Name="BillingPlan" Type="Edm.String" Nullable="false" MaxLength="10" sap:display-format="UpperCase" sap:label="Bill. Plan. No."
+					sap:quickinfo="Billing Plan Number / Invoicing Plan Number"/><Property Name="BillingPlanItem" Type="Edm.String" Nullable="false" MaxLength="6" sap:display-format="NonNegative" sap:label="Item"
+					sap:quickinfo="Item for billing plan/invoice plan/payment cards"/><Property Name="BillingPlanBillingDate" Type="Edm.DateTime" Precision="0" sap:display-format="Date" sap:label="Billing Date"/><Property Name="BillingPlanRelatedBillgStatus" Type="Edm.String" MaxLength="1" sap:display-format="UpperCase" sap:label="Billing status"
+					sap:quickinfo="Billing status for the billing plan/invoice plan date"/><Property Name="BillingPlanAmount" Type="Edm.Decimal" Precision="16" Scale="3" sap:unit="TransactionCurrency" sap:label="Billing Value"
+					sap:quickinfo="Value to be billed/calc. on date in billing/invoice plan"/><Property Name="TransactionCurrency" Type="Edm.String" MaxLength="5" sap:label="Currency" sap:quickinfo="Currency Key"
+					sap:semantics="currency-code"/><Property Name="BillingPlanItemUsage" Type="Edm.String" MaxLength="2" sap:display-format="UpperCase" sap:label="Usage"
+					sap:quickinfo="Billing Plan Item Usage"/><Property Name="BillingPlanUsageCategory" Type="Edm.String" MaxLength="2" sap:display-format="UpperCase" sap:label="Billing Plan Us. Cat"
+					sap:quickinfo="Billing Plan Usage Category"/></EntityType>
+			<EntityType Name="C_ProjectBillgElmntEntrFlwTPType" sap:label="Project Billing Element Entry Flow" sap:content-version="1">
+				<Key><PropertyRef Name="ProjBillgElmntEntrItmFlowUUID"/></Key><Property Name="ProjBillgElmntEntrItmFlowUUID" Type="Edm.Guid" Nullable="false" sap:label="PBE Flow UUID"
+					sap:quickinfo="Project Billing Element Entry Flow UUID"/><Property Name="ProjBillgElmntEntrItmUUID" Type="Edm.Guid" sap:label="PBE Entry UUID" sap:quickinfo="Project Billing Element Entry UUID"/><Property Name="ProjectBillingElementUUID" Type="Edm.Guid" sap:label="PBE UUID" sap:quickinfo="Project Billing Element UUID"/><Property Name="BillingDocument" Type="Edm.String" MaxLength="10" sap:display-format="UpperCase" sap:label="SD Document"
+					sap:quickinfo="Sales and Distribution Document Number"/><Property Name="BillingDocumentItem" Type="Edm.String" MaxLength="6" sap:display-format="NonNegative" sap:label="Item (SD)"
+					sap:quickinfo="Item number of the SD document"/><Property Name="BillingDocumentType" Type="Edm.String" MaxLength="1" sap:label="SD Document Category"/><Property Name="SDDocumentCategory" Type="Edm.String" MaxLength="4" sap:label="SD Document Category"/><Property Name="PrecedingDocument" Type="Edm.String" MaxLength="10" sap:display-format="UpperCase" sap:label="SD Document"
+					sap:quickinfo="Sales and Distribution Document Number"/><Property Name="PrecedingDocumentItem" Type="Edm.String" MaxLength="6" sap:display-format="NonNegative" sap:label="Item (SD)"
+					sap:quickinfo="Item number of the SD document"/><Property Name="PrecedingDocumentType" Type="Edm.String" MaxLength="1" sap:label="SD Document Category"/><Property Name="DocumentBillingStatus" Type="Edm.String" MaxLength="1" sap:display-format="UpperCase" sap:label="PBEE BDR Status"
+					sap:quickinfo="Project Billing Element Entry BDR Status"/><Property Name="BillingDate" Type="Edm.DateTime" Precision="0" sap:display-format="Date" sap:label="Billing Date"/><Property Name="TransactionCurrency" Type="Edm.String" MaxLength="5" sap:label="Transaction Currency"
+					sap:quickinfo="Project Billing Element Entry Transaction Currency" sap:semantics="currency-code"/><Property Name="ProjectCurrency" Type="Edm.String" MaxLength="5" sap:label="Project Currency"
+					sap:quickinfo="Project Billing Element Entry Project Currency" sap:semantics="currency-code"/><Property Name="GlobalCurrency" Type="Edm.String" MaxLength="5" sap:label="Global Currency"
+					sap:quickinfo="Project Billing Element Entry Global Currency" sap:semantics="currency-code"/><Property Name="DocumentCurrency" Type="Edm.String" MaxLength="5" sap:label="Document Currency" sap:semantics="currency-code"/><Property Name="NetPriceAmountInDocCrcy" Type="Edm.Decimal" Precision="24" Scale="3" sap:unit="DocumentCurrency" sap:label="Net Price"/><Property Name="QuantityUnit" Type="Edm.String" MaxLength="3" sap:label="Unit of measure" sap:semantics="unit-of-measure"/><Property Name="BillingRequestedQuantity" Type="Edm.Decimal" Precision="23" Scale="3" sap:unit="QuantityUnit"
+					sap:label="Billg Reqd Quantity" sap:quickinfo="PBE Entry Flow Billing Requested Quantity"/><Property Name="BillgReqdAmtInTransacCrcy" Type="Edm.Decimal" Precision="24" Scale="3" sap:unit="TransactionCurrency"
+					sap:label="Billg Reqd Amount" sap:quickinfo="Billing Requested Amount in Transaction Currency"/><Property Name="BillgReqdAmtInProjectCrcy" Type="Edm.Decimal" Precision="24" Scale="3" sap:unit="ProjectCurrency"
+					sap:label="Billg Reqd Amount" sap:quickinfo="Billing Requested Amount in Project Currency"/><Property Name="BillgReqdAmtInGlobalCrcy" Type="Edm.Decimal" Precision="24" Scale="3" sap:unit="GlobalCurrency"
+					sap:label="Billg Reqd Amount" sap:quickinfo="Billing Requested Amount in Global Currency"/><Property Name="WrittenOffQuantity" Type="Edm.Decimal" Precision="23" Scale="3" sap:unit="QuantityUnit" sap:label="Written-off Quantity"
+					sap:quickinfo="Project Billing Element Entry: Written-off Quantity"/><Property Name="WrittenOffAmtInTransacCrcy" Type="Edm.Decimal" Precision="24" Scale="3" sap:unit="TransactionCurrency"
+					sap:label="Written-off Amount" sap:quickinfo="Written-off Amount in Transaction Currency"/><Property Name="WrittenOffAmtInProjectCrcy" Type="Edm.Decimal" Precision="24" Scale="3" sap:unit="ProjectCurrency"
+					sap:label="Written-off Amount" sap:quickinfo="Written-off Amount in Project Currency"/><Property Name="WrittenOffAmtInGlobalCrcy" Type="Edm.Decimal" Precision="24" Scale="3" sap:unit="GlobalCurrency"
+					sap:label="Written-off Amount" sap:quickinfo="Written-off Amount in Global Currency"/><Property Name="PostponedQuantity" Type="Edm.Decimal" Precision="23" Scale="3" sap:unit="QuantityUnit" sap:label="Postponed Quantity"
+					sap:quickinfo="Project Billing Element Entry Postponed Quantity"/><Property Name="PostponedAmountInTransacCrcy" Type="Edm.Decimal" Precision="24" Scale="3" sap:unit="TransactionCurrency"
+					sap:label="Postponed Amount" sap:quickinfo="Postponed Amount in Transaction Currency"/><Property Name="PostponedAmountInProjectCrcy" Type="Edm.Decimal" Precision="24" Scale="3" sap:unit="ProjectCurrency"
+					sap:label="Postponed Amount" sap:quickinfo="Postponed Amount in Project Currency"/><Property Name="PostponedAmountInGlobalCrcy" Type="Edm.Decimal" Precision="24" Scale="3" sap:unit="GlobalCurrency"
+					sap:label="Postponed InGCrcy" sap:quickinfo="Postponed Amount in Global Currency"/><Property Name="BillgReqdRevenueAmtInDocCrcy" Type="Edm.Decimal" Precision="24" Scale="3" sap:unit="DocumentCurrency"
+					sap:label="Billg Reqd Revn" sap:quickinfo="Billing Requested Revenue"/><Property Name="WrittenOffRevenueAmtInDocCrcy" Type="Edm.Decimal" Precision="24" Scale="3" sap:unit="DocumentCurrency"
+					sap:label="Written-off Revenue"/><Property Name="PrjBlgElmEntrFlwCreatedByUser" Type="Edm.String" MaxLength="12" sap:display-format="UpperCase"
+					sap:label="Entry Flow Crted By" sap:quickinfo="Project Billing Element Entry Flow Created By"/><Property Name="PrjBlgElmEntrFlwCrtedAtDteTme" Type="Edm.DateTimeOffset" Precision="7" sap:label="Entry Flow Crted On"
+					sap:quickinfo="Project Billing Element Entry Flow Created On"/><Property Name="PrjBlgElmEntrFlwChangedByUser" Type="Edm.String" MaxLength="12" sap:display-format="UpperCase"
+					sap:label="Entry Flow Chgd By" sap:quickinfo="Project Billing Element Entry Flow Changed By"/><Property Name="PrjBlgElmEntrFlwChgdAtDteTme" Type="Edm.DateTimeOffset" Precision="7" sap:label="Entry Flow Chgd On"
+					sap:quickinfo="Project Billing Element Entry Flow Changed On"/><Property Name="ProfitCenter" Type="Edm.String" MaxLength="10" sap:display-format="UpperCase" sap:label="Profit Center"
+					sap:value-list="standard"/><Property Name="ResponsibleCostCenter" Type="Edm.String" MaxLength="10" sap:display-format="UpperCase" sap:label="Responsible Cost Center"
+					sap:value-list="standard"/><Property Name="ControllingArea" Type="Edm.String" MaxLength="4" sap:display-format="UpperCase" sap:label="Controlling Area"
+					sap:value-list="standard"/><NavigationProperty Name="to_ProjectBillingElementEntry" Relationship="cds_projectbillingelement_sd.assoc_773185173BDADAEE6884E2F78C9B3F72"
+					FromRole="FromRole_assoc_773185173BDADAEE6884E2F78C9B3F72" ToRole="ToRole_assoc_773185173BDADAEE6884E2F78C9B3F72"/></EntityType>
+			<EntityType Name="C_ProjectBillingCustomerCardType" sap:label="Project Billing - Customer Contact Card" sap:content-version="1">
+				<Key><PropertyRef Name="Customer"/></Key><Property Name="Customer" Type="Edm.String" Nullable="false" MaxLength="10" sap:display-format="UpperCase" sap:text="CustomerName"
+					sap:label="Customer" sap:quickinfo="Customer Number"/><Property Name="CustomerName" Type="Edm.String" MaxLength="80" sap:label="Name" sap:quickinfo="Name of Customer"/><Property Name="CustAddressNumber" Type="Edm.String" MaxLength="96" sap:label="Address"/><Property Name="AuthorizationGroup" Type="Edm.String" MaxLength="4" sap:display-format="UpperCase" sap:label="Authorization"
+					sap:quickinfo="Authorization Group"/><Property Name="CustomerAccountGroup" Type="Edm.String" MaxLength="4" sap:display-format="UpperCase" sap:label="Account Group"
+					sap:quickinfo="Customer Account Group"/><Property Name="StreetName" Type="Edm.String" MaxLength="35" sap:label="Street" sap:quickinfo="Street and House Number"/><Property Name="HouseNumber" Type="Edm.String" MaxLength="10" sap:label="House Number"/><Property Name="CityName" Type="Edm.String" MaxLength="35" sap:label="City"/><Property Name="PostalCode" Type="Edm.String" MaxLength="10" sap:display-format="UpperCase" sap:label="Postal Code"/><Property Name="Country" Type="Edm.String" MaxLength="3" sap:display-format="UpperCase" sap:label="Country" sap:quickinfo="Country Key"/><Property Name="PhoneNumber" Type="Edm.String" MaxLength="30" sap:display-format="UpperCase" sap:label="Phone No"
+					sap:quickinfo="Telephone no.: dialling code+number" sap:semantics="tel"/><Property Name="MobilePhoneNumber" Type="Edm.String" MaxLength="30" sap:display-format="UpperCase" sap:label="Mobile No"
+					sap:quickinfo="Telephone no.: dialling code+number" sap:semantics="tel"/><Property Name="EmailAddress" Type="Edm.String" MaxLength="241" sap:label="Email ID" sap:quickinfo="Email Address" sap:semantics="email"/></EntityType>
+			<EntityType Name="C_ProjectBillingElementEntryTPType" sap:label="Project Billing Element Entry Details" sap:content-version="1">
+				<Key><PropertyRef Name="ProjBillgElmntEntrItmUUID"/></Key><Property Name="ProjBillgElmntEntrItmUUID" Type="Edm.Guid" Nullable="false" sap:label="PBE Entry UUID"
+					sap:quickinfo="Project Billing Element Entry UUID"/><Property Name="ProjectBillingElementUUID" Type="Edm.Guid" sap:label="PBE UUID" sap:quickinfo="Project Billing Element UUID"/><Property Name="ProjBillgElmntEntrSourceType" Type="Edm.String" MaxLength="1" sap:display-format="UpperCase"
+					sap:label="PBE Entry SourceType" sap:quickinfo="Project Billing Element Entry Source Type"/><Property Name="WBSElementInternalID" Type="Edm.String" MaxLength="8" sap:display-format="NonNegative" sap:label="Billing Element"/><Property Name="PrjBlgElmEntrCreatedByUser" Type="Edm.String" MaxLength="12" sap:display-format="UpperCase" sap:label="Performed By"/><Property Name="Material" Type="Edm.String" MaxLength="40" sap:display-format="UpperCase" sap:label="Material"
+					sap:quickinfo="Material Number"/><Property Name="QuantityUnit" Type="Edm.String" MaxLength="3" sap:label="Unit of measure" sap:semantics="unit-of-measure"/><Property Name="ProjBillgElmntEntrIsCancelled" Type="Edm.Boolean" sap:display-format="UpperCase" sap:label="PBE Entry Cancelled"
+					sap:quickinfo="Project Billing Element Entry is Cancelled"/><Property Name="PricingDate" Type="Edm.DateTime" Precision="0" sap:display-format="Date" sap:label="Pricing Date"
+					sap:quickinfo="Project Billing Element Entry Pricing Date"/><Property Name="NetPriceAmountIsManual" Type="Edm.Boolean" sap:display-format="UpperCase" sap:label="Net Price Manual"
+					sap:quickinfo="Project Billing Element Entry Net Price Manual Flag"/><Property Name="ServicesRenderedDate" Type="Edm.DateTime" Precision="0" sap:display-format="Date" sap:label="Service Date"/><Property Name="TransactionCurrency" Type="Edm.String" MaxLength="5" sap:label="Transaction Currency"
+					sap:quickinfo="Project Billing Element Entry Transaction Currency" sap:semantics="currency-code"/><Property Name="ProjectCurrency" Type="Edm.String" MaxLength="5" sap:label="Project Currency"
+					sap:quickinfo="Project Billing Element Entry Project Currency" sap:semantics="currency-code"/><Property Name="GlobalCurrency" Type="Edm.String" MaxLength="5" sap:label="Global Currency"
+					sap:quickinfo="Project Billing Element Entry Global Currency" sap:semantics="currency-code"/><Property Name="DocumentCurrency" Type="Edm.String" MaxLength="5" sap:label="Document Currency" sap:semantics="currency-code"/><Property Name="OriginalTotalQuantity" Type="Edm.Decimal" Precision="23" Scale="3" sap:unit="QuantityUnit" sap:label="Original Quantity"/><Property Name="OriginalAmountInTransacCrcy" Type="Edm.Decimal" Precision="24" Scale="3" sap:unit="TransactionCurrency"
+					sap:label="Origl Amt Trans Crcy" sap:quickinfo="Original Amount in Transaction Currency"/><Property Name="OriginalAmountInProjectCrcy" Type="Edm.Decimal" Precision="24" Scale="3" sap:unit="ProjectCurrency"
+					sap:label="Origl Amt Proj Crcy" sap:quickinfo="Original Amount in Project Currency"/><Property Name="OriginalRevenueAmtInDocCrcy" Type="Edm.Decimal" Precision="24" Scale="3" sap:unit="DocumentCurrency"
+					sap:label="Original Revenue"/><Property Name="OriginalAmountInGlobalCurrency" Type="Edm.Decimal" Precision="24" Scale="3" sap:unit="GlobalCurrency"
+					sap:label="Original Cost"/><Property Name="OpenQuantity" Type="Edm.Decimal" Precision="23" Scale="3" sap:unit="QuantityUnit" sap:label="PBE Entry Open Qty"
+					sap:quickinfo="Project Billing Element Entry Open Quantity"/><Property Name="OpenAmountInTransCrcy" Type="Edm.Decimal" Precision="24" Scale="3" sap:unit="TransactionCurrency"
+					sap:label="Open Amt InGCrcy" sap:quickinfo="Open Amount in Global Currency"/><Property Name="OpenAmountInProjectCurrency" Type="Edm.Decimal" Precision="24" Scale="3" sap:unit="ProjectCurrency"
+					sap:label="Open Amt Proj Crcy" sap:quickinfo="Open Amount in Project Currency"/><Property Name="OpenAmountInGlobalCurrency" Type="Edm.Decimal" Precision="24" Scale="3" sap:unit="GlobalCurrency"
+					sap:label="Open Amt InGCrcy" sap:quickinfo="Open Amount in Global Currency"/><Property Name="ToBeWrittenOffQuantity" Type="Edm.Decimal" Precision="23" Scale="3" sap:unit="QuantityUnit"
+					sap:label="Quantity to be Written Off"/><Property Name="ToBeWrittenOffAmtInTransCrcy" Type="Edm.Decimal" Precision="24" Scale="3" sap:unit="TransactionCurrency"
+					sap:label="To be Written-off" sap:quickinfo="To be Written-off Amount in Transaction Currency"/><Property Name="ToBeWrittenOffAmtInProjectCrcy" Type="Edm.Decimal" Precision="24" Scale="3" sap:unit="ProjectCurrency"
+					sap:label="To be Written-off" sap:quickinfo="To be Writen-off Amount in Project Currency"/><Property Name="ToBeWrittenOffAmtInGlobalCrcy" Type="Edm.Decimal" Precision="24" Scale="3" sap:unit="GlobalCurrency"
+					sap:label="Cost to be Written Off"/><Property Name="ToBePostponedQuantity" Type="Edm.Decimal" Precision="23" Scale="3" sap:unit="QuantityUnit"
+					sap:label="Quantity to Be Postponed"/><Property Name="ToBePostponedAmtInTransacCrcy" Type="Edm.Decimal" Precision="24" Scale="3" sap:unit="TransactionCurrency"
+					sap:label="To be Postponed" sap:quickinfo="To be Postponed Amount in Transaction Currency"/><Property Name="ToBePostponedAmtInProjectCrcy" Type="Edm.Decimal" Precision="24" Scale="3" sap:unit="ProjectCurrency"
+					sap:label="Postponing Amount" sap:quickinfo="To be Postponed Amount in Project Currency"/><Property Name="ToBePostponedAmtInGlobalCrcy" Type="Edm.Decimal" Precision="24" Scale="3" sap:unit="GlobalCurrency"
+					sap:label="Cost to be Postponed"/><Property Name="BillableRevenueAmtInDocCrcy" Type="Edm.Decimal" Precision="24" Scale="3" sap:unit="DocumentCurrency"
+					sap:label="Billable Revenue"/><Property Name="ManualNetPriceAmtInDocCrcy" Type="Edm.Decimal" Precision="24" Scale="3" sap:unit="DocumentCurrency" sap:label="Net Price"
+					sap:quickinfo="Manual Net Price"/><Property Name="NetPriceAmountInDocCrcy" Type="Edm.Decimal" Precision="24" Scale="3" sap:unit="DocumentCurrency" sap:label="Net Price"/><Property Name="PrjBlgElmEntrCreatedAtDteTme" Type="Edm.DateTimeOffset" Precision="7" sap:label="PBE Entry Created On"
+					sap:quickinfo="Project Billing Element Entry Created On"/><Property Name="PrjBlgElmEntrLastChgdByUser" Type="Edm.String" MaxLength="12" sap:display-format="UpperCase"
+					sap:label="PBE Entry Changed By" sap:quickinfo="Project Billing Element Entry Changed By"/><Property Name="PrjBlgElmEntrLastChgdAtDteTme" Type="Edm.DateTimeOffset" Precision="7" sap:label="PBE Entry Changed On"
+					sap:quickinfo="Project Billing Element Entry Changed On"/><Property Name="ToBeBilledAmtInGlobCurrency" Type="Edm.Decimal" Precision="24" Scale="3" sap:unit="GlobalCurrency"
+					sap:label="Cost to be Billed"/><Property Name="ToBeBilledQuantity" Type="Edm.Decimal" Precision="23" Scale="3" sap:unit="QuantityUnit" sap:label="Quantity to be Billed"/><NavigationProperty Name="to_ProjectBillgElmntEntrFlw" Relationship="cds_projectbillingelement_sd.assoc_17C0B91A7330859B4D45F79BEBC011DD"
+					FromRole="FromRole_assoc_17C0B91A7330859B4D45F79BEBC011DD" ToRole="ToRole_assoc_17C0B91A7330859B4D45F79BEBC011DD"/><NavigationProperty Name="to_ProjectBillingElement" Relationship="cds_projectbillingelement_sd.assoc_8C86376791494F74867E4A5A7F1017AA"
+					FromRole="FromRole_assoc_8C86376791494F74867E4A5A7F1017AA" ToRole="ToRole_assoc_8C86376791494F74867E4A5A7F1017AA"/></EntityType>
+			<EntityType Name="C_ProjectBillingElementTPType" sap:label="Project Billing Element Details" sap:content-version="1">
+				<Key><PropertyRef Name="ProjectBillingElementUUID"/></Key><Property Name="ProjectBillingElementUUID" Type="Edm.Guid" Nullable="false" sap:label="PBE UUID"
+					sap:quickinfo="Project Billing Element UUID"/><Property Name="WBSElement" Type="Edm.String" MaxLength="24" sap:display-format="UpperCase" sap:label="Billing Element"
+					sap:value-list="standard"/><Property Name="ProjectBillingRequest" Type="Edm.String" MaxLength="10" sap:display-format="UpperCase" sap:label="Project Billing Request"/><Property Name="ProjectBillingRequestUUID" Type="Edm.Guid" sap:label="Proj Billg Req UUID" sap:quickinfo="Project Billing Request UUID"/><Property Name="DueBillingDate" Type="Edm.DateTime" Precision="0" sap:display-format="Date" sap:filter-restriction="interval"
+					sap:label="Billing Due Date" sap:creatable="false" sap:updatable="false"/><Property Name="BillingWBSElementInternalID" Type="Edm.String" MaxLength="8" sap:display-format="NonNegative" sap:label="WBS Internal ID"
+					sap:quickinfo="WBS Element"/><Property Name="BillableRevenueAmtInDocCrcy" Type="Edm.Decimal" Precision="24" Scale="3" sap:unit="DocumentCurrency"
+					sap:label="To be Billed" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="IsMyProjectBillingElement" Type="Edm.Boolean" sap:display-format="UpperCase" sap:filter-restriction="single-value"
+					sap:label="My Billing Elements"/><Property Name="UserID" Type="Edm.String" MaxLength="12" sap:display-format="UpperCase" sap:label="User ID"/><Property Name="Customer" Type="Edm.String" MaxLength="10" sap:display-format="UpperCase" sap:text="CustomerName" sap:label="Customer"
+					sap:value-list="standard"/><Property Name="CustomerProject" Type="Edm.String" MaxLength="40" sap:display-format="UpperCase" sap:text="ProjectDescription"
+					sap:label="Project" sap:creatable="false" sap:updatable="false" sap:value-list="standard"/><Property Name="BillingPlanUsageCategoryName" Type="Edm.String" MaxLength="60" sap:label="Billing Method" sap:creatable="false"
+					sap:updatable="false" sap:value-list="fixed-values"/><Property Name="BillingPlanUsageCategory" Type="Edm.String" MaxLength="2" sap:display-format="UpperCase" sap:label="Billing Plan Us. Cat"
+					sap:quickinfo="Billing Plan Usage Category" sap:creatable="false" sap:updatable="false"/><Property Name="DocumentCurrency" Type="Edm.String" MaxLength="5" sap:label="Document Currency" sap:semantics="currency-code"/><Property Name="TransactionCurrency" Type="Edm.String" MaxLength="5" sap:label="Document Currency" sap:quickinfo="SD document currency"
+					sap:creatable="false" sap:updatable="false" sap:semantics="currency-code"/><Property Name="BilledRevenueAmtInDocCrcy" Type="Edm.Decimal" Precision="24" Scale="3" sap:unit="DocumentCurrency" sap:label="Billed"/><Property Name="UnbilledRevnAmtInDocCrcy" Type="Edm.Decimal" Precision="24" Scale="3" sap:unit="DocumentCurrency" sap:label="Unbilled"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="ProjBillgElmntEntrIsCancelled" Type="Edm.String" MaxLength="1" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false"/><Property Name="BillgReqdRevenueAmtInDocCrcy" Type="Edm.Decimal" Precision="24" Scale="3" sap:unit="DocumentCurrency"
+					sap:label="Billing in Process" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="ProfitCenter" Type="Edm.String" MaxLength="10" sap:display-format="UpperCase" sap:text="ProfitCenterText"
+					sap:label="Profit Center" sap:creatable="false" sap:updatable="false" sap:value-list="standard"/><Property Name="ProfitCenterText" Type="Edm.String" MaxLength="20" sap:label="Profit Center Name"
+					sap:quickinfo="Description of Profit Center" sap:creatable="false" sap:updatable="false"/><Property Name="ProfitCenterName" Type="Edm.String" MaxLength="20" sap:label="Profit Center Name"
+					sap:quickinfo="Description of Profit Center" sap:creatable="false" sap:updatable="false"/><Property Name="CostCenterName" Type="Edm.String" MaxLength="20" sap:label="Cost Center Name" sap:creatable="false" sap:updatable="false"/><Property Name="PlndRevnAmt" Type="Edm.Decimal" Precision="21" Scale="3" sap:unit="TransactionCurrency" sap:label="Planned Revenue"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="CappedNetAmount" Type="Edm.Decimal" Precision="16" Scale="3" sap:unit="TransactionCurrency" sap:label="Cap"
+					sap:creatable="false" sap:updatable="false"/><Property Name="WrittenOffRevenueAmtInDocCrcy" Type="Edm.Decimal" Precision="24" Scale="3" sap:unit="DocumentCurrency"
+					sap:label="Written Off"/><Property Name="ProjectDescription" Type="Edm.String" MaxLength="40" sap:label="Project" sap:quickinfo="Customer Project Name"
+					sap:creatable="false" sap:updatable="false"/><Property Name="CustomerName" Type="Edm.String" MaxLength="80" sap:label="Customer" sap:creatable="false" sap:updatable="false"/><Property Name="StoreCustomerName" Type="Edm.String" MaxLength="80" sap:label="Name of Customer" sap:creatable="false" sap:updatable="false"/><Property Name="PlannedStartDate" Type="Edm.DateTime" Precision="0" sap:display-format="Date" sap:label="Start Date"
+					sap:quickinfo="Commercial Project: Start Date" sap:creatable="false" sap:updatable="false"/><Property Name="PlannedEndDate" Type="Edm.DateTime" Precision="0" sap:display-format="Date" sap:label="End Date"
+					sap:quickinfo="Commercial Project: End Date" sap:creatable="false" sap:updatable="false"/><Property Name="ServiceOrganizationUnit" Type="Edm.String" MaxLength="5" sap:display-format="UpperCase" sap:label="Service Organization"
+					sap:creatable="false" sap:updatable="false" sap:value-list="standard"/><Property Name="CostCenter" Type="Edm.String" MaxLength="20" sap:display-format="UpperCase" sap:label="OrganizationUnitKey"
+					sap:quickinfo="Organization Unit Key" sap:creatable="false" sap:updatable="false" sap:value-list="standard"/><Property Name="CostCenterProfitCenter" Type="Edm.String" MaxLength="10" sap:display-format="UpperCase" sap:label="Profit Center"
+					sap:creatable="false" sap:updatable="false" sap:value-list="standard"/><Property Name="EngagementProjectServiceOrg" Type="Edm.String" MaxLength="5" sap:display-format="UpperCase"
+					sap:text="EngmtProjectServiceOrgName" sap:label="Service Organization" sap:value-list="standard"/><Property Name="BillingDate" Type="Edm.DateTime" Precision="0" sap:display-format="Date" sap:filter-restriction="interval"
+					sap:label="Last Billing Date" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="BillingPlanItemUsage" Type="Edm.String" MaxLength="1" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false"/><Property Name="PlndPrepaymentAmtInProjCrcy" Type="Edm.Decimal" Precision="24" Scale="3" sap:unit="DocumentCurrency"
+					sap:label="Planned PrePayment" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="NetValueAmountInDocCurrency" Type="Edm.Decimal" Precision="24" Scale="3" sap:unit="DocumentCurrency"
+					sap:label="Estimated Actuals" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="BillingPlan" Type="Edm.String" MaxLength="10" sap:display-format="UpperCase" sap:label="Bill. Plan. No."
+					sap:quickinfo="Billing Plan Number / Invoicing Plan Number"/><Property Name="ItemBillingBlockReason" Type="Edm.String" MaxLength="2" sap:display-format="UpperCase" sap:label="Billing Block"
+					sap:quickinfo="Billing Block for Item" sap:creatable="false" sap:updatable="false"/><Property Name="HeaderBillingBlockReason" Type="Edm.String" MaxLength="2" sap:display-format="UpperCase" sap:label="Billing Block"
+					sap:quickinfo="Billing Block in SD Document" sap:creatable="false" sap:updatable="false"/><Property Name="EngmtProjectServiceOrgName" Type="Edm.String" MaxLength="40" sap:label="Organization Description" sap:creatable="false"
+					sap:updatable="false"/><NavigationProperty Name="to_CustomerContactCard" Relationship="cds_projectbillingelement_sd.assoc_117E530EDE9AD3F2569913ABEC40E09A"
+					FromRole="FromRole_assoc_117E530EDE9AD3F2569913ABEC40E09A" ToRole="ToRole_assoc_117E530EDE9AD3F2569913ABEC40E09A"/><NavigationProperty Name="to_PrjBlgElmEntrForPrepayment" Relationship="cds_projectbillingelement_sd.assoc_202D4D8D1D1FE627EC98331FC1FD5C9E"
+					FromRole="FromRole_assoc_202D4D8D1D1FE627EC98331FC1FD5C9E" ToRole="ToRole_assoc_202D4D8D1D1FE627EC98331FC1FD5C9E"/><NavigationProperty Name="to_ProjBillgSlsItmBillgPlnDuDte"
+					Relationship="cds_projectbillingelement_sd.assoc_15A7D2538ABC52B8DFB9487A7DC3F877"
+					FromRole="FromRole_assoc_15A7D2538ABC52B8DFB9487A7DC3F877" ToRole="ToRole_assoc_15A7D2538ABC52B8DFB9487A7DC3F877"/><NavigationProperty Name="to_ProjectBillingDocDetails" Relationship="cds_projectbillingelement_sd.assoc_AA578513EAFD4D2A3AB0F0799005D3C9"
+					FromRole="FromRole_assoc_AA578513EAFD4D2A3AB0F0799005D3C9" ToRole="ToRole_assoc_AA578513EAFD4D2A3AB0F0799005D3C9"/><NavigationProperty Name="to_ProjectBillingElementEntry" Relationship="cds_projectbillingelement_sd.assoc_D1C12C9130D6162A7029F274A726D751"
+					FromRole="FromRole_assoc_D1C12C9130D6162A7029F274A726D751" ToRole="ToRole_assoc_D1C12C9130D6162A7029F274A726D751"/></EntityType>
+			<EntityType Name="I_BillingWBSBasicDataStdVHType" sap:label="Value help view for I_WBSElementBasicData" sap:value-list="true"
+				sap:content-version="1">
+				<Key><PropertyRef Name="WBSElementInternalID"/></Key><Property Name="WBSElementInternalID" Type="Edm.String" Nullable="false" MaxLength="8" sap:display-format="NonNegative"
+					sap:label="WBS Internal ID" sap:quickinfo="WBS Element"/><Property Name="WBSElementExternalID" Type="Edm.String" MaxLength="24" sap:display-format="UpperCase" sap:text="WBSDescription"
+					sap:label="WBS Element" sap:quickinfo="Work Breakdown Structure Element (WBS Element) Edited"/><Property Name="WBSDescription" Type="Edm.String" MaxLength="40" sap:label="WBS Element Name"/></EntityType>
+			<EntityType Name="I_ControllingAreaType" sap:label="Controlling Area" sap:value-list="true" sap:content-version="1">
+				<Key><PropertyRef Name="ControllingArea"/></Key><Property Name="ControllingArea" Type="Edm.String" Nullable="false" MaxLength="4" sap:display-format="UpperCase"
+					sap:text="ControllingAreaName" sap:label="Controlling Area"/><Property Name="FiscalYearVariant" Type="Edm.String" MaxLength="2" sap:display-format="UpperCase" sap:label="Fiscal Year Variant"/><Property Name="ControllingAreaName" Type="Edm.String" MaxLength="25" sap:label="Controlling Area Name"/><Property Name="ControllingAreaCurrency" Type="Edm.String" MaxLength="5" sap:label="Currency" sap:quickinfo="Currency Key"
+					sap:semantics="currency-code"/><Property Name="ChartOfAccounts" Type="Edm.String" MaxLength="4" sap:display-format="UpperCase" sap:text="ChartOfAccounts_Text"
+					sap:label="Chart of Accounts"/><Property Name="ChartOfAccounts_Text" Type="Edm.String" MaxLength="50" sap:label="Description" sap:quickinfo="Chart of Accounts Description"
+					sap:creatable="false" sap:updatable="false"/><Property Name="CostCenterStandardHierarchy" Type="Edm.String" MaxLength="12" sap:display-format="UpperCase" sap:label="CCtr Std. Hierarchy"
+					sap:quickinfo="Standard Hierarchy for Cost Centers"/><Property Name="ProfitCenterStandardHierarchy" Type="Edm.String" MaxLength="12" sap:display-format="UpperCase" sap:label="Hierarchy Area"
+					sap:quickinfo="Profit center area"/><Property Name="FinancialManagementArea" Type="Edm.String" MaxLength="4" sap:display-format="UpperCase" sap:label="FM Area"
+					sap:quickinfo="Financial Management Area"/><Property Name="ControllingAreaCurrencyRole" Type="Edm.String" MaxLength="2" sap:display-format="UpperCase" sap:label="Currency Type"
+					sap:quickinfo="Currency Type for Controlling Area"/><Property Name="CtrlgStdFinStatementVersion" Type="Edm.String" MaxLength="42" sap:display-format="UpperCase"
+					sap:text="CtrlgStdFinStatementVersion_Text" sap:label="Leading FS Version" sap:quickinfo="Leading Controlling Financial Statement Version"/><Property Name="CtrlgStdFinStatementVersion_Text" Type="Edm.String" MaxLength="50" sap:label="Description"
+					sap:quickinfo="Hierarchy description" sap:creatable="false" sap:updatable="false"/><Property Name="ProfitCenterAccountingCurrency" Type="Edm.String" MaxLength="5" sap:label="PrCtr Local Currency"
+					sap:quickinfo="Local Currency for Profit Center Accounting" sap:semantics="currency-code"/></EntityType>
+			<EntityType Name="I_CostCenterStdVHType" sap:label="Cost Center" sap:value-list="true" sap:content-version="1">
+				<Key><PropertyRef Name="ControllingArea"/><PropertyRef Name="CostCenter"/><PropertyRef Name="ValidityEndDate"/></Key><Property Name="ControllingArea" Type="Edm.String" Nullable="false" MaxLength="4" sap:display-format="UpperCase"
+					sap:label="Controlling Area"/><Property Name="CostCenter" Type="Edm.String" Nullable="false" MaxLength="10" sap:display-format="UpperCase" sap:text="CostCenter_Text"
+					sap:label="Cost Center"/><Property Name="CostCenter_Text" Type="Edm.String" MaxLength="20" sap:label="Cost Center Name" sap:creatable="false" sap:updatable="false"/><Property Name="ValidityEndDate" Type="Edm.DateTime" Nullable="false" Precision="0" sap:display-format="Date" sap:label="Valid To"
+					sap:quickinfo="Valid To Date"/><Property Name="ValidityStartDate" Type="Edm.DateTime" Precision="0" sap:display-format="Date" sap:label="Valid From"
+					sap:quickinfo="Valid-From Date"/></EntityType>
+			<EntityType Name="I_Customer_VHType" sap:label="Value Help for Customer" sap:value-list="true" sap:content-version="1">
+				<Key><PropertyRef Name="Customer"/></Key><Property Name="Customer" Type="Edm.String" Nullable="false" MaxLength="10" sap:display-format="UpperCase" sap:text="CustomerName"
+					sap:label="Customer" sap:quickinfo="Customer Number"/><Property Name="OrganizationBPName1" Type="Edm.String" MaxLength="35" sap:label="Name 1"/><Property Name="OrganizationBPName2" Type="Edm.String" MaxLength="35" sap:label="Name 2"/><Property Name="Country" Type="Edm.String" MaxLength="3" sap:display-format="UpperCase" sap:label="Country" sap:quickinfo="Country Key"/><Property Name="CityName" Type="Edm.String" MaxLength="35" sap:label="City"/><Property Name="StreetName" Type="Edm.String" MaxLength="35" sap:label="Street" sap:quickinfo="Street and House Number"/><Property Name="CustomerName" Type="Edm.String" MaxLength="80" sap:label="Customer Name" sap:quickinfo="Name of Customer"/><Property Name="CustomerAccountGroup" Type="Edm.String" MaxLength="4" sap:display-format="UpperCase" sap:label="Account Group"
+					sap:quickinfo="Customer Account Group"/><Property Name="AuthorizationGroup" Type="Edm.String" MaxLength="4" sap:display-format="UpperCase" sap:label="Authorization"
+					sap:quickinfo="Authorization Group"/><Property Name="IsBusinessPurposeCompleted" Type="Edm.String" MaxLength="1" sap:display-format="UpperCase" sap:label="Purpose Complete Flag"
+					sap:quickinfo="Business Purpose Completed Flag"/></EntityType>
+			<EntityType Name="I_CustProjSlsOrdItmBillgPlnItmType" sap:label="Billing Plan Item of Sales Order Item for Customer Project"
+				sap:content-version="1">
+				<Key><PropertyRef Name="CustomerProject"/><PropertyRef Name="SalesOrderItem"/><PropertyRef Name="BillingPlan"/><PropertyRef Name="BillingPlanItem"/></Key><Property Name="CustomerProject" Type="Edm.String" Nullable="false" MaxLength="40" sap:display-format="UpperCase"
+					sap:label="Customer Project ID" sap:quickinfo="Commercial Project ID"/><Property Name="SalesOrderItem" Type="Edm.String" Nullable="false" MaxLength="6" sap:display-format="NonNegative" sap:label="Item"
+					sap:quickinfo="Sales Order Item"/><Property Name="BillingPlan" Type="Edm.String" Nullable="false" MaxLength="10" sap:display-format="UpperCase" sap:label="Bill. Plan. No."
+					sap:quickinfo="Billing Plan Number / Invoicing Plan Number"/><Property Name="BillingPlanItem" Type="Edm.String" Nullable="false" MaxLength="6" sap:display-format="NonNegative" sap:label="Item"
+					sap:quickinfo="Item for billing plan/invoice plan/payment cards"/><Property Name="BillingPlanUsageCategory" Type="Edm.String" MaxLength="2" sap:display-format="UpperCase" sap:label="Billing Plan Us. Cat"
+					sap:quickinfo="Billing Plan Usage Category"/><Property Name="SalesOrder" Type="Edm.String" MaxLength="10" sap:display-format="UpperCase" sap:label="Sales Order"/><Property Name="BillingPlanBillingDate" Type="Edm.DateTime" Precision="0" sap:display-format="Date" sap:label="Billing Date"/><Property Name="BillingPlanRelatedBillgStatus" Type="Edm.String" MaxLength="1" sap:display-format="UpperCase" sap:label="Billing status"
+					sap:quickinfo="Billing status for the billing plan/invoice plan date"/><Property Name="BillgPlnDteCorrectionRfndType" Type="Edm.String" MaxLength="1" sap:display-format="UpperCase" sap:label="Correction date"
+					sap:quickinfo="Indicator for correction date in billing plan"/><Property Name="BillingPlanAmount" Type="Edm.Decimal" Precision="16" Scale="3" sap:unit="TransactionCurrency" sap:label="Billing Value"
+					sap:quickinfo="Value to be billed/calc. on date in billing/invoice plan"/><Property Name="TransactionCurrency" Type="Edm.String" MaxLength="5" sap:label="Currency" sap:quickinfo="Currency Key"
+					sap:semantics="currency-code"/><Property Name="BillingPlanRule" Type="Edm.String" MaxLength="1" sap:display-format="UpperCase" sap:label="Billing Rule"
+					sap:quickinfo="Rule in billing plan/invoice plan"/><Property Name="PostponementReason" Type="Edm.String" MaxLength="255" sap:label="Reason" sap:quickinfo="Reason for Postponement"/><Property Name="BillingPlanItemUsage" Type="Edm.String" MaxLength="2" sap:display-format="UpperCase" sap:label="Usage"
+					sap:quickinfo="Billing Plan Item Usage"/><Property Name="BillingPlanItemDescription" Type="Edm.String" MaxLength="255" sap:label="Description"
+					sap:quickinfo="Billing Plan Item Description"/><Property Name="BillingPlanServiceStartDate" Type="Edm.DateTime" Precision="0" sap:display-format="Date" sap:label="Settlement date"
+					sap:quickinfo="Settlement date for deadline"/><Property Name="BillingPlanServiceEndDate" Type="Edm.DateTime" Precision="0" sap:display-format="Date" sap:label="Settlement Date"
+					sap:quickinfo="Settlement date for deadline"/></EntityType>
+			<EntityType Name="I_EngagementProjectVHType" sap:label="Engagement Project Value Help" sap:value-list="true" sap:content-version="1">
+				<Key><PropertyRef Name="EngagementProject"/></Key><Property Name="EngagementProject" Type="Edm.String" Nullable="false" MaxLength="40" sap:display-format="UpperCase"
+					sap:text="EngagementProjectName" sap:label="Project ID"/><Property Name="EngagementProjectName" Type="Edm.String" MaxLength="40" sap:label="Project Name"/></EntityType>
+			<EntityType Name="I_EngmntProjSrvcOrgStdVHType" sap:label="Engagement Project Service Organization" sap:value-list="true"
+				sap:content-version="1">
+				<Key><PropertyRef Name="EngagementProjectServiceOrg"/></Key><Property Name="EngagementProjectServiceOrg" Type="Edm.String" Nullable="false" MaxLength="5" sap:display-format="UpperCase"
+					sap:text="EngagementProjectServiceOrg_Text" sap:label="Service Organization"/><Property Name="EngagementProjectServiceOrg_Text" Type="Edm.String" MaxLength="40" sap:label="Organization Desc."
+					sap:quickinfo="Description of Organization Unit ID" sap:creatable="false" sap:updatable="false"/></EntityType>
+			<EntityType Name="I_PrjBlgElmEntrForPrepaymentType" sap:label="Basic view for prepayment amounts" sap:content-version="1">
+				<Key><PropertyRef Name="ProjectBillingElementUUID"/><PropertyRef Name="ProjBillgElmntEntrItmUUID"/></Key><Property Name="ProjectBillingElementUUID" Type="Edm.Guid" Nullable="false" sap:label="PBE UUID"
+					sap:quickinfo="Project Billing Element UUID"/><Property Name="ProjBillgElmntEntrItmUUID" Type="Edm.Guid" Nullable="false" sap:label="PBE Entry UUID"
+					sap:quickinfo="Project Billing Element Entry UUID"/><Property Name="BillingWBSElementInternalID" Type="Edm.String" MaxLength="8" sap:display-format="NonNegative" sap:label="WBS Internal ID"
+					sap:quickinfo="WBS Element"/><Property Name="ProjectCurrency" Type="Edm.String" MaxLength="5" sap:label="Project Currency"
+					sap:quickinfo="Project Billing Element Entry Project Currency" sap:semantics="currency-code"/><Property Name="DocumentCurrency" Type="Edm.String" MaxLength="5" sap:label="Document Currency" sap:semantics="currency-code"/><Property Name="ServicesRenderedDate" Type="Edm.DateTime" Precision="0" sap:display-format="Date" sap:label="Serv. Rendered Date"
+					sap:quickinfo="Date on which services are rendered"/><Property Name="PlndPrepaymentAmtInProjCrcy" Type="Edm.Decimal" Precision="24" Scale="3" sap:unit="ProjectCurrency"
+					sap:label="To be Blld Proj Crcy" sap:quickinfo="To be Billed Amount in Project Currency"/><Property Name="RcvdPrepaymentAmtInProjCrcy" Type="Edm.Decimal" Precision="24" Scale="3" sap:unit="ProjectCurrency"
+					sap:label="Open Amt Proj Crcy" sap:quickinfo="Open Amount in Project Currency"/><Property Name="ReqdPrepaymentAmtInDocCrcy" Type="Edm.Decimal" Precision="24" Scale="3" sap:unit="DocumentCurrency"/><Property Name="PrjBlgElmEntrLastChgdAtDteTme" Type="Edm.DateTimeOffset" Precision="7" sap:label="PBE Entry Changed On"
+					sap:quickinfo="Project Billing Element Entry Changed On"/></EntityType>
+			<EntityType Name="I_ProfitCenterStdVHType" sap:label="Profit Center" sap:value-list="true" sap:content-version="1">
+				<Key><PropertyRef Name="ControllingArea"/><PropertyRef Name="ProfitCenter"/><PropertyRef Name="ValidityEndDate"/></Key><Property Name="ControllingArea" Type="Edm.String" Nullable="false" MaxLength="4" sap:display-format="UpperCase"
+					sap:label="Controlling Area"/><Property Name="ProfitCenter" Type="Edm.String" Nullable="false" MaxLength="10" sap:display-format="UpperCase" sap:text="ProfitCenter_Text"
+					sap:label="Profit Center"/><Property Name="ProfitCenter_Text" Type="Edm.String" MaxLength="20" sap:label="Profit Center Name"
+					sap:quickinfo="Description of Profit Center" sap:creatable="false" sap:updatable="false"/><Property Name="ValidityEndDate" Type="Edm.DateTime" Nullable="false" Precision="0" sap:display-format="Date" sap:label="Valid To"
+					sap:quickinfo="Valid To Date"/><Property Name="ValidityStartDate" Type="Edm.DateTime" Precision="0" sap:display-format="Date" sap:label="Valid From"
+					sap:quickinfo="Valid-From Date"/></EntityType>
+			<EntityType Name="I_ProjectBillingDocDetailsType" sap:label="I-view for Project Billing Doc Details" sap:content-version="1">
+				<Key><PropertyRef Name="BillingDocument"/></Key><Property Name="BillingDocument" Type="Edm.String" Nullable="false" MaxLength="10" sap:display-format="UpperCase"
+					sap:label="Billing Document"/><Property Name="TransactionCurrency" Type="Edm.String" MaxLength="5" sap:label="Document Currency" sap:quickinfo="SD document currency"
+					sap:semantics="currency-code"/><Property Name="TotalNetAmount" Type="Edm.Decimal" Precision="16" Scale="3" sap:unit="TransactionCurrency" sap:label="Net Value"
+					sap:quickinfo="Net Value in Document Currency"/><Property Name="BillingDocumentDate" Type="Edm.DateTime" Precision="0" sap:display-format="Date" sap:label="Billing Date"/><Property Name="WBSElement" Type="Edm.String" MaxLength="24" sap:display-format="UpperCase" sap:label="WBS Element"
+					sap:quickinfo="Work Breakdown Structure Element (WBS Element) Edited"/><Property Name="SDDocumentCategory" Type="Edm.String" MaxLength="4" sap:label="SD Document Category"/></EntityType>
+			<EntityType Name="I_SlsDocItemBillingPlanDueDateType" sap:label="Sales Doc. Item Billing Plan Due Date" sap:content-version="1">
+				<Key><PropertyRef Name="BillingPlan"/><PropertyRef Name="BillingPlanItem"/></Key><Property Name="BillingPlan" Type="Edm.String" Nullable="false" MaxLength="10" sap:display-format="UpperCase" sap:label="Bill. Plan. No."
+					sap:quickinfo="Billing Plan Number / Invoicing Plan Number"/><Property Name="BillingPlanItem" Type="Edm.String" Nullable="false" MaxLength="6" sap:display-format="NonNegative" sap:label="Item"
+					sap:quickinfo="Item for billing plan/invoice plan/payment cards"/><Property Name="BillingPlanBillingDate" Type="Edm.DateTime" Precision="0" sap:display-format="Date" sap:label="Billing Date"/><Property Name="BillingPlanRelatedBillgStatus" Type="Edm.String" MaxLength="1" sap:display-format="UpperCase" sap:label="Billing status"
+					sap:quickinfo="Billing status for the billing plan/invoice plan date"/><Property Name="BillgPlnDteCorrectionRfndType" Type="Edm.String" MaxLength="1" sap:display-format="UpperCase" sap:label="Correction date"
+					sap:quickinfo="Indicator for correction date in billing plan"/><Property Name="BillingPlanAmount" Type="Edm.Decimal" Precision="16" Scale="3" sap:unit="TransactionCurrency" sap:label="Billing Value"
+					sap:quickinfo="Value to be billed/calc. on date in billing/invoice plan"/><Property Name="TransactionCurrency" Type="Edm.String" MaxLength="5" sap:label="Currency" sap:quickinfo="Currency Key"
+					sap:semantics="currency-code"/><Property Name="BillingPlanRule" Type="Edm.String" MaxLength="1" sap:display-format="UpperCase" sap:label="Billing Rule"
+					sap:quickinfo="Rule in billing plan/invoice plan"/><Property Name="PostponementReason" Type="Edm.String" MaxLength="255" sap:label="Reason" sap:quickinfo="Reason for Postponement"/><Property Name="BillingPlanItemUsage" Type="Edm.String" MaxLength="2" sap:display-format="UpperCase" sap:label="Usage"
+					sap:quickinfo="Billing Plan Item Usage"/><Property Name="BillingPlanItemDescription" Type="Edm.String" MaxLength="255" sap:label="Description"
+					sap:quickinfo="Billing Plan Item Description"/><Property Name="BillingPlanServiceStartDate" Type="Edm.DateTime" Precision="0" sap:display-format="Date" sap:label="Settlement date"
+					sap:quickinfo="Settlement date for deadline"/><Property Name="BillingPlanServiceEndDate" Type="Edm.DateTime" Precision="0" sap:display-format="Date" sap:label="Settlement Date"
+					sap:quickinfo="Settlement date for deadline"/></EntityType>
+			<ComplexType Name="D_PrjBlgElmUpdtFrmBillgDocReqP"><Property Name="BillingDocumentRequest" Type="Edm.String" MaxLength="10" sap:label="SD Document"/><Property Name="PrecedingDocument" Type="Edm.String" MaxLength="10" sap:label="SD Document"/><Property Name="ProjBillgElmntEntrItmFlowUUID" Type="Edm.Guid" sap:label="PBE Entry UUID"/></ComplexType>
+			<Association Name="assoc_773185173BDADAEE6884E2F78C9B3F72" sap:content-version="1"><End Type="cds_projectbillingelement_sd.C_ProjectBillgElmntEntrFlwTPType" Multiplicity="1"
+				Role="FromRole_assoc_773185173BDADAEE6884E2F78C9B3F72"/><End Type="cds_projectbillingelement_sd.C_ProjectBillingElementEntryTPType" Multiplicity="1"
+				Role="ToRole_assoc_773185173BDADAEE6884E2F78C9B3F72"/></Association>
+			<Association Name="assoc_117E530EDE9AD3F2569913ABEC40E09A" sap:content-version="1"><End Type="cds_projectbillingelement_sd.C_ProjectBillingElementTPType" Multiplicity="1"
+				Role="FromRole_assoc_117E530EDE9AD3F2569913ABEC40E09A"/><End Type="cds_projectbillingelement_sd.C_ProjectBillingCustomerCardType" Multiplicity="1"
+				Role="ToRole_assoc_117E530EDE9AD3F2569913ABEC40E09A"/>
+				<ReferentialConstraint>
+					<Principal Role="ToRole_assoc_117E530EDE9AD3F2569913ABEC40E09A"><PropertyRef Name="Customer"/></Principal>
+					<Dependent Role="FromRole_assoc_117E530EDE9AD3F2569913ABEC40E09A"><PropertyRef Name="Customer"/></Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="assoc_202D4D8D1D1FE627EC98331FC1FD5C9E" sap:content-version="1"><End Type="cds_projectbillingelement_sd.C_ProjectBillingElementTPType" Multiplicity="1"
+				Role="FromRole_assoc_202D4D8D1D1FE627EC98331FC1FD5C9E"/><End Type="cds_projectbillingelement_sd.I_PrjBlgElmEntrForPrepaymentType" Multiplicity="*"
+				Role="ToRole_assoc_202D4D8D1D1FE627EC98331FC1FD5C9E"/></Association>
+			<Association Name="assoc_15A7D2538ABC52B8DFB9487A7DC3F877" sap:content-version="1"><End Type="cds_projectbillingelement_sd.C_ProjectBillingElementTPType" Multiplicity="1"
+				Role="FromRole_assoc_15A7D2538ABC52B8DFB9487A7DC3F877"/><End Type="cds_projectbillingelement_sd.C_ProjBillgSlsItmBillgPlnDuDteType" Multiplicity="*"
+				Role="ToRole_assoc_15A7D2538ABC52B8DFB9487A7DC3F877"/></Association>
+			<Association Name="assoc_AA578513EAFD4D2A3AB0F0799005D3C9" sap:content-version="1"><End Type="cds_projectbillingelement_sd.C_ProjectBillingElementTPType" Multiplicity="1"
+				Role="FromRole_assoc_AA578513EAFD4D2A3AB0F0799005D3C9"/><End Type="cds_projectbillingelement_sd.I_ProjectBillingDocDetailsType" Multiplicity="*"
+				Role="ToRole_assoc_AA578513EAFD4D2A3AB0F0799005D3C9"/></Association>
+			<Association Name="assoc_D1C12C9130D6162A7029F274A726D751" sap:content-version="1">
+				<End Type="cds_projectbillingelement_sd.C_ProjectBillingElementTPType" Multiplicity="1"
+					Role="FromRole_assoc_D1C12C9130D6162A7029F274A726D751"><OnDelete Action="Cascade"/></End><End Type="cds_projectbillingelement_sd.C_ProjectBillingElementEntryTPType" Multiplicity="*"
+					Role="ToRole_assoc_D1C12C9130D6162A7029F274A726D751"/>
+				<ReferentialConstraint>
+					<Principal Role="FromRole_assoc_D1C12C9130D6162A7029F274A726D751"><PropertyRef Name="ProjectBillingElementUUID"/></Principal>
+					<Dependent Role="ToRole_assoc_D1C12C9130D6162A7029F274A726D751"><PropertyRef Name="ProjectBillingElementUUID"/></Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="assoc_17C0B91A7330859B4D45F79BEBC011DD" sap:content-version="1">
+				<End Type="cds_projectbillingelement_sd.C_ProjectBillingElementEntryTPType" Multiplicity="1"
+					Role="FromRole_assoc_17C0B91A7330859B4D45F79BEBC011DD"><OnDelete Action="Cascade"/></End><End Type="cds_projectbillingelement_sd.C_ProjectBillgElmntEntrFlwTPType" Multiplicity="*"
+					Role="ToRole_assoc_17C0B91A7330859B4D45F79BEBC011DD"/>
+				<ReferentialConstraint>
+					<Principal Role="FromRole_assoc_17C0B91A7330859B4D45F79BEBC011DD"><PropertyRef Name="ProjBillgElmntEntrItmUUID"/></Principal>
+					<Dependent Role="ToRole_assoc_17C0B91A7330859B4D45F79BEBC011DD"><PropertyRef Name="ProjBillgElmntEntrItmUUID"/></Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="assoc_8C86376791494F74867E4A5A7F1017AA" sap:content-version="1"><End Type="cds_projectbillingelement_sd.C_ProjectBillingElementEntryTPType" Multiplicity="1"
+				Role="FromRole_assoc_8C86376791494F74867E4A5A7F1017AA"/><End Type="cds_projectbillingelement_sd.C_ProjectBillingElementTPType" Multiplicity="1" Role="ToRole_assoc_8C86376791494F74867E4A5A7F1017AA"/></Association>
+			<EntityContainer Name="cds_projectbillingelement_sd_Entities" m:IsDefaultEntityContainer="true" sap:message-scope-supported="true"
+				sap:supported-formats="atom json xlsx"><EntitySet Name="C_BillingMethodVH" EntityType="cds_projectbillingelement_sd.C_BillingMethodVHType" sap:creatable="false"
+				sap:updatable="false" sap:deletable="false" sap:content-version="1"/><EntitySet Name="C_PrftCtrValHelp" EntityType="cds_projectbillingelement_sd.C_PrftCtrValHelpType" sap:creatable="false"
+				sap:updatable="false" sap:deletable="false" sap:searchable="true" sap:content-version="1"/><EntitySet Name="C_ProjBillgSlsItmBillgPlnDuDte" EntityType="cds_projectbillingelement_sd.C_ProjBillgSlsItmBillgPlnDuDteType"
+				sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:addressable="false" sap:content-version="1"/><EntitySet Name="C_ProjectBillgElmntEntrFlwTP" EntityType="cds_projectbillingelement_sd.C_ProjectBillgElmntEntrFlwTPType"
+				sap:deletable="false" sap:content-version="1"/><EntitySet Name="C_ProjectBillingCustomerCard" EntityType="cds_projectbillingelement_sd.C_ProjectBillingCustomerCardType"
+				sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:searchable="true" sap:content-version="1"/><EntitySet Name="C_ProjectBillingElementEntryTP" EntityType="cds_projectbillingelement_sd.C_ProjectBillingElementEntryTPType"
+				sap:deletable="false" sap:content-version="1"/><EntitySet Name="C_ProjectBillingElementTP" EntityType="cds_projectbillingelement_sd.C_ProjectBillingElementTPType" sap:searchable="true"
+				sap:content-version="1"/><EntitySet Name="I_BillingWBSBasicDataStdVH" EntityType="cds_projectbillingelement_sd.I_BillingWBSBasicDataStdVHType" sap:creatable="false"
+				sap:updatable="false" sap:deletable="false" sap:searchable="true" sap:content-version="1"/><EntitySet Name="I_ControllingArea" EntityType="cds_projectbillingelement_sd.I_ControllingAreaType" sap:creatable="false"
+				sap:updatable="false" sap:deletable="false" sap:searchable="true" sap:content-version="1"/><EntitySet Name="I_CostCenterStdVH" EntityType="cds_projectbillingelement_sd.I_CostCenterStdVHType" sap:creatable="false"
+				sap:updatable="false" sap:deletable="false" sap:searchable="true" sap:content-version="1"/><EntitySet Name="I_Customer_VH" EntityType="cds_projectbillingelement_sd.I_Customer_VHType" sap:creatable="false" sap:updatable="false"
+				sap:deletable="false" sap:searchable="true" sap:content-version="1"/><EntitySet Name="I_CustProjSlsOrdItmBillgPlnItm" EntityType="cds_projectbillingelement_sd.I_CustProjSlsOrdItmBillgPlnItmType"
+				sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/><EntitySet Name="I_EngagementProjectVH" EntityType="cds_projectbillingelement_sd.I_EngagementProjectVHType" sap:creatable="false"
+				sap:updatable="false" sap:deletable="false" sap:searchable="true" sap:content-version="1"/><EntitySet Name="I_EngmntProjSrvcOrgStdVH" EntityType="cds_projectbillingelement_sd.I_EngmntProjSrvcOrgStdVHType" sap:creatable="false"
+				sap:updatable="false" sap:deletable="false" sap:searchable="true" sap:content-version="1"/><EntitySet Name="I_PrjBlgElmEntrForPrepayment" EntityType="cds_projectbillingelement_sd.I_PrjBlgElmEntrForPrepaymentType"
+				sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/><EntitySet Name="I_ProfitCenterStdVH" EntityType="cds_projectbillingelement_sd.I_ProfitCenterStdVHType" sap:creatable="false"
+				sap:updatable="false" sap:deletable="false" sap:searchable="true" sap:content-version="1"/><EntitySet Name="I_ProjectBillingDocDetails" EntityType="cds_projectbillingelement_sd.I_ProjectBillingDocDetailsType" sap:creatable="false"
+				sap:updatable="false" sap:deletable="false" sap:content-version="1"/><EntitySet Name="I_SlsDocItemBillingPlanDueDate" EntityType="cds_projectbillingelement_sd.I_SlsDocItemBillingPlanDueDateType"
+				sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:addressable="false" sap:content-version="1"/>
+				<AssociationSet Name="assoc_773185173BDADAEE6884E2F78C9B3F72"
+					Association="cds_projectbillingelement_sd.assoc_773185173BDADAEE6884E2F78C9B3F72" sap:creatable="false" sap:updatable="false"
+					sap:deletable="false" sap:content-version="1"><End EntitySet="C_ProjectBillgElmntEntrFlwTP" Role="FromRole_assoc_773185173BDADAEE6884E2F78C9B3F72"/><End EntitySet="C_ProjectBillingElementEntryTP" Role="ToRole_assoc_773185173BDADAEE6884E2F78C9B3F72"/></AssociationSet>
+				<AssociationSet Name="assoc_D1C12C9130D6162A7029F274A726D751"
+					Association="cds_projectbillingelement_sd.assoc_D1C12C9130D6162A7029F274A726D751" sap:creatable="false" sap:updatable="false"
+					sap:deletable="false" sap:content-version="1"><End EntitySet="C_ProjectBillingElementTP" Role="FromRole_assoc_D1C12C9130D6162A7029F274A726D751"/><End EntitySet="C_ProjectBillingElementEntryTP" Role="ToRole_assoc_D1C12C9130D6162A7029F274A726D751"/></AssociationSet>
+				<AssociationSet Name="assoc_AA578513EAFD4D2A3AB0F0799005D3C9"
+					Association="cds_projectbillingelement_sd.assoc_AA578513EAFD4D2A3AB0F0799005D3C9" sap:creatable="false" sap:updatable="false"
+					sap:deletable="false" sap:content-version="1"><End EntitySet="C_ProjectBillingElementTP" Role="FromRole_assoc_AA578513EAFD4D2A3AB0F0799005D3C9"/><End EntitySet="I_ProjectBillingDocDetails" Role="ToRole_assoc_AA578513EAFD4D2A3AB0F0799005D3C9"/></AssociationSet>
+				<AssociationSet Name="assoc_8C86376791494F74867E4A5A7F1017AA"
+					Association="cds_projectbillingelement_sd.assoc_8C86376791494F74867E4A5A7F1017AA" sap:creatable="false" sap:updatable="false"
+					sap:deletable="false" sap:content-version="1"><End EntitySet="C_ProjectBillingElementEntryTP" Role="FromRole_assoc_8C86376791494F74867E4A5A7F1017AA"/><End EntitySet="C_ProjectBillingElementTP" Role="ToRole_assoc_8C86376791494F74867E4A5A7F1017AA"/></AssociationSet>
+				<AssociationSet Name="assoc_15A7D2538ABC52B8DFB9487A7DC3F877"
+					Association="cds_projectbillingelement_sd.assoc_15A7D2538ABC52B8DFB9487A7DC3F877" sap:creatable="false" sap:updatable="false"
+					sap:deletable="false" sap:content-version="1"><End EntitySet="C_ProjectBillingElementTP" Role="FromRole_assoc_15A7D2538ABC52B8DFB9487A7DC3F877"/><End EntitySet="C_ProjBillgSlsItmBillgPlnDuDte" Role="ToRole_assoc_15A7D2538ABC52B8DFB9487A7DC3F877"/></AssociationSet>
+				<AssociationSet Name="assoc_117E530EDE9AD3F2569913ABEC40E09A"
+					Association="cds_projectbillingelement_sd.assoc_117E530EDE9AD3F2569913ABEC40E09A" sap:creatable="false" sap:updatable="false"
+					sap:deletable="false" sap:content-version="1"><End EntitySet="C_ProjectBillingElementTP" Role="FromRole_assoc_117E530EDE9AD3F2569913ABEC40E09A"/><End EntitySet="C_ProjectBillingCustomerCard" Role="ToRole_assoc_117E530EDE9AD3F2569913ABEC40E09A"/></AssociationSet>
+				<AssociationSet Name="assoc_202D4D8D1D1FE627EC98331FC1FD5C9E"
+					Association="cds_projectbillingelement_sd.assoc_202D4D8D1D1FE627EC98331FC1FD5C9E" sap:creatable="false" sap:updatable="false"
+					sap:deletable="false" sap:content-version="1"><End EntitySet="C_ProjectBillingElementTP" Role="FromRole_assoc_202D4D8D1D1FE627EC98331FC1FD5C9E"/><End EntitySet="I_PrjBlgElmEntrForPrepayment" Role="ToRole_assoc_202D4D8D1D1FE627EC98331FC1FD5C9E"/></AssociationSet>
+				<AssociationSet Name="assoc_17C0B91A7330859B4D45F79BEBC011DD"
+					Association="cds_projectbillingelement_sd.assoc_17C0B91A7330859B4D45F79BEBC011DD" sap:creatable="false" sap:updatable="false"
+					sap:deletable="false" sap:content-version="1"><End EntitySet="C_ProjectBillingElementEntryTP" Role="FromRole_assoc_17C0B91A7330859B4D45F79BEBC011DD"/><End EntitySet="C_ProjectBillgElmntEntrFlwTP" Role="ToRole_assoc_17C0B91A7330859B4D45F79BEBC011DD"/></AssociationSet>
+				<FunctionImport Name="CreateBillgDocReqFromPrjBlgElm" ReturnType="Collection(cds_projectbillingelement_sd.D_PrjBlgElmUpdtFrmBillgDocReqP)"
+					m:HttpMethod="POST" sap:action-for="cds_projectbillingelement_sd.C_ProjectBillingElementTPType"><Parameter Name="ProjectBillingElementUUID" Type="Edm.Guid" Mode="In"/></FunctionImport>
+				<FunctionImport Name="CreateProjectBillingRequest" ReturnType="cds_projectbillingelement_sd.C_ProjectBillingElementTPType"
+					EntitySet="C_ProjectBillingElementTP" m:HttpMethod="POST"><Parameter Name="BillingWBSElementInternalID" Type="Edm.String" Mode="In" MaxLength="8" Nullable="true"/></FunctionImport>
+			</EntityContainer>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillgElmntEntrFlwTPType/ProfitCenter"
+				xmlns="http://docs.oasis-open.org/odata/ns/edm">
+				<Annotation Term="Common.ValueList">
+					<Record><PropertyValue Property="Label" String="Profit Center"/><PropertyValue Property="CollectionPath" String="I_ProfitCenterStdVH"/><PropertyValue Property="SearchSupported" Bool="true"/>
+						<PropertyValue Property="Parameters">
+							<Collection>
+								<Record Type="Common.ValueListParameterInOut"><PropertyValue Property="LocalDataProperty" PropertyPath="ControllingArea"/><PropertyValue Property="ValueListProperty" String="ControllingArea"/></Record>
+								<Record Type="Common.ValueListParameterInOut"><PropertyValue Property="LocalDataProperty" PropertyPath="ProfitCenter"/><PropertyValue Property="ValueListProperty" String="ProfitCenter"/></Record>
+								<Record Type="Common.ValueListParameterDisplayOnly"><PropertyValue Property="ValueListProperty" String="ProfitCenter_Text"/></Record>
+								<Record Type="Common.ValueListParameterDisplayOnly"><PropertyValue Property="ValueListProperty" String="ValidityEndDate"/></Record>
+								<Record Type="Common.ValueListParameterDisplayOnly"><PropertyValue Property="ValueListProperty" String="ValidityStartDate"/></Record>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+			</Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillgElmntEntrFlwTPType/ResponsibleCostCenter"
+				xmlns="http://docs.oasis-open.org/odata/ns/edm">
+				<Annotation Term="Common.ValueList">
+					<Record><PropertyValue Property="Label" String="Responsible Cost Center"/><PropertyValue Property="CollectionPath" String="I_CostCenterStdVH"/><PropertyValue Property="SearchSupported" Bool="true"/>
+						<PropertyValue Property="Parameters">
+							<Collection>
+								<Record Type="Common.ValueListParameterInOut"><PropertyValue Property="LocalDataProperty" PropertyPath="ControllingArea"/><PropertyValue Property="ValueListProperty" String="ControllingArea"/></Record>
+								<Record Type="Common.ValueListParameterInOut"><PropertyValue Property="LocalDataProperty" PropertyPath="ResponsibleCostCenter"/><PropertyValue Property="ValueListProperty" String="CostCenter"/></Record>
+								<Record Type="Common.ValueListParameterDisplayOnly"><PropertyValue Property="ValueListProperty" String="CostCenter_Text"/></Record>
+								<Record Type="Common.ValueListParameterDisplayOnly"><PropertyValue Property="ValueListProperty" String="ValidityEndDate"/></Record>
+								<Record Type="Common.ValueListParameterDisplayOnly"><PropertyValue Property="ValueListProperty" String="ValidityStartDate"/></Record>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+			</Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillgElmntEntrFlwTPType/ControllingArea"
+				xmlns="http://docs.oasis-open.org/odata/ns/edm">
+				<Annotation Term="Common.ValueList">
+					<Record><PropertyValue Property="Label" String="Controlling Area"/><PropertyValue Property="CollectionPath" String="I_ControllingArea"/><PropertyValue Property="SearchSupported" Bool="true"/>
+						<PropertyValue Property="Parameters">
+							<Collection>
+								<Record Type="Common.ValueListParameterInOut"><PropertyValue Property="LocalDataProperty" PropertyPath="ControllingArea"/><PropertyValue Property="ValueListProperty" String="ControllingArea"/></Record>
+								<Record Type="Common.ValueListParameterDisplayOnly"><PropertyValue Property="ValueListProperty" String="ChartOfAccounts"/></Record>
+								<Record Type="Common.ValueListParameterDisplayOnly"><PropertyValue Property="ValueListProperty" String="ChartOfAccounts_Text"/></Record>
+								<Record Type="Common.ValueListParameterDisplayOnly"><PropertyValue Property="ValueListProperty" String="ControllingAreaCurrency"/></Record>
+								<Record Type="Common.ValueListParameterDisplayOnly"><PropertyValue Property="ValueListProperty" String="ControllingAreaCurrencyRole"/></Record>
+								<Record Type="Common.ValueListParameterDisplayOnly"><PropertyValue Property="ValueListProperty" String="ControllingAreaName"/></Record>
+								<Record Type="Common.ValueListParameterDisplayOnly"><PropertyValue Property="ValueListProperty" String="CostCenterStandardHierarchy"/></Record>
+								<Record Type="Common.ValueListParameterDisplayOnly"><PropertyValue Property="ValueListProperty" String="CtrlgStdFinStatementVersion"/></Record>
+								<Record Type="Common.ValueListParameterDisplayOnly"><PropertyValue Property="ValueListProperty" String="CtrlgStdFinStatementVersion_Text"/></Record>
+								<Record Type="Common.ValueListParameterDisplayOnly"><PropertyValue Property="ValueListProperty" String="FinancialManagementArea"/></Record>
+								<Record Type="Common.ValueListParameterDisplayOnly"><PropertyValue Property="ValueListProperty" String="FiscalYearVariant"/></Record>
+								<Record Type="Common.ValueListParameterDisplayOnly"><PropertyValue Property="ValueListProperty" String="ProfitCenterAccountingCurrency"/></Record>
+								<Record Type="Common.ValueListParameterDisplayOnly"><PropertyValue Property="ValueListProperty" String="ProfitCenterStandardHierarchy"/></Record>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+			</Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/WBSElement" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+				<Annotation Term="Common.ValueList">
+					<Record><PropertyValue Property="Label" String="Billing Element"/><PropertyValue Property="CollectionPath" String="I_BillingWBSBasicDataStdVH"/><PropertyValue Property="SearchSupported" Bool="true"/>
+						<PropertyValue Property="Parameters">
+							<Collection>
+								<Record Type="Common.ValueListParameterInOut"><PropertyValue Property="LocalDataProperty" PropertyPath="WBSElement"/><PropertyValue Property="ValueListProperty" String="WBSElementExternalID"/></Record>
+								<Record Type="Common.ValueListParameterDisplayOnly"><PropertyValue Property="ValueListProperty" String="WBSDescription"/></Record>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+			</Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/Customer" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+				<Annotation Term="Common.ValueList">
+					<Record><PropertyValue Property="Label" String="Customer"/><PropertyValue Property="CollectionPath" String="I_Customer_VH"/><PropertyValue Property="SearchSupported" Bool="true"/>
+						<PropertyValue Property="Parameters">
+							<Collection>
+								<Record Type="Common.ValueListParameterInOut"><PropertyValue Property="LocalDataProperty" PropertyPath="Customer"/><PropertyValue Property="ValueListProperty" String="Customer"/></Record>
+								<Record Type="Common.ValueListParameterDisplayOnly"><PropertyValue Property="ValueListProperty" String="CityName"/></Record>
+								<Record Type="Common.ValueListParameterDisplayOnly"><PropertyValue Property="ValueListProperty" String="Country"/></Record>
+								<Record Type="Common.ValueListParameterDisplayOnly"><PropertyValue Property="ValueListProperty" String="CustomerName"/></Record>
+								<Record Type="Common.ValueListParameterDisplayOnly"><PropertyValue Property="ValueListProperty" String="OrganizationBPName1"/></Record>
+								<Record Type="Common.ValueListParameterDisplayOnly"><PropertyValue Property="ValueListProperty" String="OrganizationBPName2"/></Record>
+								<Record Type="Common.ValueListParameterDisplayOnly"><PropertyValue Property="ValueListProperty" String="StreetName"/></Record>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation><Annotation Term="Common.SemanticObject" String="Customer"/>
+				<Annotation Term="Common.SemanticObjectMapping">
+					<Collection>
+						<Record><PropertyValue Property="LocalProperty" PropertyPath="Customer"/><PropertyValue Property="SemanticObjectProperty" String="Customer"/></Record>
+					</Collection>
+				</Annotation>
+			</Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/CustomerProject"
+				xmlns="http://docs.oasis-open.org/odata/ns/edm">
+				<Annotation Term="Common.ValueList">
+					<Record><PropertyValue Property="Label" String="Project"/><PropertyValue Property="CollectionPath" String="I_EngagementProjectVH"/><PropertyValue Property="SearchSupported" Bool="true"/>
+						<PropertyValue Property="Parameters">
+							<Collection>
+								<Record Type="Common.ValueListParameterInOut"><PropertyValue Property="LocalDataProperty" PropertyPath="CustomerProject"/><PropertyValue Property="ValueListProperty" String="EngagementProject"/></Record>
+								<Record Type="Common.ValueListParameterDisplayOnly"><PropertyValue Property="ValueListProperty" String="EngagementProjectName"/></Record>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation><Annotation Term="Common.SemanticObject" String="EngagementProject"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/BillingPlanUsageCategoryName"
+				xmlns="http://docs.oasis-open.org/odata/ns/edm">
+				<Annotation Term="Common.ValueList">
+					<Record><PropertyValue Property="Label" String="Billing Method"/><PropertyValue Property="CollectionPath" String="C_BillingMethodVH"/><PropertyValue Property="SearchSupported" Bool="false"/>
+						<PropertyValue Property="Parameters">
+							<Collection>
+								<Record Type="Common.ValueListParameterInOut"><PropertyValue Property="LocalDataProperty" PropertyPath="BillingPlanUsageCategoryName"/><PropertyValue Property="ValueListProperty" String="BillingPlanUsageCategoryName"/></Record>
+								<Record Type="Common.ValueListParameterDisplayOnly"><PropertyValue Property="ValueListProperty" String="BillingPlanUsageCategory"/></Record>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation><Annotation Term="Common.ValueListWithFixedValues"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/ProfitCenter"
+				xmlns="http://docs.oasis-open.org/odata/ns/edm">
+				<Annotation Term="Common.ValueList">
+					<Record><PropertyValue Property="Label" String="Profit Center"/><PropertyValue Property="CollectionPath" String="C_PrftCtrValHelp"/><PropertyValue Property="SearchSupported" Bool="true"/>
+						<PropertyValue Property="Parameters">
+							<Collection>
+								<Record Type="Common.ValueListParameterInOut"><PropertyValue Property="LocalDataProperty" PropertyPath="ProfitCenter"/><PropertyValue Property="ValueListProperty" String="ProfitCenter"/></Record>
+								<Record Type="Common.ValueListParameterDisplayOnly"><PropertyValue Property="ValueListProperty" String="ControllingArea"/></Record>
+								<Record Type="Common.ValueListParameterDisplayOnly"><PropertyValue Property="ValueListProperty" String="ProfitCenterName"/></Record>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation><Annotation Term="Common.SemanticObject" String="ProfitCenter"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/ServiceOrganizationUnit"
+				xmlns="http://docs.oasis-open.org/odata/ns/edm">
+				<Annotation Term="Common.ValueList">
+					<Record><PropertyValue Property="Label" String="Service Organization"/><PropertyValue Property="CollectionPath" String="I_EngmntProjSrvcOrgStdVH"/><PropertyValue Property="SearchSupported" Bool="true"/>
+						<PropertyValue Property="Parameters">
+							<Collection>
+								<Record Type="Common.ValueListParameterInOut"><PropertyValue Property="LocalDataProperty" PropertyPath="ServiceOrganizationUnit"/><PropertyValue Property="ValueListProperty" String="EngagementProjectServiceOrg"/></Record>
+								<Record Type="Common.ValueListParameterDisplayOnly"><PropertyValue Property="ValueListProperty" String="EngagementProjectServiceOrg_Text"/></Record>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+			</Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/CostCenter" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+				<Annotation Term="Common.ValueList">
+					<Record><PropertyValue Property="Label" String="OrganizationUnitKey"/><PropertyValue Property="CollectionPath" String="I_CostCenterStdVH"/><PropertyValue Property="SearchSupported" Bool="true"/>
+						<PropertyValue Property="Parameters">
+							<Collection>
+								<Record Type="Common.ValueListParameterInOut"><PropertyValue Property="LocalDataProperty" PropertyPath="ControllingArea"/><PropertyValue Property="ValueListProperty" String="ControllingArea"/></Record>
+								<Record Type="Common.ValueListParameterInOut"><PropertyValue Property="LocalDataProperty" PropertyPath="CostCenter"/><PropertyValue Property="ValueListProperty" String="CostCenter"/></Record>
+								<Record Type="Common.ValueListParameterDisplayOnly"><PropertyValue Property="ValueListProperty" String="CostCenter_Text"/></Record>
+								<Record Type="Common.ValueListParameterDisplayOnly"><PropertyValue Property="ValueListProperty" String="ValidityEndDate"/></Record>
+								<Record Type="Common.ValueListParameterDisplayOnly"><PropertyValue Property="ValueListProperty" String="ValidityStartDate"/></Record>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+			</Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/CostCenterProfitCenter"
+				xmlns="http://docs.oasis-open.org/odata/ns/edm">
+				<Annotation Term="Common.ValueList">
+					<Record><PropertyValue Property="Label" String="Profit Center"/><PropertyValue Property="CollectionPath" String="I_ProfitCenterStdVH"/><PropertyValue Property="SearchSupported" Bool="true"/>
+						<PropertyValue Property="Parameters">
+							<Collection>
+								<Record Type="Common.ValueListParameterInOut"><PropertyValue Property="LocalDataProperty" PropertyPath="ControllingArea"/><PropertyValue Property="ValueListProperty" String="ControllingArea"/></Record>
+								<Record Type="Common.ValueListParameterInOut"><PropertyValue Property="LocalDataProperty" PropertyPath="CostCenterProfitCenter"/><PropertyValue Property="ValueListProperty" String="ProfitCenter"/></Record>
+								<Record Type="Common.ValueListParameterDisplayOnly"><PropertyValue Property="ValueListProperty" String="ProfitCenter_Text"/></Record>
+								<Record Type="Common.ValueListParameterDisplayOnly"><PropertyValue Property="ValueListProperty" String="ValidityEndDate"/></Record>
+								<Record Type="Common.ValueListParameterDisplayOnly"><PropertyValue Property="ValueListProperty" String="ValidityStartDate"/></Record>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+			</Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/EngagementProjectServiceOrg"
+				xmlns="http://docs.oasis-open.org/odata/ns/edm">
+				<Annotation Term="Common.ValueList">
+					<Record><PropertyValue Property="Label" String="Service Organization"/><PropertyValue Property="CollectionPath" String="I_EngmntProjSrvcOrgStdVH"/><PropertyValue Property="SearchSupported" Bool="true"/>
+						<PropertyValue Property="Parameters">
+							<Collection>
+								<Record Type="Common.ValueListParameterInOut"><PropertyValue Property="LocalDataProperty" PropertyPath="EngagementProjectServiceOrg"/><PropertyValue Property="ValueListProperty" String="EngagementProjectServiceOrg"/></Record>
+								<Record Type="Common.ValueListParameterDisplayOnly"><PropertyValue Property="ValueListProperty" String="EngagementProjectServiceOrg_Text"/></Record>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation><Annotation Term="Common.SemanticObject" String="ServiceOrganization"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.cds_projectbillingelement_sd_Entities" xmlns="http://docs.oasis-open.org/odata/ns/edm"><Annotation Term="Common.ApplyMultiUnitBehaviorForSortingAndFiltering" Bool="true"/>
+				<Annotation Term="Aggregation.ApplySupported">
+					<Record>
+						<PropertyValue Property="Transformations">
+							<Collection>
+								<String>aggregate</String>
+								<String>groupby</String>
+								<String>filter</String>
+							</Collection>
+						</PropertyValue><PropertyValue Property="Rollup" EnumMember="None"/></Record>
+				</Annotation>
+			</Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.cds_projectbillingelement_sd_Entities/C_ProjectBillingElementTP"
+				xmlns="http://docs.oasis-open.org/odata/ns/edm">
+				<Annotation Term="Capabilities.FilterRestrictions">
+					<Record>
+						<PropertyValue Property="FilterExpressionRestrictions">
+							<Collection>
+								<Record><PropertyValue Property="Property" PropertyPath="DueBillingDate"/><PropertyValue Property="AllowedExpressions" String="SingleRange"/></Record>
+								<Record><PropertyValue Property="Property" PropertyPath="IsMyProjectBillingElement"/><PropertyValue Property="AllowedExpressions" String="SingleValue"/></Record>
+								<Record><PropertyValue Property="Property" PropertyPath="BillingDate"/><PropertyValue Property="AllowedExpressions" String="SingleRange"/></Record>
+							</Collection>
+						</PropertyValue>
+						<PropertyValue Property="NonFilterableProperties">
+							<Collection>
+								<PropertyPath>BillableRevenueAmtInDocCrcy</PropertyPath>
+								<PropertyPath>UnbilledRevnAmtInDocCrcy</PropertyPath>
+								<PropertyPath>BillgReqdRevenueAmtInDocCrcy</PropertyPath>
+								<PropertyPath>PlndRevnAmt</PropertyPath>
+								<PropertyPath>BillingDate</PropertyPath>
+								<PropertyPath>BillingPlanItemUsage</PropertyPath>
+								<PropertyPath>PlndPrepaymentAmtInProjCrcy</PropertyPath>
+								<PropertyPath>NetValueAmountInDocCurrency</PropertyPath>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+				<Annotation Term="Capabilities.NavigationRestrictions">
+					<Record>
+						<PropertyValue Property="RestrictedProperties">
+							<Collection>
+								<Record><PropertyValue Property="NavigationProperty" NavigationPropertyPath="to_ProjectBillingElementEntry"/>
+									<PropertyValue Property="InsertRestrictions">
+										<Record><PropertyValue Property="Insertable" Bool="true"/></Record>
+									</PropertyValue>
+								</Record>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+				<Annotation Term="Capabilities.SortRestrictions">
+					<Record>
+						<PropertyValue Property="NonSortableProperties">
+							<Collection>
+								<PropertyPath>BillableRevenueAmtInDocCrcy</PropertyPath>
+								<PropertyPath>UnbilledRevnAmtInDocCrcy</PropertyPath>
+								<PropertyPath>ProjBillgElmntEntrIsCancelled</PropertyPath>
+								<PropertyPath>BillgReqdRevenueAmtInDocCrcy</PropertyPath>
+								<PropertyPath>PlndRevnAmt</PropertyPath>
+								<PropertyPath>BillingDate</PropertyPath>
+								<PropertyPath>BillingPlanItemUsage</PropertyPath>
+								<PropertyPath>PlndPrepaymentAmtInProjCrcy</PropertyPath>
+								<PropertyPath>NetValueAmountInDocCurrency</PropertyPath>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+			</Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.cds_projectbillingelement_sd_Entities/C_ProjectBillingElementEntryTP"
+				xmlns="http://docs.oasis-open.org/odata/ns/edm">
+				<Annotation Term="Capabilities.NavigationRestrictions">
+					<Record>
+						<PropertyValue Property="RestrictedProperties">
+							<Collection>
+								<Record><PropertyValue Property="NavigationProperty" NavigationPropertyPath="to_ProjectBillgElmntEntrFlw"/>
+									<PropertyValue Property="InsertRestrictions">
+										<Record><PropertyValue Property="Insertable" Bool="true"/></Record>
+									</PropertyValue>
+								</Record>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+			</Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingCustomerCardType" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+				<Annotation Term="Common.SemanticKey">
+					<Collection>
+						<PropertyPath>Customer</PropertyPath>
+					</Collection>
+				</Annotation>
+				<Annotation Term="Communication.Contact">
+					<Record><PropertyValue Property="fn" Path="CustomerName"/>
+						<PropertyValue Property="adr">
+							<Collection>
+								<Record><PropertyValue Property="type" EnumMember="Communication.ContactInformationType/preferred"/><PropertyValue Property="locality" Path="CityName"/><PropertyValue Property="street" Path="StreetName"/><PropertyValue Property="country" Path="Country"/><PropertyValue Property="code" Path="PostalCode"/></Record>
+							</Collection>
+						</PropertyValue>
+						<PropertyValue Property="tel">
+							<Collection>
+								<Record><PropertyValue Property="type" EnumMember="Communication.PhoneType/cell"/><PropertyValue Property="uri" Path="MobilePhoneNumber"/></Record>
+								<Record><PropertyValue Property="type" EnumMember="Communication.PhoneType/work"/><PropertyValue Property="uri" Path="PhoneNumber"/></Record>
+							</Collection>
+						</PropertyValue>
+						<PropertyValue Property="email">
+							<Collection>
+								<Record><PropertyValue Property="type" EnumMember="Communication.ContactInformationType/work"/><PropertyValue Property="address" Path="EmailAddress"/></Record>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+				<Annotation Term="Communication.Address">
+					<Record><PropertyValue Property="type" EnumMember="Communication.ContactInformationType/preferred"/><PropertyValue Property="locality" Path="CityName"/><PropertyValue Property="street" Path="StreetName"/><PropertyValue Property="country" Path="Country"/><PropertyValue Property="code" Path="PostalCode"/></Record>
+				</Annotation>
+			</Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementEntryTPType" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+				<Annotation Term="Common.SemanticKey">
+					<Collection>
+						<PropertyPath>WBSElementInternalID</PropertyPath>
+					</Collection>
+				</Annotation><Annotation Term="Common.SemanticObject" String="CustomerProject"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+				<Annotation Term="Common.SemanticKey">
+					<Collection>
+						<PropertyPath>WBSElement</PropertyPath>
+					</Collection>
+				</Annotation>
+			</Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingCustomerCardType/EmailAddress"
+				xmlns="http://docs.oasis-open.org/odata/ns/edm"><Annotation Term="Communication.IsEmailAddress"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingCustomerCardType/PhoneNumber"
+				xmlns="http://docs.oasis-open.org/odata/ns/edm"><Annotation Term="Communication.IsPhoneNumber"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingCustomerCardType/MobilePhoneNumber"
+				xmlns="http://docs.oasis-open.org/odata/ns/edm"><Annotation Term="Communication.IsPhoneNumber"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/IsMyProjectBillingElement"
+				xmlns="http://docs.oasis-open.org/odata/ns/edm"><Annotation Term="Common.FilterDefaultValue" Bool="true"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/BillingPlanUsageCategory"
+				xmlns="http://docs.oasis-open.org/odata/ns/edm"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/DocumentCurrency"
+				xmlns="http://docs.oasis-open.org/odata/ns/edm"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/TransactionCurrency"
+				xmlns="http://docs.oasis-open.org/odata/ns/edm"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/BilledRevenueAmtInDocCrcy"
+				xmlns="http://docs.oasis-open.org/odata/ns/edm"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/UnbilledRevnAmtInDocCrcy"
+				xmlns="http://docs.oasis-open.org/odata/ns/edm"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/BillgReqdRevenueAmtInDocCrcy"
+				xmlns="http://docs.oasis-open.org/odata/ns/edm"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/PlndRevnAmt" xmlns="http://docs.oasis-open.org/odata/ns/edm"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/CappedNetAmount"
+				xmlns="http://docs.oasis-open.org/odata/ns/edm"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/WrittenOffRevenueAmtInDocCrcy"
+				xmlns="http://docs.oasis-open.org/odata/ns/edm"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/ProjectDescription"
+				xmlns="http://docs.oasis-open.org/odata/ns/edm"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/CustomerName"
+				xmlns="http://docs.oasis-open.org/odata/ns/edm"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/StoreCustomerName"
+				xmlns="http://docs.oasis-open.org/odata/ns/edm"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/BillingDate" xmlns="http://docs.oasis-open.org/odata/ns/edm"><Annotation Term="UI.HiddenFilter"/></Annotations><Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/PlndPrepaymentAmtInProjCrcy"
+				xmlns="http://docs.oasis-open.org/odata/ns/edm"/>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/NetValueAmountInDocCurrency"
+				xmlns="http://docs.oasis-open.org/odata/ns/edm"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="cds_projectbillingelement_sd.C_ProjectBillingElementTPType/EngmtProjectServiceOrgName"
+				xmlns="http://docs.oasis-open.org/odata/ns/edm"><Annotation Term="UI.HiddenFilter"/></Annotations><Annotations Target="cds_projectbillingelement_sd.I_CustProjSlsOrdItmBillgPlnItmType/BillingPlanAmount"
+				xmlns="http://docs.oasis-open.org/odata/ns/edm"/><Annotations Target="cds_projectbillingelement_sd.I_SlsDocItemBillingPlanDueDateType/BillingPlanAmount"
+				xmlns="http://docs.oasis-open.org/odata/ns/edm"/><atom:link rel="self" href="./sap/opu/odata/sap/UI_PROJBILLGELMNT_SB_V2/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/><atom:link rel="latest-version" href="./sap/opu/odata/sap/UI_PROJBILLGELMNT_SB_V2/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/></Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

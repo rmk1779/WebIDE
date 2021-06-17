@@ -1,0 +1,61 @@
+{
+	"userDetails": [
+
+		{
+			"name": "rmk",
+			"address": "hrg",
+			"age": 25,
+			"weight": 5,
+			"salary": 23445
+		},
+		{
+			"name": "rmk",
+			"address": "hubli",
+			"age": 28,
+			"weight": "48kg",
+			"salary": 29445
+		},
+		{
+			"name": "shreyas",
+			"address": "sid",
+			"age": 5,
+			"weight": "18kg",
+			"salary": 3445
+		},
+		{
+			"name": "abd",
+			"address": "SA",
+			"age": 35,
+			"weight": "68kg",
+			"salary": 234456
+		},
+		{
+			"name": "rmk",
+			"address": "hrg",
+			"age": 25,
+			"weight": 5,
+			"salary": 23445
+		},
+		{
+			"name": "sud",
+			"address": "hubli",
+			"age": 28,
+			"weight": "48kg",
+			"salary": 29445
+		},
+		{
+			"name": "shreyas",
+			"address": "sid",
+			"age": 5,
+			"weight": "18kg",
+			"salary": 3445
+		},
+		{
+			"name": "abd",
+			"address": "SA",
+			"age": 35,
+			"weight": "68kg",
+			"salary": 234456
+		}
+	]
+}

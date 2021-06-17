@@ -1,0 +1,295 @@
+<edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
+	<edmx:Reference Uri="/Northwind/v2/northwind/northwind.svc/$metadata">
+		<edmx:Include Alias="Metadata" Namespace="NorthwindModel"/>
+	</edmx:Reference>
+	<edmx:Reference Uri="https://wiki.scn.sap.com/wiki/download/attachments/448470968/UI.xml?api=v2">
+		<edmx:Include Alias="UI" Namespace="com.sap.vocabularies.UI.v1"/>
+	</edmx:Reference>
+	<edmx:Reference Uri="https://wiki.scn.sap.com/wiki/download/attachments/448470974/Common.xml?api=v2">
+		<edmx:Include Alias="Common" Namespace="com.sap.vocabularies.Common.v1"/>
+	</edmx:Reference>
+	<edmx:DataServices>
+		<Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="Rmk_Report.annotations.rmk_annotation.NorthwindModel">
+			<Annotations Target="Metadata.Product">
+				<Annotation Term="UI.SelectionFields">
+					<Collection>
+						<PropertyPath>ProductID</PropertyPath>
+						<PropertyPath>ProductName</PropertyPath>
+						<PropertyPath>UnitPrice</PropertyPath>
+						<PropertyPath>UnitsInStock</PropertyPath>
+					</Collection>
+					<Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+				</Annotation>
+				<Annotation Term="UI.QuickViewFacets" Qualifier="QVF">
+					<Collection>
+						<Record Type="UI.ReferenceFacet">
+							<PropertyValue Property="Target" AnnotationPath="@UI.FieldGroup#h1"/>
+							<PropertyValue Property="Label" String="{@i18n&gt;QVF1}"/>
+							<PropertyValue Property="ID" String="idQVF1"/>
+						</Record>
+						<Record Type="UI.ReferenceFacet">
+							<PropertyValue Property="Target" AnnotationPath="@UI.FieldGroup#h2"/>
+							<PropertyValue Property="Label" String="{@i18n&gt;QVF2}"/>
+							<PropertyValue Property="ID" String="idQVF2"/>
+						</Record>
+					</Collection>
+				</Annotation>
+				<Annotation Term="UI.HeaderInfo">
+					<Record Type="UI.HeaderInfoType">
+						<PropertyValue Property="TypeName" String="{@i18n&gt;PRODUCT}"/>
+						<PropertyValue Property="TypeNamePlural" String="{@i18n&gt;PRODUCTS}"/>
+					</Record>
+				</Annotation>
+				<Annotation Term="UI.FieldGroup" Qualifier="h2">
+					<Record Type="UI.FieldGroupType">
+						<PropertyValue Property="Data">
+							<Collection>
+								<Record Type="UI.DataField">
+									<PropertyValue Property="Value" Path="QuantityPerUnit"/>
+									<PropertyValue Property="Label" String="{@i18n&gt;QUANTITY_PER_UNIT}"/>
+									<PropertyValue Property="Criticality" EnumMember="UI.CriticalityType/Positive"/>
+								</Record>
+								<Record Type="UI.DataField">
+									<PropertyValue Property="Value" Path="UnitPrice"/>
+									<PropertyValue Property="Label" String="{@i18n&gt;UNITPRICE}"/>
+									<PropertyValue Property="Criticality" EnumMember="UI.CriticalityType/Critical"/>
+								</Record>
+								<Record Type="UI.DataField">
+									<PropertyValue Property="Value" Path="UnitsInStock"/>
+									<PropertyValue Property="Label" String="{@i18n&gt;UNITINSTOCK}"/>
+								</Record>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+				<Annotation Term="UI.FieldGroup" Qualifier="h1">
+					<Record Type="UI.FieldGroupType">
+						<PropertyValue Property="Data">
+							<Collection>
+								<Record Type="UI.DataField">
+									<PropertyValue Property="Value" Path="ProductID"/>
+									<PropertyValue Property="Label" String="{@i18n&gt;PRODUCTID}"/>
+								</Record>
+								<Record Type="UI.DataField">
+									<PropertyValue Property="Value" Path="ProductName"/>
+									<PropertyValue Property="Label" String="{@i18n&gt;PRODUCTNAME}"/>
+								</Record>
+								<Record Type="UI.DataField">
+									<PropertyValue Property="Value" Path="CategoryID"/>
+									<PropertyValue Property="Label" String="{@i18n&gt;CATEGORYID}"/>
+								</Record>
+							</Collection>
+						</PropertyValue>
+						<PropertyValue Property="Label" String="{@i18n&gt;PRIMARY}"/>
+					</Record>
+				</Annotation>
+				<Annotation Term="UI.HeaderFacets">
+					<Collection>
+						<Record Type="UI.CollectionFacet">
+							<PropertyValue Property="Facets">
+								<Collection>
+									<Record Type="UI.ReferenceFacet">
+										<PropertyValue Property="Target" AnnotationPath="@UI.FieldGroup#h1"/>
+										<PropertyValue Property="Label" String="{@i18n&gt;PRIMARY}"/>
+									</Record>
+								</Collection>
+							</PropertyValue>
+							<PropertyValue Property="Label" String="{@i18n&gt;COLLECTION}"/>
+						</Record>
+						<Record Type="UI.ReferenceFacet">
+							<PropertyValue Property="Target" AnnotationPath="@UI.FieldGroup#h2"/>
+							<PropertyValue Property="Label" String="{@i18n&gt;SECONDARY}"/>
+						</Record>
+					</Collection>
+					<Annotation Term="Common.Heading" String="Hi hello"/>
+				</Annotation>
+				<Annotation Term="UI.SelectionVariant" Qualifier="L">
+					<Record Type="UI.SelectionVariantType">
+						<PropertyValue Property="SelectOptions">
+							<Collection>
+								<Record Type="UI.SelectOptionType">
+									<PropertyValue Property="PropertyName" PropertyPath="Order_Details/Quantity"/>
+									<PropertyValue Property="Ranges">
+										<Collection>
+											<Record Type="UI.SelectionRangeType">
+												<PropertyValue Property="Sign" EnumMember="UI.SelectionRangeSignType/I"/>
+												<PropertyValue Property="Option" EnumMember="UI.SelectionRangeOptionType/LT"/>
+												<PropertyValue Property="Low" Int="20"/>
+											</Record>
+										</Collection>
+									</PropertyValue>
+								</Record>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+				<Annotation Term="UI.SelectionVariant" Qualifier="G">
+					<Record Type="UI.SelectionVariantType">
+						<PropertyValue Property="SelectOptions">
+							<Collection>
+								<Record Type="UI.SelectOptionType">
+									<PropertyValue Property="PropertyName" PropertyPath="Order_Details/Quantity"/>
+									<PropertyValue Property="Ranges">
+										<Collection>
+											<Record Type="UI.SelectionRangeType">
+												<PropertyValue Property="Sign" EnumMember="UI.SelectionRangeSignType/I"/>
+												<PropertyValue Property="Option" EnumMember="UI.SelectionRangeOptionType/GT"/>
+												<PropertyValue Property="Low" Int="20"/>
+											</Record>
+										</Collection>
+									</PropertyValue>
+								</Record>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+				<Annotation Term="UI.Facets">
+					<Collection>
+						<Record Type="UI.ReferenceFacet">
+							<PropertyValue Property="Target" AnnotationPath="Order_Details/@UI.LineItem#OD"/>
+							<PropertyValue Property="Label" String="{@i18n&gt;ORDER_DETAILS}"/>
+							<PropertyValue Property="ID" String="idSection"/>
+						</Record>
+					</Collection>
+				</Annotation>
+				<Annotation Term="UI.LineItem">
+					<Collection>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="UnitPrice"/>
+							<PropertyValue Property="Label" String="{@i18n&gt;UNITPRICE}"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="UnitsInStock"/>
+							<PropertyValue Property="Label" String="{@i18n&gt;UNITINSTOCK}"/>
+							<PropertyValue Property="Criticality" EnumMember="UI.CriticalityType/Critical"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="QuantityPerUnit"/>
+							<PropertyValue Property="Label" String="{@i18n&gt;QUANTITYPERUNIT}"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="ProductName"/>
+							<PropertyValue Property="Label" String="{@i18n&gt;PRODUCTNAME}"/>
+							<PropertyValue Property="Criticality" EnumMember="UI.CriticalityType/Negative"/>
+							<PropertyValue Property="CriticalityRepresentation" EnumMember="UI.CriticalityRepresentationType/WithoutIcon"/>
+						</Record>
+						<Record Type="UI.DataFieldForIntentBasedNavigation">
+							<PropertyValue Property="SemanticObject" String="ssss"/>
+							<PropertyValue Property="Label" String="{@i18n&gt;ACT-LABEL}"/>
+						</Record>
+						<Record Type="UI.DataFieldWithIntentBasedNavigation">
+							<PropertyValue Property="SemanticObject" String="ProductID_sem"/>
+							<PropertyValue Property="Value" Path="ProductID"/>
+							<PropertyValue Property="Label" String="{@i18n&gt;PRODUCTID}"/>
+						</Record>
+					</Collection>
+				</Annotation>
+			</Annotations>
+			<Annotations Target="Metadata.Order_Detail">
+				<Annotation Term="UI.FilterFacets">
+					<Collection>
+						<Record Type="UI.ReferenceFacet">
+							<PropertyValue Property="Target" AnnotationPath="@UI.FieldGroup#ofg1"/>
+						</Record>
+					</Collection>
+				</Annotation>
+				<Annotation Term="UI.FieldGroup" Qualifier="ofg1">
+					<Record Type="UI.FieldGroupType">
+						<PropertyValue Property="Data">
+							<Collection>
+								<Record Type="UI.DataField">
+									<PropertyValue Property="Value" Path="ProductID"/>
+								</Record>
+								<Record Type="UI.DataField">
+									<PropertyValue Property="Value" Path="OrderID"/>
+								</Record>
+								<Record Type="UI.DataField">
+									<PropertyValue Property="Value" Path="Quantity"/>
+								</Record>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+				<Annotation Term="UI.QuickViewFacets" Qualifier="od_qv_rf">
+					<Collection>
+						<Record Type="UI.ReferenceFacet">
+							<PropertyValue Property="Target" AnnotationPath="@UI.LineItem#OD"/>
+						</Record>
+					</Collection>
+				</Annotation>
+				<Annotation Term="UI.SelectionVariant" Qualifier="LT">
+					<Record Type="UI.SelectionVariantType">
+						<PropertyValue Property="SelectOptions">
+							<Collection>
+								<Record Type="UI.SelectOptionType">
+									<PropertyValue Property="PropertyName" PropertyPath="Quantity"/>
+									<PropertyValue Property="Ranges">
+										<Collection>
+											<Record Type="UI.SelectionRangeType">
+												<PropertyValue Property="Sign" EnumMember="UI.SelectionRangeSignType/I"/>
+												<PropertyValue Property="Option" EnumMember="UI.SelectionRangeOptionType/LT"/>
+												<PropertyValue Property="Low" Int="20"/>
+											</Record>
+										</Collection>
+									</PropertyValue>
+								</Record>
+							</Collection>
+						</PropertyValue>
+						<PropertyValue Property="Text" String="{@i18n&gt;LESS_QUANTITY}"/>
+					</Record>
+				</Annotation>
+				<Annotation Term="UI.SelectionVariant" Qualifier="GT">
+					<Record Type="UI.SelectionVariantType">
+						<PropertyValue Property="SelectOptions">
+							<Collection>
+								<Record Type="UI.SelectOptionType">
+									<PropertyValue Property="PropertyName" PropertyPath="Quantity"/>
+									<PropertyValue Property="Ranges">
+										<Collection>
+											<Record Type="UI.SelectionRangeType">
+												<PropertyValue Property="Sign" EnumMember="UI.SelectionRangeSignType/I"/>
+												<PropertyValue Property="Option" EnumMember="UI.SelectionRangeOptionType/GT"/>
+												<PropertyValue Property="Low" Int="20"/>
+											</Record>
+										</Collection>
+									</PropertyValue>
+								</Record>
+							</Collection>
+						</PropertyValue>
+						<PropertyValue Property="Text" String="{@i18n&gt;HIGH_QUANTITY}"/>
+					</Record>
+				</Annotation>
+				<Annotation Term="UI.LineItem" Qualifier="OD">
+					<Collection>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="ProductID"/>
+							<PropertyValue Property="Label" String="{@i18n&gt;PRODUCTID}"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="Quantity"/>
+							<PropertyValue Property="Label" String="{@i18n&gt;QUANTITY}"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="UnitPrice"/>
+							<PropertyValue Property="Label" String="{@i18n&gt;UNITPRICE}"/>
+						</Record>
+					</Collection>
+				</Annotation>
+			</Annotations>
+			<Annotations Target="Metadata.Product/ProductName">
+				<Annotation Term="Common.SemanticObject" Qualifier="PN_SEM">
+					<Apply Function="odata.concat">
+						<String>Product_Sem</String>
+						<Path>Order_Details/ProductID</Path>
+					</Apply>
+				</Annotation>
+			</Annotations>
+			<Annotations Target="Metadata.Product/ProductID">
+				<Annotation Term="Common.SemanticObject" String="ProductID_sem"/>
+			</Annotations>
+			<Annotations Target="Metadata.Order_Detail/ProductID">
+				<Annotation Term="Common.SemanticObject" String="od_idpi"/>
+			</Annotations>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

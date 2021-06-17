@@ -1,0 +1,195 @@
+<core:FragmentDefinition xmlns:fb="sap.ui.comp.filterbar" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns="sap.m">
+	<fb:FilterBar id="filterBarId" reset="onReset" search="onDetailPageGoPress" showRestoreButton="true" showClearButton="true"
+		persistencyKey="detailFilterKey">
+		<fb:filterGroupItems>
+			<fb:FilterGroupItem groupName="moveAllocationGroup" name="section" label="{i18n>section}" partOfCurrentVariant="true"
+				visibleInFilterBar="true">
+				<fb:control>
+					<MultiInput id="idSection" valueHelpOnly="false" tokens="{ATPOverviewModel>/allocationVsConsumption/sectionTokens}" showSuggestion="true"
+						showValueHelp="true" valueHelpRequest="f4ValueRequest" suggestionRows="{ATPOverviewModel>/allocationVsConsumption/sectionF4Data}"
+						tokenUpdate="onSectionTokenUpdate" suggestionItemSelected="onSelectToSectionSuggestion">
+						<tokens>
+							<Token id="idSectionToken" text="{ATPOverviewModel>text}" key="{ATPOverviewModel>key}"></Token>
+						</tokens>
+						<suggestionColumns>
+							<Column hAlign="Center" popinDisplay="Inline" demandPopin="true">
+								<Label text="{i18n>section}"/>
+							</Column>
+						</suggestionColumns>
+						<suggestionRows>
+							<ColumnListItem>
+								<cells>
+									<Label text="{ATPOverviewModel>Section}"/>
+								</cells>
+							</ColumnListItem>
+						</suggestionRows>
+						<customData>
+							<core:CustomData key="f4name" value="sectionF4"></core:CustomData>
+						</customData>
+					</MultiInput>
+				</fb:control>
+			</fb:FilterGroupItem>
+			<fb:FilterGroupItem groupName="moveAllocationGroup" name="productgroup" label="{i18n>productgroup}" labelTooltip="{i18n>productgroup}"
+				partOfCurrentVariant="true" visibleInFilterBar="true">
+				<fb:control>
+					<MultiInput id="idProductGroup" valueHelpOnly="false" tokens="{ATPOverviewModel>/allocationVsConsumption/productGrpDetailTokens}"
+						showValueHelp="true" showSuggestion="true" valueHelpRequest="f4ValueRequest" tokenUpdate="onSectionTokenUpdate"
+						suggestionItemSelected="onSelectProductGroupSuggestion">
+						<tokens>
+							<Token id="idProductGroupToken" text="{ATPOverviewModel>text}" key="{ATPOverviewModel>key}"></Token>
+						</tokens>
+						<suggestionColumns>
+							<Column hAlign="Begin" popinDisplay="Inline" demandPopin="true">
+								<Label text="{i18n>sellerName}"/>
+							</Column>
+							<Column hAlign="Begin" popinDisplay="Inline" demandPopin="true">
+								<Label text="{i18n>seller}"/>
+							</Column>
+						</suggestionColumns>
+						<suggestionRows>
+							<ColumnListItem>
+								<cells>
+									<Label text="{ATPOverviewModel>SellerName}"/>
+									<Label text="{ATPOverviewModel>Seller}"/>
+								</cells>
+							</ColumnListItem>
+						</suggestionRows>
+						<customData>
+							<core:CustomData key="f4name" value="productGrpDetailF4"></core:CustomData>
+						</customData>
+					</MultiInput>
+				</fb:control>
+			</fb:FilterGroupItem>
+			<fb:FilterGroupItem groupName="moveAllocationGroup" name="product" label="{i18n>product}" labelTooltip="{i18n>product}"
+				partOfCurrentVariant="true" visibleInFilterBar="true">
+				<fb:control>
+					<MultiInput id="idProduct" valueHelpOnly="false" tokens="{ATPOverviewModel>/allocationVsConsumption/productTokens}" showValueHelp="true"
+						showSuggestion="true" valueHelpRequest="f4ValueRequest" tokenUpdate="onSectionTokenUpdate"
+						suggestionRows="{ATPOverviewModel>/allocationVsConsumption/productF4FlatData}" suggestionItemSelected="onSelectProductSuggestion">
+						<tokens>
+							<Token id="idProductToken" text="{ATPOverviewModel>text}" key="{ATPOverviewModel>key}"></Token>
+						</tokens>
+						<suggestionColumns>
+							<Column hAlign="Begin" popinDisplay="Inline" demandPopin="true">
+								<Label text="{i18n>sellerName}"/>
+							</Column>
+							<Column hAlign="Begin" popinDisplay="Inline" demandPopin="true">
+								<Label text="{i18n>seller}"/>
+							</Column>
+						</suggestionColumns>
+						<suggestionRows>
+							<ColumnListItem>
+								<cells>
+									<Label text="{ATPOverviewModel>SellerName}"/>
+									<Label text="{ATPOverviewModel>Seller}"/>
+								</cells>
+							</ColumnListItem>
+						</suggestionRows>
+						<customData>
+							<core:CustomData key="f4name" value="productF4"></core:CustomData>
+						</customData>
+					</MultiInput>
+				</fb:control>
+			</fb:FilterGroupItem>
+			<fb:FilterGroupItem groupName="moveAllocationGroup" name="site" label="{i18n>site}" labelTooltip="{i18n>site}" partOfCurrentVariant="true"
+				visibleInFilterBar="true">
+				<fb:control>
+					<MultiInput id="idSite" valueHelpOnly="false" tokens="{ATPOverviewModel>/allocationVsConsumption/siteTokens}" showValueHelp="true"
+						showSuggestion="true" valueHelpRequest="f4ValueRequest" tokenUpdate="onSectionTokenUpdate"
+						suggestionRows="{ATPOverviewModel>/siteF4FlatData}" suggestionItemSelected="onSelectSiteSuggestion">
+						<tokens>
+							<Token id="idSiteToken" text="{ATPOverviewModel>text}" key="{ATPOverviewModel>key}"></Token>
+						</tokens>
+						<suggestionColumns>
+							<Column hAlign="Begin" popinDisplay="Inline" demandPopin="true">
+								<Label text="{i18n>sellerName}"/>
+							</Column>
+							<Column hAlign="Begin" popinDisplay="Inline" demandPopin="true">
+								<Label text="{i18n>seller}"/>
+							</Column>
+						</suggestionColumns>
+						<suggestionRows>
+							<ColumnListItem>
+								<cells>
+									<Label text="{ATPOverviewModel>SellerName}"/>
+									<Label text="{ATPOverviewModel>Seller}"/>
+								</cells>
+							</ColumnListItem>
+						</suggestionRows>
+						<customData>
+							<core:CustomData key="f4name" value="siteF4"></core:CustomData>
+						</customData>
+					</MultiInput>
+				</fb:control>
+			</fb:FilterGroupItem>
+			<fb:FilterGroupItem groupName="moveAllocationGroup" name="seller" label="{i18n>seller}" labelTooltip="{i18n>seller}"
+				partOfCurrentVariant="true" visibleInFilterBar="true">
+				<fb:control>
+					<MultiInput id="idSeller" valueHelpOnly="false" tokens="{ATPOverviewModel>/allocationVsConsumption/sellerTokens}" showValueHelp="true"
+						showSuggestion="true" valueHelpRequest="f4ValueRequest" tokenUpdate="onSellerTokenUpdate"
+						suggestionRows="{ATPOverviewModel>/allocationVsConsumption/sellerF4FlatData}" suggestionItemSelected="onSelectSellerSuggestion">
+						<tokens>
+							<Token id="idSellerToken" text="{ATPOverviewModel>text}" key="{ATPOverviewModel>key}"></Token>
+						</tokens>
+						<suggestionColumns>
+							<Column hAlign="Begin" popinDisplay="Inline" demandPopin="true">
+								<Label text="{i18n>sellerName}"/>
+							</Column>
+							<Column hAlign="Begin" popinDisplay="Inline" demandPopin="true">
+								<Label text="{i18n>seller}"/>
+							</Column>
+						</suggestionColumns>
+						<suggestionRows>
+							<ColumnListItem>
+								<cells>
+									<Label text="{ATPOverviewModel>SellerName}"/>
+									<Label text="{ATPOverviewModel>Seller}"/>
+								</cells>
+							</ColumnListItem>
+						</suggestionRows>
+						<customData>
+							<core:CustomData key="f4name" value="sellerF4"></core:CustomData>
+						</customData>
+					</MultiInput>
+				</fb:control>
+			</fb:FilterGroupItem>
+			<fb:FilterGroupItem groupName="moveAllocationGroup" name="material" label="{i18n>materialAllocVsConsump}"
+				labelTooltip="{i18n>materialAllocVsConsump}" partOfCurrentVariant="true" visibleInFilterBar="true">
+				<fb:control>
+					<MultiInput id="idMaterial" valueHelpOnly="false" tokens="{ATPOverviewModel>/allocationVsConsumption/materialTokens}" showValueHelp="true"
+						showSuggestion="true" valueHelpRequest="f4ValueRequest" tokenUpdate="onSectionTokenUpdate"
+						suggestionRows="{ATPOverviewModel>/materialF4FlatData}" suggestionItemSelected="onSelectMaterialSuggestion">
+						<tokens>
+							<Token id="idMaterialToken" text="{ATPOverviewModel>text}" key="{ATPOverviewModel>key}"></Token>
+						</tokens>
+						<suggestionColumns>
+							<Column hAlign="Begin" popinDisplay="Inline" demandPopin="true">
+								<Label text="{i18n>sellerName}"/>
+							</Column>
+							<Column hAlign="Begin" popinDisplay="Inline" demandPopin="true">
+								<Label text="{i18n>seller}"/>
+							</Column>
+						</suggestionColumns>
+						<suggestionRows>
+							<ColumnListItem>
+								<cells>
+									<Label text="{ATPOverviewModel>SellerName}"/>
+									<Label text="{ATPOverviewModel>Seller}"/>
+								</cells>
+							</ColumnListItem>
+						</suggestionRows>
+						<customData>
+							<core:CustomData key="f4name" value="materialF4"></core:CustomData>
+						</customData>
+					</MultiInput>
+				</fb:control>
+			</fb:FilterGroupItem>
+			<fb:FilterGroupItem groupName="moveAllocationGroup" name="toWeek" label="{i18n>toWeek}" labelTooltip="{i18n>toWeek}"
+				partOfCurrentVariant="true" visibleInFilterBar="true">
+				<fb:control>
+					<Button icon="sap-icon://accelerated" press="onCalendarPress" tooltip="{i18n>weekPickerToolTip}" id="idWeekCalendar" text="To Week"></Button>
+				</fb:control>
+			</fb:FilterGroupItem>
+		</fb:filterGroupItems>
+	</fb:FilterBar>
+</core:FragmentDefinition>

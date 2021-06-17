@@ -1,0 +1,29 @@
+{
+"Datas":[
+{
+"srNo":1000001,
+"itemNo":10,
+"rdd":"2020.02.26",
+"material":"AAA-AAA",
+"site":5358,
+"prev":["OH:4", "IT:5", "FP:6", "CP:5", "PP:4"],
+"curr":["OH:6", "IT:5", "FP:4", "CP:10", "PP:4"],
+"uncof":2,
+"reqSeller":500111,
+"reqQty":7
+},
+{
+"srNo":1000001,
+"itemNo":10,
+"rdd":"2020.02.26",
+"material":"AAA-AAA",
+"site":5358,
+"prev":"",
+"curr":"",
+"uncof":2,
+"reqSeller":500111,
+"reqQty":""
+}
+
+]
+}

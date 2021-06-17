@@ -1,0 +1,19 @@
+Enter your custom styles here 
+.classTable{
+	
+	border:1px solid black !important;
+}
+
+.classTable td:nth-child(1){
+	background: grey !important;
+}
+
+.classTable td:nth-child(2){
+	background: grey !important;
+}
+.classTable td:nth-child(6){
+	background: grey !important;
+}
+.classTable td{
+border:1px solid black !important;	
+}

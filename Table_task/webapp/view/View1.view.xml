@@ -1,0 +1,90 @@
+<mvc:View controllerName="tbl.Table_task.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns:m="sap.m"
+	xmlns="sap.ui.table">
+	<m:Shell>
+		<m:App id="app">
+			<m:pages>
+				<m:Page id="page" title="{i18n>title}">
+					<m:content>
+						<Table id="idTable" class="classTable" rows="{path:'/Datas', templateShareable:'true'}" title="Report" selectionMode="None"
+							visibleRowCount="2" rowHeight="100px">
+							<columns >
+								<Column class="colStyle">
+									<m:Label text="sr.No"/>
+									<template>
+										<m:Text text="{srNo}" wrapping="false"/>
+									</template>
+								</Column>
+								<Column >
+									<m:Label text="Item No."/>
+									<template>
+										<m:Text text="{itemNo}"/>
+									</template>
+								</Column>
+								<Column >
+									<m:Label text="RDD"/>
+									<template>
+										<m:Text text="{rdd}"/>
+									</template>
+								</Column>
+								<Column >
+									<m:Label text="Material"/>
+									<template>
+										<m:Text text="{material}"/>
+									</template>
+								</Column>
+								<Column>
+									<m:Label text="Site"/>
+									<template>
+										<m:Text text="{site}"/>
+									</template>
+								</Column>
+								<Column>
+									<m:Label text="SP Type (Prev)"/>
+									<template>
+										<m:VBox>
+											<m:Link text="{prev/0}" press="fnPop" wrapping="false" subtle="true"/>
+											<m:Link text="{prev/1}" press="fnPop" wrapping="false"/>
+											<m:Link text="{prev/2}" press="fnPop" wrapping="false"/>
+											<m:Link text="{prev/3}" press="fnPop" wrapping="false"/>
+											<m:Link text="{prev/4}" press="fnPop" wrapping="false"/>
+										</m:VBox>
+									</template>
+								</Column>
+								<Column>
+									<m:Label text="SP Type (Curr)"/>
+									<template>
+										<m:VBox>
+											<m:Link text="{curr/0}" press="fnPop" wrapping="false"/>
+											<m:Link text="{curr/1}" press="fnPop" wrapping="false"/>
+											<m:Link text="{curr/2}" press="fnPop" wrapping="false"/>
+											<m:Link text="{curr/3}" press="fnPop" wrapping="false"/>
+											<m:Link text="{curr/4}" press="fnPop" wrapping="false"/>
+										</m:VBox>
+									</template>
+								</Column>
+								<Column>
+									<m:Label text="Uncof"/>
+									<template>
+										<m:Text text="{uncof}"/>
+									</template>
+								</Column>
+								<Column >
+									<m:Label text="REq. seller"/>
+									<template>
+										<m:Text text="{reqSeller}"/>
+									</template>
+								</Column>
+								<Column>
+									<m:Label text="REq. Qty"/>
+									<template>
+										<m:Text text="{reqQty}"/>
+									</template>
+								</Column>
+							</columns>
+						</Table>
+					</m:content>
+				</m:Page>
+			</m:pages>
+		</m:App>
+	</m:Shell>
+</mvc:View>

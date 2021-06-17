@@ -1,0 +1,26 @@
+<core:FragmentDefinition xmlns="sap.ui.table" xmlns:m="sap.m" xmlns:core="sap.ui.core">
+	<TreeTable id="idProductGroupTable"
+		rows="{path:'ATPOverviewModel>/moveAllocationHistory/productGroupF4Data', parameters: {arrayNames:['children']}}" selectionMode="Single"
+		selectionBehavior="RowOnly" enableSelectAll="false" collapseRecursive="false">
+		<extension>
+			<m:OverflowToolbar>
+				<!--<m:Title id="title" text="{i18n>tableTitle}"/>-->
+				<m:ToolbarSpacer/>
+				<m:CheckBox id="idIncludeLowerLevel" text="{i18n>includeLowLevelProductGroup}"
+					selected="{ATPOverviewModel>/moveAllocationHistory/lowLevelSelect}" select="onLowlevelSelected"/>
+				<m:Button text="{i18n>clearAllProductItem}" press="onClearAllSelection" type="Transparent"/>
+			</m:OverflowToolbar>
+		</extension>
+		<columns>
+			<Column id="idColumnItem">
+				<m:Label id="idColumnItemLabel" text="{i18n>productGroup}"/>
+				<template>
+					<m:HBox>
+						<m:CheckBox select="onChangeSelectionCB" selected="{ATPOverviewModel>checked}"/>
+						<m:Text id="idDataItemDesc" text="{ATPOverviewModel>Product}" wrapping="false" class="sapUiSmallMarginTop"/>
+					</m:HBox>
+				</template>
+			</Column>
+		</columns>
+	</TreeTable>
+</core:FragmentDefinition>

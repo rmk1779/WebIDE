@@ -1,0 +1,11 @@
+<core:View xmlns:commons="sap.ui.commons" xmlns:core="sap.ui.core" xmlns:form="sap.ui.layout.form" xmlns:l="sap.ui.layout"
+	xmlns:sfi="sap.ui.comp.smartfield" xmlns:sfo="sap.ui.comp.smartform" xmlns:table="sap.ui.table"
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1" xmlns:uxap="sap.uxap" xmlns="sap.m"
+	controllerName="i2d.ps.projectbillingrequests1.ext.controller.headerExt">
+	<VBox id="headerInfoGroupBillableRevenueVBoxID">
+		<Text id="ext.view.FieldGroupBillableRevenueDataPoint.BillableRevLabel" text="{i18n>BILLING_REVENUE_HEADER_LABEL}"/>
+		<ObjectNumber id="headerDataPointBillableRevenueID" class="sapMObjectNumberLarge" number="{ parts:[{path:'BillableRevenueAmtInDocCrcy'},{path:'DocumentCurrency'}], formatter: '.formatter.fnEnableGrouping' }"
+			unit="{DocumentCurrency}" emphasized="true" 
+			state="{ parts:[{path:'BilledRevenueAmtInDocCrcy'},{path:'BillableRevenueAmtInDocCrcy'},{path:'PlndRevnAmt'},{path:'CappedNetAmount'}], formatter: '.formatter.fnGetBillableRevenueStatus' }"/>
+	</VBox>
+</core:View>

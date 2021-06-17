@@ -1,0 +1,62 @@
+{
+	"Employees": [{
+			"empId": "EMP101",
+			"empName": "Kevin",
+			"email": "kevin@gmail.com",
+			"mobile": "9812345670",
+			"password": "Kevin123",
+			"joinDate": "04-FEB-2019",
+			"position": "SAP UI5 Consultant",
+			"salary": "35000",
+			"currency": "INR"
+		}, {
+			"empId": "EMP102",
+			"empName": "Stuart",
+			"email": "Stuart@gmail.com",
+			"mobile": "9871234560",
+			"password": "Stuart123",
+			"joinDate": "05-MAR-2019",
+			"position": "Technical Lead",
+			"salary": "55000",
+			"currency": "INR"
+		}, {
+			"empId": "EMP103",
+			"empName": "Bob",
+			"email": "Bob@gmail.com",
+			"mobile": "9876123450",
+			"password": "Bob123",
+			"joinDate": "06-APR-2019",
+			"position": " SAP UI5 Consultant",
+			"salary": "45000",
+			"currency": "INR"
+		}, {
+			"empId": "EMP104",
+			"empName": "Gru",
+			"email": "Gru@gmail.com",
+			"mobile": "9912345678",
+			"password": "Gru123",
+			"joinDate": "07-MAR-2019",
+			"position": " SAP ABAP Consultant",
+			"salary": "35000",
+			"currency": "INR"
+		}, {
+			"empId": "EMP105",
+			"empName": "Agnes",
+			"email": "Agnes@gmail.com",
+			"mobile": "9876543210",
+			"password": "Agnes123",
+			"joinDate": "08-MAY-2019",
+			"position": "Technical Lead",
+			"salary": "55000",
+			"currency": "INR"
+		}
+
+	],
+	"edits": [],
+	"length": [{
+		"editsLength": ""
+	}],
+	"request": [{
+		"requestNoti": "Transparent"
+	}]
+}

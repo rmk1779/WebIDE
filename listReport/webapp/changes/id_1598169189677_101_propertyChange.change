@@ -1,0 +1,41 @@
+{
+	"fileName": "id_1598169189677_101_propertyChange",
+	"fileType": "change",
+	"changeType": "propertyChange",
+	"moduleName": "",
+	"reference": "listReport.Component",
+	"packageName": "$TMP",
+	"content": {
+		"property": "showClearOnFB",
+		"newValue": true
+	},
+	"selector": {
+		"id": "listReport::sap.suite.ui.generic.template.ListReport.view.ListReport::Employees--listReportFilter",
+		"type": "sap.ui.comp.smartfilterbar.SmartFilterBar",
+		"idIsLocal": false
+	},
+	"layer": "CUSTOMER_BASE",
+	"texts": {},
+	"namespace": "apps/listReport/changes/",
+	"projectId": "listReport",
+	"creation": "2020-08-23T07:53:42.250Z",
+	"originalLanguage": "EN",
+	"support": {
+		"generator": "Change.createInitialFileContent",
+		"service": "",
+		"user": "",
+		"sapui5Version": "1.80.1",
+		"sourceChangeFileName": "",
+		"compositeCommand": ""
+	},
+	"oDataInformation": {},
+	"dependentSelector": {},
+	"validAppVersions": {
+		"creation": "1.0.0",
+		"from": "1.0.0",
+		"to": "1.0.0"
+	},
+	"jsOnly": false,
+	"variantReference": "",
+	"appDescriptorChange": false
+}

@@ -1,0 +1,34 @@
+{
+    "application": {
+        "id": "",
+        "title": "rmk_FilterBar",
+        "type": "SAP_UI5_Component",
+        "componentUrl": "/",
+        "appUrl": "#Sem_FBar-Display",
+        "navigationComponentName": "FB.FilterBar_Test",
+        "intentSemanticObject": "Sem_FBar",
+        "intentAction": "Display",
+        "html5ApplicationName": "filterbartest",
+        "HCPParentApplicationName": ""
+    },
+    "assignment": {
+        "groups": [
+            "c1b9e371-30f4-4fdc-a2d2-a0a5dd717582-1577856491983"
+        ],
+        "contentPackages": [
+            "eae22f89-ddb6-4a86-a529-b88538a49b92-1577856410684"
+        ],
+        "categories": []
+    },
+    "tile": {
+        "type": "DynamicTile",
+        "title": "Filter Bar App",
+        "subtitle": "filters",
+        "searchKeywords": "Filter Bar App,filters",
+        "displayIconUrl": "sap-icon://filter",
+        "displayInfoText": "",
+        "size": "1x1",
+        "serviceURL": "/sap/fiori/filterbartestundefinedundefined/$count",
+        "refreshInterval": 10
+    }
+}

@@ -1,0 +1,71 @@
+[{
+	"CustomerProject": "CustomerProject 1",
+	"CustomerProjectName": "CustomerProjectName 1",
+	"__metadata": {
+		"uri": "I_CustomerProjectVH('CustomerProject%201')",
+		"type": "cds_projectbillingelement_sd.I_CustomerProjectVHType"
+	}
+}, {
+	"CustomerProject": "CustomerProject 2",
+	"CustomerProjectName": "CustomerProjectName 2",
+	"__metadata": {
+		"uri": "I_CustomerProjectVH('CustomerProject%202')",
+		"type": "cds_projectbillingelement_sd.I_CustomerProjectVHType"
+	}
+}, {
+	"CustomerProject": "CustomerProject 3",
+	"CustomerProjectName": "CustomerProjectName 3",
+	"__metadata": {
+		"uri": "I_CustomerProjectVH('CustomerProject%203')",
+		"type": "cds_projectbillingelement_sd.I_CustomerProjectVHType"
+	}
+}, {
+	"CustomerProject": "CustomerProject 4",
+	"CustomerProjectName": "CustomerProjectName 4",
+	"__metadata": {
+		"uri": "I_CustomerProjectVH('CustomerProject%204')",
+		"type": "cds_projectbillingelement_sd.I_CustomerProjectVHType"
+	}
+}, {
+	"CustomerProject": "CustomerProject 5",
+	"CustomerProjectName": "CustomerProjectName 5",
+	"__metadata": {
+		"uri": "I_CustomerProjectVH('CustomerProject%205')",
+		"type": "cds_projectbillingelement_sd.I_CustomerProjectVHType"
+	}
+}, {
+	"CustomerProject": "CustomerProject 6",
+	"CustomerProjectName": "CustomerProjectName 6",
+	"__metadata": {
+		"uri": "I_CustomerProjectVH('CustomerProject%206')",
+		"type": "cds_projectbillingelement_sd.I_CustomerProjectVHType"
+	}
+}, {
+	"CustomerProject": "CustomerProject 7",
+	"CustomerProjectName": "CustomerProjectName 7",
+	"__metadata": {
+		"uri": "I_CustomerProjectVH('CustomerProject%207')",
+		"type": "cds_projectbillingelement_sd.I_CustomerProjectVHType"
+	}
+}, {
+	"CustomerProject": "CustomerProject 8",
+	"CustomerProjectName": "CustomerProjectName 8",
+	"__metadata": {
+		"uri": "I_CustomerProjectVH('CustomerProject%208')",
+		"type": "cds_projectbillingelement_sd.I_CustomerProjectVHType"
+	}
+}, {
+	"CustomerProject": "CustomerProject 9",
+	"CustomerProjectName": "CustomerProjectName 9",
+	"__metadata": {
+		"uri": "I_CustomerProjectVH('CustomerProject%209')",
+		"type": "cds_projectbillingelement_sd.I_CustomerProjectVHType"
+	}
+}, {
+	"CustomerProject": "CustomerProject 10",
+	"CustomerProjectName": "CustomerProjectName 10",
+	"__metadata": {
+		"uri": "I_CustomerProjectVH('CustomerProject%2010')",
+		"type": "cds_projectbillingelement_sd.I_CustomerProjectVHType"
+	}
+}]

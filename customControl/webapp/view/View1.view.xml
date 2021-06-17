@@ -1,0 +1,42 @@
+<mvc:View controllerName="customControl.customControl.controller.View1" xmlns:l="sap.ui.layout"
+	xmlns:Custom="customControl.customControl.control" xmlns:mvc="sap.ui.core.mvc" 
+	xmlns:html="http://www.w3.org/1999/xhtml" displayBlock="true" xmlns="sap.m">
+	<Carousel class="sapUiContentPadding" loop="true">
+		<pages>
+			<l:VerticalLayout>
+				<ObjectHeader title="xyz Brain RATING"></ObjectHeader>
+				<Custom:Rating valueSubmit="onRatingChanged"/>
+				<Custom:myCustom text="abcd text should be in header format" color="red" border="2px solid black"/>
+			</l:VerticalLayout>
+			<l:VerticalLayout>
+				<Image src="https://cdn.pixabay.com/photo/2018/09/01/14/16/minion-3646892__340.jpg" alt="Example picture of speakers"/>
+			</l:VerticalLayout>
+			<Image src="https://cdn.pixabay.com/photo/2015/10/05/17/09/minion-972908__340.jpg" alt="Example picture of USB flash drive"/>
+			<Text class="sapUiSmallMargin"
+				text="Lorem ipsum dolor st amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat"/>
+			<ScrollContainer height="100%" width="100%" horizontal="false" vertical="true">
+				<List headerText="Some List Content 1" items="{ path: '/ProductCollection' }">
+					<StandardListItem title="{Name}" description="{ProductId}" icon="{ProductPicUrl}" iconDensityAware="false" iconInset="false"/>
+				</List>
+			</ScrollContainer>
+			<Image src="https://cdn.pixabay.com/photo/2016/05/04/17/36/minion-1372252__340.jpg" alt="Example picture of spotlight"/>
+			<l:HorizontalLayout>
+			<html:iframe class="ifrm" width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1"></html:iframe>
+			<html:iframe class="ifrm" width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1"></html:iframe>
+			<html:iframe class="ifrm" width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1"></html:iframe>
+			</l:HorizontalLayout>
+		</pages>
+	</Carousel>
+	<Panel id="quickViewCardContainer" width="auto" height="600px">
+		<QuickViewCard id="quickViewCard" pages="{path : '/pages', templateShareable : 'true'}" navigate="onNavigate"
+			afterNavigate="onAfterNavigate">
+			<QuickViewPage pageId="{pageId}" header="{header}" icon="{icon}" title="title" titleUrl="{titleUrl}" description="{description}"
+				groups="{path : 'groups', templateShareable : 'true'}">
+				<QuickViewGroup heading="{heading}" elements="{path : 'elements', templateShareable : 'true'}">
+					<QuickViewGroupElement label="{label}" value="{value}" url="{url}" type="{elementType}" pageLinkId="{pageLinkId}"
+						emailSubject="{emailSubject}" target="{target}"></QuickViewGroupElement>
+				</QuickViewGroup>
+			</QuickViewPage>
+		</QuickViewCard>
+	</Panel>
+</mvc:View>

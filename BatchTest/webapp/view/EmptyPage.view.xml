@@ -1,0 +1,11 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="BT.BatchTest.controller.EmptyPage"
+	xmlns:f="sap.f" xmlns:html="http://www.w3.org/1999/xhtml">
+	
+	<f:DynamicPage id="idSellerMoveFrom" toggleHeaderOnTitleClick="false" headerExpanded="true" showFooter="true" fitContent="true"
+		class="sapUiSizeCompact">
+		<f:content>
+		<MessagePage id="idEmptyPageMessage" showHeader="false" text="List Item Detail will load after confirm btn" enableFormattedText="true"
+		description="take the Confirm Action " icon="sap-icon://hint"></MessagePage>
+		</f:content>
+	</f:DynamicPage>
+</mvc:View>

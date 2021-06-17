@@ -1,0 +1,14 @@
+<core:FragmentDefinition xmlns="sap.ui.comp.valuehelpdialog" xmlns:fb="sap.ui.comp.filterbar" xmlns:m="sap.m" xmlns:core="sap.ui.core">
+	<ValueHelpDialog id="idProductGrpValueHelpDialog" title="{i18n>productGroupTitle}" supportMultiselect="true" cancel="onValueHelpCancelPress"
+		afterClose="onValueHelpAfterClose" filterMode="false" key="ProductGrp" tokenDisplayBehaviour="idAndDescription" descriptionKey="ProductGrp"
+		updateSelection="onGeneralValueHelpUpdateSelection" tokenRemove="onGeneralTokenRemove" ok="onValueHelpDialogClose"
+		selectionChange="onGeneralValueHelpSelectionChange" class="SellerValueHelpClass">
+		<filterBar>
+			<fb:FilterBar id="idProductGrpFilter" advancedMode="false" search="onProductGrpTreeSearch"></fb:FilterBar>
+		</filterBar>
+		<customData>
+			<core:CustomData id="idProductGrpFilterCustom" key="F4Filter" value="productGrpDetailF4"></core:CustomData>
+			<core:CustomData key="f4name" value="productGrpDetailF4"></core:CustomData>
+		</customData>
+	</ValueHelpDialog>
+</core:FragmentDefinition>

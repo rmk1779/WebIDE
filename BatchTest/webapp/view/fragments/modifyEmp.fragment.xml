@@ -1,0 +1,89 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core">
+	<Dialog id="idModifyDialog" title="Modify Employees Data">
+		<l:VerticalLayout>
+			<Panel expandable="true" expanded="true" headerText="Add new Employee">
+				<f:SimpleForm layout="ResponsiveGridLayout">
+					<!--<f:title>-->
+					<!--<core:Title text="Add new Employee"/>-->
+					<!--</f:title>-->
+					<f:content>
+						<Label text="Name" labelFor="nameId"/>
+						<Input enabled="true" id="nameId" class="sapUiTinyMarginTop"/>
+						<Label text="Eployee id" labelFor="idId"/>
+						<Input enabled="true" id="idId" class="sapUiTinyMarginTop"/>
+						<Label text="Password" labelFor="pwdId"/>
+						<Input enabled="true" id="pwdId" class="sapUiTinyMarginTop"/>
+						<Label text="Email" labelFor="emailId"/>
+						<Input enabled="true" id="emailId" class="sapUiTinyMarginTop"/>
+						<Label text="Age" labelFor="ageId"/>
+						<Input enabled="true" id="ageId" class="sapUiTinyMarginTop"/>
+						<Label text="DOB" labelFor="dobId"/>
+						<DatePicker id="dobId" value=""></DatePicker>
+						<Label text="DOJ" labelFor="dojId"/>
+						<DatePicker id="dojId" value=""></DatePicker>
+						<Label text="Salary" labelFor="salaryId"/>
+						<Input enabled="true" id="salaryId" class="sapUiTinyMarginTop" value=""/>
+						<Label text="C-Address" labelFor="cAddressId"/>
+						<Input enabled="true" id="cAddressId" class="sapUiTinyMarginTop" value=""/>
+						<Label text="P-Address" labelFor="pAddressId"/>
+						<Input enabled="true" id="pAddressId" class="sapUiTinyMarginTop" value=""/>
+					</f:content>
+				</f:SimpleForm>
+			</Panel>
+			<Panel expanded="false" headerText="Update Employee" expandable="true">
+				<l:HorizontalLayout>
+					<l:VerticalLayout>
+						<List id="empListDialog" items="{/ZRMK_EMPSet}" selectionChange="onSelectUpdateEmp" mode="SingleSelectLeft" headerText="Employes List">
+							<items>
+								<StandardListItem title="{Name}"/>
+							</items>
+						</List>
+					</l:VerticalLayout>
+					<l:VerticalLayout id="idFormVisible" visible="false">
+						<f:SimpleForm id="idUpdateForm">
+							<f:title>
+								<core:Title text="Update Employee data"/>
+							</f:title>
+							<f:content>
+								<Label text="Name"/>
+								<Input enabled="true" id="nameIdUpdate" class="sapUiTinyMarginTop" value="{Name}"/>
+								<Label text="Eployee id" labelFor="idId" vAlign="Middle"/>
+								<Input enabled="true" id="idIdUpdate" class="sapUiTinyMarginTop" value="{Id}"/>
+								<Label text="Password"/>
+								<Input enabled="true" id="pwdIdUpdate" class="sapUiTinyMarginTop" value="{Password}"/>
+								<Label text="Email"/>
+								<Input enabled="true" id="emailIdUpdate" class="sapUiTinyMarginTop" value="{Email}"/>
+								<Label text="Age"/>
+								<Input enabled="true" id="ageIdUpdate" class="sapUiTinyMarginTop" value="{Age}"/>
+								<Label text="DOB"/>
+								<DatePicker id="dobIdUpdate" value="{Dob}"></DatePicker>
+								<Label text="DOJ"/>
+								<DatePicker id="dojIdUpdate" value="{Doj}"></DatePicker>
+								<Label text="Salary"/>
+								<Input enabled="true" id="salaryIdUpdate" class="sapUiTinyMarginTop" value="{Salary}"/>
+								<Label text="Cur Address"/>
+								<Input enabled="true" id="cAdrsIdUpdate" class="sapUiTinyMarginTop" value="{Caddress}"/>
+								<Label text="Permanent Address"/>
+								<Input enabled="true" id="pAdrsIdUpdate" class="sapUiTinyMarginTop" value="{Paddress}"/>
+							</f:content>
+						</f:SimpleForm>
+					</l:VerticalLayout>
+				</l:HorizontalLayout>
+			</Panel>
+			<Panel expandable="true" headerText="Remove Employee" expanded="false">
+				<List id="empListDelete" items="{/ZRMK_EMPSet}" selectionChange="onSelectDeleteEmp" mode="SingleSelectLeft" headerText="Employes List">
+					<items>
+						<StandardListItem title="{Name}"/>
+					</items>
+				</List>
+			</Panel>
+		</l:VerticalLayout>
+		<Toolbar>
+			<content>
+				<ToolbarSpacer/>
+				<Button text="Approve" press=".onModify"/>
+				<Button text="Close" press=".onCloseDialog"/>
+			</content>
+		</Toolbar>
+	</Dialog>
+</core:FragmentDefinition>

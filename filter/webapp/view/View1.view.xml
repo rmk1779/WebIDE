@@ -1,0 +1,41 @@
+<mvc:View controllerName="filter.filter.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<!--			<content>-->
+					<SearchField width="20%" search="searchFilterTableLevel" placeholder="Search for the value" liveChange="onSearchStart"/>
+					<VBox class="osrTileHLyout sapUiSmallMarginBottom" width="auto" items="{data>/HelpDetails}" id="idVbox">
+						<Panel expandable="true" expanded="false" width="auto" class="osrPanelToolBar osrPanel sapUiSmallMarginBottom">
+							<headerToolbar>
+								<Toolbar>
+									<HBox class="osrIdVerificationTitle">
+										<HBox>
+											<Text text="New" class="osrTileStrip osrSuccessStrip osrFontMedium sapUiTinyMarginEnd" wrapping="false"/>
+											<Title text="{data>title}"/>
+										</HBox>
+									</HBox>
+									<ToolbarSpacer/>
+								</Toolbar>
+							</headerToolbar>
+							<content>
+								<HBox width="100%" wrap="Wrap" items="{ path: 'data>textAndLink'}" >
+									<VBox class="sapUiSmallMarginTopBottom sapUiSmallMarginEnd osrThreeInput">
+										<HBox >
+											<core:Icon size=".8rem" color="gray" src="sap-icon://circle-task-2" class="sapUiSmallMarginBeginEnd"/>
+											<Text text="New" class="osrTileStrip osrWarningStrip osrFontMedium osr-warning-text sapUiTinyMarginEnd sapUiSmallMarginBottom"
+												wrapping="false"/>
+											<Link text="{data>text}" wrapping="true" target="_blank" href="{data>Link}"/>
+										</HBox>
+									</VBox>
+								</HBox>
+							</content>
+						</Panel>
+					</VBox>
+					<!--			</content>-->
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

@@ -1,0 +1,150 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds" xmlns:viz.data="sap.viz.ui5.data"
+	xmlns:viz="sap.viz.ui5.controls" xmlns:suite="sap.suite.ui.commons" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout">
+	<l:VerticalLayout width="100%">
+		<!--	<l:HorizontalLayout>
+			<l:VerticalLayout>
+				<Label text="{i18n>fromWeek}" labelFor="idOriginatorSubObject"/>
+				<Button icon="sap-icon://accelerated" press="onCalendarPress" tooltip="{i18n>weekPickerToolTip}" id="idWeekCalendar"
+					text="{ATPOverviewModel>/moveAllocationHistory/fromWeek}">
+					<layoutData>
+						<FlexItemData growFactor="1" shrinkFactor="0"/>
+					</layoutData>
+				</Button>
+			</l:VerticalLayout>
+			<l:VerticalLayout>
+				<Label text="Section" labelFor="idOriginatorSubObject"/>
+				<MultiInput id="idSection" width="12rem" valueHelpOnly="false" tokens="{ATPOverviewModel>/allocationAndConsumption/sectionTokens}"
+					showValueHelp="true" showSuggestion="true" valueHelpRequest="onF4ValueRequest" tokenUpdate="onInputTokenUpdate"
+					valueState="{ATPOverviewModel>/allocationAndConsumption/sSectionValueState}"
+					suggestionRows="{ATPOverviewModel>/allocationAndConsumption/sectionF4Data}" suggestionItemSelected="onSelectShowSuggestions">
+					<suggestionColumns>
+						<Column hAlign="Center" popinDisplay="Inline" demandPopin="true">
+							<Label text="{i18n>section}"/>
+						</Column>
+					</suggestionColumns>
+					<suggestionRows>
+						<ColumnListItem>
+							<cells>
+								<Label text="{ATPOverviewModel>Section}"/>
+							</cells>
+						</ColumnListItem>
+					</suggestionRows>
+					<layoutData>
+						<FlexItemData growFactor="1" shrinkFactor="0"/>
+					</layoutData>
+					<customData>
+						<core:CustomData key="f4name" value="sectionTypeF4"></core:CustomData>
+					</customData>
+					<tokens>
+						<Token id="idSectionToken" text="{ATPOverviewModel>text}" key="{ATPOverviewModel>key}"></Token>
+					</tokens>
+				</MultiInput>
+			</l:VerticalLayout>
+			<l:VerticalLayout class="sapUiSmallMarginBegin">
+				<Label text="{i18n>productGroup}" labelFor="idOriginatorSubObject"/>
+				<MultiInput id="idConsumptionProdGrp" width="12rem" valueHelpOnly="false"
+					tokens="{ATPOverviewModel>/allocationAndConsumption/consumptionProductGroupTokens}" showValueHelp="true" showSuggestion="true"
+					valueHelpRequest="onF4ValueRequest" tokenUpdate="onInputTokenUpdate"
+					enabled="{ATPOverviewModel>/allocationAndConsumption/bProductGroupEnable}"
+					suggestionRows="{ATPOverviewModel>/allocationAndConsumption/consumptionProductGroupF4Data}" suggestionItemSelected="onSelectShowSuggestions">
+					<suggestionColumns>
+						<Column hAlign="Center" popinDisplay="Inline" demandPopin="true">
+							<Label text="{i18n>productGroup}"/>
+						</Column>
+					</suggestionColumns>
+					<suggestionRows>
+						<ColumnListItem>
+							<cells>
+								<Label text="{ATPOverviewModel>ProductGrp}"/>
+							</cells>
+						</ColumnListItem>
+					</suggestionRows>
+					<layoutData>
+						<FlexItemData growFactor="1" shrinkFactor="0"/>
+					</layoutData>
+					<customData>
+						<core:CustomData key="f4name" value="consumptionProductGroupF4"></core:CustomData>
+					</customData>
+					<tokens>
+						<Token id="idConsumptionToken" text="{ATPOverviewModel>text}" key="{ATPOverviewModel>key}"></Token>
+					</tokens>
+				</MultiInput>
+			</l:VerticalLayout>
+			<Button text="Go" type="Emphasized" press="onSearchAllocationVsConsumption" class="sapUiLargeMarginBegin sapUiSmallMarginTop"></Button>
+		</l:HorizontalLayout>-->
+		<l:Grid defaultSpan="XL3 L3 M6 S12">
+			<l:VerticalLayout>
+				<Label text="{i18n>fromWeek}" labelFor="idOriginatorSubObject"/>
+				<Button icon="sap-icon://accelerated" press="onCalendarPress" tooltip="{i18n>weekPickerToolTip}" id="idWeekCalendar"
+					text="{ATPOverviewModel>/allocationAndConsumption/sSelectedWeek}"></Button>
+			</l:VerticalLayout>
+			<l:VerticalLayout >
+				<Label text="Section" labelFor="idOriginatorSubObject"/>
+				<MultiInput id="idSection" valueHelpOnly="false" tokens="{ATPOverviewModel>/allocationAndConsumption/sectionTokens}" showValueHelp="true"
+					showSuggestion="true" valueHelpRequest="onF4ValueRequest" tokenUpdate="onInputTokenUpdate"
+					valueState="{ATPOverviewModel>/allocationAndConsumption/sSectionValueState}"
+					suggestionRows="{ATPOverviewModel>/allocationAndConsumption/sectionF4Data}" suggestionItemSelected="onSelectShowSuggestions" width="100%">
+					<suggestionColumns>
+						<Column hAlign="Center" popinDisplay="Inline" demandPopin="true">
+							<Label text="{i18n>section}"/>
+						</Column>
+					</suggestionColumns>
+					<suggestionRows>
+						<ColumnListItem>
+							<cells>
+								<Label text="{ATPOverviewModel>Section}"/>
+							</cells>
+						</ColumnListItem>
+					</suggestionRows>
+					<customData>
+						<core:CustomData key="f4name" value="sectionF4"></core:CustomData>
+					</customData>
+					<tokens>
+						<Token id="idSectionToken" text="{ATPOverviewModel>text}" key="{ATPOverviewModel>key}"></Token>
+					</tokens>
+				</MultiInput>
+			</l:VerticalLayout>
+			<l:VerticalLayout>
+				<Label text="{i18n>productGroup}" labelFor="idOriginatorSubObject"/>
+				<MultiInput id="idConsumptionProdGrp" valueHelpOnly="false" tokens="{ATPOverviewModel>/allocationAndConsumption/productGrpDetailTokens}"
+					showValueHelp="true" showSuggestion="true" valueHelpRequest="onF4ValueRequest" tokenUpdate="onInputTokenUpdate"
+					enabled="{ATPOverviewModel>/allocationAndConsumption/bProductGroupEnable}" width="100%"
+					suggestionRows="{ATPOverviewModel>/allocationAndConsumption/productGrpDetailF4Data}" suggestionItemSelected="onSelectShowSuggestions">
+					<suggestionColumns>
+						<Column hAlign="Center" popinDisplay="Inline" demandPopin="true">
+							<Label text="{i18n>productGroup}"/>
+						</Column>
+					</suggestionColumns>
+					<suggestionRows>
+						<ColumnListItem>
+							<cells>
+								<Label text="{ATPOverviewModel>ProductGrp}"/>
+							</cells>
+						</ColumnListItem>
+					</suggestionRows>
+					<customData>
+						<core:CustomData key="f4name" value="productGrpDetailF4"></core:CustomData>
+					</customData>
+					<tokens>
+						<Token id="idConsumptionToken" text="{ATPOverviewModel>text}" key="{ATPOverviewModel>key}"></Token>
+					</tokens>
+				</MultiInput>
+			</l:VerticalLayout>
+			<Button text="Go" type="Emphasized" press="onSearchAllocationVsConsumption" class="sapUiSmallMarginTop"></Button>
+		</l:Grid>
+		<suite:ChartContainer id="idConsumptionChartContainer" showZoom="false" showLegendButton="true" showFullScreen="true">
+			<suite:ChartContainerContent>
+				<suite:content>
+					<viz:VizFrame id="idVizFrameCon" uiConfig="{applicationSet:'fiori'}" height="20rem" width="100%" vizType='column'
+						selectData="onLineChartDataPointSelect">
+						<viz:feeds>
+							<viz.feeds:FeedItem id="idFeedAllocation" uid="valueAxis" type="Measure" values="Allocation"/>
+							<viz.feeds:FeedItem id="idFeedConsumption" uid="valueAxis" type="Measure" values="Consumption"/>
+							<viz.feeds:FeedItem id="idFeedStoreName" uid="categoryAxis" type="Dimension" values="Section"/>
+						</viz:feeds>
+					</viz:VizFrame>
+				</suite:content>
+			</suite:ChartContainerContent>
+		</suite:ChartContainer>
+	</l:VerticalLayout>
+</core:FragmentDefinition>

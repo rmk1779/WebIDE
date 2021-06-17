@@ -1,0 +1,43 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="factr.FactoryFunc.controller.page1"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title">
+		<content>
+			<Table items="{path:'m1>/orderDetails', factory:'.Myfactoryfunction'}" id="tabId" busy="false"
+			growing="true" growingScrollToLoad="true" growingThreshold="5"
+				itemPress="onItemSelection">
+				<headerToolbar>
+					<Toolbar>
+						<ToolbarSpacer/>
+						<SearchField id="searchId" placeholder="search by orderID" search="handleChangeSearch"></SearchField>
+					</Toolbar>
+				</headerToolbar>
+				<columns>
+					<Column>
+						<ObjectIdentifier title="orderId"/>
+					</Column>
+					<Column>
+						<ObjectIdentifier title="productId"/>
+					</Column>
+					<Column>
+						<ObjectIdentifier title="productName"/>
+					</Column>
+					<Column>
+						<ObjectIdentifier title="unitPrice"/>
+					</Column>
+					<Column>
+						<ObjectIdentifier title="quantity"/>
+					</Column>
+				</columns>
+				<!--<ColumnListItem type="Active">-->
+				<!--	<cells>-->
+				<!--		<Text text="{m1>orderId}"/>-->
+				<!--		<Text text="{m1>productId}"/>-->
+				<!--		<Text text="{m1>productName}"/>-->
+				<!--		<Text text="{m1>unitPrice}"/>-->
+				<!--		<Text text="{m1>quantity}"/>-->
+				<!--	</cells>-->
+				<!--</ColumnListItem>-->
+			</Table>
+		</content>
+	</Page>
+</mvc:View>

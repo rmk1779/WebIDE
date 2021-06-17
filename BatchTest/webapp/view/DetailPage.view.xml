@@ -1,0 +1,41 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.f" xmlns:fd="sap.ui.layout.form"
+	controllerName="BT.BatchTest.controller.DetailPage" xmlns:l="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml">
+	<f:DynamicPage id="idSellerMoveFrom" toggleHeaderOnTitleClick="false" headerExpanded="true" showFooter="true" fitContent="true"
+		class="sapUiSizeCompact">
+		<f:content>
+			<fd:SimpleForm id="idUpdateForm">
+				<fd:title>
+					<core:Title text="Employee Detail Below"/>
+				</fd:title>
+				<fd:content>
+					<Label text="Name"/>
+					<Input enabled="false" id="nameIdDetail" class="sapUiTinyMarginTop" value="{Name}"/>
+					<Label text="Eployee id" labelFor="idId" vAlign="Middle"/>
+					<Input enabled="false" id="idIdDetail" class="sapUiTinyMarginTop" value="{Id}"/>
+					<Label text="Password"/>
+					<Input enabled="false" id="pwdIdDetail" class="sapUiTinyMarginTop" value="{Password}"/>
+					<Label text="Email"/>
+					<Input enabled="false" id="emailIdDetail" class="sapUiTinyMarginTop" value="{Email}"/>
+					<Label text="Age"/>
+					<Input enabled="false" id="ageIdDetail" class="sapUiTinyMarginTop" value="{Age}"/>
+					<Label text="DOB"/>
+					<DatePicker id="dobIdDetail" value="{Dob}" enabled="false"></DatePicker>
+					<Label text="DOJ"/>
+					<DatePicker id="dojIdDetail" value="{Doj}" enabled="false"></DatePicker>
+					<Label text="Salary"/>
+					<Input enabled="false" id="salaryIdDetail" class="sapUiTinyMarginTop" value="{Salary}"/>
+					<Label text="Cur Address"/>
+					<Input enabled="false" id="cAdrsIdDetail" class="sapUiTinyMarginTop" value="{Caddress}"/>
+					<Label text="Permanent Address"/>
+					<Input enabled="false" id="pAdrsIdDetail" class="sapUiTinyMarginTop" value="{Paddress}"/>
+				</fd:content>
+			</fd:SimpleForm>
+		</f:content>
+		<f:footer>
+			<Toolbar design="Transparent" style="Clear">
+				<ToolbarSpacer/>
+				<Button text="Back to Home" type="Transparent" press=".onBackHome"/>
+			</Toolbar>
+		</f:footer>
+	</f:DynamicPage>
+</mvc:View>

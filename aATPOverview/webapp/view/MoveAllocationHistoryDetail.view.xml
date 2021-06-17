@@ -1,0 +1,58 @@
+<mvc:View displayBlock="true" controllerName="com.samsung.aATPOverview.controller.MoveAllocationHistoryDetail" height="100%"
+	xmlns="sap.m" xmlns:f="sap.f" xmlns:mvc="sap.ui.core.mvc" xmlns:vm="sap.ui.comp.variants" class="sapUiSizeCompact" xmlns:layout="sap.ui.layout" xmlns:Table="sap.ui.table"
+	xmlns:core="sap.ui.core" xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+	xmlns:smartFilterBar="sap.ui.comp.smartfilterbar" xmlns:smartTable="sap.ui.comp.smarttable">
+	<f:DynamicPage id="idMoveAllocationHistoryDetail" toggleHeaderOnTitleClick="false" showFooter="true" fitContent="true"
+		class="sapUiSizeCompact">
+		<f:title>
+			<f:DynamicPageTitle>
+				<f:heading>
+					<Title text="{i18n>moveallocationHistory}"/>
+					<!--<vm:VariantManagement>-->
+					<!--</vm:VariantManagement>-->
+				</f:heading>
+			</f:DynamicPageTitle>
+		</f:title>
+		<f:header>
+			<f:DynamicPageHeader pinnable="false">
+				<f:content>
+					<core:Fragment type="XML" fragmentName="com.samsung.aATPOverview.view.fragments.MoveAllocationHistoryDetailFilter"/>
+				</f:content>
+			</f:DynamicPageHeader>
+		</f:header>
+		<f:content>
+			<smartTable:SmartTable beforeRebindTable="onBeforeRebindMoveListHistory" entitySet="ZCCIDPSD1_MOVEALLOC_HISTORY" tableType="Table"
+				id="idHistoryMoveList" useExportToExcel="true"
+				useVariantManagement="false" useTablePersonalisation="true" header="{i18n>moveList}" showRowCount="true"
+				persistencyKey="SmartTableAnalytical_Explored" enableAutoBinding="false" class="sapUiResponsiveContentPadding">
+				<Table id="idTable" fixedLayout="false">
+					<infoToolbar>
+						<Toolbar id="idInfoToolbar" active="true">
+							<content>
+								<Label id="idTableToolbar" text="{parts: [{
+									path: 'ATPOverviewModel/selectedLogWeek'
+								},{
+									path: 'ATPOverviewModel/productGroupTokens'
+								},{
+									path: 'ATPOverviewModel/moveType'
+								}],
+								formatter: '.getToolbarText'}"/>
+							</content>
+						</Toolbar>
+					</infoToolbar>
+					<columns>
+							
+						</columns>
+						<items>
+							<ColumnListItem>
+								
+							</ColumnListItem>
+						</items>
+				</Table>
+				<smartTable:layoutData>
+					<FlexItemData growFactor="1" baseSize="0%"/>
+				</smartTable:layoutData>
+			</smartTable:SmartTable>
+		</f:content>
+	</f:DynamicPage>
+</mvc:View>

@@ -1,0 +1,11 @@
+<core:FragmentDefinition id="ext.fragment.EstActualPopover" xmlns="sap.m" xmlns:core="sap.ui.core">
+	<ResponsivePopover id="ext.fragment.EstActualPopover.ResponsivePopover" placement="Bottom" afterClose="fnOnAfterClose" showHeader="false" class="sapUiPopupWithPadding">
+		<content>
+			<VBox id="ext.fragment.EstActualPopover.VBox1">
+				<Text id="ext.fragment.EstActualPopover.EstActualText" 
+					text="{ parts:[{path:'/BilledRevenueAmtInDocCrcy'},{path:'/NetValueAmountInDocCurrency'},{path:'/PlndRevnAmt'},{path:'/CappedNetAmount'},{path:'/DocumentCurrency'}], formatter: '.formatter.fnGetEstActualPopText' }"
+					class="sapUiSmallMarginBottom"/>
+			</VBox>
+		</content>
+	</ResponsivePopover>
+</core:FragmentDefinition>

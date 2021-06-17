@@ -1,0 +1,28 @@
+<mvc:View controllerName="FU.FileUpload.controller.App" xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" displayBlock="true" xmlns="sap.m"
+	xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:u="sap.ui.unified">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<u:FileUploader change="onUploadPress" id="fileUploader" name="ImagesUpload" buttonOnly="true" buttonText="Browse"/>
+						<!--<l:Grid class="sapUiMediumMarginTop" content="{imagesModel>/Images}" defaultSpan="L3 M4 S12" id="imageGrid" vSpacing="0.5">-->
+						<!--	<VBox height="">-->
+						<!--		<layoutData>-->
+						<!--			<l:GridData span="L3 M6 S12"/>-->
+						<!--		</layoutData>-->
+						<!--		<Image class="imgclass" height="135px" id="gridImagesId" press="onImageZoom" src="{imagesModel>Pic}" width="95%"></Image>-->
+						<!--		<core:HTML-->
+						<!--			content='&lt;div id="myModal" class="modal"&gt; &lt;span class="close"&gt;X&lt;/span&gt;&lt;img class="modal-content" id="img01"/&gt;&lt;div id="caption"&gt;&lt;/div&gt;&lt;/div&gt;'></core:HTML>-->
+						<!--	</VBox>-->
+						<!--</l:Grid>-->
+						<Text text="{Filename}"></Text>
+						
+						<Image class="imgclass" height="135px" id="idImage" press="onImageZoom" src="{imagesModel>Pic}" width="95%"></Image>
+
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

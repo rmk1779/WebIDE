@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Qunit test page for Manage Project Billing Elements</title>
+		<meta charset="UTF-8">
+
+		<script id="sap-ui-bootstrap"
+			type="text/javascript"
+			src="../../resources/sap-ui-core.js"
+			data-sap-ui-resourceroots='{
+		    "i2d.ps.projbillingelements1": "../../",
+			"test.unit": "./"
+		}'>
+		</script>
+			<script>
+			jQuery.sap.require("sap.ui.qunit.qunit-css");
+			jQuery.sap.require("sap.ui.thirdparty.qunit");
+			jQuery.sap.require("sap.ui.qunit.qunit-junit");
+			jQuery.sap.require("sap.ui.qunit.qunit-coverage");
+
+			QUnit.config.autostart = false;
+
+			sap.ui.require(
+				[
+				 "test/unit/ext/model/formatter"
+				],
+				function () {
+					QUnit.start();
+				}
+			);
+		</script>
+	</head>
+	<body>
+		<div id="qunit"></div>
+		<div id="qunit-fixture"></div>
+	</body>
+</html>

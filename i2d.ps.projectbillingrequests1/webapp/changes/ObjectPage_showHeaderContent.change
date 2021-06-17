@@ -1,0 +1,27 @@
+{
+	"fileName": "ObjectPage_showHeaderContent",
+	"fileType": "change",
+	"changeType": "propertyBindingChange",
+	"reference": "i2d.ps.projectbillingrequests1.Component",
+	"packageName": "$TMP",
+	"content": {
+		"property": "showHeaderContent",
+		"newBinding": "{= !${ui>/createMode}}"
+	},
+	"selector": {
+		"id": "i2d.ps.projectbillingrequests1::sap.suite.ui.generic.template.ObjectPage.view.Details::C_ProjectBillingRequestTP--objectPage",
+		"type": "sap.uxap.ObjectPageLayout"
+	},
+	"layer": "VENDOR",
+	"texts": {},
+	"namespace": "apps/i2d.ps.projectbillingrequests1/changes/",
+	"creation": "2019-10-11T11:05:47.583Z",
+	"originalLanguage": "EN",
+	"conditions": {},
+	"context": "",
+	"support": {
+		"generator": "Change.createInitialFileContent",
+		"service": "",
+		"user": ""
+	}
+}
